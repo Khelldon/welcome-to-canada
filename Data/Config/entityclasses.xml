@@ -49,7 +49,7 @@
 	<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
 	<property name="MapIcon" value="ui_game_symbol_map_player_arrow"/>
 	<property name="IsEnemyEntity" value="false"/>
-	<property name="DropInventoryBlock" value="cntBackpackDropped"/>
+	<property name="DropInventoryBlock" value="cntBackpackDropped"/> <!-- deprecated. It's an entity now "Backpack" -->
 	<property name="ItemsOnEnterGame.GameModeSurvival" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
 	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
 	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
@@ -61,6 +61,8 @@
 
 	<property name="HandItem" value="meleeHandPlayer"/>
 
+	<!-- IMPORTANT NOTE: In entityclasses.xml, effect_groups DO extend if you extend an entity to another.
+		Pay attention so that you do not stack several base_add or perc_add. -->
 	<effect_group>
 		<passive_effect name="HealthMax" operation="base_set" value="110"/>
 		<passive_effect name="StaminaMax" operation="base_set" value="110"/>
@@ -88,8 +90,8 @@
 		<passive_effect name="WaterLossPerHealthPointGained" operation="base_set" value="0.06"/> <!-- healing damage costs you water -->
 		<passive_effect name="WaterLossPerStaminaPointGained" operation="base_set" value="0.006"/> <!-- regening stamina costs you water -->
 
-		<passive_effect name="HealthLossMaxMult" operation="base_set" value="0.16"/> <!-- taking damage blacks out part of the HP bar -->
-		<passive_effect name="StaminaLossMaxMult" operation="base_set" value="0.006"/> <!-- regening stamina costs food, blacks out the stamina bar -->
+		<passive_effect name="HealthLossMaxMult" operation="base_set" value="0.144"/> <!-- taking damage blacks out part of the HP bar -->
+		<passive_effect name="StaminaLossMaxMult" operation="base_set" value="0.0054"/> <!-- regening stamina costs food, blacks out the stamina bar -->
 
 		<passive_effect name="WalkSpeed" operation="base_set" value="1.53"/>
 		<passive_effect name="RunSpeed" operation="base_set" value="1.10"/>
@@ -138,7 +140,7 @@
 		<passive_effect name="BagSize" operation="base_set" value="45"/> <!-- number of slots on the inventory UI -->
 
 		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffStatusCheck"/>
-		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck,buffPerkAbilityUpdate,buffNearDeathTrauma"/>
+		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffStatusCheck,buffPerkAbilityUpdate,buffNearDeathTraumaTrigger"/>
 	</effect_group>
 </entity_class>
 
@@ -290,7 +292,7 @@
 	<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
 
 	<property name="ExperienceGain" value="700"/> <!-- XP grunt -->
-	<property name="LootDropProb" value=".02"/> <!-- Whether it drops a loot bag on death or not. -->
+	<property name="LootDropProb" value="0.02"/> <!-- Whether it drops a loot bag on death or not. -->
 	<!-- <property name="LootListOnDeath" value="45"/> -->
 	<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
 
@@ -1260,7 +1262,7 @@
 <!-- Missing: zombieSnowRadiated -->
 
 <entity_class name="zombieSpider" extends="zombieTemplateMale">
-	<property name="Tags" value="zombie,walker"/>
+	<property name="Tags" value="zombie"/>
 	<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="RootMotion" value="true"/>
@@ -1316,7 +1318,6 @@
 	<!-- Gameplay -->
 	<property name="ApproachSpeed" value="1.5"/>
 	<property name="NightApproachSpeed" value="1.5"/>
-	<property name="ApproachSpeed" value="1.1"/>
 	<property name="JumpMaxDistance" value="12"/>
 
 	<property name="HandItem" value="meleeHandZombie02Feral"/>
@@ -3060,7 +3061,7 @@
 	<property name="Prefab" value="Backpack"/>
 	<property name="Class" value="EntityBackpack"/>
 	<property name="Parent" value="Backpack"/>
-	<property name="TimeStayAfterDeath" value="1200"/> <!-- player death backpacks will go poof after this many seconds. 0 means 0, not infinite. -->
+	<property name="TimeStayAfterDeath" value="3600"/> <!-- player death backpacks will go poof after this many seconds. 0 means 0, not infinite. -->
 	<property name="IsEnemyEntity" value="false"/>
 	<property name="LootListOnDeath" value="2"/> <!-- used to determine container X/Y size -->
 	<property name="Faction" value="none"/>
@@ -3080,7 +3081,7 @@
 
  <!-- Coloured loot-backpacks that drop off of killed zombies -->
 <entity_class name="EntityLootContainerRegular">
-	<property name="Mesh" value="LootContainers/backpack_droppedPrefab"/>
+	<property name="Mesh" value="LootContainers/zpackPrefab"/>
 	<property name="ModelType" value="Custom"/>
 	<property name="Prefab" value="Backpack"/>
 	<property name="Class" value="EntityLootContainer"/>
@@ -3092,7 +3093,7 @@
 </entity_class>
 
 <entity_class name="EntityLootContainerStrong">
-	<property name="Mesh" value="LootContainers/backpack_droppedPrefab"/>
+	<property name="Mesh" value="LootContainers/zpackPrefab"/>
 	<property name="ModelType" value="Custom"/>
 	<property name="Prefab" value="Backpack"/>
 	<property name="Class" value="EntityLootContainer"/>
@@ -3104,7 +3105,7 @@
 </entity_class>
 
 <entity_class name="EntityLootContainerBoss">
-	<property name="Mesh" value="LootContainers/backpack_droppedPrefab"/>
+	<property name="Mesh" value="LootContainers/zpackPrefab"/>
 	<property name="ModelType" value="Custom"/>
 	<property name="Prefab" value="Backpack"/>
 	<property name="Class" value="EntityLootContainer"/>
@@ -3116,7 +3117,7 @@
 </entity_class>
 
 <entity_class name="EntityLootContainerBandit"> <!-- 71.72 -->
-	<property name="Mesh" value="LootContainers/backpack_droppedPrefab"/>
+	<property name="Mesh" value="LootContainers/zpackPrefab"/>
 	<property name="ModelType" value="Custom"/>
 	<property name="Prefab" value="Backpack"/>
 	<property name="Class" value="EntityLootContainer"/>

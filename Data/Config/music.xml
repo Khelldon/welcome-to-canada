@@ -650,53 +650,143 @@
   <configs>
     <configuration id ="0">
       <threat_level name="Exploration">
+
+        <layer name ="Primary" num="1"/>
+        <layer name ="PrimarySupporting" num="1"/>
+        <layer name ="Secondary" num="1"/>
+        <layer name ="LongEffects" num="1"/>
+        
         <segment name="seg1" length="3">
-          <layer name="Primary" num="1">
+          <layer name="Primary">
             <placement name="Begin" value="0"/>
             <placement name="Loop" value="1,2"/>
           </layer>
-          <layer name="PrimarySupporting" num="1">
+          <layer name="PrimarySupporting">
             <placement name="Begin" value ="1"/>
             <placement name="Loop" value="2"/>
           </layer>
-          <layer name="Secondary" num="1">
+          <layer name="Secondary">
             <placement name="Begin" value="2"/>
           </layer>
-          <layer name ="LongEffects" num="1">
+          <layer name ="LongEffects">
             <placement name="Begin" value="2"/>
           </layer>
         </segment>
 
         <segment name="seg2" length="3">
-          <layer name="Primary" num="1">
+          <layer name="Primary">
             <placement name="Loop" value="3,4,5"/>
           </layer>
-          <layer name="PrimarySupporting" num="1">
+          <layer name="PrimarySupporting">
             <placement name="Loop" value="3,4,5"/>
           </layer>
-          <layer name="Secondary" num="1">
+          <layer name="Secondary">
             <placement name="Loop" value="3,4,5"/>
           </layer>
-          <layer name ="LongEffects" num="1">
+          <layer name ="LongEffects">
             <placement name="Loop" value="3,4,5"/>
           </layer>
         </segment>
 
         <segment name="seg3" length="3">
-          <layer name="Primary" num="1">
+          <layer name="Primary">
             <placement name="Loop" value="6"/>
             <placement name="End" value="7"/>
           </layer>
-          <layer name="PrimarySupporting" num="1">
+          <layer name="PrimarySupporting">
             <placement name="Loop" value ="6,7"/>
-            <placement name="Loop" value="8"/>
+            <placement name="End" value="8"/>
           </layer>
-          <layer name="Secondary" num="1">
+          <layer name="Secondary">
             <placement name="Loop" value="6"/>
             <placement name="End" value="7"/>
           </layer>
-          <layer name ="LongEffects" num="1">
+          <layer name ="LongEffects">
             <placement name="End" value="6"/>
+          </layer>
+        </segment>
+      </threat_level>
+
+      <threat_level name="Suspense">
+        <layer name="Primary" num="1"/>
+
+        <segment name="seg1" length="1">
+          <layer name="Primary">
+            <placement name="Loop" value="0"/>
+          </layer>
+        </segment>
+      </threat_level>
+
+      <threat_level name="CombatReady">
+        <layer name="Primary" num="1"/>
+
+        <segment name="seg1" length="1">
+          <layer name="Primary">
+            <placement name="Loop" value="0"/>
+          </layer>
+        </segment>
+      </threat_level>
+
+      <threat_level name="Combat">
+
+        <layer name ="Primary" num="1"/>
+        <layer name ="PrimarySupporting" num="1"/>
+        <layer name ="Secondary" num="1"/>
+        <layer name ="LongEffects" num="1"/>
+        <layer name ="ShortEffects" num="1"/>
+
+        <segment name="seg1" length="1">
+          <layer name="Primary">
+            <placement name="Begin" value="0"/>
+          </layer>
+          <layer name="PrimarySupporting">
+            <placement name="Begin" value ="0"/>
+          </layer>
+          <layer name="Secondary">
+            <placement name="Begin" value="0"/>
+          </layer>
+          <layer name ="LongEffects">
+            <placement name="Begin" value="0"/>
+          </layer>
+          <layer name ="ShortEffects">
+            <placement name="Begin" value="0"/>
+          </layer>
+
+        </segment>
+
+        <segment name="seg2" length="1">
+          <layer name="Primary">
+            <placement name="Loop" value="1"/>
+          </layer>
+          <layer name="PrimarySupporting">
+            <placement name="Loop" value="1"/>
+          </layer>
+          <layer name="Secondary">
+            <placement name="Loop" value="1"/>
+          </layer>
+          <layer name ="LongEffects">
+            <placement name="Loop" value="1"/>
+          </layer>
+          <layer name ="ShortEffects">
+            <placement name="Loop" value="1"/>
+          </layer>
+        </segment>
+
+        <segment name="seg3" length="1">
+          <layer name="Primary">
+            <placement name="End" value="2"/>
+          </layer>
+          <layer name="PrimarySupporting">
+            <placement name="End" value="2"/>
+          </layer>
+          <layer name="Secondary">
+            <placement name="End" value="2"/>
+          </layer>
+          <layer name ="LongEffects">
+            <placement name="End" value="2"/>
+          </layer>
+          <layer name ="ShortEffects">
+            <placement name="End" value="2"/>
           </layer>
         </segment>
       </threat_level>

@@ -319,7 +319,7 @@ Forces:
 			<property name="IKFootRPosition" value="0, .1, -.05"/>
 			<property name="IKFootRRotation" value="0, 0, 0"/>
 			<property name="pedalSound" value="bicycle_pedal"/>
-			<property name="staminaDrain" value="1.5, 4"/>
+			<property name="staminaDrain" value="1.5, 15"/>
 		</property>
 
 		<property class="seat0">

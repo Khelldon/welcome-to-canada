@@ -21,12 +21,16 @@ List of hacks to be removed:
 	<buff name="bufftest1" icon="ui_game_symbol_infection">
 		<damage_type value="Infection"/>
 		<stack_type value="ignore"/>
-		<duration value="5"/>
+		<duration value="20"/>
 		<effect_group>
+			<!--
 			<requirement name="EntityTagCompare" tags="player"/>
-
 			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStat" stat="staminamaxmodifier" operation="subtract" value="2"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="3.3"/>
+			-->
+
 
 		</effect_group>
 <!--
@@ -115,8 +119,8 @@ List of hacks to be removed:
 		<effect_group>
 			<passive_effect name="StaminaMaxModifierOT" operation="base_subtract" value="10" />
 			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value="10" />
-			<passive_effect name="WaterChangeOT" operation="base_subtract" value="10"/>
 			<!--
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value="10"/>
 			-->
 		</effect_group>
 	</buff>
@@ -325,9 +329,6 @@ List of hacks to be removed:
 			<triggered_effect trigger="onSelfFallImpact" action="AddBuff" target="self" buff="buffPlayerFallingDamage">
 				<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".15"/>
 			</triggered_effect>
-
-			<!-- Kinda sorta dying but not -->
-			<triggered_effect trigger="onSelfDied" action="AddBuff" target="self" buff="buffNearDeathTrauma"/>
 
 			<!-- Crouching -->
 			<triggered_effect trigger="onSelfCrouch" action="AddBuff" target="self" buff="buffCrouching"/>
@@ -1270,10 +1271,10 @@ List of hacks to be removed:
 		<stack_type value="ignore"/>
 		<duration value="0"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="5"/>
+			<requirement name="EntityTagCompare" tags="zombie"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="WalkType" value="5"/>
 		</effect_group>
 	</buff>
-
 
 	<buff name="buffInjuryKnockdown1">
 		<damage_type value="knockdown"/>
@@ -1679,59 +1680,69 @@ List of hacks to be removed:
 
 <!-- ****************** Illness Debuffs: Dysentery, Pneumonia, etc. ****************** -->
 
-	<buff name="buffNearDeathTrauma" name_key="buffNearDeathTraumaName" description_key="buffNearDeathTraumaDesc" tooltip_key="buffNearDeathTraumaTooltip" icon="ui_game_symbol_near_death_trauma" icon_color="255,128,0" remove_on_death="false">
-		<damage_type value="disease"/>
+	<buff name="buffNearDeathTraumaTrigger" hidden="true">
 		<stack_type value="replace"/>
-		<duration value="3600"/>
-		<update_rate value="90"/>
+		<duration value=".5"/>
 		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="NearDeathTraumaCounter" operation="set" value="1800">
+				<requirement name="NotHasBuff" buff="buffNearDeathTrauma"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="NearDeathTraumaCounter" operation="add" value="1800"/>
 
-		<!-- Added: Custom read-only variable "_difficulty" -->
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffNearDeathProtection"/>
-
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="NearDeathTraumaCounter" operation="set" value="7200"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="NearDeathTraumaReduction" operation="set" value="@NearDeathTraumaCounter"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="NearDeathTraumaReduction" operation="divide" value="40"/>
 
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" target="self" cvar="NearDeathTraumaCounter" operation="add" value="3600"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" target="self" cvar="NearDeathTraumaReduction" operation="set" value="@NearDeathTraumaCounter"/>
-			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" target="self" cvar="NearDeathTraumaReduction" operation="divide" value="40"/>
-
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffNearDeathProtection"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffNearDeathRegen"/>
-			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" target="self" buff="buffNearDeathRegen"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffNearDeathTrauma"/>
+		</effect_group>
+	</buff>
 
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="NearDeathTraumaEffect" operation="set" value="5"/>
+	<buff name="buffNearDeathTrauma" name_key="buffNearDeathTraumaName" description_key="buffNearDeathTraumaDesc" tooltip_key="buffNearDeathTraumaTooltip" icon="ui_game_symbol_near_death_trauma" icon_color="255,128,0" remove_on_death="false">
+		<damage_type value="disease"/>
+		<stack_type value="replace"/>
+		<duration value="1800"/>
+		<update_rate value="45"/>
+		<effect_group>
+			<!-- Added: Custom read-only variable "_difficulty" -->
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffNearDeathTraumaCalculate"/>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="NearDeathTraumaCounter" operation="subtract" value="@NearDeathTraumaReduction"/>
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="NearDeathTraumaEffect" operation="set" value="1">
-				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="LTE" value="3600"/>
-			</triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="NearDeathTraumaEffect" operation="set" value="2">
-				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="GT" value="3600"/>
-				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="LTE" value="7200"/>
-				<requirement name="PlayerLevel" operation="GTE" value="10"/>
-			</triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="NearDeathTraumaEffect" operation="set" value="3">
-				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="GT" value="7200"/>
-				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="LTE" value="10800"/>
-				<requirement name="PlayerLevel" operation="GTE" value="30"/>
-			</triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="NearDeathTraumaEffect" operation="set" value="4">
-				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="GT" value="10800"/>
-				<requirement name="PlayerLevel" operation="GTE" value="60"/>
-			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffNearDeathTraumaCalculate"/>
 
 			<passive_effect name="AttributeLevel" operation="base_subtract" value="@NearDeathTraumaEffect"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 
-			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" target="self" cvar="NearDeathTraumaCounter"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" target="self" cvar="NearDeathTraumaEffect"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" target="self" cvar="NearDeathTraumaCounter" operation="set" value="0"/>
 		</effect_group>
 	</buff>
 
-	<!-- In the early game it was deemed too easy get in a death loop. -->
+	<buff name="buffNearDeathTraumaCalculate" hidden="true">
+		<damage_type value="disease"/>
+		<stack_type value="ignore"/>
+		<duration value=".5"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="NearDeathTraumaEffect" operation="set" value="1">
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="NearDeathTraumaEffect" operation="set" value="2">
+				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="GT" value="1800"/>
+				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="LTE" value="3600"/>
+				<requirement name="PlayerLevel" operation="GTE" value="20"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="NearDeathTraumaEffect" operation="set" value="3">
+				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="GT" value="3600"/>
+				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="LTE" value="5400"/>
+				<requirement name="PlayerLevel" operation="GTE" value="40"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="NearDeathTraumaEffect" operation="set" value="4">
+				<requirement name="CVarCompare" cvar="NearDeathTraumaCounter" operation="GT" value="5400"/>
+				<requirement name="PlayerLevel" operation="GTE" value="60"/>
+			</triggered_effect>
+		</effect_group>
+	</buff>
+
+	<!-- In the early game it was deemed too easy get in a death loop so health/food/water regen to a degree. -->
 	<buff name="buffNearDeathRegen" icon="ui_game_symbol_near_death_trauma" icon_color="0,255,0" hidden="true">
 		<stack_type value="ignore"/>
 		<duration value="100"/>
@@ -2319,51 +2330,58 @@ List of hacks to be removed:
 	</buff>
 
 	<!-- digesting food -->
-	<buff name="buffHealStaminaMax" name_key="buffHealStaminaMaxName" description_key="buffHealStaminaMaxDesc" tags="food" icon="ui_game_symbol_hunger">
+	<buff name="buffHealStaminaMax" name_key="buffHealStaminaMaxName" tags="food" icon="ui_game_symbol_hunger" icon_color="0,200,0" hidden="true">
 		<stack_type value="ignore"/>
-		<update_rate value="1"/>
 		<effect_group>
+			<requirement name="CVarCompare" target="self" cvar="foodSuspend" operation="Equals" value="0"/>
+
 			<passive_effect name="StaminaMaxModifierOT" operation="base_add" value="@foodSatiationPSec"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="foodAmount" operation="subtract" value="1"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffHealStaminaMax">
-				<requirement name="CVarCompare" target="self" cvar="foodAmount" operation="LTE" value="0"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="foodSuspend" operation="set" value="1">
+				<requirement name="StatComparePercModMaxToMax" stat="stamina" operation="GTE" value=".998"/>
+			</triggered_effect>
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealStaminaMax">
+				<requirement name="CVarCompare" cvar="foodAmount" operation="LTE" value="-1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="foodAmount" operation="set" value="0">
+				<requirement name="CVarCompare" cvar="foodAmount" operation="LTE" value="0"/>
 			</triggered_effect>
 
-			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffHealStaminaMax">
-				<requirement name="HasBuff" buff="buffHealStaminaMax2"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffHealStaminaMaxStatus">
+				<requirement name="NotHasBuff" buff="buffHealStaminaMaxStatus"/>
+				<requirement name="StatComparePercModMaxToMax" stat="stamina" operation="LTE" value=".985"/>
 			</triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffHealStaminaMax2">
-				<requirement name="CVarCompare" target="self" cvar="foodAmount" operation="GTE" value="160"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="foodSuspend" operation="set" value="0">
+				<requirement name="StatComparePercModMaxToMax" stat="stamina" operation="LTE" value=".99"/>
 			</triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffHealStaminaMax">
-				<requirement name="CVarCompare" target="self" cvar="foodAmount" operation="GTE" value="160"/>
+
+			<!-- how much you can overeat -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="foodAmount" operation="set" value="25">
+				<requirement name="CVarCompare" cvar="foodAmount" operation="GT" value="25"/>
+				<requirement name="StatComparePercModMaxToMax" stat="stamina" operation="GTE" value=".99"/>
 			</triggered_effect>
 		</effect_group>
 	</buff>
 
-	<!-- digesting food, stuffed -->
-	<buff name="buffHealStaminaMax2" name_key="buffHealStaminaMax2Name" description_key="buffHealStaminaMax2Desc" tags="food" icon="ui_game_symbol_hunger" icon_color="255,128,0">
+	<!-- digesting food, displayed status -->
+	<buff name="buffHealStaminaMaxStatus" name_key="buffHealStaminaMaxStatusName" description_key="buffHealStaminaMaxStatusDesc" tags="food" icon="ui_game_symbol_hunger">
 		<stack_type value="ignore"/>
-		<update_rate value="1"/>
 		<effect_group>
-			<passive_effect name="StaminaMaxModifierOT" operation="base_add" value="@foodSatiationPSec"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="foodAmount" operation="subtract" value="1"/>
-
-			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffHealStaminaMax"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffHealStaminaMax2">
-				<requirement name="CVarCompare" target="self" cvar="foodAmount" operation="LTE" value="150"/>
-			</triggered_effect>
-		</effect_group>
-
-		<!-- throwing up -->
-		<effect_group>
-			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="3"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffPuking1"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffHealStaminaMax2Belt"/>
+			<requirements compare_type="or">
+				<requirement name="StatComparePercModMaxToMax" stat="stamina" operation="GTE" value=".99"/>
+				<requirement name="CVarCompare" cvar="foodAmount" operation="LTE" value="0"/>
+				<requirement name="NotHasBuff" buff="buffHealStaminaMax"/>
+			</requirements>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealStaminaMaxStatus"/>
 		</effect_group>
 	</buff>
 
-	<buff name="buffPuking1" name_key="buffHealStaminaMax2Name" tags="food" icon="ui_game_symbol_hunger" icon_color="255,0,0" hidden="true">
+	<buff name="buffPuking1" name_key="buffPuking1Name" tags="food" icon="ui_game_symbol_hunger" icon_color="255,0,0" hidden="true">
 		<damage_type value="Disease"/>
 		<stack_type value="ignore"/>
 		<duration value="4"/>
@@ -2465,7 +2483,8 @@ List of hacks to be removed:
 		<stack_type value="ignore"/>
 		<duration value="180"/>
 		<effect_group>
-			<passive_effect name="AttributeLevel" opertaion="base_add" value="1" tags="attFortitude,attStrength,attAgility"/>
+			<passive_effect name="AttributeLevel" operation="base_add" value="1" tags="attStrength,attFortitude,attAgility"/>
+
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 
@@ -2474,7 +2493,6 @@ List of hacks to be removed:
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.1944"/>
 		</effect_group>
 	</buff>
-
 
 	<buff name="buffDrugAntibiotics" name_key="buffDrugAntibioticsName" description_key="buffDrugAntibioticsDesc" tags="drug" icon="ui_game_symbol_pills">
 		<damage_type value="Disease"/>
@@ -2842,6 +2860,14 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 
+	<buff name="buffBandolier" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".3"/>
+		</effect_group>
+	</buff>
+
 	<buff name="buffCoffee" name_key="buffCoffeeName" description_key="buffCoffeeDesc" icon="ui_game_symbol_coffee" tags="drug">
 		<stack_type value="duration"/>
 		<duration value="120"/>
@@ -2878,7 +2904,7 @@ icon="ui_game_symbol_pack_mule"
 			<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
 		</passive_effect>
 		<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.35">
-			<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+			<requirement name="HasBuff" buff="buffHealWaterMax"/>
 		</passive_effect>
 
 		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.3" effect_name="Drunk"/>
@@ -3897,8 +3923,7 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 
-	<buff name="buffImpactBracing"  name_key="buffImpactBracingName" description_key="buffImpactBracingDesc" tooltip_key="buffImpactBracingTooltip" icon="ui_game_symbol_parkour" remove_on_death="false">
-		<stack_type value="ignore"/> <duration value="0"/> </buff>
+	<buff name="buffImpactBracing" hidden="true"> <stack_type value="ignore"/> <duration value="0"/> </buff>
 
 
 <!-- ****************** Deprecated Buffs? (Needs review) ****************** -->
@@ -4123,7 +4148,7 @@ REQUIREMENTS / CONDITIONS:
 	target="self" is the default and can be overridden with target="other" if you want to check on the target of (an attack?)
 	For event triggers like being attacked, "other" is your attacker.
 
-		RandomRoll: 			target, min_max, operation, value, seed_type
+		RandomRoll: 			target, min_max, operation, value, seed_type, seed_additive
 				seed_type:		Item, Player, Random
 								Random is the default in most cases. A simple random number.
 								Player is the static seed of this player on this map. You can create random "genetic" effects that permanently remain with this player.
@@ -4370,7 +4395,9 @@ ACTIVE / TRIGGERED EFFECTS: ACTIONS
 	PlaySound:			target, sound, play_in_head;   sound references not a file name but a sound name from sounds.xml
 	StopSound:			target, sound, play_in_head
 	FadeOutSound:			target, sound
-	ModifyStat:			target, stat[health,stamina,food?,water,speedmodifier,HealthMaxModifier,StaminaMaxModifier], operation[setvalue,set,add,subtract,multiply,divide], value
+	ModifyStat:			target, stat[health,stamina,water,coretemp; ?food,speedmodifier,HealthMaxModifier,StaminaMaxModifier],
+						operation[set,setvalue,add,subtract,multiply,divide,randomfloat,randomint], value
+
 							Note that the operators are DIFFERENT from the ones on passive effects.
 						Perform a basic math operation of   "stat" "operation" "value"
 						and write the result back to  "stat"
