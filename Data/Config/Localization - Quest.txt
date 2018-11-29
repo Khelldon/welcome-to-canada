@@ -1,4 +1,4 @@
-Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+﻿Key,Source,Context,Changes,English,French,German,Klingon,Spanish
 bonus,,Category,KgNone,Bonus,Bonus,Bonus,,Bonos
 challenge,,Category,KgNone,Challenge,Défi,Herausforderung,,Desafío
 quest,,Category,KgNone,Quest,Quête,Quest,,Misión

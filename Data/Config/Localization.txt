@@ -1,4 +1,4 @@
-Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+﻿Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
 airConditioner,blocks,Block,KgNone,Air Conditioner,Climatiseur,Klimaanlage,,Aire acondicionado,Klimatyzator
 airConditionVentFan,blocks,Block,New,Vent Fan,,,,,
 airConditionVentFanDouble,blocks,Block,New,"Vent Fan, Double",,,,,
