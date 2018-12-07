@@ -1,5 +1,4 @@
 <configs>
-	<config name="blocks">	
 		<append xpath="/blocks">	
 	<!-- ###############################################################################################################  -->
 	<!-- ###############################################################################################################  -->
@@ -8,7 +7,7 @@
 	<!-- ###############################################################################################################  -->
 
 	<!-- Terrain blocks -->
-	<block id="" name="arcticRock01">
+	<block name="arcticRock01">
 		<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="Mboulder" />
 		<property name="Shape" value="ModelEntity" />
@@ -26,12 +25,12 @@
 		<property name="Map.Color" value="120,120,120" />
 		<property name="Model" value="#SurfaceResources?Rock02" />
 	</block>
-	<block id="" name="arcticRock02">
+	<block name="arcticRock02">
 		<property name="Extends" value="arcticRock01" />
 		<property name="Model" value="#SurfaceResources?Rock04" />
 	</block>
 	<!-- Kitten -->
-	<block id="" name="KittenBlock">
+	<block name="KittenBlock">
 		<property name="Material" value="organic" />
 		<property name="MaxDamage" value="10" />
 		<property name="Shape" value="ModelEntity" />
@@ -46,7 +45,7 @@
 		<property name="EconomicValue" value="300" />
 				<property name="ModelOffset" value="0,0,0" />
 	</block>
-	<block id="" name="xmasGift">
+	<block name="xmasGift">
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="201" />
 		<property name="CustomIcon" value="xmasGift" />
@@ -62,7 +61,7 @@
 		<drop event="Fall" name="paper" count="1" prob=".75" stick_chance="1" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<block id="" name="xmasGifts">
+	<block name="xmasGifts">
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="201" />
 		<property name="CustomIcon" value="xmasGifts" />
@@ -79,7 +78,7 @@
 		<drop event="Fall" name="paper" count="5" prob=".75" stick_chance="1" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<block id="" name="xmasTree">
+	<block name="xmasTree">
 		<property name="CustomIcon" value="xmasTree" />
 		<property name="Material" value="treeWoodSmall" />
 		<property name="Shape" value="ModelEntity" />
@@ -93,7 +92,7 @@
 		<property name="ParticleOnDeath" value="treeGib_small_dust" />
 		<property name="EconomicValue" value="300" />
 	</block>
-	<block id="" name="icicle">
+	<block name="icicle">
 		<property name="Material" value="snow" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#WinterBlocks?IciclePrefab" />
@@ -106,7 +105,7 @@
 		<drop event="Fall" name="snowBall" count="3" prob="0.187" stick_chance="0" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<block id="" name="icicles">
+	<block name="icicles">
 		<property name="Material" value="snow" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#WinterBlocks?IciclesPrefab" />
@@ -119,7 +118,7 @@
 		<drop event="Fall" name="snowBall" count="10" prob="0.187" stick_chance="0" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<block id="" name="rabbitBlock">
+	<block name="rabbitBlock">
 		<property name="Material" value="cloth" />
 		<property name="Shape" value="ModelEntity" />
 		<!-- Rabbit Christmas by Chaitanya Krishnan is licensed under CC Attribution -->
@@ -132,7 +131,7 @@
 		<property name="DescriptionKey" value="" />
 		<drop event="Destroy" name="cloth" count="1,3" prob="1" />
 	</block>
-	<block id="" name="wreath">
+	<block name="wreath">
 		<property name="CustomIcon" value="xmasTree" />
 		<property name="Material" value="treeWoodSmall" />
 		<property name="Shape" value="ModelEntity" />
@@ -147,11 +146,11 @@
 		<property name="ParticleOnDeath" value="treeGib_small_dust" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<block id="" name="wreath2">
+	<block name="wreath2">
 		<property name="Extends" value="wreath" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<block id="" name="stockings1">
+	<block name="stockings1">
 		<property name="Material" value="cloth" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Stockings?Stockings1Prefab" />
@@ -162,7 +161,7 @@
 		<property name="DescriptionKey" value="" />
 		<drop event="Destroy" name="cloth" count="1,3" prob="1" />
 	</block>
-	<block id="" name="stockings2">
+	<block name="stockings2">
 		<property name="Material" value="cloth" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Stockings?Stockings2Prefab" />
@@ -174,7 +173,7 @@
 		<drop event="Destroy" name="cloth" count="1,3" prob="1" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<block id="" name="wrappingStation">
+	<block name="wrappingStation">
 		<property name="Extends" value="workbench" />
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
@@ -197,7 +196,7 @@
 		<drop event="Destroy" count="0" />
 		<drop event="Harvest" name="wood" count="2,4" tool_category="Disassemble" />
 	</block>
-	<block id="" name="xmasCandle">
+	<block name="xmasCandle">
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#XmasCandle?XmasCandlePrefab" />
 		<property name="CustomIcon" value="xmasCandle" />
@@ -219,7 +218,7 @@
 		<property name="DescriptionKey" value="torchGroupDesc" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<block id="" name="poinsettia">
+	<block name="poinsettia">
 		<property name="CustomIcon" value="poinsettia" />
 		<property name="Material" value="treeWoodSmall" />
 		<property name="Shape" value="ModelEntity" />
@@ -233,7 +232,7 @@
 		<property name="ParticleOnDeath" value="treeGib_small_dust" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<block id="" name="lightString">
+	<block name="lightString">
 		<property name="Material" value="glass" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#LightStrings?LightStringPrefab" />
@@ -245,7 +244,7 @@
 		<drop event="Destroy" name="brokenGlass" count="1" prob="1" />
 		<property name="EconomicValue" value="100" />
 	</block>
-	<block id="" name="lightStringDiag">
+	<block name="lightStringDiag">
 		<property name="Material" value="glass" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#LightStrings?LightStringDiagPrefab" />
@@ -265,7 +264,7 @@
 	
 	<!-- Terrain Types -->
 	
-	<block id="" name="snowNoSpawns">
+	<block name="snowNoSpawns">
 		<!-- Feral and Insane places -->
 		<property name="Material" value="snow" />
 		<property name="Shape" value="Terrain" />
@@ -288,7 +287,7 @@
 		<property name="CanMobsSpawnOn" value="true" />
 		<property name="CanPlayersSpawnOn" value="false" />
 	</block>
-	<block id="" name="claySnow">
+	<block name="claySnow">
 		<property name="Material" value="clay" />
 		<property name="LPHardnessScale" value="2" />
 		<property name="Shape" value="Terrain" />
@@ -311,7 +310,7 @@
 	
 	<!-- Custom Workstations -->
 	<!-- Advanced Workbench -->
-	<block id="" name="AdvancedWorkbench">
+	<block name="AdvancedWorkbench">
 		<property name="CustomIcon" value="advancedWorkbenchIcon" />
 		<property name="Class" value="Workstation" />
 		<property name="Material" value="metal" />
@@ -348,7 +347,7 @@
 		<property name="Group" value="Building" />
 	</block>	
 	<!-- Heater Workstation -->
-    <block id="" name="heaterElectric">
+    <block name="heaterElectric">
         <property name="Extends" value="AdvancedWorkbench" />
 		<property name="CustomIcon" value="heaterElectricIcon" />
 		<property name="DescriptionKey" value="heaterElectricDesc" />
@@ -358,7 +357,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
     </block>
 	<!-- Generator -->
-	<block id="" name="generatorNew">
+	<block name="generatorNew">
         <property name="Extends" value="generatorbank" />
 		<property name="CustomIcon" value="generatorNewIcon" />
 		<property name="DescriptionKey" value="generatorNewDesc" />
@@ -386,7 +385,7 @@
 		<property name="EconomicValue" value="5000" />
 	</block>
 	<!-- Saw Horse Workstation -->
-	<block id="" name="sawHorse">
+	<block name="sawHorse">
         <property name="Extends" value="AdvancedWorkbench" />
 		<property name="CustomIcon" value="sawHorseIcon" />
 		<property name="DescriptionKey" value="sawHorseDesc" />
@@ -411,7 +410,7 @@
 		<property name="Group" value="Building" />
 	</block>
 	<!-- RJ Stove workstation -->
-<block id="" name="stoveHome">
+<block name="stoveHome">
         <property name="Extends" value="campfire" />
 		<property name="CustomIcon" value="stoveHomeIcon" />
 		<property name="DescriptionKey" value="stoveHomeDesc" />
@@ -421,7 +420,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ Hobo Stove -->
-<block id="" name="stoveHobo">
+<block name="stoveHobo">
         <property name="Extends" value="campfire" />
 		<property name="CustomIcon" value="stoveHoboIcon" />
 		<property name="DescriptionKey" value="stoveHoboDesc" />
@@ -431,7 +430,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ BBQ -->
-<block id="" name="BBQ">
+<block name="BBQ">
         <property name="Extends" value="campfire" />
 		<property name="CustomIcon" value="BBQIcon" />
 		<property name="DescriptionKey" value="BBQDesc" />
@@ -441,7 +440,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ Cauldron -->
-<block id="" name="cauldron">
+<block name="cauldron">
         <property name="Extends" value="campfire" />
 		<property name="CustomIcon" value="cauldronIcon" />
 		<property name="DescriptionKey" value="cauldronDesc" />
@@ -451,7 +450,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ Coffee Machine -->
-<block id="" name="kitchenCoffeeMachineHome">
+<block name="kitchenCoffeeMachineHome">
         <property name="Extends" value="campfire" />
 		<property name="CustomIcon" value="kitchenCoffeeMachineHomeIcon" />
 		<property name="DescriptionKey" value="kitchenCoffeeMachineHomeDesc" />
@@ -460,7 +459,7 @@
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
-<block id="" name="kitchenCoffeeMachineIndustrial">
+<block name="kitchenCoffeeMachineIndustrial">
         <property name="Extends" value="campfire" />
 		<property name="CustomIcon" value="kitchenCoffeeMachineIndustrialIcon" />
 		<property name="DescriptionKey" value="kitchenCoffeeMachineIndustrialDesc" />
@@ -470,7 +469,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ Water Cooler -->
-<block id="" name="waterCooler">
+<block name="waterCooler">
         <property name="Extends" value="campfire" />
 		<property name="CustomIcon" value="waterCoolerIcon" />
 		<property name="DescriptionKey" value="waterCoolerDesc" />
@@ -484,7 +483,7 @@
 
 	
 <!-- ############################## RJ NEW BLOCKS - MASTERS ############################# -->
-	<block id="" name="snowBlockMaster">
+	<block name="snowBlockMaster">
 		<property name="Group" value="Building" />
 		<property name="Material" value="mSnow" />
 		<property name="DescriptionKey" value="snowBlockGroupDesc" />
@@ -505,7 +504,7 @@
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="20" />
 	</block>
-	<block id="" name="iceBlockMaster">
+	<block name="iceBlockMaster">
 		<property name="Group" value="Building" />
 		<property name="Material" value="mIce" />
 		<property name="Texture" value="178" />
@@ -518,7 +517,7 @@
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="20" />
 	</block>
-	<block id="" name="titaniumBlockMaster">
+	<block name="titaniumBlockMaster">
 		<property name="Group" value="Building" />
 		<property name="Material" value="mTitanium" />
 		<property name="DescriptionKey" value="titaniumGroupDesc" />
@@ -537,7 +536,7 @@
 	</block>
 	
 	<!-- blocks -->
-	<block id="" name="snowBlock">
+	<block name="snowBlock">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelBlock" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -548,13 +547,13 @@
 			<property name="ToBlock" value="iceBlock" />
 		</property>
 	</block>
-	<block id="" name="iceBlock">
+	<block name="iceBlock">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="cube" />
 		<property name="DowngradeBlock" value="snowBlock" />
 	</block>
-	<block id="" name="titaniumBlock">
+	<block name="titaniumBlock">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelBlock" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -563,7 +562,7 @@
 		<property name="Model" value="cube" />
 		<property name="DowngradeBlock" value="stainlessSteelBlock" />
 	</block>
-	<block id="" name="snowHalfBlock">
+	<block name="snowHalfBlock">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelHalf" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -573,13 +572,13 @@
 			<property name="ToBlock" value="iceHalfBlock" />
 		</property>
 	</block>
-	<block id="" name="iceHalfBlock">
+	<block name="iceHalfBlock">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="cube_half" />
 		<property name="DowngradeBlock" value="snowRamp" />
 	</block>
-	<block id="" name="titaniumHalfBlock">
+	<block name="titaniumHalfBlock">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelHalf" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -588,7 +587,7 @@
 		<property name="Model" value="cube_half" />
 		<property name="DowngradeBlock" value="stainlessSteelHalf" />
 	</block>
-	<block id="" name="snowQuarterBlock">
+	<block name="snowQuarterBlock">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelQuarter" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -598,13 +597,13 @@
 			<property name="ToBlock" value="iceQuarterBlock" />
 		</property>
 	</block>
-	<block id="" name="iceQuarterBlock">
+	<block name="iceQuarterBlock">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="cube_quarter" />
 		<property name="DowngradeBlock" value="snowQuarterBlock" />
 	</block>
-	<block id="" name="titaniumQuarterBlock">
+	<block name="titaniumQuarterBlock">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelQuarter" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -613,7 +612,7 @@
 		<property name="Model" value="cube_quarter" />
 		<property name="DowngradeBlock" value="stainlessSteelQuarter" />
 	</block>
-	<block id="" name="snowEighthBlock">
+	<block name="snowEighthBlock">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelEighth" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -623,13 +622,13 @@
 			<property name="ToBlock" value="iceEighthBlock" />
 		</property>
 	</block>
-	<block id="" name="iceEighthBlock">
+	<block name="iceEighthBlock">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="cube_eighth" />
 		<property name="DowngradeBlock" value="snowEighthBlock" />
 	</block>
-	<block id="" name="titaniumEighthBlock">
+	<block name="titaniumEighthBlock">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelEighth" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -639,7 +638,7 @@
 		<property name="DowngradeBlock" value="stainlessSteelEighth" />
 	</block>
 	<!-- Wedges -->
-	<block id="" name="snowWedge">
+	<block name="snowWedge">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedge" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -650,14 +649,14 @@
 			<property name="ToBlock" value="iceWedge" />
 		</property>
 	</block>
-	<block id="" name="iceWedge">
+	<block name="iceWedge">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="wedge60" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowWedge" />
 	</block>
-	<block id="" name="titaniumWedge">
+	<block name="titaniumWedge">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedge" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -667,7 +666,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelWedge" />
 	</block>
-	<block id="" name="snowWedgeTip">
+	<block name="snowWedgeTip">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeTip" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -678,14 +677,14 @@
 			<property name="ToBlock" value="iceWedgeTip" />
 		</property>
 	</block>
-	<block id="" name="iceWedgeTip">
+	<block name="iceWedgeTip">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="wedge60_tip" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowWedgeTip" />
 	</block>
-	<block id="" name="titaniumWedgeTip">
+	<block name="titaniumWedgeTip">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeTip" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -695,7 +694,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelWedgeTip" />
 	</block>
-	<block id="" name="snowWedgeIncline">
+	<block name="snowWedgeIncline">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeIncline" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -706,14 +705,14 @@
 			<property name="ToBlock" value="iceWedgeIncline" />
 		</property>
 	</block>
-	<block id="" name="iceWedgeIncline">
+	<block name="iceWedgeIncline">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="wedge60_incline" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowWedgeIncline" />
 	</block>
-	<block id="" name="titaniumWedgeIncline">
+	<block name="titaniumWedgeIncline">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeIncline" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -723,7 +722,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelWedgeIncline" />
 	</block>
-	<block id="" name="snowWedgeTipCNRFullTop">
+	<block name="snowWedgeTipCNRFullTop">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeTipCNRFullTop" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -734,14 +733,14 @@
 			<property name="ToBlock" value="iceWedgeTipCNRFullTop" />
 		</property>
 	</block>
-	<block id="" name="iceWedgeTipCNRFullTop">
+	<block name="iceWedgeTipCNRFullTop">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="wedge60_corner" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowWedgeTipCNRFullTop" />
 	</block>
-	<block id="" name="titaniumWedgeTipCNRFullTop">
+	<block name="titaniumWedgeTipCNRFullTop">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeTipCNRFullTop" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -751,7 +750,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelWedgeTipCNRFullTop" />
 	</block>
-	<block id="" name="snowWedgeTipCNRFullBottom">
+	<block name="snowWedgeTipCNRFullBottom">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeTipCNRFullBottom" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -762,14 +761,14 @@
 			<property name="ToBlock" value="iceWedgeTipCNRFullBottom" />
 		</property>
 	</block>
-	<block id="" name="iceWedgeTipCNRFullBottom">
+	<block name="iceWedgeTipCNRFullBottom">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="wedge60_tip_corner" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowWedgeTipCNRFullBottom" />
 	</block>
-	<block id="" name="titaniumWedgeTipCNRFullBottom">
+	<block name="titaniumWedgeTipCNRFullBottom">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeTipCNRFullBottom" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -779,7 +778,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelWedgeTipCNRFullBottom" />
 	</block>
-	<block id="" name="snowWedgeCNRInsideBottom">
+	<block name="snowWedgeCNRInsideBottom">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeCNRInsideBottom" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -790,14 +789,14 @@
 			<property name="ToBlock" value="iceWedgeCNRInsideBottom" />
 		</property>
 	</block>
-	<block id="" name="iceWedgeCNRInsideBottom">
+	<block name="iceWedgeCNRInsideBottom">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="wedge60_inside_corner" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowWedgeCNRInsideBottom" />
 	</block>
-	<block id="" name="titaniumWedgeCNRInsideBottom">
+	<block name="titaniumWedgeCNRInsideBottom">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeCNRInsideBottom" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -807,7 +806,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelWedgeCNRInsideBottom" />
 	</block>
-	<block id="" name="snowWedgeCNRInsideTop">
+	<block name="snowWedgeCNRInsideTop">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeCNRInsideBottom" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -818,14 +817,14 @@
 			<property name="ToBlock" value="iceWedgeCNRInsideTop" />
 		</property>
 	</block>
-	<block id="" name="iceWedgeCNRInsideTop">
+	<block name="iceWedgeCNRInsideTop">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="wedge60_inside_corner_2" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowWedgeCNRInsideTop" />
 	</block>
-	<block id="" name="titaniumWedgeCNRInsideTop">
+	<block name="titaniumWedgeCNRInsideTop">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeCNRInsideTop" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -835,7 +834,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelWedgeCNRInsideTop" />
 	</block>
-	<block id="" name="snowWedgeStairs">
+	<block name="snowWedgeStairs">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeStairs" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -846,14 +845,14 @@
 			<property name="ToBlock" value="iceWedgeStairs" />
 		</property>
 	</block>
-	<block id="" name="iceWedgeStairs">
+	<block name="iceWedgeStairs">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="wedge_stairs" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowWedgeStairs" />
 	</block>
-	<block id="" name="titaniumWedgeStairs">
+	<block name="titaniumWedgeStairs">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeStairs" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -863,7 +862,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelWedgeStairs" />
 	</block>
-	<block id="" name="snowWedgeTipStairs">
+	<block name="snowWedgeTipStairs">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeTipStairs" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -874,14 +873,14 @@
 			<property name="ToBlock" value="iceWedgeTipStairs" />
 		</property>
 	</block>
-	<block id="" name="iceWedgeTipStairs">
+	<block name="iceWedgeTipStairs">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="wedge_tip_stairs" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowWedgeTipStairs" />
 	</block>
-	<block id="" name="titaniumWedgeTipStairs">
+	<block name="titaniumWedgeTipStairs">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelWedgeTipStairs" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -892,7 +891,7 @@
 		<property name="DowngradeBlock" value="stainlessSteelWedgeTipStairs" />
 	</block>
 	<!-- Ramps -->
-	<block id="" name="snowRamp">
+	<block name="snowRamp">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelRamp" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -904,14 +903,14 @@
 			<property name="ToBlock" value="iceRamp" />
 		</property>
 	</block>
-	<block id="" name="iceRamp">
+	<block name="iceRamp">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="ramp" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowRamp" />
 	</block>
-	<block id="" name="titaniumRamp">
+	<block name="titaniumRamp">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelRamp" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -921,7 +920,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelRamp" />
 	</block>
-	<block id="" name="snowCNRFull">
+	<block name="snowCNRFull">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRFull" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -932,14 +931,14 @@
 			<property name="ToBlock" value="iceCNRFull" />
 		</property>
 	</block>
-	<block id="" name="iceCNRFull">
+	<block name="iceCNRFull">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="ramp_outside_corner" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowCNRFull" />
 	</block>
-	<block id="" name="titaniumCNRFull">
+	<block name="titaniumCNRFull">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRFull" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -949,7 +948,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelCNRFull" />
 	</block>
-	<block id="" name="snowCNRRamp">
+	<block name="snowCNRRamp">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRRamp" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -960,14 +959,14 @@
 			<property name="ToBlock" value="iceCNRRamp" />
 		</property>
 	</block>
-	<block id="" name="iceCNRRamp">
+	<block name="iceCNRRamp">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="ramp_corner" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowCNRRamp" />
 	</block>
-	<block id="" name="titaniumCNRRamp">
+	<block name="titaniumCNRRamp">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRRamp" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -977,7 +976,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelCNRRamp" />
 	</block>
-	<block id="" name="snowCNRInside">
+	<block name="snowCNRInside">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRInside" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -988,14 +987,14 @@
 			<property name="ToBlock" value="iceCNRInside" />
 		</property>
 	</block>
-	<block id="" name="iceCNRInside">
+	<block name="iceCNRInside">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="ramp_inside_corner" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowCNRInside" />
 	</block>
-	<block id="" name="titaniumCNRInside">
+	<block name="titaniumCNRInside">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRInside" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1005,7 +1004,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelCNRInside" />
 	</block>
-	<block id="" name="snowCNRRampFiller">
+	<block name="snowCNRRampFiller">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRRampFiller" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1016,14 +1015,14 @@
 			<property name="ToBlock" value="iceCNRRampFiller" />
 		</property>
 	</block>
-	<block id="" name="iceCNRRampFiller">
+	<block name="iceCNRRampFiller">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="ramp_corner_filler" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowCNRRampFiller" />
 	</block>
-	<block id="" name="titaniumCNRRampFiller">
+	<block name="titaniumCNRRampFiller">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRRampFiller" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1034,7 +1033,7 @@
 		<property name="DowngradeBlock" value="stainlessSteelCNRRampFiller" />
 	</block>
 	<!-- Pillars, Poles -->
-	<block id="" name="snowPillar100">
+	<block name="snowPillar100">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelPillar100" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1045,14 +1044,14 @@
 			<property name="ToBlock" value="icePillar100" />
 		</property>
 	</block>
-	<block id="" name="icePillar100">
+	<block name="icePillar100">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole1m" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowPillar100" />
 	</block>
-	<block id="" name="titaniumPillar100">
+	<block name="titaniumPillar100">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelPillar100" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1062,7 +1061,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelPillar100" />
 	</block>
-	<block id="" name="snowPillar50">
+	<block name="snowPillar50">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelPillar50" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1073,14 +1072,14 @@
 			<property name="ToBlock" value="icePillar50" />
 		</property>
 	</block>
-	<block id="" name="icePillar50">
+	<block name="icePillar50">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole0.5m" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowPillar50" />
 	</block>
-	<block id="" name="titaniumPillar50">
+	<block name="titaniumPillar50">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelPillar50" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1090,7 +1089,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelPillar50" />
 	</block>
-	<block id="" name="snowPole">
+	<block name="snowPole">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelPole" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1101,14 +1100,14 @@
 			<property name="ToBlock" value="icePole" />
 		</property>
 	</block>
-	<block id="" name="icePole">
+	<block name="icePole">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="pole_square" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowPole" />
 	</block>
-	<block id="" name="titaniumPole">
+	<block name="titaniumPole">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelPole" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1118,7 +1117,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelPole" />
 	</block>
-	<block id="" name="snowCTRpole">
+	<block name="snowCTRpole">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCTRpole" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1129,14 +1128,14 @@
 			<property name="ToBlock" value="iceCTRpole" />
 		</property>
 	</block>
-	<block id="" name="iceCTRpole">
+	<block name="iceCTRpole">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="pole_square_centered" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowCTRpole" />
 	</block>
-	<block id="" name="titaniumCTRpole">
+	<block name="titaniumCTRpole">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCTRpole" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1147,7 +1146,7 @@
 		<property name="DowngradeBlock" value="stainlessSteelCTRpole" />
 	</block>
 	<!-- Stairs -->
-	<block id="" name="snowStairs25">
+	<block name="snowStairs25">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelStairs25" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1158,14 +1157,14 @@
 			<property name="ToBlock" value="iceStairs25" />
 		</property>
 	</block>
-	<block id="" name="iceStairs25">
+	<block name="iceStairs25">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="StairsFilledVerticalUV" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowStairs25" />
 	</block>
-	<block id="" name="titaniumStairs25">
+	<block name="titaniumStairs25">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelStairs25" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1175,7 +1174,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelStairs25" />
 	</block>
-	<block id="" name="snowStairs25CornerCNR">
+	<block name="snowStairs25CornerCNR">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelStairs25CornerCNR" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1186,14 +1185,14 @@
 			<property name="ToBlock" value="iceStairs25CornerCNR" />
 		</property>
 	</block>
-	<block id="" name="iceStairs25CornerCNR">
+	<block name="iceStairs25CornerCNR">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="stairs_filled_corner" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowStairs25CornerCNR" />
 	</block>
-	<block id="" name="titaniumStairs25CornerCNR">
+	<block name="titaniumStairs25CornerCNR">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelStairs25CornerCNR" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1204,7 +1203,7 @@
 		<property name="DowngradeBlock" value="stainlessSteelStairs25CornerCNR" />
 	</block>
 	<!-- Rounded Corners -->
-	<block id="" name="snowCNRRound">
+	<block name="snowCNRRound">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRRound" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1215,14 +1214,14 @@
 			<property name="ToBlock" value="iceCNRRound" />
 		</property>
 	</block>
-	<block id="" name="iceCNRRound">
+	<block name="iceCNRRound">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="corner_round1m" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowCNRRound" />
 	</block>
-	<block id="" name="titaniumCNRRound">
+	<block name="titaniumCNRRound">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRRound" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1232,7 +1231,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelCNRRound" />
 	</block>
-	<block id="" name="snowCNRRoundTop">
+	<block name="snowCNRRoundTop">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRRoundTop" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1243,14 +1242,14 @@
 			<property name="ToBlock" value="iceCNRRoundTop" />
 		</property>
 	</block>
-	<block id="" name="iceCNRRoundTop">
+	<block name="iceCNRRoundTop">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="corner_rounded" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowCNRRoundTop" />
 	</block>
-	<block id="" name="titaniumCNRRoundTop">
+	<block name="titaniumCNRRoundTop">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelCNRRoundTop" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1261,7 +1260,7 @@
 		<property name="DowngradeBlock" value="stainlessSteelCNRRoundTop" />
 	</block>
 	<!-- Arch, Arrow Slit, Plate, pyramid -->
-	<block id="" name="snowPlate">
+	<block name="snowPlate">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelPlate" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1272,14 +1271,14 @@
 			<property name="ToBlock" value="icePlate" />
 		</property>
 	</block>
-	<block id="" name="icePlate">
+	<block name="icePlate">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Plate" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowPlate" />
 	</block>
-	<block id="" name="titaniumPlate">
+	<block name="titaniumPlate">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelPlate" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1289,7 +1288,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelPlate" />
 	</block>
-	<block id="" name="snowArrowSlitHalf">
+	<block name="snowArrowSlitHalf">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelArrowSlitHalf" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1300,14 +1299,14 @@
 			<property name="ToBlock" value="iceArrowSlitHalf" />
 		</property>
 	</block>
-	<block id="" name="iceArrowSlitHalf">
+	<block name="iceArrowSlitHalf">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="arrow_slit_half" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowArrowSlitHalf" />
 	</block>
-	<block id="" name="titaniumArrowSlitHalf">
+	<block name="titaniumArrowSlitHalf">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelArrowSlitHalf" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1317,7 +1316,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelArrowSlitHalf" />
 	</block>
-	<block id="" name="snowArch">
+	<block name="snowArch">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelArch" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1328,14 +1327,14 @@
 			<property name="ToBlock" value="iceArch" />
 		</property>
 	</block>
-	<block id="" name="iceArch">
+	<block name="iceArch">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Arch" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowArch" />
 	</block>
-	<block id="" name="titaniumArch">
+	<block name="titaniumArch">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelArch" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1345,7 +1344,7 @@
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="stainlessSteelArch" />
 	</block>
-	<block id="" name="snowPyramid">
+	<block name="snowPyramid">
 		<property name="Extends" value="snowBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelPyramid" />
 		<property name="CustomIconTint" value="f6f6fe" />
@@ -1356,14 +1355,14 @@
 			<property name="ToBlock" value="icePyramid" />
 		</property>
 	</block>
-	<block id="" name="icePyramid">
+	<block name="icePyramid">
 		<property name="Extends" value="iceBlockMaster" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="pyramid" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="DowngradeBlock" value="snowPyramid" />
 	</block>
-	<block id="" name="titaniumPyramid">
+	<block name="titaniumPyramid">
 		<property name="Extends" value="titaniumBlockMaster" />
 		<property name="CustomIcon" value="stainlessSteelPyramid" />
 		<property name="CustomIconTint" value="5b8580" />
@@ -1376,7 +1375,7 @@
 	
 	<!-- RJ Coloured Doors -->
 	<!-- Red -->
-	<block id="" name="secureDoorWoodenRed">
+	<block name="secureDoorWoodenRed">
 		<property name="Extends" value="secureDoorWooden" />
 		<property name="CustomIcon" value="secureDoorWooden" />
 		<property name="CustomIconTint" value="800000" />
@@ -1388,7 +1387,7 @@
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 	</block>
-	<block id="" name="secureReinforcedDoorWoodenRed">
+	<block name="secureReinforcedDoorWoodenRed">
 		<property name="Extends" value="secureReinforcedDoorWooden" />
 		<property name="CustomIcon" value="secureReinforcedDoorWooden" />
 		<property name="CustomIconTint" value="800000" />
@@ -1400,14 +1399,14 @@
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 	</block>
-	<block id="" name="metalReinforcedDoorWoodenRed">
+	<block name="metalReinforcedDoorWoodenRed">
 		<property name="Extends" value="metalReinforcedDoorWooden" />
 		<property name="CustomIcon" value="metalReinforcedDoorWooden" />
 		<property name="CustomIconTint" value="800000" />
 		<property name="RandomTintColor1" value="800000" />
 	</block>
 	<!-- Blue -->
-	<block id="" name="secureDoorWoodenBlue">
+	<block name="secureDoorWoodenBlue">
 		<property name="Extends" value="secureDoorWooden" />
 		<property name="CustomIcon" value="secureDoorWooden" />
 		<property name="CustomIconTint" value="000080" />
@@ -1419,7 +1418,7 @@
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 	</block>
-	<block id="" name="secureReinforcedDoorWoodenBlue">
+	<block name="secureReinforcedDoorWoodenBlue">
 		<property name="Extends" value="secureReinforcedDoorWooden" />
 		<property name="CustomIcon" value="secureReinforcedDoorWooden" />
 		<property name="CustomIconTint" value="000080" />
@@ -1431,14 +1430,14 @@
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 	</block>
-	<block id="" name="metalReinforcedDoorWoodenBlue">
+	<block name="metalReinforcedDoorWoodenBlue">
 		<property name="Extends" value="metalReinforcedDoorWooden" />
 		<property name="CustomIcon" value="metalReinforcedDoorWooden" />
 		<property name="CustomIconTint" value="000080" />
 		<property name="RandomTintColor1" value="000080" />
 	</block>
 	<!-- Green -->
-	<block id="" name="secureDoorWoodenGreen">
+	<block name="secureDoorWoodenGreen">
 		<property name="Extends" value="secureDoorWooden" />
 		<property name="CustomIcon" value="secureDoorWooden" />
 		<property name="CustomIconTint" value="004000" />
@@ -1450,7 +1449,7 @@
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 	</block>
-	<block id="" name="secureReinforcedDoorWoodenGreen">
+	<block name="secureReinforcedDoorWoodenGreen">
 		<property name="Extends" value="secureReinforcedDoorWooden" />
 		<property name="CustomIcon" value="secureReinforcedDoorWooden" />
 		<property name="CustomIconTint" value="004000" />
@@ -1462,14 +1461,14 @@
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 	</block>
-	<block id="" name="metalReinforcedDoorWoodenGreen">
+	<block name="metalReinforcedDoorWoodenGreen">
 		<property name="Extends" value="metalReinforcedDoorWooden" />
 		<property name="CustomIcon" value="metalReinforcedDoorWooden" />
 		<property name="CustomIconTint" value="004000" />
 		<property name="RandomTintColor1" value="004000" />
 	</block>
 	<!-- Pink -->
-	<block id="" name="secureDoorWoodenPink">
+	<block name="secureDoorWoodenPink">
 		<property name="Extends" value="secureDoorWooden" />
 		<property name="CustomIcon" value="secureDoorWooden" />
 		<property name="CustomIconTint" value="ff40ff" />
@@ -1481,7 +1480,7 @@
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 	</block>
-	<block id="" name="secureReinforcedDoorWoodenPink">
+	<block name="secureReinforcedDoorWoodenPink">
 		<property name="Extends" value="secureReinforcedDoorWooden" />
 		<property name="CustomIcon" value="secureReinforcedDoorWooden" />
 		<property name="CustomIconTint" value="ff40ff" />
@@ -1493,7 +1492,7 @@
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 	</block>
-	<block id="" name="metalReinforcedDoorWoodenPink">
+	<block name="metalReinforcedDoorWoodenPink">
 		<property name="Extends" value="metalReinforcedDoorWooden" />
 		<property name="CustomIcon" value="metalReinforcedDoorWooden" />
 		<property name="CustomIconTint" value="ff40ff" />
@@ -1502,7 +1501,7 @@
 	
 	<!-- RJ Chairs -->
 	<!-- Lobby -->
-	<block id="" name="chairLobby">
+	<block name="chairLobby">
 		<property name="CustomIcon" value="chairLobbyIcon" />
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="ModelEntity" />
@@ -1529,7 +1528,7 @@
 		<property name="Group" value="Decor/Miscellaneous" />
 	</block>
 	<!-- Computer -->
-	<block id="" name="chairComputer">
+	<block name="chairComputer">
 		<property name="CustomIcon" value="chairComputerIcon" />
 		<property name="Material" value="furniture" />
 		<property name="Shape" value="ModelEntity" />
@@ -1554,7 +1553,7 @@
 		<property name="Group" value="Decor/Miscellaneous" />
 	</block>
 	<!-- Wood Nice -->
-	<block id="" name="chairWoodNice">
+	<block name="chairWoodNice">
 		<property name="CustomIcon" value="chairWoodNiceIcon" />
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="ModelEntity" />
@@ -1577,7 +1576,7 @@
 		<property name="Group" value="Decor/Miscellaneous" />
 	</block>
 	<!-- Wood Plain -->
-	<block id="" name="chairWoodPlain">
+	<block name="chairWoodPlain">
 		<property name="CustomIcon" value="chairWoodPlainIcon" />
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="ModelEntity" />
@@ -1600,7 +1599,7 @@
 		<property name="Group" value="Decor/Miscellaneous" />
 	</block>
 	<!-- Plastic -->
-	<block id="" name="chairPlastic">
+	<block name="chairPlastic">
 		<property name="CustomIcon" value="chairPlasticIcon" />
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="ModelEntity" />
@@ -1629,7 +1628,7 @@
 	
 	<!-- Military Vehicles -->
     <!-- Tiger Tank -->
-	<block id="" name="cntTankTiger">
+	<block name="cntTankTiger">
 		<property name="CreativeMode" value="Player" />
 		<property name="Material" value="mMilitarySteel" />
 		<property name="LightOpacity" value="0" />
@@ -1665,47 +1664,47 @@
 		</property>
 		<property name="ActivationDistance" value="6" />
 	</block>
-	<block id="" name="cntTankSherman">
+	<block name="cntTankSherman">
 		<property name="Extends" value="cntTankTiger" />
 		<property name="Model" value="#militarySherman?vehicleShermanTankSnowPrefab" />
 	</block>
-	<block id="" name="cntAPC">
+	<block name="cntAPC">
 		<property name="Extends" value="cntTankTiger" />
 		<property name="MultiBlockDim" value="5,3,10" />
 		<property name="Model" value="#militaryAPC?vehicleAPCPrefab" />
 		<property name="MaxDamage" value="17500" />
 	</block>
-	<block id="" name="cntJeep">
+	<block name="cntJeep">
 		<property name="Extends" value="cntTankTiger" />
 		<property name="MultiBlockDim" value="3,3,10" />
 		<property name="Model" value="#militaryJeep?vehicleJeepSnowPrefab" />
 		<property name="MaxDamage" value="2500" />
 	</block>
-	<block id="" name="cntKubel">
+	<block name="cntKubel">
 		<property name="Extends" value="cntTankTiger" />
 		<property name="MultiBlockDim" value="3,2,5" />
 		<property name="Model" value="#militaryKubelWagon?vehicleKubelWagonSnowPrefab" />
 		<property name="MaxDamage" value="2500" />
 	</block>
-	<block id="" name="cntHalfTrack">
+	<block name="cntHalfTrack">
 		<property name="Extends" value="cntTankTiger" />
 		<property name="MultiBlockDim" value="3,4,8" />
 		<property name="Model" value="#militaryHalfTrack?vehicleHalftrackSnowPrefab" />
 	</block>
-	<block id="" name="cntTransport">
+	<block name="cntTransport">
 		<property name="Extends" value="cntTankTiger" />
 		<property name="MultiBlockDim" value="3,3,7" />
 		<property name="LootList" value="173" />
 		<property name="Model" value="#militaryTransport?vehicleTransportTruckPrefab" />
 	</block>
 	<!-- RJ Hummer -->
-	<block id="" name="cntHummer">
+	<block name="cntHummer">
 		<property name="Extends" value="cntTankTiger" />
 		<property name="Model" value="#militaryHummer?vehicleHummer01Prefab" />
 		<property name="LootList" value="106" />
 		<property name="MultiBlockDim" value="3,3,6" />
 	</block>
-	<block id="" name="cnt222">
+	<block name="cnt222">
 		<property name="Extends" value="cntTankTiger" />
 		<property name="LootList" value="106" />
 		<property name="MultiBlockDim" value="3,3,6" />
@@ -1715,7 +1714,7 @@
 	
 	<!-- #################### Sedans #################### -->
 	<!-- RCMP -->
-	<block id="" name="cntRCMP">
+	<block name="cntRCMP">
 		<property name="CreativeMode" value="Player" />
 		<property name="Material" value="metal" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
@@ -1760,7 +1759,7 @@
 	</block>
 	
 	<!-- Taxi -->
-	<block id="" name="cntTaxi">
+	<block name="cntTaxi">
 		<property name="Extends" value="cntRCMP" />
 		<property name="LootList" value="110" />
 		<property name="Model" value="#carTaxi?vehicleCarTaxiPrefab" />
@@ -1768,7 +1767,7 @@
 	
 	<!-- Standard Sedans -->
 	<!-- Danger -->
-	<block id="" name="cntSedan01">
+	<block name="cntSedan01">
 		<property name="Extends" value="cntRCMP" />
 		<property name="LootList" value="19" />
 		<property name="MultiBlockDim" value="3,2,6" />
@@ -1776,77 +1775,77 @@
 	</block>
 	
 	<!-- sedan type 2 -->
-	<block id="" name="cntSedan02">
+	<block name="cntSedan02">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan01?vehicleCarSedan02whitePrefab" />
 	</block>
-	<block id="" name="cntSedan02Red">
+	<block name="cntSedan02Red">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan01?vehicleCarSedan02redPrefab" />
 	</block>
-	<block id="" name="cntSedan02LightBlue">
+	<block name="cntSedan02LightBlue">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan01?vehicleCarSedan02lightbluePrefab" />
 	</block>
-	<block id="" name="cntSedan02Green">
+	<block name="cntSedan02Green">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan01?vehicleCarSedan02greenPrefab" />
 	</block>
-	<block id="" name="cntSedan02Blue">
+	<block name="cntSedan02Blue">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan01?vehicleCarSedan02bluePrefab" />
 	</block>
-	<block id="" name="cntSedan02Black">
+	<block name="cntSedan02Black">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan01?vehicleCarSedan02blackPrefab" />
 	</block>
 	
 	<!-- sedan type 3 -->
-	<block id="" name="cntSedan03">
+	<block name="cntSedan03">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan02?vehicleCarSedan03whitePrefab" />
 	</block>
-	<block id="" name="cntSedan03Red">
+	<block name="cntSedan03Red">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan02?vehicleCarSedan03redPrefab" />
 	</block>
-	<block id="" name="cntSedan03LightBlue">
+	<block name="cntSedan03LightBlue">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan02?vehicleCarSedan03lightbluePrefab" />
 	</block>
-	<block id="" name="cntSedan03Green">
+	<block name="cntSedan03Green">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan02?vehicleCarSedan03greenPrefab" />
 	</block>
-	<block id="" name="cntSedan03Blue">
+	<block name="cntSedan03Blue">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan02?vehicleCarSedan03bluePrefab" />
 	</block>
-	<block id="" name="cntSedan03Black">
+	<block name="cntSedan03Black">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedan02?vehicleCarSedan03blackPrefab" />
 	</block>
 	<!-- sedan wrecked -->
-	<block id="" name="cntSedanWrecked03">
+	<block name="cntSedanWrecked03">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedanWrecked?vehicleCarSedanWrecked03whitePrefab" />
 	</block>
-	<block id="" name="cntSedanWrecked03Tan">
+	<block name="cntSedanWrecked03Tan">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedanWrecked?vehicleCarSedanWrecked03tanPrefab" />
 	</block>
-	<block id="" name="cntSedanWrecked03Red">
+	<block name="cntSedanWrecked03Red">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedanWrecked?vehicleCarSedanWrecked03redPrefab" />
 	</block>
-	<block id="" name="cntSedanWrecked03Black">
+	<block name="cntSedanWrecked03Black">
 		<property name="Extends" value="cntSedan01" />
 		<property name="Model" value="#carSedanWrecked?vehicleCarSedanWrecked03blackPrefab" />
 	</block>
 	
 	
 	<!-- #################### HatchBacks ################################# -->
-	<block id="" name="cntHatchBack">
+	<block name="cntHatchBack">
 		<property name="CreativeMode" value="Player" />
 		<property name="Material" value="metal" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
@@ -1888,49 +1887,49 @@
 		</property>
 		<property name="ActivationDistance" value="6" />
 	</block>
-	<block id="" name="cntHatchBackRed">
+	<block name="cntHatchBackRed">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchback?vehicleCarHatchback01redPrefab" />
 	</block>
-	<block id="" name="cntHatchBackLightBlue">
+	<block name="cntHatchBackLightBlue">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchback?vehicleCarHatchback01lightbluePrefab" />
 	</block>
-	<block id="" name="cntHatchBackGreen">
+	<block name="cntHatchBackGreen">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchback?vehicleCarHatchback01greenPrefab" />
 	</block>
-	<block id="" name="cntHatchBackBlue">
+	<block name="cntHatchBackBlue">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchback?vehicleCarHatchback01bluePrefab" />
 	</block>
 	<!-- Wrecked -->
-	<block id="" name="cntHatchBackWrecked01">
+	<block name="cntHatchBackWrecked01">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchbackWrecked?vehicleCarHatchbackWrecked01whitePrefab" />
 	</block>
-	<block id="" name="cntHatchBackWrecked01tan">
+	<block name="cntHatchBackWrecked01tan">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchbackWrecked?vehicleCarHatchbackWrecked01tanPrefab" />
 	</block>
-	<block id="" name="cntHatchBackWrecked01red">
+	<block name="cntHatchBackWrecked01red">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchbackWrecked?vehicleCarHatchbackWrecked01redPrefab" />
 	</block>
-	<block id="" name="cntHatchBackWrecked01blue">
+	<block name="cntHatchBackWrecked01blue">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchbackWrecked?vehicleCarHatchbackWrecked01bluePrefab" />
 	</block>
-	<block id="" name="cntHatchBackWrecked01black">
+	<block name="cntHatchBackWrecked01black">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchbackWrecked?vehicleCarHatchbackWrecked01blackPrefab" />
 	</block>
 	<!-- Half Life Hatchbacks -->
-	<block id="" name="cntHatchBackWrecked02">
+	<block name="cntHatchBackWrecked02">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchbackWreckedHLRed?vehiclesCarHatchbackRedWreckedPrefab" />
 	</block>
-	<block id="" name="cntHatchBackWrecked03">
+	<block name="cntHatchBackWrecked03">
 		<property name="Extends" value="cntHatchBack" />
 		<property name="Model" value="#carHatchbackWreckedHLBlue?vehiclesCarHatchbackBlueWreckedPrefab" />
 	</block>
@@ -1940,7 +1939,7 @@
 	
 	
 	<!-- Pickup -->
-	<block id="" name="cntPickUp">
+	<block name="cntPickUp">
 		<property name="CreativeMode" value="Player" />
 		<property name="Material" value="metal" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
@@ -1982,87 +1981,87 @@
 		</property>
 		<property name="ActivationDistance" value="6" />
 	</block>
-	<block id="" name="cntPickUpRed">
+	<block name="cntPickUpRed">
 		<property name="Extends" value="cntPickUp" />
 		<property name="Model" value="#truckPickup?vehicleTruckPickup01RedPrefab" />
 	</block>
-	<block id="" name="cntPickUpGreen">
+	<block name="cntPickUpGreen">
 		<property name="Extends" value="cntPickUp" />
 		<property name="Model" value="#truckPickup?vehicleTruckPickup01GreenPrefab" />
 	</block>
-	<block id="" name="cntPickUpBlue">
+	<block name="cntPickUpBlue">
 		<property name="Extends" value="cntPickUp" />
 		<property name="Model" value="#truckPickup?vehicleTruckPickup01bluePrefab" />
 	</block>
-	<block id="" name="cntPickUpBlack">
+	<block name="cntPickUpBlack">
 		<property name="Extends" value="cntPickUp" />
 		<property name="Model" value="#truckPickup?vehicleTruckPickup01BlackPrefab" />
 	</block>
-	<block id="" name="cntPickUpAqua">
+	<block name="cntPickUpAqua">
 		<property name="Extends" value="cntPickUp" />
 		<property name="Model" value="#truckPickup?vehicleTruckPickup01AquaPrefab" />
 	</block>
 	
 	<!-- Extended Cab -->
-	<block id="" name="cntExtendedCab">
+	<block name="cntExtendedCab">
 		<property name="Extends" value="cntPickUp" />
 		<property name="MultiBlockDim" value="3,3,9" />
 		<property name="Model" value="#truckExtendedCab?vehicleTruckPickup02WhitePrefab" />
 	</block>
-	<block id="" name="cntExtendedCabRed">
+	<block name="cntExtendedCabRed">
 		<property name="Extends" value="cntPickUp" />
 		<property name="Model" value="#truckExtendedCab?vehicleTruckPickup02RedPrefab" />
 	</block>
-	<block id="" name="cntExtendedCabBlue">
+	<block name="cntExtendedCabBlue">
 		<property name="Extends" value="cntPickUp" />
 		<property name="Model" value="#truckExtendedCab?vehicleTruckPickup02BluePrefab" />
 	</block>
-	<block id="" name="cntExtendedCabBlack">
+	<block name="cntExtendedCabBlack">
 		<property name="Extends" value="cntPickUp" />
 		<property name="Model" value="#truckExtendedCab?vehicleTruckPickup02BlackPrefab" />
 	</block>
 	
 	<!-- Bronco -->
-	<block id="" name="cntBronco"> <!-- OJ -->
+	<block name="cntBronco"> <!-- OJ -->
 		<property name="Extends" value="cntPickUp" />
 		<property name="LootList" value="175" />
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="Model" value="#truckBronco?vehicleTruckBroncoWhitePrefab" />
 	</block>
-	<block id="" name="cntBroncoRed">
+	<block name="cntBroncoRed">
 		<property name="Extends" value="cntPickUp" />
 		<property name="LootList" value="108" />
 		<property name="Model" value="#truckBronco?vehicleTruckBroncoRedPrefab" />
 	</block>
-	<block id="" name="cntBroncoLightGreen">
+	<block name="cntBroncoLightGreen">
 		<property name="Extends" value="cntPickUpRed" />
 		<property name="Model" value="#truckBronco?vehicleTruckBroncolightgreenPrefab" />
 	</block>
-	<block id="" name="cntBroncoDarkGreen">
+	<block name="cntBroncoDarkGreen">
 		<property name="Extends" value="cntPickUpRed" />
 		<property name="Model" value="#truckBronco?vehicleTruckBroncoLightDarkGreenPrefab" />
 	</block>
-	<block id="" name="cntBroncoBlue">
+	<block name="cntBroncoBlue">
 		<property name="Extends" value="cntPickUpRed" />
 		<property name="Model" value="#truckBronco?vehicleTruckBroncoBluePrefab" />
 	</block>
-	<block id="" name="cntBroncoBlack">
+	<block name="cntBroncoBlack">
 		<property name="Extends" value="cntPickUpRed" />
 		<property name="Model" value="#truckBronco?vehicleTruckBroncoBlackPrefab" />
 	</block>
-	<block id="" name="cntBroncoAqua">
+	<block name="cntBroncoAqua">
 		<property name="Extends" value="cntPickUpRed" />
 		<property name="Model" value="#truckBronco?vehicleTruckBroncoAquaPrefab" />
 	</block>
 	
 	<!-- Other Trucks -->
-	<block id="" name="cntUtilityTruck">
+	<block name="cntUtilityTruck">
 		<property name="Extends" value="cntPickUp" />
 		<property name="LootList" value="117" />
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="Model" value="#truckUtility?vehicleTruckUtilityPrefab" />
 	</block>
-	<block id="" name="cntVan">
+	<block name="cntVan">
 		<property name="Extends" value="cntPickUp" />
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="Model" value="#truckVan?vehicleTruckVanPrefab" />
@@ -2070,19 +2069,19 @@
 	
 	<!-- #################### Aircraft #################### -->
 	
-	<block id="" name="cntBlackHawk">
+	<block name="cntBlackHawk">
 		<property name="Extends" value="cntTankTiger" />
 		<property name="LootList" value="114" />
 		<property name="MultiBlockDim" value="5,4,13" />
 		<property name="Model" value="#chopperBlackHawk?vehicleChopperBlackMilitaryPrefab" />
 	</block>
-	<block id="" name="cntWreckedChopper">
+	<block name="cntWreckedChopper">
 		<property name="Extends" value="cntBlackHawk" />
 		<property name="LootList" value="174" />
 		<property name="MultiBlockDim" value="7,5,16" />
 		<property name="Model" value="#chopperNewsWrecked?vehicleHelicopterNewsWreckedPrefab" />
 	</block>
-	<block id="" name="cntPlane">
+	<block name="cntPlane">
 		<property name="Extends" value="cntTankTiger" />
 		<property name="LootList" value="116" />
 		<property name="MultiBlockDim" value="14,3,10" />
@@ -2092,7 +2091,7 @@
 	<!-- ################### Semi Trucks #################################### -->
 	
 	
-	<block id="" name="cntSemiShort">
+	<block name="cntSemiShort">
 		<property name="CreativeMode" value="Player" />
 		<property name="Material" value="metal" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
@@ -2134,73 +2133,73 @@
 		</property>
 		<property name="ActivationDistance" value="6" />
 	</block>
-	<block id="" name="cntSemiShortRed">
+	<block name="cntSemiShortRed">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="Model" value="#truckSemiFlat?vehicleTruckFlatnoseRedPrefab" />
 	</block>
-	<block id="" name="cntSemiShortLightBlue">
+	<block name="cntSemiShortLightBlue">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="Model" value="#truckSemiFlat?vehicleTruckFlatnoseLightBluePrefab" />
 	</block>
-	<block id="" name="cntSemiShortGreen">
+	<block name="cntSemiShortGreen">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="Model" value="#truckSemiFlat?vehicleTruckFlatnoseGreenPrefab" />
 	</block>
-	<block id="" name="cntSemiShortDarkBlue">
+	<block name="cntSemiShortDarkBlue">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="Model" value="#truckSemiFlat?vehicleTruckFlatnoseDarkBluePrefab" />
 	</block>
-	<block id="" name="cntSemiShortBlack">
+	<block name="cntSemiShortBlack">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="Model" value="#truckSemiFlat?vehicleTruckFlatnoseBlackPrefab" />
 	</block>
 	                 
 	<!-- Long nose -->
-	<block id="" name="cntSemiLong">
+	<block name="cntSemiLong">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="MultiBlockDim" value="4,4,11" />
 		<property name="Model" value="#truckSemiLong?vehicleTruckLongnoseWhitePrefab" />
 	</block>
-	<block id="" name="cntSemiLongRed">
+	<block name="cntSemiLongRed">
 		<property name="Extends" value="cntSemiLong" />
 		<property name="Model" value="#truckSemiLong?vehicleTruckLongnoseRedPrefab" />
 	</block>
-	<block id="" name="cntSemiLongLightBlue">
+	<block name="cntSemiLongLightBlue">
 		<property name="Extends" value="cntSemiLong" />
 		<property name="Model" value="#truckSemiLong?vehicleTruckLongnoseLightBluePrefab" />
 	</block>
-	<block id="" name="cntSemiLongGreen">
+	<block name="cntSemiLongGreen">
 		<property name="Extends" value="cntSemiLong" />
 		<property name="Model" value="#truckSemiLong?vehicleTruckLongnoseGreenPrefab" />
 	</block>
-	<block id="" name="cntSemiLongBlue">
+	<block name="cntSemiLongBlue">
 		<property name="Extends" value="cntSemiLong" />
 		<property name="Model" value="#truckSemiLong?vehicleTruckLongnoseBluePrefab" />
 	</block>
-	<block id="" name="cntSemiLongBlack">
+	<block name="cntSemiLongBlack">
 		<property name="Extends" value="cntSemiLong" />
 		<property name="Model" value="#truckSemiLong?vehicleTruckLongnoseBlackPrefab" />
 	</block>
 	
 	<!-- Wrecked -->
-	<block id="" name="cntSemiFlatWrecked">
+	<block name="cntSemiFlatWrecked">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="LootList" value="112" />
 		<property name="MultiBlockDim" value="6,3,10" />
 		<property name="Model" value="#truckSemiFlatWrecked?vehicleTruckFlatnoseWreckedWhitePrefab" />
 	</block>
-	<block id="" name="cntSemiFlatWreckedRed">
+	<block name="cntSemiFlatWreckedRed">
 		<property name="Extends" value="cntSemiFlatWrecked" />
 		<property name="Model" value="#truckSemiFlatWrecked?vehicleTruckFlatnoseWreckedRedPrefab" />
 	</block>
-	<block id="" name="cntSemiFlatWreckedBlack">
+	<block name="cntSemiFlatWreckedBlack">
 		<property name="Extends" value="cntSemiFlatWrecked" />
 		<property name="Model" value="#truckSemiFlatWrecked?vehicleTruckFlatnoseWreckedBlackPrefab" />
 	</block>
 	
 	<!-- Full Trucks -->
 	<!-- Short Full -->
-	<block id="" name="semiFullShort">
+	<block name="semiFullShort">
 		<property name="CreativeMode" value="Player" />
 		<property name="Material" value="mMilitarySteel" />
 		<property name="LightOpacity" value="0" />
@@ -2238,14 +2237,14 @@
 	</block>
 	
 	<!-- Long full -->
-	<block id="" name="semiFullLong">
+	<block name="semiFullLong">
 		<property name="Extends" value="semiFullShort" />
 		<property name="MultiBlockDim" value="3,4,19" />
 		<property name="Model" value="#truckSemiFull?vehicleSemiFullPrefab" />
 	</block>
 	
 	<!-- Trailers -->
-	<block id="" name="cntTrailer">
+	<block name="cntTrailer">
 		<property name="CreativeMode" value="Player" />
 		<property name="Material" value="metal" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
@@ -2287,13 +2286,13 @@
 		</property>
 		<property name="ActivationDistance" value="6" />
 	</block>
-	<block id="" name="cntTrailerWrecked">
+	<block name="cntTrailerWrecked">
 		<property name="Extends" value="cntTrailer" />
 		<property name="Model" value="#truckSemiTrailers?vehicleSemiTrailer03Prefab" />
 	</block>
 	
 	<!-- Petrol Truck -->
-	<block id="" name="cntTruckFuel">
+	<block name="cntTruckFuel">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="LootList" value="109" />
 		<property name="MultiBlockDim" value="3,3,11" />
@@ -2301,13 +2300,13 @@
 	</block>
 	
 	<!-- Tractors -->
-	<block id="" name="cntTractor01">
+	<block name="cntTractor01">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="LootList" value="113" />
 		<property name="MultiBlockDim" value="2,2,5" />
 		<property name="Model" value="#tractor?vehicleTractorPrefab" />
 	</block>
-	<block id="" name="cntCombine">
+	<block name="cntCombine">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="LootList" value="113" />
 		<property name="Model" value="#combine?vehicleTractor2Prefab" />
@@ -2315,21 +2314,21 @@
 	
 	<!-- ###### Buses ######## -->
 	<!-- RJ School bus -->
-	<block id="" name="cntSchoolBus">
+	<block name="cntSchoolBus">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="LootList" value="118" />
 		<property name="MultiBlockDim" value="3,3,12" />
 		<property name="Model" value="#schoolBus?vehicleSchoolBusPrefab" />
 	</block>
 	<!-- RJ City bus -->
-	<block id="" name="cntCityBus">
+	<block name="cntCityBus">
 		<property name="Extends" value="cntSemiShort" />
 		<property name="LootList" value="118" />
 		<property name="MultiBlockDim" value="3,3,12" />
 		<property name="Model" value="#cityBus?vehicleBusCityPrefab" />
 	</block>
     <!-- ############# BOATS ############### -->
-	<block id="" name="boatDestroyed">
+	<block name="boatDestroyed">
 		<property name="CreativeMode" value="Player" />
 		<property name="Material" value="wood" />
 		<property name="MaxDamage" value="600" />
@@ -2345,7 +2344,7 @@
 		<property name="EconomicValue" value="128" />
 		<property name="Group" value="Building" />
 	</block>
-	<block id="" name="vikingBoat">
+	<block name="vikingBoat">
 		<property name="Extends" value="boatDestroyed" />
 		<property name="Model" value="#vikingBoat?vikingBoatPrefab" />
 		<property name="MultiBlockDim" value="3,3,11" />
@@ -2353,7 +2352,7 @@
 	</block>
 	
 	<!-- RJ fishing boat 1 -->
-<block id="" name="boatFishing01">
+<block name="boatFishing01">
         <property name="Extends" value="boatDestroyed" />
 		<property name="CustomIcon" value="boatFishing01Icon" />
 		<property name="DescriptionKey" value="boatFishing01Desc" />
@@ -2366,7 +2365,7 @@
 </block>
 
 	<!-- RJ fishing boat 2 -->
-<block id="" name="boatFishing02">
+<block name="boatFishing02">
         <property name="Extends" value="boatFishing01" />
 		<property name="CustomIcon" value="boatFishing02Icon" />
 		<property name="DescriptionKey" value="boatFishing02Desc" />
@@ -2376,7 +2375,7 @@
 		<property name="MultiBlockDim" value="10,12,28" />
 </block>
 	<!-- RJ Row boat 1 -->
-<block id="" name="boatRow01">
+<block name="boatRow01">
         <property name="Extends" value="boatDestroyed" />
 		<property name="CustomIcon" value="boatRow01Icon" />
 		<property name="DescriptionKey" value="boatRow01Desc" />
@@ -2387,7 +2386,7 @@
 		<property name="MaxDamage" value="900" />
 </block>
 	<!-- RJ Row boat 2 -->
-<block id="" name="boatRow02">
+<block name="boatRow02">
         <property name="Extends" value="boatDestroyed" />
 		<property name="CustomIcon" value="boatRow02Icon" />
 		<property name="DescriptionKey" value="boatRow02Desc" />
@@ -2398,7 +2397,7 @@
 		<property name="MaxDamage" value="900" />
 </block>
 	<!-- RJ Row boat 3 -->
-<block id="" name="boatRow03">
+<block name="boatRow03">
         <property name="Extends" value="boatDestroyed" />
 		<property name="CustomIcon" value="boatRow03Icon" />
 		<property name="DescriptionKey" value="boatRow03Desc" />
@@ -2413,20 +2412,20 @@
 	
 	
 	<!-- RJ Bedroll02 -->
-	<block id="" name="bedroll02">
+	<block name="bedroll02">
 		<property name="Extends" value="bedroll" />
 		<property name="CustomIcon" value="bedroll02Icon" />
 		<property name="Model" value="#bedroll?bedrollGreenPrefab" />
 	</block>
 	<!-- RJ Bedroll default -->
-	<block id="" name="bedroll03">
+	<block name="bedroll03">
 		<property name="Extends" value="bedroll" />
 		<property name="CustomIcon" value="bedroll" />
 	    <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
     	<property name="Mesh" value="models"/>
      	<property name="Model" value="CampingGear/bedroll_02" param1="main_mesh"/>
 	</block>
-	<block id="" name="rjBed01">
+	<block name="rjBed01">
 		<property name="DescriptionKey" value="bedGroupDesc" />
 		<property name="CustomIcon" value="rjBed01Icon" />
 		<property name="Class" value="SleepingBag" />
@@ -2453,13 +2452,13 @@
 		<property name="Group" value="Building,Decor/Miscellaneous" />
 		<property name="EconomicValue" value="2600" />
 	</block>
-	<block id="" name="rjBed02">
+	<block name="rjBed02">
 		<property name="CustomIcon" value="rjBed02Icon" />
 		<property name="Model" value="#beds?bed03Prefab" />
 		<property name="MultiBlockDim" value="2,1,2" />
 		<property name="Extends" value="rjBed01" />
 	</block>
-	<block id="" name="rjBed03">
+	<block name="rjBed03">
 		<property name="CustomIcon" value="rjBed03Icon" />
 		<property name="Model" value="#beds?bed02Prefab" />
 		<property name="Extends" value="rjBed01" />
@@ -2467,7 +2466,7 @@
 	
 	<!-- #################### Trailer Boxes #################### -->
 	<!-- RJ Trailer Boxes -->
-	<block id="" name="cntTrailerBoxJeans">
+	<block name="cntTrailerBoxJeans">
 		<property name="CustomIcon" value="cntShippingCrateShamway" />
 		<property name="CustomIconTint" value="38a838" />
 		<property name="Stacknumber" value="1" />
@@ -2481,7 +2480,7 @@
 		<property name="CanPickup" value="true" param1="boardedWindowsSheet_weak" />
 		<property name="TakeDelay" value="5" />
 	</block>
-	<block id="" name="cntTrailerBoxJeansOpen">
+	<block name="cntTrailerBoxJeansOpen">
 		<property name="CustomIcon" value="cntShippingCrateShamway" />
 		<property name="CustomIconTint" value="38a838" />
 		<property name="Class" value="Loot" />
@@ -2495,19 +2494,19 @@
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 		<drop event="Destroy" count="0" />
 	</block>
-	<block id="" name="cntTrailerBoxSpam">
+	<block name="cntTrailerBoxSpam">
 		<property name="DowngradeBlock" value="cntTrailerBoxSpamOpen" />
 		<property name="Extends" value="cntTrailerBoxJeans" />
 	</block>
-	<block id="" name="cntTrailerBoxSpamOpen">
+	<block name="cntTrailerBoxSpamOpen">
 		<property name="Extends" value="cntTrailerBoxJeansOpen" />
 		<property name="LootList" value="122" />
 	</block>
-	<block id="" name="cntTrailerBox1337">
+	<block name="cntTrailerBox1337">
 		<property name="DowngradeBlock" value="cntTrailerBox1337Open" />
 		<property name="Extends" value="cntTrailerBoxJeans" />
 	</block>
-	<block id="" name="cntTrailerBox1337Open">
+	<block name="cntTrailerBox1337Open">
 		<property name="Extends" value="cntTrailerBoxJeansOpen" />
 		<property name="LootList" value="123" />
 	</block>
@@ -2515,7 +2514,7 @@
 	
 
 	<!-- RJ Starter Crate -->
-	<block id="" name="rjstartercrate">
+	<block name="rjstartercrate">
 		<property name="CustomIcon" value="cntShippingCrateShamway" />
 		<property name="CustomIconTint" value="38a838" />
 		<property name="DescriptionKey" value="rjstartercrateDesc" />
@@ -2528,7 +2527,7 @@
 		<property name="CanPickup" value="true" param1="boardedWindowsSheet_weak" />
 		<property name="TakeDelay" value="5" />
 	</block>
-	<block id="" name="rjstartercrateopen">
+	<block name="rjstartercrateopen">
 		<property name="CustomIcon" value="cntShippingCrateShamway" />
 		<property name="CustomIconTint" value="38a838" />
 		<property name="Class" value="Loot" />
@@ -2548,7 +2547,7 @@
 	<!-- RJ Stumps - not containers -->
 	
 	<!-- Decorations Master -->
-	<block id="" name="decorationsMaster">
+	<block name="decorationsMaster">
 		<property name="Material" value="treeWoodSmall" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#stump1?treeStump01Prefab" />
@@ -2567,7 +2566,7 @@
 	</block>
 	
 	<!-- Containers Master -->
-	<block id="" name="containersMaster">
+	<block name="containersMaster">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="MCardboardLoot" />
 		<property name="StabilitySupport" value="false" />
@@ -2586,19 +2585,19 @@
 	
 	<!-- ########### Decorations ############ -->
 	
-	<block id="" name="cntStump02">
+	<block name="cntStump02">
         <property name="Extends" value="decorationsMaster" />
 		<property name="ModelOffset" value="0,-0.01,0" />
 		<property name="MultiBlockDim" value="1,1,1" />
 		<property name="CanPickup" value="false" />
 	</block>
-	<block id="" name="cntStump03">
+	<block name="cntStump03">
         <property name="Extends" value="cntStump02" />
 		<property name="Model" value="#stump2?treeStump02Prefab" />
 	</block>
 	
 	<!-- Iron Poll -->
-	<block id="" name="ironPollSnow">
+	<block name="ironPollSnow">
         <property name="Extends" value="decorationsMaster" />
 		<property name="Material" value="metal" />
 		<property name="Model" value="#pollIron?ironPoleSnowPrefab" />
@@ -2607,7 +2606,7 @@
 		<property name="CanPickup" value="false" />
 	</block>	
 	<!-- RJ lawn Gnome -->
-	<block id="" name="lawnGnome">
+	<block name="lawnGnome">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="lawnGnomeIcon" />
 		<property name="DescriptionKey" value="lawnGnomeDesc" />
@@ -2629,7 +2628,7 @@
 		<property name="EconomicBundleSize" value="10" />
 	</block>
 	<!-- RJ Gramophone -->
-	<block id="" name="gramophone">
+	<block name="gramophone">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="gramaphoneIcon" />
 		<property name="DescriptionKey" value="gramophoneDesc" />
@@ -2638,7 +2637,7 @@
    </block>	
 	
 	<!-- Rj Deer Head -->
-	<block id="" name="deerHead">
+	<block name="deerHead">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CreativeMode" value="Player" />
 		<property name="CustomIcon" value="deerHeadIcon" />
@@ -2653,7 +2652,7 @@
 		<drop event="Destroy" name="deerHead" count="1" />
 	</block>
 	<!-- RJ Mirror -->
-	<block id="" name="mirrorWall">
+	<block name="mirrorWall">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CreativeMode" value="Player" />
 		<property name="CustomIcon" value="mirrorIcon" />
@@ -2670,7 +2669,7 @@
 		<drop event="Destroy" name="deerHead" count="1" />
 	</block>
 	<!-- RJ teddy bear -->
-	<block id="" name="teddyBear">
+	<block name="teddyBear">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="teddyBearIcon" />
 		<property name="DescriptionKey" value="teddyBearDesc" />
@@ -2692,7 +2691,7 @@
 	</block>
 	
 	<!-- RJ Anvil anvil ANVIL -->
-	<block id="" name="anvil">
+	<block name="anvil">
 		<property name="CustomIcon" value="anvilIcon" />
 		<property name="DescriptionKey" value="anvilDesc" />
 		<property name="Material" value="MmetalNoGlue" />
@@ -2711,7 +2710,7 @@
 		<property name="EconomicValue" value="40" />
 	</block>
 	<!-- RJ Canada flag wall -->
-	<block id="" name="flagCanadaWall">
+	<block name="flagCanadaWall">
         <property name="Extends" value="containersMaster" />
 		<property name="CreativeMode" value="Player" />
 		<property name="CustomIcon" value="CanadaFlagWallIcon" />
@@ -2728,7 +2727,7 @@
 		<drop event="Destroy" name="flagCanadaWall" count="1" />
 	</block>
 	<!-- Bath Tub -->
-<block id="" name="bathtubClawFooted">
+<block name="bathtubClawFooted">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="bathtubClawFootedIcon" />
 		<property name="DescriptionKey" value="bathtubClawFootedDesc" />
@@ -2738,7 +2737,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ bathroom sink -->
-<block id="" name="sinkBathroom">
+<block name="sinkBathroom">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="sinkBathroomIcon" />
 		<property name="DescriptionKey" value="sinkBathroomDesc" />
@@ -2748,7 +2747,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ Pool Table -->
-<block id="" name="poolTable">
+<block name="poolTable">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="poolTableIcon" />
 		<property name="DescriptionKey" value="poolTableDesc" />
@@ -2758,7 +2757,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ pot 1 -->
-<block id="" name="kitchenPot01">
+<block name="kitchenPot01">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="kitchenPot01Icon" />
 		<property name="DescriptionKey" value="kitchenPot01Desc" />
@@ -2769,7 +2768,7 @@
 		<property name="CanPickup" value="true" />
 </block>
 	<!-- RJ Pot 2 -->
-<block id="" name="kitchenPot02">
+<block name="kitchenPot02">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="kitchenPot02Icon" />
 		<property name="DescriptionKey" value="kitchenPot02Desc" />
@@ -2780,7 +2779,7 @@
 		<property name="CanPickup" value="true" />
 </block>
 	<!-- RJ Frying Pan -->
-<block id="" name="kitchenFryingPan">
+<block name="kitchenFryingPan">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="kitchenFryingPanIcon" />
 		<property name="DescriptionKey" value="kitchenFryingPanDesc" />
@@ -2791,7 +2790,7 @@
 		<property name="CanPickup" value="true" />
 </block>
 	<!-- RJ Kettle -->
-<block id="" name="kitchenKettle">
+<block name="kitchenKettle">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="kitchenKettleIcon" />
 		<property name="DescriptionKey" value="kitchenKettleDesc" />
@@ -2802,7 +2801,7 @@
 		<property name="CanPickup" value="true" />
 </block>
 	<!-- RJ Alarm clock -->
-<block id="" name="alarmClock">
+<block name="alarmClock">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="alarmClockIcon" />
 		<property name="DescriptionKey" value="alarmClockDesc" />
@@ -2812,7 +2811,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ Bird Bath -->
-<block id="" name="birdBath">
+<block name="birdBath">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="birdBathIcon" />
 		<property name="DescriptionKey" value="birdBathDesc" />
@@ -2822,7 +2821,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ Statue Fountain -->
-<block id="" name="statueEpic">
+<block name="statueEpic">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="statueEpicIcon" />
 		<property name="DescriptionKey" value="statueEpicDesc" />
@@ -2833,7 +2832,7 @@
 		<property name="CanPickup" value="false" />
 </block>
 	<!-- RJ Chandelier -->
-<block id="" name="chandelier">
+<block name="chandelier">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="chandelierIcon" />
 		<property name="DescriptionKey" value="chandelierDesc" />
@@ -2845,7 +2844,7 @@
 
 
 	<!-- RJ Gun Trophy -->
-<block id="" name="trophyGuns">
+<block name="trophyGuns">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="trophyGunsIcon" />
 		<property name="DescriptionKey" value="trophyGunsDesc" />
@@ -2855,7 +2854,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ Industrial Kitchen Prep Table -->
-<block id="" name="kitchenTableIndustrial">
+<block name="kitchenTableIndustrial">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="kitchenTableIndustrialIcon" />
 		<property name="DescriptionKey" value="kitchenTableIndustrialDesc" />
@@ -2865,7 +2864,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ Propane -->
-<block id="" name="propaneCanister">
+<block name="propaneCanister">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="propaneCanisterIcon" />
 		<property name="DescriptionKey" value="propaneCanisterDesc" />
@@ -2875,7 +2874,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>
 	<!-- RJ TV Old -->
-<block id="" name="oldTV">
+<block name="oldTV">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="oldTVIcon" />
 		<property name="DescriptionKey" value="oldTVDesc" />
@@ -2885,7 +2884,7 @@
 		<property name="MultiBlockDim" value="1,1,1" />
 </block>	
 	<!-- RJ Piano -->
-<block id="" name="piano">
+<block name="piano">
         <property name="Extends" value="decorationsMaster" />
 		<property name="CustomIcon" value="pianoIcon" />
 		<property name="DescriptionKey" value="pianoDesc" />
@@ -2896,7 +2895,7 @@
 </block>
 
 <!-- RJ Gems -->
-<block id="" name="oreGemstone">
+<block name="oreGemstone">
 	<property name="Material" value="mCrystal"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -2915,27 +2914,27 @@
 	<!-- ########### Containers ############ -->
 	
 	<!-- RJ trash -->
-	<block id="" name="cntRations">
+	<block name="cntRations">
         <property name="Extends" value="containersMaster" />
 	    <property name="Model" value="#rations?itemMilitaryRationsPrefab"/>
 		<property name="LootList" value="124" />
 	</block>
-	<block id="" name="cntCardboardBox01">
+	<block name="cntCardboardBox01">
         <property name="Extends" value="containersMaster" />
 		<property name="Model" value="#trashCardboardBoxes?cardboardBox01Prefab" />
 	</block>
-	<block id="" name="cntCardboardBox02">
+	<block name="cntCardboardBox02">
         <property name="Extends" value="containersMaster" />
 		<property name="Model" value="#trashCardboardBoxes?cardboardBox02Prefab" />
 	</block>
-	<block id="" name="cntTrashTools">
+	<block name="cntTrashTools">
         <property name="Extends" value="containersMaster" />
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Model" value="#trashTools?trashToolsPrefab" />
 		<property name="LootList" value="125" />
 	</block>
 	<!-- RJ ShitBucket -->
-<block id="" name="shitBucket">
+<block name="shitBucket">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="shitBucketIcon" />
 		<property name="DescriptionKey" value="shitBucketDesc" />
@@ -2946,7 +2945,7 @@
 		<property name="Material" value="Mplastics" />
 </block>
 <!-- RJ Old Campfire -->
-<block id="" name="campfireOld">
+<block name="campfireOld">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="campfireOldIcon" />
 		<property name="DescriptionKey" value="campfireOldDesc" />
@@ -2958,7 +2957,7 @@
 		<property name="LootList" value="179" />
 </block>
 	<!-- deisel canister -->
-<block id="" name="dieselCanister">
+<block name="dieselCanister">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="dieselCanisterIcon" />
 		<property name="DescriptionKey" value="dieselCanisterDesc" />
@@ -2970,7 +2969,7 @@
 		<property name="LootList" value="180" />
 </block>
 	<!-- water tank -->
-	<block id="" name="cntWaterTank">
+	<block name="cntWaterTank">
         <property name="Extends" value="containersMaster" />
 		<property name="CreativeMode" value="Player" />
 		<property name="LootList" value="119" />
@@ -2989,7 +2988,7 @@
 		<property name="Group" value="Building" />
 	</block>
 	<!-- wells -->
-	<block id="" name="cntWell01">
+	<block name="cntWell01">
         <property name="Extends" value="containersMaster" />
 		<property name="CreativeMode" value="Player" />
 		<property name="LootList" value="120" />
@@ -3004,13 +3003,13 @@
 		<property name="EconomicValue" value="128" />
 		<property name="Group" value="Building" />
 	</block>
-	<block id="" name="cntWell02">
+	<block name="cntWell02">
         <property name="Extends" value="cntWell01" />
 		<property name="Model" value="#wells?well02Prefab" />
 	</block>
 	
 	<!-- RJ Death Marker -->
-	<block id="" name="cntDeathMarker">
+	<block name="cntDeathMarker">
         <property name="Extends" value="containersMaster" />
 		<property name="CreativeMode" value="Player" />
 		<property name="CustomIcon" value="DeathMarkerIcon" />
@@ -3025,7 +3024,7 @@
 		<drop event="Destroy" count="0" />
 	</block>
 	<!-- RJ antique cash register -->
-<block id="" name="cashRegisterAntique">
+<block name="cashRegisterAntique">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="cashRegisterAntiqueIcon" />
 		<property name="DescriptionKey" value="cashRegisterAntiqueDesc" />
@@ -3037,7 +3036,7 @@
 		<property name="LootList" value="181" />
 </block>
 	<!-- RJ Lady Fire Heart's grave -->
-<block id="" name="graveEpic">
+<block name="graveEpic">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="graveEpicIcon" />
 		<property name="DescriptionKey" value="graveEpicDesc" />
@@ -3049,7 +3048,7 @@
 		<property name="LootList" value="176" />
 </block>
 	<!-- RJ Washer -->
-<block id="" name="clothesWasher">
+<block name="clothesWasher">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="washerIcon" />
 		<property name="DescriptionKey" value="clothesWasherDesc" />
@@ -3061,7 +3060,7 @@
 		<property name="Material" value="MmetalNoGlue" />
 </block>
 	<!-- RJ Drier -->
-<block id="" name="clothesDrier">
+<block name="clothesDrier">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="drierIcon" />
 		<property name="DescriptionKey" value="clothesDrierDesc" />
@@ -3073,7 +3072,7 @@
 		<property name="Material" value="MmetalNoGlue" />
 </block>
 	<!-- RJ Ammo pile -->
-<block id="" name="ammoPile">
+<block name="ammoPile">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="ammoPileIcon" />
 		<property name="DescriptionKey" value="ammoPileDesc" />
@@ -3085,7 +3084,7 @@
 	    <property name="Material" value="metal"/>
 </block>
 	<!-- RJ Hutch -->
-<block id="" name="furnitureHutch">
+<block name="furnitureHutch">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="furnitureHutchIcon" />
 		<property name="DescriptionKey" value="furnitureHutchDesc" />
@@ -3096,7 +3095,7 @@
 		<property name="LootList" value="184" />
 </block>
 	<!-- RJ Back pack storage -->
-<block id="" name="backpackStorageInsecure">
+<block name="backpackStorageInsecure">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="backpackStorageInsecureIcon" />
 		<property name="DescriptionKey" value="backpackStorageInsecureDesc" />
@@ -3109,7 +3108,7 @@
 		<property name="Group" value="Basics,Decor/Miscellaneous" />
 </block>
 	<!-- Mini Fridge -->
-<block id="" name="fridgeMini">
+<block name="fridgeMini">
         <property name="Extends" value="containersMaster" />
 		<property name="CustomIcon" value="fridgeMiniIcon" />
 		<property name="DescriptionKey" value="fridgeMiniDesc" />
@@ -3137,7 +3136,7 @@
 		<property name="EconomicValue" value="192" />
 </block>
 	<!-- RJ Fridge -->
-<block id="" name="kitchenFridgeHome">
+<block name="kitchenFridgeHome">
         <property name="Extends" value="fridgeMini" />
 		<property name="CustomIcon" value="fridgeHomeIcon" />
 		<property name="DescriptionKey" value="kitchenFridgeHomeDesc" />
@@ -3148,7 +3147,7 @@
 		<property name="LootList" value="187" />
 </block>
 	<!-- RJ Fridge Industrial -->
-<block id="" name="kitchenFridgeIndustrial">
+<block name="kitchenFridgeIndustrial">
         <property name="Extends" value="fridgeMini" />
 		<property name="CustomIcon" value="fridgeIndustrialIcon" />
 		<property name="DescriptionKey" value="kitchenFridgeIndustrialDesc" />
@@ -3162,7 +3161,7 @@
 	<!-- ############# Electricity ############### -->
 	
 	<!-- RJ drown out the noise -->
-	<block id="" name="SmallStereo">
+	<block name="SmallStereo">
 		<property name="CustomIcon" value="stereoIcon" />
 		<property name="CreativeMode" value="Player" />
 		<property name="Class" value="Speaker" />
@@ -3191,7 +3190,7 @@
 		<property name="DescriptionKey" value="SmallStereoDesc" />
 	</block>
 	<!-- RJ Summon the Angry Hockey Mom with Stompin Tom song -->
-	<block id="" name="speakerSummoning">
+	<block name="speakerSummoning">
 		<property name="CustomIcon" value="speaker" />
 		<property name="CustomIconTint" value="c000c0" />
 		<property name="RandomTintColor1" value="c000c0" />
@@ -3226,7 +3225,7 @@
 <!-- #################### Corpses #################### -->	
 	
 	<!-- RJ creepy doll -->
-	<block id="" name="creepyDoll">
+	<block name="creepyDoll">
 		<property name="CustomIcon" value="creepyDollIcon" />
 		<property name="Class" value="Gore" />
 		<property name="CreativeMode" value="Dev" />
@@ -3251,7 +3250,7 @@
 <!-- #################### Chests #################### -->	
 
 <!-- Holy Handgrenade of Antioch chest -->
-<block id="" name="treasureChestAntioch">
+<block name="treasureChestAntioch">
 	<property name="Class" value="Loot"/>
 	<property name="CustomIcon" value="cntChest01"/>
 	<property name="Material" value="wood+wood"/>
@@ -3266,7 +3265,7 @@
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
 <!-- RJ Chest 03 -->
-<block id="" name="cntChest03">
+<block name="cntChest03">
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="SecureLoot"/>
 	<property name="CustomIcon" value="cntChest03"/>
@@ -3289,7 +3288,7 @@
 <!-- #################### House Plants #################### -->
 
     <!-- Bunnie Lily -->
-    <block id="" name="hpLily">
+    <block name="hpLily">
         <property name="Extends" value="treePlant02" />
 		<property name="CustomIcon" value="hpLilyIcon" />
 		<property name="DescriptionKey" value="hpLilyDesc" />
@@ -3303,7 +3302,7 @@
 	
 <!-- #################### CROPS ########################### -->
 	<!-- RJ Wheat -->
-    <block id="" name="cropWheat">
+    <block name="cropWheat">
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="CustomIcon" value="cropWheatIcon" />
 		<property name="DescriptionKey" value="cropWheatDesc" />
@@ -3315,21 +3314,21 @@
 		<drop event="Harvest" name="wheatPlant" count="1" />
     </block>
 	<!-- RJ Weed -->
-	<block id="" name="cropMarijuana">
+	<block name="cropMarijuana">
         <property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="plantMarijuanaIcon" />
 		<property name="DescriptionKey" value="cropMarijuanaDesc" />
 	    <property name="Model" value="#crops?potPlantPrefab"/>
 	</block>
 	<!-- RJ Lavender -->
-	<block id="" name="cropLavender">
+	<block name="cropLavender">
         <property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropLavenderIcon" />
 		<property name="DescriptionKey" value="cropLavenderDesc" />
 	    <property name="Model" value="#crops?cropsLavender04Prefab"/>
 	</block>
 	<!-- RJ Oats -->
-	<block id="" name="cropOats">
+	<block name="cropOats">
         <property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropOatsIcon" />
 		<property name="DescriptionKey" value="cropOatsDesc" />
@@ -3337,21 +3336,21 @@
 	    <property name="Model" value="#crops?cropsOats09Prefab"/>
 	</block>
 	<!-- RJ Rye Grass -->
-	<block id="" name="cropRye">
+	<block name="cropRye">
         <property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropRyeIcon" />
 		<property name="DescriptionKey" value="cropRyeDesc" />
 	    <property name="Model" value="#crops?cropsRyegrass09Prefab"/>
     </block>	
 	<!-- RJ Tabacco -->
-	<block id="" name="cropTobacco">
+	<block name="cropTobacco">
         <property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropTobaccoIcon" />
 		<property name="DescriptionKey" value="cropTobaccoDesc" />
 	    <property name="Model" value="#crops?cropsTobacco09Prefab"/>
 	</block>		
 	<!-- RJ barley -->
-	<block id="" name="cropBarley">
+	<block name="cropBarley">
         <property name="Extends" value="cropWheat" />
 		<property name="CustomIcon" value="cropBarleyIcon" />
 		<property name="DescriptionKey" value="cropBarleyDesc" />
@@ -3367,5 +3366,4 @@
 	<!-- ###############################################################################################################  -->
 
 		</append>
-	</config>
 </configs>
