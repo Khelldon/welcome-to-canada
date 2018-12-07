@@ -324,7 +324,6 @@
 		  <entitygroup name="ZombiesBCTier06">
 			<!--Vanilla-->
 			<entity name="zombieFatHawaiianFeral"/>
-			<entity name="zombieSpiderFeralRadiated"/>
 			<entity name="zombieFatCop"/>
 
 			<!--Bad Company-->
@@ -1495,7 +1494,6 @@
 
 			<!--T6-->
 			<entity name="zombieFatHawaiianFeral" prob="0.1"/>
-			<entity name="zombieSpiderFeralRadiated" prob="0.1"/>
 			<entity name="zombieFatCop" prob="0.1"/>
 			<entity name="badZombieWarlord" prob="0.1"/>
 			<entity name="badZombieSuicideMole" prob="0.1"/>
@@ -1819,7 +1817,6 @@
 
 			<!--T6-->
 			<entity name="zombieFatHawaiianFeral" prob="0.2"/>
-			<entity name="zombieSpiderFeralRadiated" prob="0.2"/>
 			<entity name="zombieFatCop" prob="0.2"/>
 			<entity name="badZombieWarlord" prob="0.2"/>
 			<entity name="badZombieSuicideMole" prob="0.2"/>
@@ -2151,7 +2148,6 @@
 
 			<!--T6-->
 			<entity name="zombieFatHawaiianFeral" prob="1.0"/>
-			<entity name="zombieSpiderFeralRadiated" prob="1.0"/>
 			<entity name="zombieFatCop" prob="1.0"/>
 			<entity name="badZombieWarlord" prob="1.0"/>
 			<entity name="badZombieSuicideMole" prob="1.0"/>
@@ -2483,7 +2479,6 @@
 
 			<!--T6-->
 			<entity name="zombieFatHawaiianFeral" prob="2.0"/>
-			<entity name="zombieSpiderFeralRadiated" prob="2.0"/>
 			<entity name="zombieFatCop" prob="2.0"/>
 			<entity name="badZombieWarlord" prob="2.0"/>
 			<entity name="badZombieSuicideMole" prob="2.0"/>
