@@ -361,8 +361,9 @@
 			<entity name="valZombieBruteBoss_Rager"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier10">
-
 			<!--Bad Company-->
+			<entity name="valZombieBrute_Rager"/>
+			<entity name="valZombieBruteBoss_Rager"/>
 		  </entitygroup>
 
 		  <!-- GS 1 to 400 -->
