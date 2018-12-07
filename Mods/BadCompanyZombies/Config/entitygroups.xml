@@ -361,8 +361,6 @@
 			<entity name="valZombieBruteBoss_Rager"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier10">
-			<!--Vanilla-->
-			<entity name="zombieFatCopFeralRadiated"/>
 
 			<!--Bad Company-->
 		  </entitygroup>
@@ -1837,9 +1835,6 @@
 			<!--T9-->
 			<entity name="valZombieBrute_Rager" prob="0.1"/>
 			<entity name="valZombieBruteBoss_Rager" prob="0.1"/>
-
-			<!--T10-->
-			<entity name="zombieFatCopFeralRadiated" prob="0.1"/>
 		  </entitygroup>
 		  <!-- GS 2001 to 3000 -->
 		  <entitygroup name="ZombiesTierGroup06">
@@ -2167,9 +2162,6 @@
 			<!--T9-->
 			<entity name="valZombieBrute_Rager" prob="0.75"/>
 			<entity name="valZombieBruteBoss_Rager" prob="0.75"/>
-
-			<!--T10-->
-			<entity name="zombieFatCopFeralRadiated" prob="0.75"/>
 		  </entitygroup>
 		  <!-- GS 3001+ -->
 		  <entitygroup name="ZombiesTierGroup07">
@@ -2497,9 +2489,6 @@
 			<!--T9-->
 			<entity name="valZombieBrute_Rager" prob="5.0"/>
 			<entity name="valZombieBruteBoss_Rager" prob="5.0"/>
-
-			<!--T10-->
-			<entity name="zombieFatCopFeralRadiated" prob="10.0"/>
 		  </entitygroup>
 		</append>
 </configs>
