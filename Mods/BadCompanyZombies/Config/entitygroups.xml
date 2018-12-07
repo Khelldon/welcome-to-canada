@@ -356,9 +356,6 @@
 			<entity name="gupZombieBiff_Rager"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier09">
-			<!--Vanilla-->
-			<entity name="zombieWightFeralRadiated"/>
-
 			<!--Bad Company-->
 			<entity name="valZombieBrute_Rager"/>
 			<entity name="valZombieBruteBoss_Rager"/>
@@ -1838,7 +1835,6 @@
 			<entity name="gupZombieBiff_Rager" prob="0.1"/>
 
 			<!--T9-->
-			<entity name="zombieWightFeralRadiated" prob="0.1"/>
 			<entity name="valZombieBrute_Rager" prob="0.1"/>
 			<entity name="valZombieBruteBoss_Rager" prob="0.1"/>
 
@@ -2169,7 +2165,6 @@
 			<entity name="gupZombieBiff_Rager" prob="0.75"/>
 
 			<!--T9-->
-			<entity name="zombieWightFeralRadiated" prob="0.75"/>
 			<entity name="valZombieBrute_Rager" prob="0.75"/>
 			<entity name="valZombieBruteBoss_Rager" prob="0.75"/>
 
@@ -2500,7 +2495,6 @@
 			<entity name="gupZombieBiff_Rager" prob="3.0"/>
 
 			<!--T9-->
-			<entity name="zombieWightFeralRadiated" prob="10.0"/>
 			<entity name="valZombieBrute_Rager" prob="5.0"/>
 			<entity name="valZombieBruteBoss_Rager" prob="5.0"/>
 
