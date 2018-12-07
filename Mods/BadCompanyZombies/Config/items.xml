@@ -2,7 +2,7 @@
 		<append xpath="/items">
 		  <!-- ZOMBIE HANDS -->
 		  <item name="handZombieTiny">
-			<property name="Extends" value="handMaster"/>
+			<property name="Extends" value="meleeHandMaster"/>
 			<property name="IsDeveloper" value="true"/>
 			<property name="HoldType" value="24"/>
 			<property class="Action0">
@@ -14,7 +14,7 @@
 			</property>
 		  </item>
 		  <item name="handZombieCur">
-			<property name="Extends" value="handMaster"/>
+			<property name="Extends" value="meleeHandMaster"/>
 			<property name="IsDeveloper" value="true"/>
 			<property name="HoldType" value="24"/>
 			<property class="Action0">
@@ -26,7 +26,7 @@
 			</property>
 		  </item>
 		  <item name="handBurningRusher">
-			<property name="Extends" value="handMaster"/>
+			<property name="Extends" value="meleeHandMaster"/>
 			<property name="IsDeveloper" value="true"/>
 			<property class="Action0">
 			  <property name="Class" value="Melee"/>
@@ -45,7 +45,7 @@
 			</property>
 		  </item>
 		  <item name="handGupHulk">
-			<property name="Extends" value="handMaster"/>
+			<property name="Extends" value="meleeHandMaster"/>
 			<property name="IsDeveloper" value="true"/>
 			<property class="Action0">
 			  <property name="Delay" value="0.2"/>
@@ -56,7 +56,7 @@
 			</property>
 		  </item>
 		  <item name="handRegenerator">
-			<property name="Extends" value="handMaster"/>
+			<property name="Extends" value="meleeHandMaster"/>
 			<property name="IsDeveloper" value="true"/>
 			<property class="Action0">
 			  <property name="DamageEntity" value="10"/>
@@ -74,7 +74,7 @@
 			</property>
 		  </item>
 		  <item name="handSuicideMole">
-			<property name="Extends" value="handMaster"/>
+			<property name="Extends" value="meleeHandMaster"/>
 			<property name="IsDeveloper" value="true"/>
 			<property class="Action0">
 			  <property name="Class" value="Melee"/>
@@ -93,7 +93,7 @@
 			</property>
 		  </item>
 		  <item name="handBabyBoomer">
-			<property name="Extends" value="handMaster"/>
+			<property name="Extends" value="meleeHandMaster"/>
 			<property name="IsDeveloper" value="true"/>
 			<property class="Action0">
 			  <property name="Class" value="Melee"/>
