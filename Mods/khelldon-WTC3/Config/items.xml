@@ -1,0 +1,2456 @@
+<configs>
+	<config name="items">	
+		<append xpath="/items">	
+	<!-- ###############################################################################################################  -->
+	<!-- ###############################################################################################################  -->
+	<!-- ######################################## Winter Project Merger ################################################  -->
+	<!-- ###############################################################################################################  -->
+	<!-- ###############################################################################################################  -->
+	<item id="" name="Kitten">
+		<property name="DescriptionKey" value="kitty" />
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="31" />
+		<property name="Stacknumber" value="10" />
+		<property class="Action1">
+			<property name="Class" value="PlaceAsBlock" />
+			<property name="Delay" value="0.1" />
+			<property name="Blockname" value="KittenBlock" />
+		</property>
+		<property name="Group" value="Basics,Decor/Miscellaneous" />
+		<property name="EconomicValue" value="25" />
+
+	
+	</item>
+	<item id="" name="Cookies">
+		<property name="DescriptionKey" value="Cookies" />
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="31" />
+		<property name="Material" value="organic" />
+		<property name="Stacknumber" value="50" />
+		<property name="EconomicValue" value="52" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="2.1" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Buff" value="eatFood_9_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_wellness" value="0.675" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="Smell" value="smallSmell" />
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="deadKitten">
+		<property name="DescriptionKey" value="SadKitty" />
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="31" />
+		<property name="Stacknumber" value="10" />
+		<property name="Group" value="Basics,Decor/Miscellaneous" />
+		<property name="EconomicValue" value="25" />
+	</item>
+	<item id="" name="Babyseal">
+		<property name="DescriptionKey" value="deadSeal" />
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="31" />
+		<property name="Stacknumber" value="10" />
+		<property name="Group" value="Basics,Decor/Miscellaneous" />
+		<property name="EconomicValue" value="25" />
+	</item>
+	<item id="" name="rabbitItem">
+		<property name="DescriptionKey" value="toysDesc" />
+		<property name="Meshfile" value="#Rabbit?RabbitItemPrefab" />
+		<!-- Rabbit Christmas by Chaitanya Krishnan is licensed under CC Attribution -->
+		<property name="DropMeshfile" value="#Rabbit?RabbitItemPrefab" />
+		<property name="Material" value="cloth" />
+		<property name="HoldType" value="31" />
+		<property name="Stacknumber" value="1" />
+		<property class="Action1">
+			<property name="Class" value="PlaceAsBlock" />
+			<property name="Delay" value="0.1" />
+			<property name="Blockname" value="rabbitBlock" />
+		</property>
+		<property name="Group" value="Basics,Decor/Miscellaneous" />
+		<property name="EconomicValue" value="25" />
+	</item>
+	<item id="" name="snowShovel">
+		<property name="Extends" value="shovelIron" />
+		<property name="DescriptionKey" value="snowShovelDesc" />
+		<property name="Meshfile" value="#SnowShovel?SnowShovelPrefab" />
+		<property name="DropMeshfile" value="#SnowShovel?SnowShovelPrefab" />
+	</item>
+	<item id="" name="candyCane">
+		<property name="Extends" value="clubIron" />
+		<property name="DescriptionKey" value="candyCaneDesc" />
+		<property name="Material" value="wood" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="Meshfile" value="#CandyCane?CandyCanePrefab" />
+		<property name="CustomIcon" value="CandyCane" />
+	</item>
+	<item id="" name="handZombieSnowman">
+		<property name="Extends" value="handZombieCop" />
+		<property name="CreativeMode" value="None" />
+		<property class="Action0">
+			<property name="DamageEntity" value="40" />
+			<property name="DamageBlock" value="400" />
+			<property name="Buff" value="bleeding,stunned" />
+			<property name="Buff_chance" value="0.1,0.1" />
+			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.earth" value="3" />
+			<property name="DamageBonus.stone" value="10" />
+			<property name="DamageBonus.wood" value="10" />
+			<property name="DamageBonus.metal" value="10" />
+		</property>
+		<!-- <property class="Action1">
+			<property name="DamageEntity" value="20" />
+			<property name="DamageBlock" value="200" />
+			<property name="Buff" value="bleeding,stunned" />
+			<property name="Buff_chance" value="0.3,0.3" />
+			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.earth" value="3" />
+			<property name="DamageBonus.stone" value="10" />
+			<property name="DamageBonus.wood" value="10" />
+			<property name="DamageBonus.metal" value="10" />
+		</property> -->
+		<!-- <property class="Action1">
+			<property name="Class" value="Vomit" />
+			<property name="Delay" value="0.35" />
+			<property name="Range" value="200" />
+			<property name="Auto_fire" value="true" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Magazine_items" value="snowmanVomit" />
+			<property name="Rays_spread" value="0.5" />
+			<property name="Reload_time" value="2" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_warning" value="hulkvomitwarning" />
+			<property name="Sound_start" value="hulkvomitattack" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="" />
+			<property name="Sound_reload" value="" />
+			<property name="Buff" value="infection" />
+			<property name="Buff_chance" value="0.2" />
+		</property> -->
+	</item>
+	
+	<item id="" name="snowmanVomit">
+		<property name="Meshfile" value="Items/Crafting/rock_smallPrefab" />
+		<property name="Material" value="organic" />
+		<property name="CreativeMode" value="None" />
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="DamageEntity" value="100" />
+			<property name="DamageBlock" value="10" />
+			<property name="Explosion.ParticleIndex" value="7" />
+			<property name="Velocity" value="20" />
+			<property name="FlyTime" value="0.50" />
+			<property name="LifeTime" value="4" />
+			<property name="CollisionRadius" value="0.5" />
+			<property name="DamageBonus.earth" value="0" />
+		</property>
+	</item>
+	
+	<!-- ################################################################################################# -->
+	<!-- ################################################################################################# -->
+	<!-- ################################################################################################# -->
+	<!-- ####                                Begin RJ Edits                                          ##### -->
+	<!-- ################################################################################################# -->
+	<!-- ################################################################################################# -->
+	
+	<!-- ############################# TOOLS ############################# -->
+	
+	<!-- Crowbar -->
+	<item id="" name="CrowBar">
+		<property name="CustomIcon" value="crowbarIcon" />
+		<property name="DescriptionKey" value="crowbarDesc" />
+		<property name="Meshfile" value="#crowbar?itemCrowbarPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="forgedSteel" />
+		<property name="HoldType" value="29" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="metaldestroy1" />
+		<property name="EconomicValue" value="288" />
+		<property name="Weight" value="25" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.1" />
+			<property name="Range" value="2" />
+			<property name="Block_range" value="4.5" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="8.27" />
+			<property name="DamageBonus.head" value="3" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="DamageBonus.stone" value="0.5" />
+			<property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.metal" value="2" />
+			<property name="DamageBonus.organic" value="0.5" />
+			<property name="ActionExp" value="4" />
+			<property name="ToolCategory.Disassemble" value="1" param1="2" />
+			<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
+			<property name="Particle_harvesting" value="true" param1="metal" />
+			<property name="ToolCategory.Butcher" value="0" param1="10" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.4" />
+			<property name="Repair_amount" value="400" />
+			<property name="Upgrade_hit_offset" value="-2" />
+			<property name="Sound_start" value="repair_block" />
+			<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,feather,bottledWater,titanium,rjbolts,titaniumPlates,steelPlates,rebar,bucketWater" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="4,10" />
+			<property name="BlockDamage" value="4,20" />
+			<property name="DegradationMax" value="1000,1800" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="-0.3,-0.1" />
+		</property>
+		<property name="Group" value="Tools/Traps" />
+		<property name="ActionSkillGroup" value="Construction Tools" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	<!-- Ice Pick by RRFREELANCE -->
+	<item id="113" name="iceAxe">
+		<property name="CustomIcon" value="iceAxeIcon" />
+		<property name="DescriptionKey" value="iceAxeDesc" />
+		<property name="Extends" value="pickaxeIron" />
+		<property name="Meshfile" value="#iceAxe?iceAxePrefab" />
+		<property class="Action0">
+			<property name="Delay" value="0.9" />
+			<property name="Stamina_usage" value="4" />
+			<property name="DamageBonus.glass" value="20" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,25" />
+			<property name="BlockDamage" value="60,220" />
+			<property name="DismembermentBaseChance" value="-0.1,0" />
+		</property>
+	</item>
+	
+	
+	<!-- ############################# STONE TOOLS ############################# -->
+	
+	<item id="" name="rjstoneaxe">
+		<property name="CustomIcon" value="stoneAxe" />
+		<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab" />
+		<property name="Material" value="stone" />
+		<property name="RepairTools" value="rockSmall" />
+		<property name="HoldType" value="32" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="FuelValue" value="30" />
+		<property name="DescriptionKey" value="rjstoneaxeDesc" />
+		<property name="EconomicValue" value="240" />
+		<property name="SellableToTrader" value="false" />
+		<property name="SoundDestroy" value="wooddestroy1" />
+		<property name="RandomTintColor1" value="808080" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.1" />
+			<property name="Range" value="2.1" />
+			<property name="Sphere" value="0.1" />
+			<property name="Block_range" value="4" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="8.27" />
+			<property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.head" value="2" />
+			<property name="DamageBonus.glass" value="0.25" />
+			<property name="DamageBonus.stone" value="0.25" />
+			<property name="DamageBonus.metal" value="0.25" />
+			<property name="DamageBonus.earth" value="0.2" />
+			<property name="DamageBonus.organic" value="1" />
+			<property name="ActionExp" value="4" />
+			<property name="ToolCategory.Butcher" value="0.5" param1="10" />
+			<property name="ToolCategory.harvestingTools" value="1" param1="1" />
+			<property name="Sound_harvesting" value="open_animal" param1="organic" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="6,15" />
+			<property name="BlockDamage" value="30,48" />
+			<property name="DegradationMax" value="200,1000" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0,0.05" />
+		</property>
+		<property name="Group" value="Tools/Traps,Basics" />
+		<property name="ActionSkillGroup" value="Mining Tools" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	<item id="" name="rjstonehammer">
+		<property name="CustomIcon" value="clawHammer" />
+		<property name="CustomIconTint" value="808080" />
+		<property name="Meshfile" value="Items/Tools/hammerPrefab" />
+		<property name="Material" value="stone" />
+		<property name="RepairTools" value="rockSmall" />
+		<property name="HoldType" value="32" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="wooddestroy1" />
+		<property name="FuelValue" value="18" />
+		<property name="DescriptionKey" value="rjstonehammerDesc" />
+		<property name="EconomicValue" value="200" />
+		<property name="SellableToTrader" value="false" />
+		<property name="RandomTintColor1" value="808080" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="0.8" />
+			<property name="Range" value="2.1" />
+			<property name="Block_range" value="4" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="6" />
+			<property name="DamageBonus.head" value="4" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="DamageBonus.stone" value="1" />
+			<property name="DamageBonus.metal" value="1" />
+			<property name="DamageBonus.organic" value="0.5" />
+			<property name="DamageBonus.earth" value="1" />
+			<property name="ToolCategory.harvestingTools" value="0.7" param1="1" />
+			<property name="ToolCategory.Butcher" value="0" param1="10" />
+			<property name="ActionExp" value="3" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.5" />
+			<property name="Repair_amount" value="250" />
+			<property name="Upgrade_hit_offset" value="-3" />
+			<property name="Sound_start" value="repair_block" />
+			<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,nail,feather,bottledWater,titanium,rjbolts,titaniumPlates,steelPlates,rebar,bucketWater" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="8,20" />
+			<property name="BlockDamage" value="15,40" />
+			<property name="DegradationMax" value="100,600" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="-0.3,-0.1" />
+		</property>
+		<property name="Group" value="Tools/Traps,Basics" />
+		<property name="ActionSkillGroup" value="Construction Tools" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	<item id="" name="rjstonepickaxe">
+		<property name="CustomIcon" value="pickaxeIron" />
+		<property name="CustomIconTint" value="808080" />
+		<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab" />
+		<property name="Material" value="stone" />
+		<property name="RepairTools" value="rockSmall" />
+		<property name="HoldType" value="32" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="metaldestroy1" />
+		<property name="FuelValue" value="30" />
+		<property name="DescriptionKey" value="rjstonepickaxeDesc" />
+		<property name="EconomicValue" value="240" />
+		<property name="SellableToTrader" value="false" />
+		<property name="RandomTintColor1" value="808080" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.0" />
+			<property name="Range" value="2" />
+			<property name="Sphere" value="0.1" />
+			<property name="Block_range" value="4" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="7.52" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="DamageBonus.head" value="2" />
+			<property name="DamageBonus.wood" value="0.2" />
+			<property name="DamageBonus.earth" value="0.2" />
+			<property name="DamageBonus.organic" value="0.2" />
+			<property name="ToolCategory.harvestingTools" value="1" param1="1" />
+			<property name="ActionExp" value="4" />
+			<property name="ToolCategory.Butcher" value="0" param1="10" />
+		</property>
+		<property name="Group" value="Tools/Traps,Basics" />
+		<property class="Attributes">
+			<property name="EntityDamage" value="5,15" />
+			<property name="BlockDamage" value="24,60.5" />
+			<property name="DegradationMax" value="200,1000" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="-0.1,0" />
+		</property>
+		<property name="ActionSkillGroup" value="Mining Tools" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+		<property name="PickupJournalEntry" value="miningTip" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	<item id="" name="rjstoneshovel">
+		<property name="CustomIcon" value="stoneShovel" />
+		<property name="Meshfile" value="Items/Tools/stone_shovelPrefab" />
+		<property name="Material" value="stone" />
+		<property name="RepairTools" value="rockSmall" />
+		<property name="HoldType" value="18" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="wooddestroy1" />
+		<property name="FuelValue" value="30" />
+		<property name="DescriptionKey" value="rjstoneshovelDesc" />
+		<property name="EconomicValue" value="240" />
+		<property name="SellableToTrader" value="false" />
+		<property name="RandomTintColor1" value="808080" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.1" />
+			<property name="Range" value="2" />
+			<property name="Block_range" value="4" />
+			<property name="Sphere" value="0.2" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="8.27" />
+			<property name="DamageBonus.earth" value="2" />
+			<property name="DamageBonus.glass" value="0.5" />
+			<property name="DamageBonus.head" value="4" />
+			<property name="DamageBonus.wood" value="0.25" />
+			<property name="DamageBonus.stone" value="0.5" />
+			<property name="DamageBonus.metal" value="0.25" />
+			<property name="DamageBonus.organic" value="0.7" />
+			<property name="ToolCategory.harvestingTools" value="1" param1="1" />
+			<property name="ToolCategory.Butcher" value="0" param1="10" />
+			<property name="ActionExp" value="4" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="7,15.5" />
+			<property name="BlockDamage" value="18,44" />
+			<property name="DegradationMax" value="200,1000" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="-0.1,0.05" />
+		</property>
+		<property name="Group" value="Tools/Traps,Basics" />
+		<property name="ActionSkillGroup" value="Mining Tools" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+		<property name="PickupJournalEntry" value="miningTip" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	
+	<!-- ############################# Winter clothes ############################# -->
+	
+	<item id="" name="rjskipants">
+		<property name="Extends" value="hazmatPants" />
+		<property name="CustomIcon" value="skipants" />
+		<property name="Material" value="cloth" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="000000" />
+		</property>
+		<property class="Attributes">
+			<property name="ConcussiveProtection" value="0.08,0.2" />
+			<property name="PunctureProtection" value="0.08,0.2" />
+			<property name="FireProtection" value="0.12,0.2" />
+			<property name="RadiationProtection" value="0.06,0.1" />
+			<property name="ElectricalProtection" value="0.06,0.1" />
+			<property name="DegradationMax" value="80,200" />
+		</property>
+		<property name="DescriptionKey" value="rjskipantsDesc" />
+		<property name="Insulation" value="30" />
+		<property name="RepairTools" value="cloth" />
+	</item>
+	<item id="" name="rjscarf">
+		<property name="Extends" value="bandana" />
+		<property name="CustomIcon" value="bandana" />
+		<property name="CustomIconTint" value="172,33,50" />
+		<property class="UMA">
+			<property name="Overlay0Tint" value="172,33,50" />
+		</property>
+		<property class="Attributes">
+			<property name="ConcussiveProtection" value="0.08,0.2" />
+			<property name="PunctureProtection" value="0.08,0.2" />
+			<property name="FireProtection" value="0.12,0.2" />
+			<property name="RadiationProtection" value="0.06,0.1" />
+			<property name="ElectricalProtection" value="0.06,0.1" />
+			<property name="DegradationMax" value="80,200" />
+		</property>
+		<property name="DescriptionKey" value="rjscarfDesc" />
+		<property name="Insulation" value="6" />
+		<property name="RepairTools" value="cloth" />
+	</item>
+	<item id="" name="rjwintergloves">
+		<property name="Insulation" value="15" />
+		<property name="CustomIcon" value="wintergloves" />
+		<property name="Encumbrance" value="0.05" />
+		<property name="Material" value="cloth" />
+		<property name="RepairTools" value="cloth" />
+		<property name="Weight" value="5" />
+		<property name="EconomicValue" value="1600" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="EquipSlot" value="Hands" />
+		<property name="HoldType" value="45" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property class="Attributes">
+			<property name="ConcussiveProtection" value="0.08,0.2" />
+			<property name="PunctureProtection" value="0.08,0.2" />
+			<property name="FireProtection" value="0.12,0.2" />
+			<property name="RadiationProtection" value="0.06,0.1" />
+			<property name="ElectricalProtection" value="0.06,0.1" />
+			<property name="DegradationMax" value="80,200" />
+		</property>
+		<property class="UMA">
+			<property name="Mesh" value="armor_kevlar_gloves" />
+			<property name="Overlay0" value="armor_kevlar_gloves" />
+			<property name="Layer" value="0" />
+			<property name="UISlot" value="Gloves" />
+			<property name="Overlay0Tint" value="404040" />
+		</property>
+		<property name="DescriptionKey" value="rjwinterglovesDesc" />
+		<property name="Group" value="Clothing" />
+		<property name="ActionSkillGroup" value="Clothing/Armor" />
+		<property name="CraftingSkillGroup" value="craftSkillArmor" />
+		<property name="RepairExpMultiplier" value="12.8" />
+	</item>
+	<item id="" name="rjwinterboots">
+		<property name="Extends" value="rjwintergloves" />
+		<property name="CustomIcon" value="winterboots" />
+		<property name="EquipSlot" value="Feet" />
+		<property class="UMA">
+			<property name="Mesh" value="armor_kevlar_boots" />
+			<property name="Overlay0" value="armor_kevlar_boots" />
+			<property name="Layer" value="0" />
+			<property name="UISlot" value="Footwear" />
+			<property name="Overlay0Tint" value="404040" />
+		</property>
+		<property class="Attributes">
+			<property name="ConcussiveProtection" value="0.08,0.2" />
+			<property name="PunctureProtection" value="0.08,0.2" />
+			<property name="FireProtection" value="0.12,0.2" />
+			<property name="RadiationProtection" value="0.06,0.1" />
+			<property name="ElectricalProtection" value="0.06,0.1" />
+			<property name="DegradationMax" value="80,200" />
+		</property>
+		<property name="DescriptionKey" value="rjwinterbootsDesc" />
+		<property name="Insulation" value="18" />
+		<property name="RepairTools" value="cloth" />
+	</item>
+	<item id="" name="rjsweater">
+		<property name="CustomIcon" value="rjsweatericon" />
+		<property name="Insulation" value="25" />
+		<property name="Material" value="cloth" />
+		<property name="RepairTools" value="cloth" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Weight" value="25" />
+		<property name="FuelValue" value="5" />
+		<property name="EconomicValue" value="60" />
+		<property name="EquipSlot" value="Chest" />
+		<property name="HoldType" value="45" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property class="Attributes">
+			<property name="ConcussiveProtection" value="0.08,0.2" />
+			<property name="PunctureProtection" value="0.08,0.2" />
+			<property name="FireProtection" value="0.12,0.2" />
+			<property name="RadiationProtection" value="0.06,0.1" />
+			<property name="ElectricalProtection" value="0.06,0.1" />
+			<property name="DegradationMax" value="80,200" />
+		</property>
+		<property class="UMA">
+			<property name="Mesh" value="sweatshirt" />
+			<property name="Overlay0" value="sweatshirt" />
+			<property name="Layer" value="0" />
+			<property name="Mask0" value="chest" param1="inner" />
+			<property name="UISlot" value="Shirt" />
+		</property>
+		<property name="DescriptionKey" value="rjsweaterDesc" />
+		<property name="Group" value="Clothing" />
+		<property name="ActionSkillGroup" value="Clothing/Armor" />
+		<property name="CraftingSkillGroup" value="craftSkillMiscellaneous" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	
+	<!-- ############################# Other Clothes ############################# -->
+	<!-- OJs Gloves -->
+    <item id="" name="leatherGlovesOJ">
+		<property name="Extends" value="leatherGloves" />
+		<property name="CustomIcon" value="leatherGloves" />
+		<property name="DescriptionKey" value="leatherGlovesOJDesc" />
+	</item>
+
+	<!-- Skates -->
+	<item id="" name="hockeySkates">
+		<property name="Extends" value="leatherBoots" />
+		<property name="CustomIcon" value="hockeySkatesIcon" />
+		<property name="DescriptionKey" value="hockeySkatesDesc" />
+		<property name="FuelValue" value="20" />
+		<property name="EconomicValue" value="232" />
+		<property name="EquipSlot" value="Feet" />
+		<property name="Meshfile" value="#hockeySkates?hockeySkatePrefab" />
+		<property name="DropMeshfile" value="#hockeySkates?hockeySkatePrefab" />
+		<property class="UMA">
+		</property>
+	</item>
+	
+	<!-- Goalie Helmet -->
+	<item id="" name="hockeyGoalieHelmet">
+		<property name="CustomIcon" value="hockeyHelmetGoalieIcon" />
+		<property name="DescriptionKey" value="hockeyGoalieHelmetDesc" />
+		<property name="Meshfile" value="#hockeyGoalieHelmet?hockeyGoalieHelmetPrefab" />
+		<property name="Extends" value="footballHelmet" />
+		<property name="RepairTools" value="scrapPlastics" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="450,900" />
+		</property>
+		<property class="UMA">
+		</property>
+	</item>
+	
+	
+	
+	<!-- ############################# Food ############################# -->
+	
+	<item id="" name="rjflapjacks">
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="Material" value="organic" />
+		<property name="CustomIcon" value="rjflapjacks" />
+		<property name="HoldType" value="23" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="200" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="80" />
+			<property name="Gain_water" value="-1" />
+			<property name="Gain_stamina" value="-2" />
+			<property name="Gain_wellness" value="1" />
+			<property name="Sound_start" value="player_eating" />
+			<property name="Buff" value="rjflapjacksWarm,eatFood_78_Trigger" />
+		</property>
+		<property name="DescriptionKey" value="rjflapjacksDesc" />
+		<property name="Smell" value="exLargeSmell" />
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="rjcanadianbacon">
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="CustomIcon" value="rjcanadianbacon" />
+		<property name="HoldType" value="31" />
+		<property name="Material" value="organic" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="24" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="2.1" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="16" />
+			<property name="Buff" value="stewWarming,eatFood_14_Trigger" />
+			<property name="Gain_water" value="-3" />
+			<property name="Gain_wellness" value="2" />
+			<property name="Sound_start" value="rjcanadianbaconWarm,player_eating" />
+		</property>
+		<property name="DescriptionKey" value="rjcanadianbaconDesc" />
+		<property name="Smell" value="mediumSmell" />
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="rjpoutine">
+		<property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+		<property name="Material" value="organic" />
+		<property name="CustomIcon" value="rjpoutine" />
+		<property name="HoldType" value="23" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="200" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="60" />
+			<property name="Gain_water" value="1" />
+			<property name="Gain_stamina" value="10" />
+			<property name="Gain_wellness" value="6" />
+			<property name="Sound_start" value="player_eating" />
+			<property name="Buff" value="rjpoutineWarm,eatFood_78_Trigger" />
+		</property>
+		<property name="DescriptionKey" value="rjpoutineDesc" />
+		<property name="Smell" value="exLargeSmell" />
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="rjcheese">
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="Material" value="organic" />
+		<property name="CustomIcon" value="rjcheese" />
+		<property name="HoldType" value="14" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="5" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="5" />
+			<property name="Buff" value="eatFood_2_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_stamina" value="10" />
+			<property name="Gain_wellness" value="1" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="DescriptionKey" value="rjcheeseDesc" />
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="rjfriedeggs">
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="Material" value="organic" />
+		<property name="CustomIcon" value="rjfriedeggs" />
+		<property name="HoldType" value="14" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="5" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="15" />
+			<property name="Buff" value="rjfriedeggsWarm,eatFood_2_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_stamina" value="10" />
+			<property name="Gain_wellness" value="1" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="DescriptionKey" value="rjfriedeggsDesc" />
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<!-- RJ Military Ration Bar -->
+	<item id="" name="militaryRationsBar">
+		<property name="CustomIcon" value="militaryRationsBarIcon" />
+		<property name="DescriptionKey" value="militaryRationsBarDesc" />
+		<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+		<property name="Material" value="organic" />
+		<property name="HoldType" value="14" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="5" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="2" />
+			<property name="Gain_food" value="25" />
+			<property name="Buff" value="eatFood_2_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_stamina" value="10" />
+			<property name="Gain_wellness" value="3" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	
+	<!-- ############################# Drinks ############################# -->
+	<item id="" name="rjhotchocolate">
+		<property name="Meshfile" value="Items/Food/coffeePrefab" />
+		<property name="Material" value="glass" />
+		<property name="CustomIcon" value="rjhotchocolate" />
+		<property name="Weight" value="5" />
+		<property name="HoldType" value="14" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="8" />
+		<property name="CraftingIngredientTime" value="10" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_stamina" value="20" />
+			<property name="Gain_food" value="0" />
+			<property name="Gain_water" value="20" />
+			<property name="Sound_start" value="player_drinking" />
+			<property name="Buff" value="rjhotchocolateWarm" />
+			<property name="Create_item" value="emptyJar" />
+		</property>
+		<property name="DescriptionKey" value="rjhotchocolateDesc" />
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="monsterEnergy">
+		<property name="CustomIcon" value="monsterEnergyIcon" />
+		<property name="DescriptionKey" value="monsterEnergyDesc" />
+		<property name="Extends" value="redTea" />
+		<property name="EconomicValue" value="15" />
+		<property class="Action1">
+			<property name="Gain_water" value="4" />
+			<property name="Gain_stamina" value="0" />
+			<property name="Buff" value="monsterEnergyBuff,extinguishFireBuff" />
+			<property name="Sound_start" value="player_drinking" />
+			<property name="Create_item" value="aluminumCan" />
+		</property>
+	</item>
+	<item id="" name="canCoke">
+		<property name="CustomIcon" value="canCokeIcon" />
+		<property name="DescriptionKey" value="canCokeDesc" />
+		<property name="Extends" value="redTea" />
+		<property name="EconomicValue" value="15" />
+		<property class="Action1">
+			<property name="Gain_water" value="4" />
+			<property name="Gain_stamina" value="0" />
+			<property name="Buff" value="softDrinkBuff,extinguishFireBuff" />
+			<property name="Sound_start" value="player_drinking" />
+			<property name="Create_item" value="aluminumCan" />
+		</property>
+	</item>
+	<item id="" name="canMtnDew">
+		<property name="CustomIcon" value="canMtnDewIcon" />
+		<property name="DescriptionKey" value="canMtnDewDesc" />
+		<property name="Extends" value="redTea" />
+		<property name="EconomicValue" value="15" />
+		<property class="Action1">
+			<property name="Gain_water" value="4" />
+			<property name="Gain_stamina" value="0" />
+			<property name="Buff" value="softDrinkBuff,extinguishFireBuff" />
+			<property name="Sound_start" value="player_drinking" />
+			<property name="Create_item" value="aluminumCan" />
+		</property>
+	</item>
+	
+	
+	
+	<!-- ############################# Ingredients ############################# -->
+	<item id="" name="rjmaplesyrup">
+		<property name="Meshfile" value="Items/Food/coffeePrefab" />
+		<property name="Material" value="glass" />
+		<property name="CustomIcon" value="rjmaplesyrup" />
+		<property name="Weight" value="5" />
+		<property name="HoldType" value="14" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="8" />
+		<property name="CraftingIngredientTime" value="10" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_stamina" value="0" />
+			<property name="Gain_food" value="3" />
+			<property name="Gain_water" value="-1" />
+			<property name="Sound_start" value="player_drinking" />
+		</property>
+		<property name="DescriptionKey" value="rjmaplesyrupDesc" />
+		<property name="Group" value="Food/Cooking" />
+	</item>
+	<item id="" name="rjflour">
+		<property name="Meshfile" value="Items/Food/cornmealPrefab" />
+		<property name="Material" value="organic" />
+		<property name="CustomIcon" value="rjflour" />
+		<property name="HoldType" value="21" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="11" />
+		<property name="EconomicBundleSize" value="5" />
+		<property name="CraftingIngredientTime" value="10" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Buff" value="eatFood_1_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="DescriptionKey" value="rjflourDesc" />
+		<property name="Group" value="Resources,Food/Cooking" />
+	</item>
+	<item id="" name="rjhotchocolatemix">
+		<property name="Meshfile" value="Items/Food/cornmealPrefab" />
+		<property name="Material" value="organic" />
+		<property name="CustomIcon" value="rjhotchocolatemix" />
+		<property name="HoldType" value="21" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="11" />
+		<property name="EconomicBundleSize" value="5" />
+		<property name="CraftingIngredientTime" value="10" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Buff" value="eatFood_1_Trigger" />
+			<property name="Gain_water" value="0" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="DescriptionKey" value="rjhotchocolatemixDesc" />
+		<property name="Group" value="Resources,Food/Cooking" />
+	</item>
+	<item id="" name="rjcookingoil">
+		<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab" />
+		<property name="Material" value="organic" />
+		<property name="CustomIcon" value="rjcookingoil" />
+		<property name="HoldType" value="21" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="11" />
+		<property name="EconomicBundleSize" value="5" />
+		<property name="CraftingIngredientTime" value="10" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Buff" value="dysentery" />
+			<property name="Gain_water" value="0" />
+			<property name="Sound_start" value="player_eating" />
+		</property>
+		<property name="DescriptionKey" value="rjcookingoilDesc" />
+		<property name="Group" value="Resources,Food/Cooking" />
+	</item>
+	
+	<!-- ############################# RJ BUILDING RESOURCES ############################# -->
+	<item id="" name="rjbolts">
+		<property name="Meshfile" value="Items/Tools/nailProjectilePrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="45" />
+		<property name="CustomIcon" value="rjbolts" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="10" />
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="Explosion.ParticleIndex" value="0" />
+			<property name="Velocity" value="55" />
+			<property name="FlyTime" value="1" />
+			<property name="LifeTime" value="1" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="DamageBonus.wood" value="0.1" />
+			<property name="DamageBonus.earth" value="0" />
+			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.cloth" value="0" />
+		</property>
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="5,10" />
+			<property name="BlockDamage" value="0.1,0.2" />
+		</property>
+		<property name="DescriptionKey" value="rjboltsDesc" />
+		<property name="Group" value="Ammo/Weapons" />
+	</item>
+	<item id="" name="titanium">
+		<property name="Meshfile" value="Items/Crafting/ingotIron" />
+		<property name="CustomIcon" value="rjtitanium" />
+		<property name="HoldType" value="21" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="68" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingIngredientExp" value="15" />
+		<property name="CraftingIngredientTime" value="15" />
+		<property name="RepairTime" value="1" />
+		<property name="RepairAmount" value="400" />
+		<property name="DescriptionKey" value="titaniumDesc" />
+	</item>
+	<!-- RJ Rebar -->
+	<item id="" name="rebar">
+		<property name="CustomIcon" value="rebar" />
+		<property name="DescriptionKey" value="rebarDesc" />
+		<property name="Meshfile" value="Items/Crafting/ingotIron" />
+		<property name="HoldType" value="21" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="5" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingIngredientExp" value="15" />
+		<property name="CraftingIngredientTime" value="15" />
+		<property name="RepairTime" value="1" />
+		<property name="RepairAmount" value="400" />
+	</item>
+	<!-- Steel Plates - ty for the idea HaidrGna -->
+	<item id="" name="steelPlates">
+		<property name="CustomIcon" value="steelPlatesIcon" />
+		<property name="DescriptionKey" value="steelPlatesDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="500" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	<!-- Titanium Plates - ty for the idea HairdrGna -->
+	<item id="" name="titaniumPlates">
+		<property name="CustomIcon" value="titaniumPlatesIcon" />
+		<property name="DescriptionKey" value="titaniumPlatesDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="500" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	
+	
+	<!-- ############################# Advanced Workbench Tools ############################# -->
+	<!-- RJ Welding Gear -->
+	<item id="" name="weldingGear">
+		<property name="CustomIcon" value="weldingGear" />
+		<property name="DescriptionKey" value="weldingGearDesc" />
+		<property name="HoldType" value="45" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="10" />
+		<property name="EconomicValue" value="5" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+	</item>
+	<!-- RJ Garment Makers Form -->
+	<item id="" name="armorForm">
+		<property name="CustomIcon" value="armorForm" />
+		<property name="DescriptionKey" value="armorFormDesc" />
+		<property name="HoldType" value="45" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="cloth" />
+		<property name="Stacknumber" value="10" />
+		<property name="EconomicValue" value="500" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+	</item>
+	<!-- RJ Grinder -->
+	<item id="" name="grinder">
+		<property name="CustomIcon" value="grinderIcon" />
+		<property name="DescriptionKey" value="grinderDesc" />
+		<property name="HoldType" value="45" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="10" />
+		<property name="EconomicValue" value="10000" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+	</item>
+	<!-- RJ Electronics Kit -->
+	<item id="" name="electronicsToolKit">
+		<property name="CustomIcon" value="electronicsToolKitIcon" />
+		<property name="DescriptionKey" value="electronicsToolKitDesc" />
+		<property name="HoldType" value="45" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="10" />
+		<property name="EconomicValue" value="250" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+	</item>
+	<!-- RJ Bullet Press -->
+	<item id="" name="bulletPress">
+		<property name="CustomIcon" value="bulletPressIcon" />
+		<property name="DescriptionKey" value="bulletPressDesc" />
+		<property name="HoldType" value="45" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="10" />
+		<property name="EconomicValue" value="15000" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillTools" />
+	</item>
+	<!-- RJ Power Hammer -->
+	<item id="" name="powerHammer">
+		<property name="CustomIcon" value="powerHammer" />
+		<property name="DescriptionKey" value="powerHammerDesc" />
+		<property name="HoldType" value="45" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="10" />
+		<property name="EconomicValue" value="5000" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	
+	<!-- ############################# WEAPONS ############################# -->
+	<item id="" name="crossbowSnow">
+		<property name="CustomIcon" value="crossbowSnow" />
+		<property name="CustomIconTint" value="ffffff" />
+		<property name="RandomTintColor1" value="ffffff" />
+		<property name="DescriptionKey" value="crossbowSnowDesc" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="forgedIron" />
+		<property name="HoldType" value="26" />
+		<property name="FuelValue" value="70" />
+		<property name="EconomicValue" value="220" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="wooddestroy1" />
+		<property name="CrosshairOnAim" value="false" />
+		<property name="CrosshairUpAfterShot" value="true" />
+		<property name="Sound_Sight_In" value="crossbow_sight_in" />
+		<property name="Sound_Sight_Out" value="crossbow_sight_out" />
+		<property class="Action0">
+			<property name="Class" value="Launcher" />
+			<property name="Hitmask_override" value="Arrow" />
+			<property name="Delay" value="0.8" />
+			<property name="Crosshair_min_distance" value="30" />
+			<property name="Crosshair_max_distance" value="30" />
+			<property name="Magazine_size" value="1" />
+			<property name="Magazine_items" value="snowBall" />
+			<property name="Rays_spread" value="0.012" />
+			<property name="Reload_time" value="2" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="crossbow_fire" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="weapon_empty" />
+			<property name="Sound_reload" value="crossbow_reload" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Zoom" />
+			<property name="Zoom_max_out" value="40" />
+			<property name="Zoom_max_in" value="40" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationRate" value="1,1" />
+			<property name="DegradationMax" value="240,600" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Archery" />
+		<property name="CraftingSkillGroup" value="craftSkillWeapons" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	<!-- Survival Machete -->
+	<item id="" name="macheteSurvival">
+		<property name="CustomIcon" value="macheteSurvivalIcon" />
+		<property name="DescriptionKey" value="macheteSurvivalDesc" />
+		<property name="Extends" value="machete" />
+		<property name="Meshfile" value="#weaponMachete?MachetePrefab" />
+		<property name="RepairTools" value="forgedIron" />
+		<property name="HoldType" value="2" />
+		<property name="FuelValue" value="1" />
+		<property name="EconomicValue" value="600" />
+		<property name="Weight" value="20" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.2" />
+			<property name="Range" value="2.2" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="6.51" />
+			<property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="0.5" />
+			<property name="DamageBonus.leaves" value="1" />
+			<property name="DamageBonus.stone" value="0.25" />
+			<property name="DamageBonus.metal" value="0.25" />
+			<property name="DamageBonus.earth" value="0.2" />
+			<property name="DamageBonus.organic" value="3" />
+			<property name="ToolCategory.Butcher" value="1" param1="7" />
+			<property name="ToolCategory.harvestingTools" value="1" param1="1" />
+			<property name="Sound_harvesting" value="open_animal" param1="organic" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,20" />
+			<property name="BlockDamage" value="30,48" />
+			<property name="DegradationMax" value="200,800" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.05,0.1" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	<!-- Baseball Bat -->
+	<item id="" name="bat">
+		<property name="Extends" value="clubMaster" />
+		<property name="CustomIcon" value="batIcon" />
+		<property name="DescriptionKey" value="batDesc" />
+		<property name="Meshfile" value="#bat?batPrefab" />
+		<property name="SellableToTrader" value="false" />
+		<property name="RepairTools" value="wood" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property class="Action0">
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.1" />
+			<property name="Stamina_usage" value="3.7" />
+			<property name="DamageBonus.head" value="5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,20" />
+			<property name="BlockDamage" value="1,2" />
+			<property name="DegradationMax" value="200,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property name="CritChance" value="0.12" />
+		<property name="Group" value="Ammo/Weapons" />
+	</item>
+	<!-- Police Night Stick -->
+	<item id="" name="nightStick">
+		<property name="Extends" value="clubMaster" />
+		<property name="RepairTools" value="wood" />
+		<property name="CustomIcon" value="nightStickIcon" />
+		<property name="DescriptionKey" value="nightStickDesc" />
+		<property name="Meshfile" value="#nightStick?nightStickPrefab" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SellableToTrader" value="true" />
+		<property class="Action0">
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.1" />
+			<property name="Stamina_usage" value="3.7" />
+			<property name="DamageBonus.head" value="5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="12,24" />
+			<property name="BlockDamage" value="1,2" />
+			<property name="DegradationMax" value="200,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property name="CritChance" value="0.12" />
+		<property name="Group" value="Ammo/Weapons" />
+	</item>
+	<!-- Hand Wraps -->
+	<item id="" name="handWraps">
+		<property name="CustomIcon" value="handWrapsIcon" />
+		<property name="DescriptionKey" value="handWrapsDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="RepairTools" value="ductTape" />
+		<property name="Material" value="organic" />
+		<property name="CreativeMode" value="None" />
+		<property name="Weight" value="10" />
+		<property name="HoldType" value="0" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="0.75" />
+			<property name="Range" value="2.5" />
+			<property name="DamageEntity" value="20" />
+			<property name="DamageBlock" value="5" />
+			<property name="Stamina_usage" value="3" />
+			<property name="DamageBonus.head" value="2" />
+			<property name="DamageBonus.organic" value="5" />
+			<property name="ToolCategory.harvestingTools" value="1.5" param1="1" />
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.2" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.05" />
+			<property name="Range" value="3.0" />
+			<property name="DamageEntity" value="35" />
+			<property name="DamageBlock" value="12" />
+			<property name="Stamina_usage" value="12" />
+			<property name="DamageBonus.head" value="10" />
+			<property name="DamageBonus.organic" value="10" />
+			<property name="ToolCategory.harvestingTools" value="1.5" param1="1" />
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.4" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,20" />
+			<property name="BlockDamage" value="2,5" />
+			<property name="DismembermentBaseChance" value="0.1,0.3" />
+			<property name="DismembermentBonus" value="0,0.2" />
+			<property name="DegradationMax" value="200,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property name="ActionSkillGroup" value="Martial Arts" />
+		<property name="CraftingSkillGroup" value="craftSkillWeapons" />
+		<property name="Group" value="Basics,Ammo/Weapons" />
+	</item>
+	<!-- Hockey Sticks -->
+	<item id="" name="hockeyStick01"> <!-- hockey stick master -->
+		<property name="Meshfile" value="#hockeySticks?hockeyStick1Prefab" />
+		<property name="CustomIcon" value="hockeyStickIcon" />
+		<property name="DescriptionKey" value="hockeyStickGroupDesc" />
+		<property name="HoldType" value="33" />
+		<property name="RepairTools" value="hockeyTape" />
+		<property name="DegradationBreaksAfter" value="true" />
+		<property name="Material" value="wood" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="wooddestroy1" />
+		<property name="FuelValue" value="30" />
+		<property name="EconomicValue" value="5" />
+		<property name="EconomicBundleSize" value="1" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.8" />
+			<property name="Range" value="2.4" />
+			<property name="Sphere" value="0.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sound_start" value="SlowSwoosh" />
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.1" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.head" value="4" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="Stamina_usage" value="3.5" />
+			<property name="ToolCategory.Butcher" value="0" param1="10" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,20" />
+			<property name="BlockDamage" value="3,12" />
+			<property name="DegradationMax" value="200,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property name="CritChance" value="0.10" />
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blunt Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillWeapons" />
+	</item>
+	<item id="" name="hockeyStick02">
+		<property name="Meshfile" value="#hockeySticks?hockeyStick2Prefab" />
+		<property name="Extends" value="hockeyStick01" />
+		<property name="CustomIcon" value="hockeyStick2Icon" />
+	</item>
+	<item id="" name="hockeyStick03">
+		<property name="Meshfile" value="#hockeySticks?hockeyStick3Prefab" />
+		<property name="Extends" value="hockeyStick01" />
+		<property name="CustomIcon" value="hockeyStick3Icon" />
+	</item>
+	<!-- Goalie Sticks -->
+	<item id="" name="hockeyGoalieStick01"> <!-- Goalie stick master -->
+		<property name="Extends" value="hockeyStick01" />
+		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick1Prefab" />
+		<property name="CustomIcon" value="hockeyGoalieStickIcon" />
+		<property name="DescriptionKey" value="hockeyGoalieStickGroupDesc" />
+	</item>
+	<item id="" name="hockeyGoalieStick02">
+		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick2Prefab" />
+		<property name="Extends" value="hockeyGoalieStick01" />
+		<property name="CustomIcon" value="hockeyGoalieStick2Icon" />
+	</item>
+	<item id="" name="hockeyGoalieStick03">
+		<property name="Meshfile" value="#hockeySticks?hockeyGoalieStick3Prefab" />
+		<property name="Extends" value="hockeyGoalieStick01" />
+		<property name="CustomIcon" value="hockeyGoalieStick3Icon" />
+	</item>
+	
+	
+	<!-- ############################# Damascus Weapons ############################# -->
+	<!-- ############################# Tier 01 ############################# -->
+	<!-- Mace -->
+	<item id="" name="mace">
+		<property name="Extends" value="clubMaster" />
+		<property name="CustomIcon" value="maceIcon" />
+		<property name="DescriptionKey" value="maceDesc" />
+		<property name="Meshfile" value="#mace?macePrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.8" />
+			<property name="Range" value="4.2" />
+			<property name="Sphere" value="0.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sound_start" value="SlowSwoosh" />
+			<property name="Stamina_usage" value="15" />
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.25" />
+			<property name="Stamina_usage" value="3.7" />
+			<property name="DamageBonus.head" value="5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="20,40" />
+			<property name="BlockDamage" value="1,2" />
+			<property name="DegradationMax" value="600,1500" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property name="CritChance" value="0.12" />
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	<!-- ############################# Tier 02 ############################# -->
+	
+	<!-- Spear -->
+	<item id="" name="spear">
+		<property name="CustomIcon" value="spearIcon" />
+		<property name="DescriptionKey" value="spearDesc" />
+		<property name="Meshfile" value="#w_spears?SpearPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="HoldType" value="18" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="wooddestroy1" />
+		<property name="FuelValue" value="18" />
+		<property name="EconomicValue" value="5" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.1" />
+			<property name="Range" value="6" />
+			<property name="Sphere" value="0.2" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="6.8" />
+			<property name="DamageBonus.earth" value="0.01" />
+			<property name="DamageBonus.glass" value="0.5" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.wood" value="0.1" />
+			<property name="DamageBonus.stone" value="0.001" />
+			<property name="DamageBonus.metal" value="0.001" />
+			<property name="DamageBonus.organic" value="0.01" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="15,30" />
+			<property name="BlockDamage" value="1,1.5" />
+			<property name="DegradationMax" value="60,600" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	<!-- ############################# Tier 03 ############################# -->
+	
+	<!-- Halbert -->
+	<item id="" name="halberd">
+		<property name="CustomIcon" value="halberdIcon" />
+		<property name="DescriptionKey" value="halberdDesc" />
+		<property name="Meshfile" value="#w_spears?halberdPrefabs" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="HoldType" value="18" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="wooddestroy1" />
+		<property name="FuelValue" value="13" />
+		<property name="EconomicValue" value="5" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.1" />
+			<property name="Range" value="6" />
+			<property name="Sphere" value="0.2" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="6.8" />
+			<property name="DamageBonus.earth" value="0.01" />
+			<property name="DamageBonus.glass" value="0.5" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.wood" value="0.1" />
+			<property name="DamageBonus.stone" value="0.001" />
+			<property name="DamageBonus.metal" value="0.001" />
+			<property name="DamageBonus.organic" value="0.01" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="18,36" />
+			<property name="BlockDamage" value="1,1.5" />
+			<property name="DegradationMax" value="60,600" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	<!-- ############################# Tier 04 ############################# -->
+	<!-- Short Sword -->
+	<item id="" name="swordShort">
+		<property name="CustomIcon" value="shortSwordIcon" />
+		<property name="DescriptionKey" value="swordShortDesc" />
+		<property name="Extends" value="machete" />
+		<property name="Meshfile" value="#w_shortSwords?ShortSwordPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="FuelValue" value="0" />
+		<property name="EconomicValue" value="600" />
+		<property name="Weight" value="200" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.2" />
+			<property name="Range" value="2.2" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="3.55" />
+			<property name="DamageBonus.wood" value="3" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="DamageBonus.leaves" value="25" />
+			<property name="DamageBonus.organic" value="3" />
+			<property name="ToolCategory.Butcher" value="1" param1="7" />
+			<property name="Sound_harvesting" value="open_animal" param1="organic" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="15,38" />
+			<property name="BlockDamage" value="4,10" />
+			<property name="DegradationMax" value="500,1500" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.1,0.5" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	<!-- ############################# Tier 05 ############################# -->
+	
+	<!-- Hand Axe -->
+	<item id="" name="warAxeSteel">
+		<property name="CustomIcon" value="handAxeIcon" />
+		<property name="DescriptionKey" value="warAxeSteelDesc" />
+		<property name="Meshfile" value="#w_axes?handAxePrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="2" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.8" />
+			<property name="Range" value="4.2" />
+			<property name="Sphere" value="0.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sound_start" value="SlowSwoosh" />
+			<property name="Stamina_usage" value="15" />
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.1" />
+			<property name="Stamina_usage" value="3.7" />
+			<property name="DamageBonus.head" value="5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="12,24" />
+			<property name="BlockDamage" value="1,2" />
+			<property name="DegradationMax" value="200,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property name="CritChance" value="0.12" />
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	<!-- ############################# Tier 06 ############################# -->
+	
+	<!-- Evil Short Sword -->
+	<item id="" name="swordShortEvil">
+		<property name="CustomIcon" value="shortSwordEvilIcon" />
+		<property name="DescriptionKey" value="swordShortEvilDesc" />
+		<property name="Extends" value="machete" />
+		<property name="Meshfile" value="#w_shortSwords?swordShortEvilPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="FuelValue" value="0" />
+		<property name="EconomicValue" value="600" />
+		<property name="Weight" value="200" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.2" />
+			<property name="Range" value="2.2" />
+			<property name="Sphere" value="0.1" />
+			<property name="Buff" value="evilBuff" />
+			<property name="Buff_chance" value="0.25" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="3.55" />
+			<property name="DamageBonus.wood" value="3" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="DamageBonus.leaves" value="25" />
+			<property name="DamageBonus.organic" value="3" />
+			<property name="ToolCategory.Butcher" value="1" param1="7" />
+			<property name="Sound_harvesting" value="open_animal" param1="organic" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="15,38" />
+			<property name="BlockDamage" value="4,10" />
+			<property name="DegradationMax" value="500,1500" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.1,0.5" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	<!-- ############################# Tier 07 ############################# -->
+	
+	<!-- Long Sword -->
+	<item id="" name="swordLong">
+		<property name="CustomIcon" value="longSwordIcon" />
+		<property name="DescriptionKey" value="swordLongDesc" />
+		<property name="Extends" value="machete" />
+		<property name="Meshfile" value="#w_longSwords?swordLongPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="FuelValue" value="1" />
+		<property name="EconomicValue" value="600" />
+		<property name="Weight" value="200" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.2" />
+			<property name="Range" value="2.2" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="6.51" />
+			<property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="0.5" />
+			<property name="DamageBonus.leaves" value="1" />
+			<property name="DamageBonus.stone" value="0.25" />
+			<property name="DamageBonus.metal" value="0.25" />
+			<property name="DamageBonus.earth" value="0.2" />
+			<property name="DamageBonus.organic" value="3" />
+			<property name="ToolCategory.Butcher" value="1" param1="7" />
+			<property name="ToolCategory.harvestingTools" value="1" param1="1" />
+			<property name="Sound_harvesting" value="open_animal" param1="organic" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,20" />
+			<property name="BlockDamage" value="30,48" />
+			<property name="DegradationMax" value="200,800" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.05,0.1" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	
+	
+	<!-- ############################# Tier 08 ############################# -->
+	
+	<!-- Flamberge -->
+	<item id="" name="swordFlamberge">
+		<property name="CustomIcon" value="flambergeIcon" />
+		<property name="DescriptionKey" value="swordFlambergeDesc" />
+		<property name="Extends" value="machete" />
+		<property name="Meshfile" value="#w_longSwords?swordFlambergePrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="FuelValue" value="1" />
+		<property name="EconomicValue" value="600" />
+		<property name="Weight" value="200" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.2" />
+			<property name="Range" value="2.2" />
+			<property name="Sphere" value="0.1" />
+			<property name="Buff" value="evilBuff" />
+			<property name="Buff_chance" value="0.25" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="6.51" />
+			<property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="0.5" />
+			<property name="DamageBonus.leaves" value="1" />
+			<property name="DamageBonus.stone" value="0.25" />
+			<property name="DamageBonus.metal" value="0.25" />
+			<property name="DamageBonus.earth" value="0.2" />
+			<property name="DamageBonus.organic" value="3" />
+			<property name="ToolCategory.Butcher" value="1" param1="7" />
+			<property name="ToolCategory.harvestingTools" value="1" param1="1" />
+			<property name="Sound_harvesting" value="open_animal" param1="organic" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,20" />
+			<property name="BlockDamage" value="30,48" />
+			<property name="DegradationMax" value="200,800" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.05,0.1" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	
+	<!-- Double Headed War Axe -->
+	<item id="" name="warAxeDouble">
+		<property name="CustomIcon" value="warAxeIcon" />
+		<property name="DescriptionKey" value="warAxeDoubleDesc" />
+		<property name="Meshfile" value="#w_axes?axeDoublePrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="HoldType" value="33" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="metaldestroy1" />
+		<property name="FuelValue" value="30" />
+		<property name="EconomicValue" value="500" />
+		<property name="SellableToTrader" value="false" />
+		<property name="CritChance" value="0.4" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.8" />
+			<property name="Range" value="4.2" />
+			<property name="Sphere" value="0.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sound_start" value="SlowSwoosh" />
+			<property name="Stamina_usage" value="15" />
+			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,evilBuff" />
+			<property name="Buff_chance" value="0.5,0.3,0.3,0.25" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.head" value="6" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="ToolCategory.Butcher" value="0" param1="10" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="50,99" />
+			<property name="BlockDamage" value="100,250" />
+			<property name="DegradationMax" value="300,1000" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.05,0.5" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	<!-- ############################# Tier 09 ############################# -->
+	
+	<!-- Evil long sword -->
+	<item id="" name="swordLongEvil">
+		<property name="CustomIcon" value="longSwordEvilIcon" />
+		<property name="DescriptionKey" value="swordLongEvilDesc" />
+		<property name="Extends" value="machete" />
+		<property name="Meshfile" value="#w_longSwords?swordLongEvilPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="FuelValue" value="1" />
+		<property name="EconomicValue" value="600" />
+		<property name="Weight" value="200" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.2" />
+			<property name="Range" value="2.2" />
+			<property name="Sphere" value="0.1" />
+			<property name="Buff" value="evilBuff" />
+			<property name="Buff_chance" value="0.25" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="6.51" />
+			<property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="0.5" />
+			<property name="DamageBonus.leaves" value="1" />
+			<property name="DamageBonus.stone" value="0.25" />
+			<property name="DamageBonus.metal" value="0.25" />
+			<property name="DamageBonus.earth" value="0.2" />
+			<property name="DamageBonus.organic" value="3" />
+			<property name="ToolCategory.Butcher" value="1" param1="7" />
+			<property name="ToolCategory.harvestingTools" value="1" param1="1" />
+			<property name="Sound_harvesting" value="open_animal" param1="organic" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,20" />
+			<property name="BlockDamage" value="30,48" />
+			<property name="DegradationMax" value="200,800" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.05,0.1" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	<!-- ############################# Tier 10 ############################# -->
+	<!-- Evil Warhammer -->
+	<item id="" name="warHammerSteel">
+		<property name="CustomIcon" value="warHammerIcon" />
+		<property name="DescriptionKey" value="warHammerSteelDesc" />
+		<property name="Meshfile" value="#warHammer?warhammerEvilPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="HoldType" value="33" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="ItemNeedsRepair" />
+		<property name="SoundDestroy" value="metaldestroy1" />
+		<property name="FuelValue" value="30" />
+		<property name="EconomicValue" value="500" />
+		<property name="SellableToTrader" value="false" />
+		<property name="CritChance" value="0.4" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.8" />
+			<property name="Range" value="4.5" />
+			<property name="Sphere" value="0.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sound_start" value="SlowSwoosh" />
+			<property name="Stamina_usage" value="15" />
+			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,evilBuff" />
+			<property name="Buff_chance" value="0.5,0.3,0.3,0.25" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.head" value="6" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="ToolCategory.Butcher" value="0" param1="10" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="100,250" />
+			<property name="BlockDamage" value="100,250" />
+			<property name="DegradationMax" value="300,1000" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.05,0.5" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blunt Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+	</item>
+	<!-- Scorpion Katana - the ultimate killing device -->
+	<item id="" name="katana">
+		<property name="CustomIcon" value="katanaIcon" />
+		<property name="DescriptionKey" value="katanaDesc" />
+		<property name="Extends" value="machete" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="damascusSteel" />
+		<property name="Meshfile" value="#katana?katanaPrefab" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="0.7" />
+			<property name="Range" value="3" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="3.51" />
+			<property name="DamageBonus.wood" value="3" />
+			<property name="DamageBonus.head" value="50" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="DamageBonus.leaves" value="25" />
+			<property name="DamageBonus.organic" value="3" />
+			<property name="ToolCategory.Butcher" value="1" param1="7" />
+			<property name="Sound_harvesting" value="open_animal" param1="organic" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.2" />
+			<property name="Range" value="3.5" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="6.51" />
+			<property name="DamageBonus.wood" value="3" />
+			<property name="DamageBonus.head" value="50" />
+			<property name="DamageBonus.glass" value="1" />
+			<property name="DamageBonus.leaves" value="25" />
+			<property name="DamageBonus.organic" value="50" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="100,150" />
+			<property name="BlockDamage" value="4,10" />
+			<property name="DegradationMax" value="200,800" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.5,1" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="RepairExpMultiplier" value="5.5" />
+	</item>
+	
+	<!-- DEV Katana -->
+	<item id="" name="devKatana">
+		<property name="CustomIcon" value="katanamichonne" />
+		<property name="Extends" value="katana" />
+		<property name="Meshfile" value="#michonnekatana?katana" />
+	</item>
+	
+	<!-- Lady FireHeart Sword -->
+	<item id="" name="fireheartSword">
+		<property name="CustomIcon" value="fireheartSwordIcon" />
+		<property name="DescriptionKey" value="fireheartSwordDesc" />
+		<property name="Extends" value="clubMaster" />
+		<property name="Meshfile" value="#ladyFireHeartSword?fireHeartSwordPrefab" />
+		<property name="Class" value="ItemClassTorch" />
+		<property name="SoundIdle" value="torch_lp" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.5" />
+			<property name="Range" value="3.2" />
+			<property name="Sound_start" value="torch_swoosh" />
+			<property name="Buff" value="burning" />
+			<property name="Buff_chance" value="1" />
+			<property name="ToolCategory.Butcher" value="0" param1="20" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="30,50" />
+			<property name="BlockDamage" value="30,48" />
+			<property name="DegradationMax" value="200,800" />
+			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.05,0.1" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+		<property name="LightValue" value="0.35" />
+		<property name="LightSource" value="lightSource" />
+		<property name="ActivateObject" value="lightSource" />
+		<property name="AlwaysActive" value="true" />
+	</item>
+	
+	
+	<!-- ############################# AMMO ############################# -->
+	
+	<!-- RJ Hockey Puck -->
+	<item id="" name="hockeyPuck">
+		<property name="CustomIcon" value="hockeyPuck" />
+		<property name="DescriptionKey" value="hockeyPuckDesc" />
+		<property name="Meshfile" value="#hockeyPuck?hockeyPuckPrefab" />
+		<property name="Material" value="stone" />
+		<property name="HoldType" value="40" />
+		<property name="Stacknumber" value="30000" />
+		<property name="RepairAmount" value="300" />
+		<property name="Weight" value="5" />
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="50" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Projectile" />
+			<property name="Explosion.ParticleIndex" value="0" />
+			<property name="Velocity" value="60" />
+			<property name="FlyTime" value="0" />
+			<property name="Gravity" value="-3" />
+			<property name="LifeTime" value="12" />
+			<property name="DamageBonus.head" value="20" />
+			<property name="DamageBonus.glass" value="100" />
+			<property name="DamageBonus.wood" value="0.1" />
+			<property name="DamageBonus.earth" value="0" />
+			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.cloth" value="0" />
+		</property>
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="20,35" />
+			<property name="BlockDamage" value="1,2" />
+			<property name="ApplyBuff" value="0.35,0.35" param1="stunned" />
+		</property>
+		<property name="ThrowableDecoy" value="true" />
+		<property name="DropScale" value="3" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingIngredientTime" value="0.5" />
+	</item>
+	<!-- Beer Rocket -->
+	<item id="" name="beerRocket">
+		<property name="CustomIcon" value="rocket" />
+		<property name="DescriptionKey" value="beerRocketDesc" />
+		<property name="CustomIconTint" value="683600" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab" />
+		<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="3" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="588" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="250,500" />
+			<property name="BlockDamage" value="50,200" />
+			<property name="ApplyBuff" value="0.25,0.25" param1="Drunk" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="Explosion.ParticleIndex" value="4" />
+			<property name="Explosion.RadiusBlocks" value="5" />
+			<property name="Explosion.BlockDamage" value="5" />
+			<property name="Explosion.RadiusEntities" value="5" />
+			<property name="Explosion.EntityDamage" value="25" />
+			<property name="Velocity" value="50" />
+			<property name="FlyTime" value="1.2" />
+			<property name="LifeTime" value="8" />
+		</property>
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+		<property name="Group" value="Ammo/Weapons" />
+	</item>
+	<!-- Rebar Crossbow Bolts -->
+	<item id="" name="rebarCrossbowBolt">
+		<property name="Extends" value="ironCrossbowBolt" />
+		<property name="CustomIcon" value="rebarCrossbowBoltIcon" />
+		<property name="DescriptionKey" value="rebarCrossbowBoltDesc" />
+		<property name="Meshfile" value="#rebarBolts?rebarBoltColdPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_steelPrefab" />
+		<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_steelPrefab" />
+		<property name="EconomicValue" value="5" />
+		<property name="EconomicBundleSize" value="5" />
+		<property class="Action1">
+			<property name="Velocity" value="85" />
+			<property name="Gravity" value="-15" />
+			<property name="LifeTime" value="12" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="30,65" />
+			<property name="BlockDamage" value="6,11" />
+			<property name="ApplyBuff" value="0.5,0.5" param1="arrowCriticalBleedout" />
+		</property>
+	</item>
+	<item id="" name="rebarCrossbowBoltHot">
+		<property name="Extends" value="rebarCrossbowBolt" />
+		<property name="CustomIcon" value="rebarCrossbowBoltHotIcon" />
+		<property name="DescriptionKey" value="rebarCrossbowBoltHotDesc" />
+		<property name="Meshfile" value="#rebarBolts?rebarBoltHotPrefab" />
+		<property name="DropMeshfile" value="#rebarBolts?rebarBoltHotPrefab" />
+		<property name="HandMeshfile" value="#rebarBolts?rebarBoltHotPrefab" />
+		<property class="Attributes">
+			<property name="EntityDamage" value="35,75" />
+			<property name="ApplyBuff" value="1,1" param1="burningMolotov" />
+		</property>
+	</item>
+	
+	<!-- ############################# Grenades ############################# -->
+	<!-- RJ holy handgrenade -->
+	<item id="" name="theHolyHandgrenadeOfAntioch">
+		<property name="CustomIcon" value="theHolyHandgrenadeOfAntiochIcon" />
+		<property name="DescriptionKey" value="theHolyHandgrenadeOfAntiochDesc" />
+		<property name="Meshfile" value="#holyHandgrenade?holyHandgrenadePrefab" />
+		<property name="HoldType" value="40" />
+		<property name="Class" value="ItemClassTimeBomb" />
+		<property name="Material" value="organic" />
+		<property name="Weight" value="5" />
+		<property name="Stacknumber" value="30000" />
+		<property name="Explosion.BlockDamage" value="10000" />
+		<property name="Explosion.EntityDamage" value="8000" />
+		<property name="Explosion.ParticleIndex" value="1" />
+		<property name="Explosion.RadiusBlocks" value="35" />
+		<property name="Explosion.RadiusEntities" value="20" />
+		<property name="Explosion.BlastPower" value="700" />
+		<property name="Explosion.DamageBonus.stone" value="90" />
+		<property name="Explosion.DamageBonus.metal" value="90" />
+		<property name="Explosion.DamageBonus.earth" value="90" />
+		<property name="Explosion.DamageBonus.water" value="90" />
+		<property name="Explosion.DamageBonus.wood" value="90" />
+		<property name="FuseTime" value="20000" />
+		<property name="ExplodeOnHit" value="true" />
+		<property name="EconomicValue" value="5" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="ThrowAway" />
+			<property name="Delay" value="1.2" />
+			<property name="Explosion.ParticleIndex" value="1" />
+			<property name="Throw_strength_default" value="14" />
+			<property name="Throw_strength_max" value="50" />
+			<property name="Max_strain_time" value="1.5" />
+			<property name="Sound_start" value="heavenVoice" />
+		</property>
+		<property name="ThrowableDecoy" value="true" />
+		<property name="DropScale" value="3" />
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	
+	
+	
+	<!-- ############################# Books and Quests ############################# -->
+	<!--  RJ workbenchbook -->
+	<item id="" name="workbenchBook">
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="workbenchBookIcon" />
+		<property name="DescriptionKey" value="workbenchBookDesc" />
+		<property class="Action1">
+			<property name="Recipes_to_learn" value="AdvancedWorkbench" />
+		</property>
+	</item>
+	<!--  RJ titanium book -->
+	<item id="" name="titaniumPanelsBook">
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="titaniumBookIcon" />
+		<property name="DescriptionKey" value="titaniumPanelsBookDesc" />
+		<property class="Action1">
+			<property name="Recipes_to_learn" value="titaniumRamp,titaniumWedge,titaniumWedgeTip,titaniumHalfBlock,titaniumQuarterBlock,titaniumEighthBlock,titaniumPlate,titaniumWedgeIncline,titaniumWedgeTipCNRFullTop,titaniumCNRFull,titaniumCNRRamp,titaniumCNRInside,titaniumPyramid,titaniumPillar100,titaniumPillar50,titaniumStairs25,titaniumPole,titaniumWedgeTipCNRFullBottom,titaniumWedgeCNRInsideBottom,titaniumWedgeCNRInsideTop,titaniumArrowSlitHalf,titaniumCNRRampFiller,titaniumStairs25CornerCNR,titaniumArch,titaniumWedgeStairs,titaniumWedgeTipStairs,titaniumCTRpole,titaniumBlock,titaniumCNRRoundTop,titaniumCNRRound,titaniumPlates" />
+		</property>
+	</item>
+	<!-- Sword and Weapon Smithing Book -->
+	<item id="" name="bladeSmithingBook">
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="bladeSmithingBookIcon" />
+		<property name="DescriptionKey" value="bladeSmithingBookDesc" />
+		<property class="Action1">
+			<property name="Recipes_to_learn" value="damascusSteel" />
+		</property>
+	</item>
+	<!-- new quests -->
+	<item id="" name="qt_john">
+		<property name="Extends" value="treasureQuestMaster" />
+		<property class="Action1">
+			<property name="QuestGiven" value="treasure_john" />
+		</property>
+	</item>
+	
+	
+	<!-- ############################# MISC RESOURCES ############################# -->
+	
+	<!-- RJ Hockey Tape -->
+	<item id="" name="hockeyTape">
+		<property name="CustomIcon" value="hockeyTape" />
+		<property name="DescriptionKey" value="hockeyTapeDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="cloth" />
+		<property name="HoldType" value="45" />
+		<property name="RepairAmount" value="50" />
+		<property name="Weight" value="5" />
+		<property name="EconomicValue" value="49" />
+		<property name="SellableToTrader" value="false" />
+		<property name="Stacknumber" value="5000" />
+		<property name="Group" value="Resources" />
+	</item>
+	<!-- RJ Canadian Currency -->
+	<item id="" name="2dollars">
+		<property name="CustomIcon" value="2dollars" />
+		<property name="DescriptionKey" value="2dollarsDesc" />
+		<property name="HoldType" value="21" />
+		<property name="Meshfile" value="Items/Misc/casino_coinPrefab" />
+		<property name="Material" value="metal" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="FuelValue" value="1" />
+		<property name="Weight" value="1" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	<item id="" name="5dollars">
+		<property name="CustomIcon" value="fiveDollarSpock" />
+		<property name="DescriptionKey" value="5dollarsDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="paper" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="25" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="FuelValue" value="1" />
+		<property name="Weight" value="1" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	<item id="" name="10dollars">
+		<property name="CustomIcon" value="10dollars" />
+		<property name="DescriptionKey" value="10dollarsDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="paper" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="50" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="FuelValue" value="1" />
+		<property name="Weight" value="1" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	<item id="" name="20dollars">
+		<property name="CustomIcon" value="20dollars" />
+		<property name="DescriptionKey" value="20dollarsDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="paper" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="100" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="FuelValue" value="1" />
+		<property name="Weight" value="1" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	<item id="" name="50dollars">
+		<property name="CustomIcon" value="50dollars" />
+		<property name="DescriptionKey" value="50dollarsDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="paper" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="250" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="FuelValue" value="1" />
+		<property name="Weight" value="1" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	<item id="" name="100dollars">
+		<property name="CustomIcon" value="100dollars" />
+		<property name="DescriptionKey" value="100dollarsDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="paper" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="500" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="FuelValue" value="1" />
+		<property name="Weight" value="1" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	<!-- Scrap Foam -->
+	<item id="" name="scrapFoam">
+		<property name="CustomIcon" value="scrapFoam" />
+		<property name="DescriptionKey" value="scrapFoamDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="500" />
+		<property name="SellableToTrader" value="false" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	<!-- Rubber Mulch -->
+	<item id="" name="rubberMulch">
+		<property name="CustomIcon" value="rubberMulch" />
+		<property name="DescriptionKey" value="rubberMulchDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="500" />
+		<property name="SellableToTrader" value="false" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	<!-- Ice Shard -->
+	<item id="" name="iceShard">
+		<property name="CustomIcon" value="ice" />
+		<property name="DescriptionKey" value="iceShardDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="mIce" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="5" />
+		<property name="SellableToTrader" value="false" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
+	<!-- Damascas Steel -->
+	<item id="" name="damascusSteel">
+		<property name="CustomIcon" value="damascusSteelIcon" />
+		<property name="DescriptionKey" value="damascusSteelDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="dSteel" />
+		<property name="RepairAmount" value="50" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="5000" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillBladeSmith" />
+	</item>
+	<!-- Gemstone -->
+	<item id="" name="gemStone">
+		<property name="CustomIcon" value="gemStoneIcon" />
+		<property name="DescriptionKey" value="gemStoneDesc" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="Msteel" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="5000" />
+		<property name="Group" value="Resources" />
+		<property name="SellableToTrader" value="false" />
+	</item>
+	<!-- Aluminum -->
+	<item id="" name="aluminumCan">
+		<property name="CustomIcon" value="aluminumCanIcon" />
+		<property name="DescriptionKey" value="aluminumCanDesc" />
+		<property name="Meshfile" value="Items/Food/can_empty" />
+		<property name="Material" value="mAluminum" />
+		<property name="Weight" value="5" />
+		<property name="HoldType" value="14" />
+		<property name="Stacknumber" value="5000" />
+		<property name="EconomicValue" value="5" />
+		<property name="SellableToTrader" value="false" />
+		<property name="CraftingIngredientTime" value="9" />
+		<property name="Group" value="Resources" />
+	</item>
+	<item id="" name="scrapAluminum">
+		<property name="CustomIcon" value="potassiumNitratePowder" />
+		<property name="CustomIconTint" value="192,192,192" />
+		<property name="DescriptionKey" value="scrapAluminumDesc" />
+		<property name="Meshfile" value="Items/Food/cornmealPrefab" />
+		<property name="Material" value="coal" />
+		<property name="HoldType" value="21" />
+		<property name="Weight" value="5" />
+		<property name="Stacknumber" value="30000" />
+		<property name="EconomicValue" value="10" />
+		<property name="EconomicBundleSize" value="10" />
+		<property name="SellableToTrader" value="false" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingIngredientTime" value="2" />
+	</item>
+	
+	<!-- Deer Antlers -->
+	<item id="" name="deerAntlers">
+		<property name="CustomIcon" value="deerAntlersIcon" />
+		<property name="DescriptionKey" value="deerAntlersDesc" />
+		<property name="Meshfile" value="Items/Crafting/animal_hidePrefab" />
+		<property name="HoldType" value="21" />
+		<property name="Material" value="leather" />
+		<property name="Weight" value="5" />
+		<property name="Stacknumber" value="5000" />
+		<property name="FuelValue" value="5" />
+		<property name="EconomicValue" value="20" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingIngredientTime" value="2" />
+		<property name="CraftingSkillGroup" value="craftSkillMiscellaneous" />
+	</item>
+	
+	<!-- ########################## Zeds & Animals hands ############### -->
+	<!-- Creepy Doll Hand -->
+	<item id="" name="handCreepyDoll">
+		<property name="Extends" value="handMaster" />
+		<property name="CreativeMode" value="None" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property class="Action0">
+			<property name="Range" value="1.75" />
+			<property name="DamageEntity" value="60" />
+			<property name="DamageBlock" value="250" />
+			<property name="Buff" value="evilBuff" />
+			<property name="Buff_chance" value="0.5" />
+		</property>
+	</item>
+	
+	<!-- Moose Antlers -->
+	<item id="" name="handMooseAntlers">
+		<property name="Extends" value="handMaster" />
+		<property name="CreativeMode" value="None" />
+		<property name="HoldType" value="46" />
+		<property class="Action0">
+			<property name="Range" value="2.75" />
+			<property name="DamageEntity" value="50" />
+			<property name="DamageBlock" value="100" />
+			<property name="Buff" value="bleeding,stunned,infection" />
+			<property name="Buff_chance" value="0.3,0.4,0.4" />
+		</property>
+	</item>
+	
+	<!-- Spiper Fangs -->
+	<item id="" name="handSpiderFangs">
+		<property name="Extends" value="handMaster" />
+		<property name="CreativeMode" value="None" />
+		<property name="HoldType" value="46" />
+		<property class="Action0">
+			<property name="Range" value="2.75" />
+			<property name="DamageEntity" value="5" />
+			<property name="DamageBlock" value="1" />
+			<property name="Buff" value="spiderBite" />
+			<property name="Buff_chance" value="1" />
+		</property>
+	</item>
+	<item id="" name="handSpiderKingFangs">
+		<property name="Extends" value="handSpiderFangs" />
+		<property class="Action0">
+			<property name="Range" value="2.75" />
+			<property name="DamageEntity" value="50" />
+			<property name="DamageBlock" value="1" />
+			<property name="Buff" value="spiderBite" />
+			<property name="Buff_chance" value="1" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Vomit" />
+			<property name="Delay" value="0.35" />
+			<property name="Range" value="200" />
+			<property name="Auto_fire" value="true" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Magazine_items" value="projectileSpiderVenom" />
+			<property name="Rays_spread" value="0.5" />
+			<property name="Reload_time" value="2" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_warning" value="" />
+			<property name="Sound_start" value="" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="" />
+			<property name="Sound_reload" value="" />
+			<property name="Buff" value="spiderBite" />
+			<property name="Buff_chance" value="0.2" />
+		</property>
+	</item>
+
+	<item id="" name="projectileSpiderVenom">
+		<property name="Meshfile" value="Items/Weapons/Ranged/Vomit/vomitBulbPrefab" />
+		<property name="Material" value="organic" />
+		<property name="CreativeMode" value="None" />
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="DamageEntity" value="10" />
+			<property name="DamageBlock" value="10" />
+			<property name="Explosion.ParticleIndex" value="7" />
+			<property name="Velocity" value="20" />
+			<property name="FlyTime" value="0.50" />
+			<property name="LifeTime" value="4" />
+			<property name="CollisionRadius" value="0.5" />
+			<property name="DamageBonus.earth" value="0" />
+		</property>
+	</item>
+	<!-- Puck Bunny Vomit -->
+	<item id="" name="puckBunnyVomit">
+		<property name="Meshfile" value="Items/Weapons/Ranged/Vomit/vomitBulbPrefab" />
+		<property name="Material" value="organic" />
+		<property name="CreativeMode" value="None" />
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="DamageEntity" value="0.1" />
+			<property name="DamageBlock" value="0.001" />
+			<property name="Explosion.ParticleIndex" value="7" />
+			<property name="Velocity" value="20" />
+			<property name="FlyTime" value="0.50" />
+			<property name="LifeTime" value="1" />
+			<property name="CollisionRadius" value="0.5" />
+			<property name="DamageBonus.earth" value="0" />
+		</property>
+	</item>
+	<!-- ############################# CROPS ############################# -->
+	
+	
+	<!-- RJ Chips - old dutch ketchup, dill pickle, all dressed - Zesty Mordant -->
+	<!-- Peperoni -->
+	<!-- RJ Dixie Cup -->
+	<!-- Tim Hortons Cup -->
+	<!-- RJ Chocolate Toblerone, Rizzo Bar, Nestle Bubbles, Bunnie Bar, oh henry, kit kat,  -->
+	<!-- Baked Goods -->
+	<!-- Hot Stews -->
+	<!-- RJ Weed Buds -->
+	<!-- RJ Weed Joint -->
+	<!-- RJ Weed Pipe -->
+	<!-- RJ Weed Papers -->
+	<!-- RJ Weed Bong -->
+	<!-- RJ Weed Grinder -->
+	<!-- RJ weed oil -->
+	<!-- RJ weed Hash -->
+	<!-- RJ weed brownies -->
+	<!-- RJ Crown Royal -->
+	<!-- RJ Vodka -->
+	<!-- RJ Speed -->
+	<!-- RJ Cocaine -->
+	<!-- RJ meth -->
+	<!-- RJ Crack -->
+	<!-- RJ boards and nails -->
+
+
+<!-- ###############################################################################################################  -->
+<!-- ###############################################################################################################  -->
+<!-- ############## Do not edit or change anything passed this point you freaking dumbass ##########################  -->
+<!-- ###############################################################################################################  -->
+<!-- ###############################################################################################################  -->
+		</append>
+	</config>
+</configs>
