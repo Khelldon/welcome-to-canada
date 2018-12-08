@@ -3,7 +3,7 @@
 <remove xpath="/worldgeneration/biomes/biome[@name='water']" />
 <remove xpath="/worldgeneration/biomes/biome[@name='onlyWater']" />
 <remove xpath="/worldgeneration/biomes/biome[@name='underwater']" />
-<append xpath="/biomes">
+<append xpath="/worldgeneration/biomes">
 
 <!-- Khelldon - Desert Becomes Snow -->
 	
