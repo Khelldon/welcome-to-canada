@@ -9,7 +9,7 @@
 	
 	<biome name="desert" biomemapcolor="#FAFFFF">
 	<weather>
-			<Temperature min="-60" max="-30" prob="1"/>
+			<Temperature min="-80" max="-30" prob="1"/>
 			<Fog min="0" max="0" prob=".9"/>
 			<Fog min="100" max="100" prob=".1"/>
 			<CloudThickness min="0" max="100" prob=".5"/>
@@ -163,7 +163,7 @@
 	
 	<biome name="water" biomemapcolor="#0063ff">
 		<weather>
-			<Temperature min="0" max="10" prob="1"/>
+			<Temperature min="-80" max="-10" prob="1"/>
 			<CloudThickness min="5" max="50" prob="1"/>
 			<Fog min="0" max="0" prob=".9"/>
 			<Fog min="100" max="100" prob=".1"/>
@@ -181,29 +181,29 @@
 
 		<subbiome prob="0.1551">
 			<layers>
-				<layer depth="6" blockname="terrSand"> <resource blockname="terrOreSandPlusLead" prob="0.071" rwgGenerationType="all"/> </layer>
+				<layer depth="6" blockname="terrSnow"> <resource blockname="terrOreSandPlusLead" prob="0.071" rwgGenerationType="all"/> </layer>
 				<layer depth="1" blockname="terrStone"> <resource blockname="terrOreGravelPlusLead" prob="0.8130" rwgGenerationType="all"/> </layer>
 				<layer depth="*" blockname="terrStone"> <resource blockname="terrOreLead" prob="0.1300" rwgGenerationType="all"/> <resource blockname="terrOreGravelPlusLead" prob="0.8130" rwgGenerationType="all"/> </layer> <layer depth="1" blockname="terrStone"/> <layer depth="3" blockname="terrBedrock"/>
 			</layers>
 		</subbiome>
 		<subbiome prob="0.1551">
 			<layers>
-				<layer depth="6" blockname="terrSand"> <resource blockname="terrOreSandPlusCoal" prob="0.071" rwgGenerationType="all"/> </layer>
+				<layer depth="6" blockname="terrSnow"> <resource blockname="terrOreSandPlusCoal" prob="0.071" rwgGenerationType="all"/> </layer>
 				<layer depth="1" blockname="terrStone"> <resource blockname="terrOreGravelPlusCoal" prob="0.8130" rwgGenerationType="all"/> </layer>
 				<layer depth="*" blockname="terrStone"> <resource blockname="terrOreCoal" prob="0.1300" rwgGenerationType="all"/> <resource blockname="terrOreGravelPlusCoal" prob="0.8130" rwgGenerationType="all"/> </layer> <layer depth="1" blockname="terrStone"/> <layer depth="3" blockname="terrBedrock"/>
 			</layers>
 		</subbiome>
 		<subbiome prob="0.1551">
 			<layers>
-				<layer depth="6" blockname="terrSand"> <resource blockname="terrOreSandPlusPotassium" prob="0.071" rwgGenerationType="all"/> </layer>
+				<layer depth="6" blockname="terrSnow"> <resource blockname="terrOreSandPlusPotassium" prob="0.071" rwgGenerationType="all"/> </layer>
 				<layer depth="1" blockname="terrStone"> <resource blockname="terrOreGravelPlusPotassium" prob="0.8130" rwgGenerationType="all"/> </layer>
 				<layer depth="*" blockname="terrStone"> <resource blockname="terrOrePotassiumNitrate" prob="0.1300" rwgGenerationType="all"/> <resource blockname="terrOreGravelPlusPotassium" prob="0.8130" rwgGenerationType="all"/> </layer> <layer depth="1" blockname="terrStone"/> <layer depth="3" blockname="terrBedrock"/>
 			</layers>
 		</subbiome>
 		<layers>
-			<layer fillupto="58" filluptorg="58" blockname="water"/>
-			<layer depth="1" blockname="terrSand"> <resource blockname="terrOreSandPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
-			<layer depth="5" blockname="terrSand"> <resource blockname="terrOreSandPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
+			<layer fillupto="58" filluptorg="58" blockname="terrIce"/>
+			<layer depth="1" blockname="terrSnow"> <resource blockname="terrOreSandPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
+			<layer depth="5" blockname="terrSnow"> <resource blockname="terrOreSandPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
 				<resource blockname="terrOreIron" prob="0.1300" rwgGenerationType="all"/>
 				<resource blockname="terrOreGravelPlusIron" prob="0.8130" rwgGenerationType="all"/>
@@ -230,12 +230,12 @@
 			<decoration type="block" blockname="treeDeadTree02" prob="0.005" rotatemax="7"/>
 			<decoration type="block" blockname="treeDeadPineLeaf" prob ="0.01" rotatemax="7"/>
 			<decoration type="block" blockname="carsRandomHelper" prob="0.001" rotatemax="3"/>
-			<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".15"/>
-			<decoration type="block" blockname="treeTallGrassDiagonal" prob =".35"/>
+			<decoration type="block" blockname="treeSnowyDeadBush" prob ="0.005" rotatemax="7"/>
+			<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".1"/>
 		</decorations>
 	</biome>
 
-<!-- Khelldon - Ice Only -->
+<!-- Khelldon - Water under the ice -->
 	
 	<biome name="onlyWater" biomemapcolor="#0064ff">
 		<weather>
@@ -253,8 +253,8 @@
 		</weather>
 		<layers>
 			<layer fillupto="9" blockname="water"/>
-			<layer depth="1" blockname="terrSand"> <resource blockname="terrOreSandPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
-			<layer depth="5" blockname="terrSand"> <resource blockname="terrOreSandPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
+			<layer depth="1" blockname="terrSnow"> <resource blockname="terrOreSandPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
+			<layer depth="5" blockname="terrSnow"> <resource blockname="terrOreSandPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
 				<resource blockname="terrOreIron" prob="0.1300" rwgGenerationType="all"/>
 				<resource blockname="terrOreGravelPlusIron" prob="0.8130" rwgGenerationType="all"/>
@@ -269,7 +269,7 @@
 		<decorations></decorations>
 	</biome>
 
-<!-- Khelldon - Under the Ice -->
+<!-- Khelldon - Decorations Under the Ice -->
 
 	<biome name="underwater" biomemapcolor="#001234">
 		<decorations>
@@ -285,9 +285,8 @@
 			<decoration type="block" blockname="tire" prob="0.0005" rotatemax="7"/>
 			<decoration type="block" blockname="hubcapNoMine" prob="0.0005"/>
 			<decoration type="block" blockname="cntCar03SedanDamage2" prob="0.001" rotatemax="3"/>
-			<decoration type="block" blockname="treeDesertShrub" prob =".04"/>
-			<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".04"/>
-			<decoration type="block" blockname="treeGreenBrownGrassDiagonal" prob =".06"/>
+			<decoration type="block" blockname="treeSnowyDeadBush" prob ="0.005" rotatemax="7"/>
+			<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".1"/>
 		</decorations>
 	</biome>
 
