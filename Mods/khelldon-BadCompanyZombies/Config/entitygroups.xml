@@ -4,19 +4,24 @@
 		  <entitygroup name="ZombiesBCTier01">
 			<!--Vanilla-->
 			<entity name="zombieBoe"/>
-			<entity name="zombieJoe"/>
-			<entity name="zombieArlene"/>
-			<entity name="zombieDarlene"/>
-			<entity name="zombieMarlene"/>
-			<entity name="zombieYo"/>
-			<entity name="zombieSteve"/>
-			<entity name="zombieSteveCrawler"/>
-			<entity name="zombieNurse"/>
-			<entity name="zombieMaleHazmat"/>
-			<entity name="zombieUtilityWorker"/>
-			<entity name="zombieSkateboarder"/>
-			<entity name="zombieCheerleader"/>
-			<entity name="zombieOldTimer"/>
+    		<entity name="zombieJoe"/>
+    		<entity name="zombieSteve"/>
+     		<entity name="zombieMoe"/>
+    		<entity name="zombieYo"/>
+	    	<entity name="zombieBusinessMan"/>
+	     	<entity name="zombieArlene"/>
+	    	<entity name="zombieDarlene"/>
+	    	<entity name="zombieMarlene"/>
+	    	<entity name="zombieSkateboarder"/>
+	    	<entity name="zombieCheerleader"/>
+	    	<entity name="zombieOldTimer"/>
+	    	<entity name="zombieBiker"/>
+	    	<entity name="zombieFarmer"/>
+	    	<entity name="zombieStripper"/>
+	    	<entity name="zombieUtilityWorker"/>
+	    	<entity name="zombieNurse"/>
+	    	<entity name="zombieSteveCrawler"/>
+	    	<entity name="zombieFatHawaiian"/>
 
 			<!--Bad Company-->
 			<entity name="badZombieAiden"/>
