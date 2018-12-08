@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="S420_SimpleUI-BiggerBackpack120-PlayerBuiltStorage" />
-		<Description value="Increases player backpack size and player built storage" />
+		<Name value="S420_SimpleUI-BiggerBackpack60" />
+		<Description value="Increases player backpack size" />
 		<Author value="stedman420" />
 		<Version value="1.0" />
 		<Website value="" />
