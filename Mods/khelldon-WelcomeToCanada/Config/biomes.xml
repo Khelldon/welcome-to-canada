@@ -7,7 +7,7 @@
 
 <!-- Khelldon - Desert Becomes Snow -->
 	
-	<biome name="desert" biomemapcolor="#FFE477">
+	<biome name="desert" biomemapcolor="#FAFFFF">
 	<weather>
 			<Temperature min="-60" max="-30" prob="1"/>
 			<Fog min="0" max="0" prob=".9"/>
