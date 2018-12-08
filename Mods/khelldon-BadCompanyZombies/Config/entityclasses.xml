@@ -1,7 +1,7 @@
 <configs>
 		<append xpath="/entity_classes">
-		  <!-- Bad Company UMA -->
-		  <!-- Templates -->
+		  <!-- Khelldon - Bad Company UMA Zombies -->
+		  
 		  <entity_class name="badZombieUMA" extends="zombieTemplateMale">
 			<property name="ModelType" value="ZombieUMA"/>
 			<property name="AvatarController" value="AvatarZombieUMAController"/>
@@ -99,10 +99,8 @@
 		  <entity_class name="badZombieWillie" extends="badZombieUMA">
 			<property name="Archetype" value="ZombieWillie"/>
 		  </entity_class>
-		  <!-- handZombie02 -->
 		  <entity_class name="badZombieBaby" extends="badZombieUMA">
 			<property name="Archetype" value="ZombieBaby"/>
-			<property name="HandItem" value="handZombie02"/>
 			<property name="MaxHealth" value="60"/>
 			<property name="Class" value="EntityZombie"/>
 			<property name="WalkType" value="8"/>
@@ -118,7 +116,7 @@
 			<property name="NightWanderSpeed" value="0.08"/>
 			<property name="NightApproachSpeed" value="0.55"/>
 		  </entity_class>
-		  <!-- handZombie02 -->
+		  <!-- meleeHandZombie02 -->
 		  <entity_class name="badZombieBabyCrawler" extends="badZombieBaby">
 			<property name="Archetype" value="ZombieBaby"/>
 			<property name="Class" value="EntityZombieCrawl"/>
@@ -145,16 +143,13 @@
 			<property name="Archetype" value="valZombieSurvivorFemale"/>
 			<property name="WalkType" value="7" />
 		  </entity_class>
-		  <!-- loot 84 -->
 		  <entity_class name="valZombieVoodooFemale" extends="badZombieFemaleUMA" >
 			<property name="Archetype" value="valZombieVoodooFemale"/>
-			<property name="LootListOnDeath" value="84"/>
 			<property name="WalkType" value="2" />
 		  </entity_class>
 		  <!-- loot 84 -->
 		  <entity_class name="valZombieVoodooMale" extends="badZombieUMA" >
 			<property name="Archetype" value="valZombieVoodooMale"/>
-			<property name="LootListOnDeath" value="84"/>
 		  </entity_class>
 		  <entity_class name="valZombieDan" extends="badZombieUMA" >
 			<property name="Archetype" value="valZombieDan"/>
@@ -199,7 +194,8 @@
 		  <!-- -HP 45, +speed 0.7, handBurningRusher -->
 		  <entity_class name="valZombieScorchedRusher" extends="badZombieUMA">
 			<property name="Archetype" value="valZombieCharred"/>
-			<property name="HandItem" value="handBurningRusher"/>
+	        <property name="HandItem" value="meleeHandZombieBurning"/>
+	        <property name="HandItemCrawler" value="meleeHandZombieBurningCrawler"/> 
 			<property name="WalkType" value="7"/>
 			<property name="AITask-1" value="BreakDoor"/>
 			<property name="AITask-2" value="BreakBlock"/>
@@ -241,25 +237,17 @@
 			<property name="CanClimbLadders" value="false"/>
 			<property name="RotateToGround" value="true"/>
 		  </entity_class>
-		  <!-- loot 80 -->
 		  <entity_class name="sanZombiePunk" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombiePunk"/>
-			<property name="LootListOnDeath" value="80" />
 		  </entity_class>
-		  <!-- loot 80 -->
 		  <entity_class name="sanZombieRioter" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieRioter"/>
-			<property name="LootListOnDeath" value="80" />
 		  </entity_class>
-		  <!-- loot 80 -->
 		  <entity_class name="sanZombieRocker" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieRocker"/>
-			<property name="LootListOnDeath" value="80"/>
 		  </entity_class>
-		  <!-- loot 80 -->
 		  <entity_class name="sanZombieFemaleRocker" extends="badZombieFemaleUMA" >
 			<property name="Archetype" value="sanZombieFemaleRocker"/>
-			<property name="LootListOnDeath" value="80"/>
 		  </entity_class>
 		  <entity_class name="sanZombieHermit" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieHermit"/>
@@ -267,10 +255,8 @@
 		  <entity_class name="sanZombieFrank" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieFrank"/>
 		  </entity_class>
-		  <!-- loot 83 -->
 		  <entity_class name="sanZombieBikerChick" extends="badZombieFemaleUMA">
 			<property name="Archetype" value="sanZombieBikerChick"/>
-			<property name="LootListOnDeath" value="83"/>
 		  </entity_class>
 		  <entity_class name="sanZombieInfectedSurvivor" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieInfectedSurvivor"/>
@@ -290,22 +276,16 @@
 		  <entity_class name="sanZombieFiend" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieFiend"/>
 		  </entity_class>
-		  <!-- loot 61 -->
 		  <entity_class name="sanZombieBanditSharpshooter" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieBanditSharpshooter"/>
-			<property name="LootListOnDeath" value="61"/>
-
 			<property name="WalkType" value="5"/>
 		  </entity_class>
 		  <entity_class name="sanZombieHunterSven" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieHunterSven"/>
 			<property name="WalkType" value="7"/>
 		  </entity_class>
-		  <!-- loot 61 -->
 		  <entity_class name="sanZombiePsycho" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombiePsycho"/>
-			<property name="LootListOnDeath" value="61"/>
-
 			<property name="WalkType" value="1"/>
 		  </entity_class>
 		  <entity_class name="sanZombieKim" extends="badZombieFemaleUMA" >
@@ -315,56 +295,38 @@
 			<property name="Archetype" value="sanZombieVagrant"/>
 			<property name="WalkType" value="1" />
 		  </entity_class>
-		  <!-- handZombie02, crawler -->
 		  <entity_class name="sanZombieCripple" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieCripple"/>
-			<property name="HandItem" value="handZombie02"/>
-
 			<property name="Class" value="EntityZombieCrawl"/>
 			<property name="WalkType" value="4"/>
 		  </entity_class>
-		  <!-- loot 38 -->
 		  <entity_class name="sanZombieBanditSavage" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieBanditSavage"/>
-			<property name="LootListOnDeath" value="38"/>
-
 			<property name="WalkType" value="1"/>
 		  </entity_class>
-		  <!-- loot 38 -->
 		  <entity_class name="sanZombieBanditSentry" extends="badZombieFemaleUMA" >
 			<property name="Archetype" value="sanZombieBanditSentry"/>
-			<property name="LootListOnDeath" value="38"/>
-
 			<property name="WalkType" value="1"/>
 		  </entity_class>
-		  <!-- handZombieHazMat, loot 65 -->
 		  <entity_class name="sanZombieMitchHazmat" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieMitchHazmat"/>
-			<property name="HandItem" value="handZombieHazMat" />
-			<property name="LootListOnDeath" value="65" />
+			<property name="HandItem" value="meleeHandZombieHazMat" />
 		  </entity_class>
-		  <!-- handZombieHazMat, loot 65 -->
 		  <entity_class name="sanZombieMarkHazmat" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieMarkHazmat"/>
-			<property name="HandItem" value="handZombieHazMat" />
-			<property name="LootListOnDeath" value="65" />
+	        <property name="HandItem" value="meleeHandZombieHazMat"/>
 		  </entity_class>
-		  <!-- handZombieHazMat, loot 65 -->
 		  <entity_class name="sanZombieClaireHazmat" extends="badZombieFemaleUMA" >
 			<property name="Archetype" value="sanZombieClaireHazmat"/>
-			<property name="HandItem" value="handZombieHazMat" />
-			<property name="LootListOnDeath" value="65" />
+			<property name="HandItem" value="meleeHandZombieHazMat" />
 		  </entity_class>
-		  <!-- handZombieHazMat, loot 65 -->
 		  <entity_class name="sanZombieSueHazmat" extends="badZombieFemaleUMA" >
 			<property name="Archetype" value="sanZombieSueHazmat"/>
-			<property name="HandItem" value="handZombieHazMat" />
-			<property name="LootListOnDeath" value="65" />
+			<property name="HandItem" value="meleeHandZombieHazMat" />
 		  </entity_class>
 		  <!-- +HP 200, -speed 0.15 at night -->
 		  <entity_class name="sanZombieOldLady" extends="badZombieFemaleUMA" >
 			<property name="Archetype" value="sanZombieOldLady"/>
-
 			<property name="MaxHealth" value="200" />
 			<property name="WanderSpeed" value="0.08" />
 			<property name="ApproachSpeed" value="0.15" />
@@ -376,7 +338,6 @@
 		  <!-- +HP 200, -speed 0.25 at night -->
 		  <entity_class name="sanZombieOldMan" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieOldMan"/>
-
 			<property name="MaxHealth" value="200"/>
 			<property name="WanderSpeed" value="0.08"/>
 			<property name="ApproachSpeed" value="0.15"/>
@@ -384,28 +345,22 @@
 			<property name="NightApproachSpeed" value="0.25"/>
 			<property name="WalkType" value="5"/>
 		  </entity_class>
-		  <!-- handZombieStrong, -speed 0.55 at night -->
+		  <!-- meleeHandZombieCop, -speed 0.55 at night -->
 		  <entity_class name="sanZombieEvilGranny" extends="badZombieFemaleUMA">
 			<property name="Archetype" value="sanZombieEvilGranny"/>
-			<property name="HandItem" value="handZombieStrong"/>
-
 			<property name="WalkType" value="1"/>
 			<property name="WanderSpeed" value="0.2"/>
 			<property name="ApproachSpeed" value="0.55"/>
 			<property name="NightWanderSpeed" value="0.2"/>
 			<property name="NightApproachSpeed" value="0.55"/>
 		  </entity_class>
-		  <!-- handZombieStrong -->
 		  <entity_class name="sanZombieSecurityGuard" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieSecurityGuard"/>
-			<property name="HandItem" value="handZombieStrong"/>
-
 			<property name="WalkType" value="7"/>
 		  </entity_class>
 		  <!-- +speed 0.45 -->
 		  <entity_class name="sanZombieFrozen" extends="badZombieFemaleUMA">
 			<property name="Archetype" value="sanZombieFrozen"/>
-
 			<property name="WanderSpeed" value="0.25"/>
 			<property name="ApproachSpeed" value="0.45"/>
 			<property name="NightWanderSpeed" value="0.35"/>
@@ -414,12 +369,10 @@
 		  </entity_class>
 
 		  <!-- Teir Two -->
-		  <!-- +HP 300, handZombieStrong, loot 38 -->
+		  <!-- +HP 300, meleeHandZombieCop, loot 38 -->
 		  <entity_class name="badZombieJethro" extends="badZombieUMA">
 			<property name="Archetype" value="ZombieJethro"/>
-			<property name="LootListOnDeath" value="38"/>
-			<property name="HandItem" value="handZombieStrong"/>
-
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="300"/>
 			<property name="WalkType" value="1"/>
 			<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
@@ -449,20 +402,18 @@
 			<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
 			<property name="ExperienceGain" value="1039"/>
 		  </entity_class>
-		  <!-- +HP 200, handZombieStrong -->
+		  <!-- +HP 200, meleeHandZombieCop -->
 		  <entity_class name="valZombieBigBitch" extends="badZombieFemaleUMA" >
 			<property name="Archetype" value="valZombieBigBitch"/>
 			<property name="MaxHealth" value="200" />
 			<property name="WalkType" value="1" />
-			<property name="HandItem" value="handZombieStrong" />
+			<property name="HandItem" value="meleeHandZombieCop" />
 			<property name="ExperienceGain" value="1039"/>
 		  </entity_class>
-		  <!-- +HP 300, handZombieStrong, loot 66 -->
+		  <!-- +HP 300, meleeHandZombieCop, loot 66 -->
 		  <entity_class name="valZombieLumberjack" extends="badZombieUMA" >
 			<property name="Archetype" value="valZombieLumberjack"/>
-			<property name="HandItem" value="handZombieStrong" />
-			<property name="LootListOnDeath" value="66" />
-
+			<property name="HandItem" value="meleeHandZombieCop" />
 			<property name="MaxHealth" value="300" />
 			<property name="WalkType" value="2" />
 			<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam" />
@@ -474,18 +425,18 @@
 			<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
 			<property name="ExperienceGain" value="1039"/>
 		  </entity_class>
-		  <!-- +HP 200, handZombieStrong -->
+		  <!-- +HP 200, meleeHandZombieCop -->
 		  <entity_class name="valZombieTrucker" extends="badZombieUMA" >
 			<property name="Archetype" value="valZombieTrucker"/>
 			<property name="MaxHealth" value="200" />
 			<property name="WalkType" value="1" />
-			<property name="HandItem" value="handZombieStrong" />
+			<property name="HandItem" value="meleeHandZombieCop" />
 			<property name="ExperienceGain" value="1039"/>
 		  </entity_class>
-		  <!-- -HP 130, handZombieBurning -->
+		  <!-- -HP 130, meleeHandZombieBurning -->
 		  <entity_class name="valZombieCharred" extends="badZombieUMA" >
 			<property name="Archetype" value="valZombieCharred"/>
-			<property name="HandItem" value="handZombieBurning" />
+			<property name="HandItem" value="meleeHandZombieBurning" />
 			<property name="WalkType" value="7" />
 			<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam" />
 			<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert" />
@@ -500,37 +451,30 @@
 		  <!-- +HP 350, loot 73 -->
 		  <entity_class name="sanZombieCpl" extends="badZombieFemaleUMA" >
 			<property name="Archetype" value="sanZombieCpl"/>
-			<property name="LootListOnDeath" value="73" />
-
 			<property name="MaxHealth" value="350" />
 			<property name="WalkType" value="5" />
 			<property name="ExperienceGain" value="1039"/>
 		  </entity_class>
-		  <!-- +HP 300, handZombieStrong, loot 17 -->
+		  <!-- +HP 300, meleeHandZombieCop, loot 17 -->
 		  <entity_class name="sanZombieHunter" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieHunter"/>
-			<property name="HandItem" value="handZombieStrong" />
-			<property name="LootListOnDeath" value="17" />
-
+			<property name="HandItem" value="meleeHandZombieCop" />
 			<property name="MaxHealth" value="300" />
 			<property name="WalkType" value="7" />
 			<property name="ExperienceGain" value="1039"/>
 		  </entity_class>
-		  <!-- +HP 350, handZombieWorker, loot 85 -->
+		  <!-- +HP 350, meleeHandZombieWorker, loot 85 -->
 		  <entity_class name="sanZombieBanditKiller" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieBanditKiller"/>
-			<property name="HandItem" value="handZombieWorker"/>
-			<property name="LootListOnDeath" value="85"/>
-
+			<property name="HandItem" value="meleeHandZombieWorker"/>
 			<property name="MaxHealth" value="350"/>
 			<property name="WalkType" value="2"/>
 			<property name="ExperienceGain" value="1039"/>
 		  </entity_class>
-		  <!-- -HP 140, handZombieCop, +speed 1.25 -->
+		  <!-- -HP 140, meleeHandZombieCop, +speed 1.25 -->
 		  <entity_class name="sanZombieBloodmoon" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieBloodmoon"/>
-			<property name="HandItem" value="handZombieCop"/>
-
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="140"/>
 			<property name="WalkType" value="8"/>
 			<property name="ApproachSpeed" value="1.25"/>
@@ -540,8 +484,6 @@
 		  <!-- +HP 300, loot 71 -->
 		  <entity_class name="sanZombieCannibalFemale" extends="badZombieFemaleUMA">
 			<property name="Archetype" value="sanZombieCannibalFemale"/>
-			<property name="LootListOnDeath" value="71"/>
-
 			<property name="MaxHealth" value="300"/>
 			<property name="WalkType" value="5"/>
 			<property name="ExperienceGain" value="1039"/>
@@ -549,16 +491,14 @@
 		  <!-- +HP 300, loot 71 -->
 		  <entity_class name="sanZombieCannibalMale" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieCannibalMale"/>
-			<property name="LootListOnDeath" value="71"/>
-
 			<property name="MaxHealth" value="300"/>
 			<property name="WalkType" value="7"/>
 			<property name="ExperienceGain" value="1039"/>
 		  </entity_class>
-		  <!-- +HP 350, handZombieStrong -->
+		  <!-- +HP 350, meleeHandZombieCop -->
 		  <entity_class name="sanZombieFreak" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieFreak"/>
-			<property name="HandItem" value="handZombieStrong"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
 
 			<property name="MaxHealth" value="350"/>
 			<property name="WalkType" value="1"/>
@@ -569,7 +509,7 @@
 		  <!-- +HP 500 -->
 		  <entity_class name="badZombieBolivar" extends="badZombieUMA">
 			<property name="Archetype" value="ZombieBolivar"/>
-			<property name="HandItem" value="handZombieCop"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="500"/>
 			<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
 			<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
@@ -581,15 +521,12 @@
 			<property name="WalkType" value="6"/>
 			<property name="AttackTimeoutDay" value="0.5"/>
 			<property name="AttackTimeoutNight" value="0.5"/>
-			<property name="HandItem" value="handZombieCur"/>
 			<property name="MaxHealth" value="500"/>
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
 		  <!-- +HP 800, loot 73 -->
 		  <entity_class name="badZombieSWATMale" extends="badZombieUMA">
 			<property name="Archetype" value="ZombieSWATMale"/>
-			<property name="LootListOnDeath" value="73"/>
-
 			<property name="MaxHealth" value="800"/>
 			<property name="WalkType" value="7"/>
 			<property name="ExperienceGain" value="1407"/>
@@ -597,8 +534,6 @@
 		  <!-- +HP 600, loot 73 -->
 		  <entity_class name="badZombieSWATFemale" extends="badZombieFemaleUMA">
 			<property name="Archetype" value="ZombieSWATFemale"/>
-			<property name="LootListOnDeath" value="73"/>
-
 			<property name="MaxHealth" value="600"/>
 			<property name="WalkType" value="3"/>
 			<property name="WanderSpeed" value="0.1"/>
@@ -623,12 +558,10 @@
 			<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
-		  <!-- +HP 350, +speed 1.0, handZombieCop, loot 61 -->
+		  <!-- +HP 350, +speed 1.0, meleeHandZombieCop, loot 61 -->
 		  <entity_class name="valZombieRaveReaper" extends="badZombieFemaleUMA" >
 			<property name="Archetype" value="valZombieRaveReaper"/>
-			<property name="HandItem" value="handZombieCop"/>
-			<property name="LootListOnDeath" value="61"/>
-
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="WalkType" value="2"/>
 			<property name="ApproachSpeed" value="1.0"/>
 			<property name="NightApproachSpeed" value="1.4"/>
@@ -642,12 +575,10 @@
 			<property name="MaxHealth" value="350"/>
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
-		  <!-- +HP 500, handZombieStripper, loot 84 -->
+		  <!-- +HP 500, meleeHandZombieStripper, loot 84 -->
 		  <entity_class name="badZombieStripperMole" extends="badZombieUMA">
 			<property name="Archetype" value="ZombieStripperMole"/>
-			<property name="HandItem" value="handZombieStripper"/>
-			<property name="LootListOnDeath" value="84"/>
-
+			<property name="HandItem" value="meleeHandZombieStripper"/>
 			<property name="MaxHealth" value="500"/>
 			<property name="WalkType" value="1"/>
 			<property name="ExperienceGain" value="1407"/>
@@ -655,9 +586,6 @@
 		  <!-- +HP 500, handRegenerator, loot 17 -->
 		  <entity_class name="valZombieRegen" extends="badZombieUMA">
 			<property name="Archetype" value="valZombieRegen"/>
-			<property name="HandItem" value="handRegenerator"/>
-			<property name="LootListOnDeath" value="17"/>
-
 			<property name="MaxHealth" value="500"/>
 			<property name="WalkType" value="2"/>
 			<property name="AITask-1" value="BreakDoor"/>
@@ -700,48 +628,40 @@
 			<property name="WalkType" value="7"/>
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
-		  <!-- +HP 400, handZombieWorker, loot 85 -->
+		  <!-- +HP 400, meleeHandZombieWorker, loot 85 -->
 		  <entity_class name="sanZombieTrailerPark" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieTrailerPark"/>
-			<property name="HandItem" value="handZombieWorker" />
-			<property name="LootListOnDeath" value="85" />
-
+			<property name="HandItem" value="meleeHandZombieWorker" />
 			<property name="MaxHealth" value="400" />
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
-		  <!-- +HP 500, handZombieWorker, loot 85 -->
+		  <!-- +HP 500, meleeHandZombieWorker, loot 85 -->
 		  <entity_class name="sanZombieBanditRaider" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieBanditRaider"/>
-			<property name="HandItem" value="handZombieWorker" />
-			<property name="LootListOnDeath" value="85" />
-
+			<property name="HandItem" value="meleeHandZombieWorker" />
 			<property name="MaxHealth" value="500" />
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
-		  <!-- +HP 750, handZombieStrong, loot 38 -->
+		  <!-- +HP 750, meleeHandZombieCop, loot 38 -->
 		  <entity_class name="sanZombieReaper" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieReaper"/>
-			<property name="HandItem" value="handZombieStrong" />
-			<property name="LootListOnDeath" value="38" />
-
+			<property name="HandItem" value="meleeHandZombieCop" />
 			<property name="MaxHealth" value="750" />
 			<property name="WalkType" value="7" />
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
-		  <!-- +HP 400, handZombieWorker, loot 85 -->
+		  <!-- +HP 400, meleeHandZombieWorker, loot 85 -->
 		  <entity_class name="sanZombieBanditLooter" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieBanditLooter"/>
-			<property name="HandItem" value="handZombieWorker" />
-			<property name="LootListOnDeath" value="85" />
-
+			<property name="HandItem" value="meleeHandZombieWorker" />
 			<property name="MaxHealth" value="400" />
 			<property name="WalkType" value="3" />
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
-		  <!-- +HP 350, handZombieCop -->
+		  <!-- +HP 350, meleeHandZombieCop -->
 		  <entity_class name="sanZombieCrazed" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieCrazed"/>
-			<property name="HandItem" value="handZombieCop"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="350"/>
 			<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
 			<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
@@ -754,28 +674,26 @@
 			<property name="NightApproachSpeed" value="1.35"/>
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
-		  <!-- +HP 500, handZombieCop -->
+		  <!-- +HP 500, meleeHandZombieCop -->
 		  <entity_class name="bkSanta" extends="badZombieUMA" >
 			<property name="Archetype" value="bkSanta"/>
-			<property name="HandItem" value="handZombieCop"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="500"/>
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
-		  <!-- +HP 500, handZombieStrong -->
+		  <!-- +HP 500, meleeHandZombieCop -->
 		  <entity_class name="sanZombieBodyBuilder" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieBodyBuilder"/>
-			<property name="HandItem" value="handZombieStrong"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
 
 			<property name="MaxHealth" value="500"/>
 			<property name="WalkType" value="2"/>
 			<property name="ExperienceGain" value="1407"/>
 		  </entity_class>
-		  <!-- +HP 550, handZombieStrong, loot 17, -speed 0.45 at night -->
+		  <!-- +HP 550, meleeHandZombieCop, loot 17, -speed 0.45 at night -->
 		  <entity_class name="sanZombieBanditJuggernaut" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieBanditJuggernaut"/>
-			<property name="HandItem" value="handZombieStrong"/>
-			<property name="LootListOnDeath" value="17"/>
-
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="550"/>
 			<property name="WalkType" value="2"/>
 			<property name="WanderSpeed" value="0.1"/>
@@ -786,12 +704,10 @@
 		  </entity_class>
 
 		  <!-- Teir Four -->
-		  <!-- +HP 750, +speed 1.35, handZombieCop, loot 61 -->
+		  <!-- +HP 750, +speed 1.35, meleeHandZombieCop, loot 61 -->
 		  <entity_class name="badZombieMord" extends="badZombieFemaleUMA">
 			<property name="Archetype" value="ZombieMord"/>
-			<property name="HandItem" value="handZombieCop"/>
-			<property name="LootListOnDeath" value="61"/>
-
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="750"/>
 			<property name="WalkType" value="2"/>
 			<property name="ApproachSpeed" value="1.35"/>
@@ -805,12 +721,10 @@
 			<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
 			<property name="ExperienceGain" value="2091"/>
 		  </entity_class>
-		  <!-- +HP 500, +speed 1.35, handZombieCop, loot 61 -->
+		  <!-- +HP 500, +speed 1.35, meleeHandZombieCop, loot 61 -->
 		  <entity_class name="sanZombieExperiment" extends="badZombieUMA">
 			<property name="Archetype" value="sanZombieExperiment"/>
-			<property name="HandItem" value="handZombieCop" />
-			<property name="LootListOnDeath" value="61" />
-
+			<property name="HandItem" value="meleeHandZombieCop" />
 			<property name="MaxHealth" value="500" />
 			<property name="WalkType" value="2" />
 			<property name="ApproachSpeed" value="1.35" />
@@ -831,7 +745,6 @@
 			<property name="Archetype" value="ZombieBaby"/>
 			<property name="Class" value="EntityZombieCop"/>
 			<property name="MaxHealth" value="100"/>
-			<property name="HandItem" value="handBabyBoomer"/>
 			<property name="WanderSpeed" value="0.08"/>
 			<property name="ApproachSpeed" value="0.75"/>
 			<property name="NightWanderSpeed" value="0.08"/>
@@ -858,8 +771,6 @@
 		  <!-- +HP 500, +speed 1.3, nodismember, spiderwalk, wallclimb, loot 61 -->
 		  <entity_class name="valZombieRavagerSpider" extends="badZombieUMA">
 			<property name="Archetype" value="valZombieRavager"/>
-			<property name="LootListOnDeath" value="61"/>
-
 			<property name="MaxHealth" value="500"/>
 			<property name="CanClimbVertical" value="true"/>
 			<property name="WalkType" value="8"/>
@@ -883,7 +794,7 @@
 		  <!-- +HP 800, +speed 1.1, spiderwalk, wallclimb -->
 		  <entity_class name="gupZombieClimber" extends="badZombieUMA">
 			<property name="Archetype" value="gupZombieClimber"/>
-			<property name="HandItem" value="handZombie02"/>
+			<property name="HandItem" value="meleeHandZombie02"/>
 			<property name="MaxHealth" value="800"/>
 			<property name="WalkType" value="8"/>
 			<property name="ApproachSpeed" value="1.1"/>
@@ -898,12 +809,10 @@
 			<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
 			<property name="ExperienceGain" value="2509"/>
 		  </entity_class>
-		  <!-- +HP 1500, +speed 0.75, handZombieStrong, loot 38 -->
+		  <!-- +HP 1500, +speed 0.75, meleeHandZombieCop, loot 38 -->
 		  <entity_class name="sanZombieClown" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieClown"/>
-			<property name="HandItem" value="handZombieStrong"/>
-			<property name="LootListOnDeath" value="38"/>
-
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="1500"/>
 			<property name="WanderSpeed" value="0.2"/>
 			<property name="ApproachSpeed" value="0.75"/>
@@ -914,12 +823,12 @@
 		  </entity_class>
 
 		  <!-- Teir Six -->
-		  <!-- +HP 1200, Cop Class, explo 3/3 - 400/70, handZombieCop -->
+		  <!-- +HP 1200, Cop Class, explo 3/3 - 400/70, meleeHandZombieCop -->
 		  <entity_class name="badZombieWarlord" extends="badZombieUMA">
 			<property name="Archetype" value="ZombieWarlord"/>
 			<property name="Class" value="EntityZombieCop"/>
 			<property name="WalkType" value="1"/>
-			<property name="HandItem" value="handZombieCop"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="1200"/>
 			<property name="Explosion.ParticleIndex" value="8"/>
 			<property name="Explosion.RadiusBlocks" value="3"/>
@@ -929,12 +838,10 @@
 			<property name="Explosion.DamageBonus.earth" value="0"/>
 			<property name="ExperienceGain" value="2916"/>
 		  </entity_class>
-		  <!-- +HP 500, explo 5/6 - 500/150, handSuicideMole, loot 84 -->
+		  <!-- +HP 500, explo 5/6 - 500/150, meleeHandZombieCop, loot 84 -->
 		  <entity_class name="badZombieSuicideMole" extends="badZombieUMA">
 			<property name="Archetype" value="ZombieBomberMole"/>
-			<property name="HandItem" value="handSuicideMole"/>
-			<property name="LootListOnDeath" value="84"/>
-
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="500"/>
 			<property name="Class" value="EntityZombieCop"/>
 			<property name="Explosion.ParticleIndex" value="8"/>
@@ -954,7 +861,7 @@
 			<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 			<property name="ExperienceGain" value="2916"/>
 		  </entity_class>
-		  <!-- +HP 1200, +speed 2.0, handGupHulk -->
+		  <!-- +HP 1200, +speed 2.0, meleeHandZombieCop -->
 		  <entity_class name="gupZombieBiff" extends="badZombieUMA">
 			<property name="Archetype" value="gupZombieBiff"/>
 			<property name="WalkType" value="2"/>
@@ -965,7 +872,7 @@
 			<property name="AITask-6" value="ApproachSpot"/>
 			<property name="AITask-7" value="Wander"/>
 			<property name="MaxHealth" value="1200"/>
-			<property name="HandItem" value="handGupHulk"/>
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="WanderSpeed" value="0.5"/>
 			<property name="ApproachSpeed" value="2.0"/>
 			<property name="NightWanderSpeed" value="0.5"/>
@@ -974,24 +881,20 @@
 		  </entity_class>
 
 		  <!-- Teir Seven -->
-		  <!-- +HP 1500, handZombieCop, spiderwalk, loot 61 -->
+		  <!-- +HP 1500, meleeHandZombieCop, spiderwalk, loot 61 -->
 		  <entity_class name="valZombieBrute" extends="badZombieUMA" >
 			<property name="Archetype" value="valZombieBrute"/>
-			<property name="HandItem" value="handZombieCop" />
-			<property name="LootListOnDeath" value="61" />
-
+			<property name="HandItem" value="meleeHandZombieCop" />
 			<property name="MaxHealth" value="1500" />
 			<property name="WalkType" value="8" />
 			<property name="CanClimbLadders" value="false"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="ExperienceGain" value="3429"/>
 		  </entity_class>
-		  <!-- +HP 3300, handGupHulk, nodismember, loot 61 -->
+		  <!-- +HP 3300, meleeHandZombieCop, nodismember, loot 61 -->
 		  <entity_class name="valZombieBruteBoss" extends="badZombieUMA">
 			<property name="Archetype" value="valZombieBrute"/>
-			<property name="HandItem" value="handGupHulk"/>
-			<property name="LootListOnDeath" value="61"/>
-
+			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="MaxHealth" value="3300"/>
 			<property name="WalkType" value="5"/>
 			<property name="CanClimbLadders" value="false"/>
