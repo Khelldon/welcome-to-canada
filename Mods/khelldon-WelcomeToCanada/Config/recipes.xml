@@ -2633,7 +2633,7 @@
 	<ingredient name="resourceWood" count="10"/>
 </recipe>
 
-<recipe name="medicalSnowberryExtract" count="1" craft_area="workbench" craft_area="chemistryStation">
+<recipe name="medicalSnowberryExtract" count="1" craft_area="chemistryStation">
 	<ingredient name="resourceCropSnowberryPlant" count="1"/>
 	<ingredient name="foodCornMeal" count="1"/>
 </recipe>
