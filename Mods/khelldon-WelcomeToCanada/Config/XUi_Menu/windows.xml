@@ -6,6 +6,8 @@
 <set xpath="/windows/window[@name='mainMenuLogo']/texture[@name='gameLogo']/@texture">WTCLogo</set> -->
 
 <remove xpath="/windows/window[@name='worldGeneration']" />
+<remove xpath="/windows/window[@name='menuBackground']" />
+<remove xpath="/windows/window[@name='mainMenuLogo']" />
 <append xpath="/windows">
 
 
@@ -81,6 +83,14 @@
 		<rect pos="0, -720">
 			<simplebutton name="btnBack" depth="3" pos="0, 0" width="200" height="36" font_size="32" caption_key="xuiBack" />
 		</rect>
+	</window>
+
+	<window name="menuBackground" anchor="CenterCenter" pos="0,0" width="1050" height="780" depth="-3">
+		<texture depth="1" color="[white]" texture="@file:Mods/khelldon-WelcomeToCanada/Textures/MenuBG.png" name="bgTexture" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
+	</window>
+	
+	<window name="mainMenuLogo" anchor="CenterCenter" pos="0,0" width="1050" height="780" depth="-2">
+		<texture depth="3" color="[white]" texture="@file:Mods/khelldon-WelcomeToCanada/Textures/WTCLogo.png" name="gameLogo" anchor_left="#cam,0.5,-20" anchor_bottom="#cam,0.5,70" anchor_right="#cam,0.5,-20" anchor_top="#cam,0.5,490" pivot="center" keep_aspect_ratio="BasedOnHeight" aspect_ratio="2.3" />
 	</window>
 	
 	
