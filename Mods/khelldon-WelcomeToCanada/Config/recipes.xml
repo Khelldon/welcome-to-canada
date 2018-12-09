@@ -242,7 +242,7 @@
 	<ingredient name="resourceFeather" count="1"/>
 </recipe>
 
-<recipe name="burningBarrelPlayer" count="1" craft_area="workbench" craft_area="workbench">
+<recipe name="burningBarrelPlayer" count="1" craft_area="workbench">
 	<ingredient name="resourceForgedIron" count="3"/>
 	<ingredient name="resourceWood" count="10"/>
 </recipe>
