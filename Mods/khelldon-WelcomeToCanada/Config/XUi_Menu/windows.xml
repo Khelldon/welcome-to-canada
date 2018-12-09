@@ -1,7 +1,0 @@
-<configs>
-<set xpath="/windows/window[@name='worldGeneration']/rect[@width='250']/grid[@cell_width='244']/rect/label[@text='Desert']/@text">Southern Snow</set>
-<set xpath="/windows/window[@name='worldGeneration']/rect[@width='250']/grid[@cell_width='244']/rect/label[@text_key='xuiDesert']/@text_key">Snow2</set>
-<set xpath="/windows/window[@name='worldGeneration']/rect[@width='250']/grid[@cell_width='244']/rect/sprite[@color='255,228,119']/@color">250,255,255</set>
-<set xpath="/windows/window[@name='menuBackground']/texture[@texture='Textures/UI/background']/@texture">MenuBG.png</set>
-<set xpath="/windows/window[@name='mainMenuLogo']/texture[@texture='Textures/UI/7DTD_logo']/@texture">WTCLogo.png</set>
-</configs>
