@@ -899,6 +899,7 @@
 			<decoration type="block" blockname="treeMountainPine48m" prob ="0.0005" rotatemax="7"/>
 			<decoration type="block" blockname="treeStump" prob =".0002" rotatemax="7"/>
 		</decorations>
+		<spectrum name="pine_forest"/>
 		<terrain class="Mountains"/>
 	</biome>
 
