@@ -23,6 +23,10 @@ there was only undead to deal with, now there are real monsters out there.
 Now you are one of the last people alive on earth, with a strong immunity to the virus, you are left to survive the cold while fending
 off thousands of starving Zombies. 
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 **About**: This is a complete conversion for 7 days to Die a17 x.x.x. Most of it is written using xpath, a full conversion in modlet formatting.
 In addition to being a code based mod, the mod also comes with it's own map. Just as the game comes with Navezgane you will also find the map "Canada"
 in your list now. It is HIGHLY recommended that you play the game using the Canada map. A lot of time and attention to detail will be found in the Canada
@@ -30,6 +34,10 @@ map that you will never get in a random gen world. Random gen is quite functiona
 in the Canada map.
 
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 **Features**:
 Bad Company UMA Zombies - designed by Bad Company and remixed by Khelldon
 SimpleUI Modlets - designed by Steadman420 - https://7daystodie.com/forums/showthread.php?94502-A17-Simple-UI-Modlets
@@ -39,4 +47,8 @@ Workbench Needed for mostly Everything - by Khelldon
 Workstation pickups - by Khelldon
 Loot bag drop increased - by Khelldon
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 **Thank You**: Big thanks to Sphereii, Xyth, Khaine, Guppycur, Steadman420, TormentedEmu, and many more. Thank you so much for the help everyone.

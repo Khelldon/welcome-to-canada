@@ -348,6 +348,16 @@
 			<prefab name="cave_02" />
 			<prefab name="cave_03" />
 			<prefab name="cave_04" />
+			<prefab name="army_camp_01" />
+			<prefab name="army_camp_02" />
+			<prefab name="army_camp_03" />
+			<prefab name="army_barracks_01" />
+			<prefab name="installation_red_mesa" max_count="1"/>
+			<prefab name="barn_01" />
+			<prefab name="barn_02" />
+			<prefab name="barn_03" />
+			<prefab name="bombshelter_lg_01" max_count="1"/>
+			<prefab name="bombshelter_md_01" max_count="1"/>
 		</prefab_rule>
 
 		<prefab_rule name="detailFillerGroup">
