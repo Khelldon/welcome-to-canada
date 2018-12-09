@@ -1,6 +1,10 @@
 <configs>
 <remove xpath="/recipes" />
-
+<insertAfter xpath="/" >
+	<recipes>	
+	
+	</recipes>
+</insertAfter>
 
 <append xpath="/recipes">
 <!-- * * * * * * * * * * * * scrap and forge-emptying recipes * * * * * * * * * * * * -->
