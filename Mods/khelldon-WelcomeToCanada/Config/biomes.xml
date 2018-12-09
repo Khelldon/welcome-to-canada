@@ -3,7 +3,6 @@
 <remove xpath="/worldgeneration/biomes/biome[@name='pine_forest']" />
 <remove xpath="/worldgeneration/biomes/biome[@name='desert']" />
 <remove xpath="/worldgeneration/biomes/biome[@name='water']" />
-<remove xpath="/worldgeneration/biomes/biome[@name='radiated']" />
 <remove xpath="/worldgeneration/biomes/biome[@name='wasteland']" />
 <remove xpath="/worldgeneration/biomes/biome[@name='burnt_forest']" />
 <remove xpath="/worldgeneration/biomes/biome[@name='city']" />
