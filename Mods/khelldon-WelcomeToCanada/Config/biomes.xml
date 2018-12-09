@@ -13,7 +13,7 @@
 <remove xpath="/worldgeneration/biomes/biome[@name='underwater']" />
 <append xpath="/worldgeneration/biomes">
 
-<!-- Snow Main Biome -->
+<!-- Khelldon - Snow Main Biome -->
 	<biome name="snow" biomemapcolor="#FFFFFF">
 		<weather>
 			<Temperature min="-60" max="-30" prob="1"/>
@@ -166,7 +166,7 @@
 	</biome>
 
 
-<!-- Pine Forest Main Biome  -->
+<!-- Khelldon - Pine Forest Main Biome  -->
 	<biome name="pine_forest" biomemapcolor="#004000">
 		<weather>
 			<Temperature min="-35" max="15" prob="1"/>
@@ -579,7 +579,7 @@
 		</decorations>
 	</biome>
 	
-<!-- Wasteland Main Biome -->
+<!-- Khelldon - Wasteland Main Biome -->
 	<biome name="wasteland" biomemapcolor="#ffa800">
 		<weather>
 			<Temperature min="-30" max="30" prob="1"/>
@@ -719,7 +719,7 @@
 	</biome>
 
 
-<!-- Burnt Forest Main Biome -->
+<!-- Khelldon - Burnt Forest Main Biome -->
 	<biome name="burnt_forest" biomemapcolor="#ba00ff">
 		<weather>
 			<Temperature min="0" max="20" prob="1"/>
@@ -867,7 +867,7 @@
 	</biome>
 
 
-<!-- City Main Biome Diersville -->
+<!-- Khelldon - City Main Biome Diersville -->
 	<biome name="city" biomemapcolor="#808080">
 		<weather>
 			<Temperature min="-15" max="15" prob="1"/>
@@ -929,7 +929,7 @@
 	</biome>
 
 
-<!-- City Main Biome Gravestown -->
+<!-- Khelldon - City Main Biome Gravestown -->
 	<biome name="city_wasteland" biomemapcolor="#c0c0c0">
 		<weather>
 			<Temperature min="5" max="15" prob="1"/>
@@ -989,7 +989,7 @@
 	</biome>
 
 
-<!-- Wasteland Hub Biome Random Gen -->
+<!-- Khelldon - Wasteland Hub Biome Random Gen -->
 	<biome name="wasteland_hub" biomemapcolor="#a0a0a0">
 		<weather>
 			<Temperature min="5" max="15" prob="1"/>
