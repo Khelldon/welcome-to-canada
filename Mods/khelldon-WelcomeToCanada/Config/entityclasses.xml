@@ -209,13 +209,6 @@
 	        <property name="HandItem" value="meleeHandZombieBurning"/>
 	        <property name="HandItemCrawler" value="meleeHandZombieBurningCrawler"/> 
 			<property name="WalkType" value="7"/>
-			<property name="AITask-1" value="BreakDoor"/>
-			<property name="AITask-2" value="BreakBlock"/>
-			<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
-			<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
-			<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC"/>
-			<property name="AITask-6" value="ApproachSpot"/>
-			<property name="AITask-7" value="Wander"/>
 			<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 			<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 			<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
@@ -301,11 +294,6 @@
 		  <entity_class name="sanZombieVagrant" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieVagrant"/>
 			<property name="WalkType" value="1" />
-		  </entity_class>
-		  <entity_class name="sanZombieCripple" extends="badZombieUMA">
-			<property name="Archetype" value="sanZombieCripple"/>
-			<property name="Class" value="EntityZombieCrawl"/>
-			<property name="WalkType" value="4"/>
 		  </entity_class>
 		  <entity_class name="sanZombieBanditSavage" extends="badZombieUMA" >
 			<property name="Archetype" value="sanZombieBanditSavage"/>
@@ -561,13 +549,6 @@
 			<property name="Archetype" value="valZombieRegen"/>
 			<property name="MaxHealth" value="500"/>
 			<property name="WalkType" value="2"/>
-			<property name="AITask-1" value="BreakDoor"/>
-			<property name="AITask-2" value="BreakBlock"/>
-			<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
-			<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
-			<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC"/>
-			<property name="AITask-6" value="ApproachSpot"/>
-			<property name="AITask-7" value="Wander"/>
 			<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
 			<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 			<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
@@ -695,13 +676,6 @@
 			<property name="Archetype" value="ZombieBaby"/>
 			<property name="Class" value="EntityZombieCop"/>
 			<property name="MaxHealth" value="100"/>
-			<property name="AITask-1" value="BreakDoor"/>
-			<property name="AITask-2" value="BreakBlock"/>
-			<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
-			<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
-			<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC"/>
-			<property name="AITask-6" value="ApproachSpot"/>
-			<property name="AITask-7" value="Wander"/>
 			<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 			<property name="Explosion.ParticleIndex" value="8"/>
 			<property name="Explosion.RadiusBlocks" value="8"/>
@@ -782,25 +756,12 @@
 			<property name="Explosion.EntityDamage" value="150"/>
 			<property name="Explosion.DamageBonus.earth" value="0"/>
 			<property name="WalkType" value="1"/>
-			<property name="AITask-1" value="BreakDoor"/>
-			<property name="AITask-2" value="BreakBlock"/>
-			<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
-			<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
-			<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC"/>
-			<property name="AITask-6" value="ApproachSpot"/>
-			<property name="AITask-7" value="Wander"/>
 			<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
 			<property name="ExperienceGain" value="2916"/>
 		  </entity_class>
 		  <entity_class name="gupZombieBiff" extends="badZombieUMA">
 			<property name="Archetype" value="gupZombieBiff"/>
 			<property name="WalkType" value="2"/>
-			<property name="AITask-1" value="BreakBlock"/>
-			<property name="AITask-2" value="Territorial" param1="10"/>
-			<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
-			<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC"/>
-			<property name="AITask-6" value="ApproachSpot"/>
-			<property name="AITask-7" value="Wander"/>
 			<property name="MaxHealth" value="1200"/>
 			<property name="HandItem" value="meleeHandZombieCop"/>
 			<property name="ExperienceGain" value="2916"/>

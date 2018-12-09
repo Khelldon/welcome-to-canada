@@ -92,7 +92,6 @@
 			<entity name="sanZombiePsycho"/>
 			<entity name="sanZombieKim"/>
 			<entity name="sanZombieVagrant"/>
-			<entity name="sanZombieCripple"/>
 			<entity name="sanZombieBanditSavage"/>
 			<entity name="sanZombieBanditSentry"/>
 			<entity name="sanZombieMitchHazmat"/>
@@ -422,7 +421,6 @@
 			<entity name="sanZombiePsycho"/>
 			<entity name="sanZombieKim"/>
 			<entity name="sanZombieVagrant"/>
-			<entity name="sanZombieCripple"/>
 			<entity name="sanZombieBanditSavage"/>
 			<entity name="sanZombieBanditSentry"/>
 			<entity name="sanZombieMitchHazmat"/>
@@ -661,7 +659,6 @@
 			<entity name="sanZombiePsycho" prob="0.65"/>
 			<entity name="sanZombieKim" prob="0.65"/>
 			<entity name="sanZombieVagrant" prob="0.65"/>
-			<entity name="sanZombieCripple" prob="0.65"/>
 			<entity name="sanZombieBanditSavage" prob="0.65"/>
 			<entity name="sanZombieBanditSentry" prob="0.65"/>
 			<entity name="sanZombieMitchHazmat" prob="0.65"/>
@@ -928,7 +925,6 @@
 			<entity name="sanZombiePsycho" prob="0.15"/>
 			<entity name="sanZombieKim" prob="0.15"/>
 			<entity name="sanZombieVagrant" prob="0.15"/>
-			<entity name="sanZombieCripple" prob="0.15"/>
 			<entity name="sanZombieBanditSavage" prob="0.15"/>
 			<entity name="sanZombieBanditSentry" prob="0.15"/>
 			<entity name="sanZombieMitchHazmat" prob="0.15"/>
@@ -1219,7 +1215,6 @@
 			<entity name="sanZombiePsycho" prob="0.1"/>
 			<entity name="sanZombieKim" prob="0.1"/>
 			<entity name="sanZombieVagrant" prob="0.1"/>
-			<entity name="sanZombieCripple" prob="0.1"/>
 			<entity name="sanZombieBanditSavage" prob="0.1"/>
 			<entity name="sanZombieBanditSentry" prob="0.1"/>
 			<entity name="sanZombieMitchHazmat" prob="0.1"/>
@@ -1526,7 +1521,6 @@
 			<entity name="sanZombiePsycho" prob="0.05"/>
 			<entity name="sanZombieKim" prob="0.05"/>
 			<entity name="sanZombieVagrant" prob="0.05"/>
-			<entity name="sanZombieCripple" prob="0.05"/>
 			<entity name="sanZombieBanditSavage" prob="0.05"/>
 			<entity name="sanZombieBanditSentry" prob="0.05"/>
 			<entity name="sanZombieMitchHazmat" prob="0.05"/>
@@ -1835,7 +1829,6 @@
 			<entity name="sanZombiePsycho" prob="0.05"/>
 			<entity name="sanZombieKim" prob="0.05"/>
 			<entity name="sanZombieVagrant" prob="0.05"/>
-			<entity name="sanZombieCripple" prob="0.05"/>
 			<entity name="sanZombieBanditSavage" prob="0.05"/>
 			<entity name="sanZombieBanditSentry" prob="0.05"/>
 			<entity name="sanZombieMitchHazmat" prob="0.05"/>
@@ -2144,7 +2137,6 @@
 			<entity name="sanZombiePsycho" prob="0.05"/>
 			<entity name="sanZombieKim" prob="0.05"/>
 			<entity name="sanZombieVagrant" prob="0.05"/>
-			<entity name="sanZombieCripple" prob="0.05"/>
 			<entity name="sanZombieBanditSavage" prob="0.05"/>
 			<entity name="sanZombieBanditSentry" prob="0.05"/>
 			<entity name="sanZombieMitchHazmat" prob="0.05"/>
