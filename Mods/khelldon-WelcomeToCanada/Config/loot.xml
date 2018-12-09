@@ -16,7 +16,7 @@
 	<item name="meleeToolMachete"/>
 </lootgroup>
 <lootcontainer id="111" count="1" size="8,9" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate" destroy_on_close="true">
-	<item group="khelldonStarterCrateContents"/>
+	<item group="khelldonStarterCrateContents" count="1"/>
 </lootcontainer>
 		</append>
 </configs>
