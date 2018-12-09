@@ -13,7 +13,7 @@
 <remove xpath="/rwgmixer/prefab_rules/prefab_rule[@name='detailFillerGroup']" />
 <remove xpath="/rwgmixer/prefab_rules/prefab_rule[@name='traderGroup']" />
 <!-- Reinstate the old prefabs along with the new ones -->
-<append xpath="/rwgmixer/prefab_rules/">
+<append xpath="/rwgmixer/prefab_rules">
 
        <prefab_rule name="townGroup">
 			<prefab rule="residentialOldGroup"/>
