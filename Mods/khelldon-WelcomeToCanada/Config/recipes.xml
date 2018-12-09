@@ -1,5 +1,5 @@
 <configs>
 
-<set xpath="/recipes/recipe[not (contains(@craft_area, 'workbench') or (@craft_area, 'forge') or (@craft_area, 'campfire') or (@craft_area, 'cementMixer') or (@craft_area, 'tablesaw') or (@craft_area, 'chemistryStation') or (@name, 'bedroll') or (@name, 'campfire') or (@name, 'medicalFirstAidBandage') or (@name, 'workbench') or (@name, 'meleeBoneShiv') or (@name, 'meleeClubWood'))]/@craft_area">workbench</set>
+<append xpath="/recipes/recipe[not (contains(@craft_area, 'workbench') or (@craft_area, 'forge') or (@craft_area, 'campfire') or (@craft_area, 'cementMixer') or (@craft_area, 'tablesaw') or (@craft_area, 'chemistryStation') or (@name, 'bedroll') or (@name, 'campfire') or (@name, 'medicalFirstAidBandage') or (@name, 'workbench') or (@name, 'meleeBoneShiv') or (@name, 'meleeClubWood'))]/@craft_area">workbench</append>
 
 </configs>
