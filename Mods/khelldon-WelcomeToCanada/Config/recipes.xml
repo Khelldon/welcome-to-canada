@@ -1,11 +1,11 @@
 <configs>
-<remove xpath="/recipes" />
+<!-- <remove xpath="/recipes" />
 <insertAfter xpath="/" >
 	<recipes>	
 	
 	</recipes>
 </insertAfter>
-
+-->
 <append xpath="/recipes">
 <!-- * * * * * * * * * * * * scrap and forge-emptying recipes * * * * * * * * * * * * -->
 <recipe name="resourceMilitaryFiber" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true">
@@ -118,12 +118,6 @@
 	<ingredient name="resourceCoal" count="10"/>
 </recipe>
 
-<!--<recipe name="ammo44MagnumBulletAP" count="1" craft_area="workbench" tags="learnable">
-	<ingredient name="resourceBulletTip" count="2"/>
-	<ingredient name="resourceGunPowder" count="4"/>
-	<ingredient name="resourceBulletCasing" count="1"/>
-</recipe>-->
-
 <recipe name="ammo44MagnumBulletSteel" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="3"/>
@@ -136,12 +130,6 @@
 	<ingredient name="resourceBulletCasing" count="1"/>
 </recipe>
 
-<!--<recipe name="ammo762mmBulletAP" count="1" craft_area="workbench" tags="learnable">
-	<ingredient name="resourceBulletTip" count="2"/>
-	<ingredient name="resourceGunPowder" count="4"/>
-	<ingredient name="resourceBulletCasing" count="1"/>
-</recipe>-->
-
 <recipe name="ammo762mmBulletFMJSteel" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceBulletTip" count="1"/>
 	<ingredient name="resourceGunPowder" count="3"/>
@@ -153,12 +141,6 @@
 	<ingredient name="resourceGunPowder" count="1"/>
 	<ingredient name="resourceBulletCasing" count="1"/>
 </recipe>
-
-<!--<recipe name="ammo9mmBulletJHP" count="1" craft_area="workbench" tags="learnable">
-	<ingredient name="resourceBulletTip" count="2"/>
-	<ingredient name="resourceGunPowder" count="2"/>
-	<ingredient name="resourceBulletCasing" count="1"/>
-</recipe>-->
 
 <recipe name="ammo9mmBulletSteel" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceBulletTip" count="1"/>
@@ -512,14 +494,6 @@
 	<ingredient name="resourceMetalPipe" count="1"/>
 </recipe>
 
-<!--
-<recipe name="resourceBioFuel" count="1" craft_area="chemistryStation">
-	<ingredient name="resourceAnimalFat" count="1"/>
-</recipe>
-<recipe name="resourceBioFuel" count="1" craft_area="campfire" craft_tool="toolBeaker">
-	<ingredient name="resourceAnimalFat" count="1"/>
-</recipe>
--->
 <recipe name="foodBlueberryPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
 	<ingredient name="foodCropBlueberries" count="5"/>
 	<ingredient name="foodEgg" count="1"/>
