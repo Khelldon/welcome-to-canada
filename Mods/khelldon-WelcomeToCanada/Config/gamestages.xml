@@ -1,7 +1,11 @@
 <configs>
 		<remove xpath="/gamestages/spawner[@name='SleeperGSList']" />
 		<append xpath="/gamestages">
-		  <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX Bad Company Sleeper Spawns XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Bad Company UMA Zombies -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 		  <spawner name="SleeperGSList">
 			<gamestage stage="1">
 			  <spawn group="ZombiesTierGroup01" num="5" maxAlive="1" duration="1"/>
@@ -727,6 +731,6 @@
 			  <spawn group="ZombiesTierGroup07" num="97" maxAlive="256" duration="1"/>
 			</gamestage>
 		  </spawner>
-		  <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX Bad COmpany Sleeper Spawns XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		  
 		</append>
 </configs>

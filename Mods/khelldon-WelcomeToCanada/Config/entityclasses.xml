@@ -1,7 +1,24 @@
 <configs>
-		<append xpath="/entity_classes">
-		  <!-- Khelldon - Bad Company UMA Zombies -->
-		  
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Change Starting Gear -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">meleeToolTorch,workbench,keystoneBlock</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">meleeToolTorch,workbench,keystoneBlock</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">meleeToolTorch,workbench,keystoneBlock</set>
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Bad Company Zombies -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/entity_classes">
+		
 		  <entity_class name="badZombieUMA" extends="zombieTemplateMale">
 			<property name="ModelType" value="ZombieUMA"/>
 			<property name="AvatarController" value="AvatarZombieUMAController"/>
@@ -1226,5 +1243,6 @@
 		  <entity_class name="badZombieBiker_Rager" extends="zombieBiker">
 			<property name="ExperienceGain" value="2509"/>
 		  </entity_class>
-		</append>
+		  
+</append>
 </configs>

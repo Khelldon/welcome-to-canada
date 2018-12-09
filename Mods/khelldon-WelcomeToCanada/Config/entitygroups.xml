@@ -1,6 +1,10 @@
 <configs>
 		<append xpath="/entitygroups">
-<!-- Khelldon - BAD COMPANY UMA Zombies -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Bad Company UMA Zombies -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 		  <entitygroup name="ZombiesBCTier01">
 			<entity name="zombieBoe"/>
     		<entity name="zombieJoe"/>
@@ -21,6 +25,7 @@
 	    	<entity name="zombieNurse"/>
 	    	<entity name="zombieSteveCrawler"/>
 	    	<entity name="zombieFatHawaiian"/>
+	    	<entity name="zombieSnow" prob="10"/>
 			<entity name="badZombieAiden"/>
 			<entity name="badZombieBob"/>
 			<entity name="badZombieCaitlin"/>
