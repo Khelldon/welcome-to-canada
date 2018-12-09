@@ -16,3 +16,5 @@ SimpleUI Modlets - designed by Steadman420 - https://7daystodie.com/forums/showt
 RWG Updated - 3 separate snow biomes by 
 Traders Destructable - by Khelldon
 Workbench Needed for mostly Everything - by Khelldon
+Workstation pickups - by Khelldon
+Loot bag drop increased - by Khelldon
