@@ -8,20 +8,20 @@
 <!-- Khelldon update RWG Preview to reflect actual biomes -->
 					<grid pos="6,-33" cell_width="244" cell_height="30" arrangement="vertical">
 						<rect>
-							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Snow" text_key="Snow" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Snow" text_key="Northern Snow" font_size="28" color="[white]" justify="right" pivot="topleft" />
 							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="255,255,255" type="sliced" fillcenter="true" globalopacity="false" />
 						</rect>
 						
 						<rect>
-							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Pine Forest" text_key="Pine Forest" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Pine Forest" text_key="Snow" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="257,255,255" type="sliced" fillcenter="true" globalopacity="false" />
+						</rect>
+						<rect>
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Burnt Forest" text_key="Forest" font_size="28" color="[white]" justify="right" pivot="topleft" />
 							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="0,64,0" type="sliced" fillcenter="true" globalopacity="false" />
 						</rect>
 						<rect>
-							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Burnt Forest" text_key="Burnt Forest" font_size="28" color="[white]" justify="right" pivot="topleft" />
-							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="186,0,255" type="sliced" fillcenter="true" globalopacity="false" />
-						</rect>
-						<rect>
-							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Southern Snow" text_key="South Snow" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Southern Snow" text_key="Southern Snow" font_size="28" color="[white]" justify="right" pivot="topleft" />
 							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="250,255,255" type="sliced" fillcenter="true" globalopacity="false" />
 						</rect>
 						<rect>
@@ -29,8 +29,8 @@
 							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="255,168,0" type="sliced" fillcenter="true" globalopacity="false" />
 						</rect>
 						<rect>
-							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Water" text_key="Water" font_size="28" color="[white]" justify="right" pivot="topleft" />
-							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="0,99,255" type="sliced" fillcenter="true" globalopacity="false" />
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Water" text_key="Ice" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="50,76,106" type="sliced" fillcenter="true" globalopacity="false" />
 						</rect>
 					</grid>
 	
