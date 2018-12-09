@@ -1,0 +1,98 @@
+<configs>
+<!-- <set xpath="/windows/window[@name='worldGeneration']/rect[@width='250']/grid[@cell_width='244']/rect/label[@text='Desert']/@text">Southern Snow</set>
+<set xpath="/windows/window[@name='worldGeneration']/rect[@width='250']/grid[@cell_width='244']/rect/label[@text_key='xuiDesert']/@text_key">Snow2</set>
+<set xpath="/windows/window[@name='worldGeneration']/rect[@width='250']/grid[@cell_width='244']/rect/sprite[@color='255,228,119']/@color">250,255,255</set>
+<set xpath="/windows/window[@name='menuBackground']/texture[@name='bgTexture']/@texture">MenuBG</set>
+<set xpath="/windows/window[@name='mainMenuLogo']/texture[@name='gameLogo']/@texture">WTCLogo</set> -->
+
+<remove xpath="/windows/window[@name='worldGeneration']" />
+<remove xpath="/windows/window[@name='menuBackground']" />
+<remove xpath="/windows/window[@name='mainMenuLogo']" />
+<append xpath="/windows">
+
+
+   <window name="worldGeneration" anchor="CenterCenter" pos="-600,375" width="1200" height="780" controller="WorldGenerationWindowGroup" cursor_area="true">
+		<panel name="header" pos="0,0" height="43" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
+			<label style="header.name" name="windowheader" pos="9,-6" width="550" text_key="xuiGenerateWorld" />
+			<label depth="108" pos="556,-6" name="countyName" style="header.name" justify="left" pivot="topleft" />
+		</panel>
+		
+		<rect pos="0,-50" height="650" width="480" cursor_area="true">
+			<rect name="generationControls">
+				<sprite depth="10" name="border" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" globalopacity="false" />
+				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" color="[mediumGrey]" type="sliced" fillcenter="true" />
+				
+				<rect pos="8,-40">
+					<grid rows="13" cell_width="425" cell_height="45" repeat_content="false" arrangement="vertical">
+						<rect>
+							<label depth="4" width="150" height="30" style="hover" tooltip_key="xuiWorldSeed" text="Seed" text_key="xuiWorldSeed" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<textfield name="seedInput" depth="5" pos="189,0" width="232" height="32" pivot="topLeft" on_hover="true" />
+						</rect>
+						<rect>
+							<label depth="4" width="150" height="30" style="hover" tooltip_key="xuiWorldSize" text="World Size" text_key="xuiWorldSize" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<combobox depth="108" pos="155,0" width="300" height="32" name="WorldSize" type="ComboBoxList&lt;System.String&gt;" values="4096,8192,16384" value_wrap="false" />
+						</rect>
+						<rect>
+							<simplebutton name="generate" pos="189,0" width="232" height="32" font_size="26" text="Generate World" caption_key="btnGenerateWorld"/>
+						</rect>
+					</grid>
+				</rect>
+				
+				<rect pos="227,-432" width="250" height="340">
+					
+					<grid pos="6,-33" cell_width="244" cell_height="30" arrangement="vertical">
+						<rect>
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Snow" text_key="xuiSnow" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="255,255,255" type="sliced" fillcenter="true" globalopacity="false" />
+						</rect>
+						
+						<rect>
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Pine Forest" text_key="xuiPineForest" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="0,64,0" type="sliced" fillcenter="true" globalopacity="false" />
+						</rect>
+						<rect>
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Burnt Forest" text_key="xuiBurntForest" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="186,0,255" type="sliced" fillcenter="true" globalopacity="false" />
+						</rect>
+						<rect>
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Southern Snow" text_key="Snow2" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="250,255,255" type="sliced" fillcenter="true" globalopacity="false" />
+						</rect>
+						<rect>
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Wasteland" text_key="xuiWasteland" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="255,168,0" type="sliced" fillcenter="true" globalopacity="false" />
+						</rect>
+						<rect>
+							<label depth="11" pos="9,0" width="199" height="30" style="hover" text="Water" text_key="xuiWater" font_size="28" color="[white]" justify="right" pivot="topleft" />
+							<sprite depth="10" pos="218,-6" name="border" width="16" height="16" sprite="menu_empty3px" color="0,99,255" type="sliced" fillcenter="true" globalopacity="false" />
+						</rect>
+					</grid>
+					
+				</rect>
+				
+			</rect>
+			
+		</rect>
+		
+		<rect pos="550,-50" height="650" width="650">
+			<sprite depth="10" name="border" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" globalopacity="false" />
+			<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" color="[mediumGrey]" type="sliced" fillcenter="true" />
+			<texture depth="100" name="worldPreviewTex" material="Materials/Transparent Colored" pos="3,-3" size="647,647" globalopacity="false" on_drag="true" controller="WorldGenerationPreview"/>
+		</rect>
+		
+		<rect pos="0, -720">
+			<simplebutton name="btnBack" depth="3" pos="0, 0" width="200" height="36" font_size="32" caption_key="xuiBack" />
+		</rect>
+	</window>
+
+	<window name="menuBackground" anchor="CenterCenter" pos="0,0" width="1050" height="780" depth="-3">
+		<texture depth="1" color="[white]" texture="@file:Mods/khelldon-WelcomeToCanada/Textures/MenuBG.png" name="bgTexture" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
+	</window>
+	
+	<window name="mainMenuLogo" anchor="CenterCenter" pos="0,0" width="1050" height="780" depth="-2">
+		<texture depth="3" color="[white]" texture="@file:Mods/khelldon-WelcomeToCanada/Textures/WTCLogo.png" name="gameLogo" anchor_left="#cam,0.5,-20" anchor_bottom="#cam,0.5,70" anchor_right="#cam,0.5,-20" anchor_top="#cam,0.5,490" pivot="center" keep_aspect_ratio="BasedOnHeight" aspect_ratio="2.3" />
+	</window>
+	
+	
+</append>
+</configs>

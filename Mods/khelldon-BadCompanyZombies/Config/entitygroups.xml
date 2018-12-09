@@ -1,8 +1,7 @@
 <configs>
 		<append xpath="/entitygroups">
-		  <!--BAD COMPANY-->
+<!-- Khelldon - BAD COMPANY UMA Zombies -->
 		  <entitygroup name="ZombiesBCTier01">
-			<!--Vanilla-->
 			<entity name="zombieBoe"/>
     		<entity name="zombieJoe"/>
     		<entity name="zombieSteve"/>
@@ -22,8 +21,6 @@
 	    	<entity name="zombieNurse"/>
 	    	<entity name="zombieSteveCrawler"/>
 	    	<entity name="zombieFatHawaiian"/>
-
-			<!--Bad Company-->
 			<entity name="badZombieAiden"/>
 			<entity name="badZombieBob"/>
 			<entity name="badZombieCaitlin"/>
@@ -104,7 +101,6 @@
 			<entity name="sanZombieFrozen"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier02">
-			<!--Vanilla-->
 			<entity name="zombieFootballPlayer"/>
 			<entity name="zombieFemaleFat"/>
 			<entity name="zombieMoe"/>
@@ -127,8 +123,6 @@
 			<entity name="badZombieSkateboarder_Rager"/>
 			<entity name="badZombieCheerleader_Rager"/>
 			<entity name="badZombieOldTimer_Rager"/>
-
-			<!--Bad Company-->
 			<entity name="badZombieJethro"/>
 			<entity name="badZombieSeryph"/>
 			<entity name="badZombieSeryphSnow"/>
@@ -146,7 +140,6 @@
 
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier03">
-			<!--Vanilla-->
 			<entity name="zombieBoeFeral"/>
 			<entity name="zombieJoeFeral"/>
 			<entity name="zombieArleneFeral"/>
@@ -163,14 +156,10 @@
 			<entity name="zombieCheerleaderFeral"/>
 			<entity name="zombieOldTimerFeral"/>
 			<entity name="zombieBiker"/>
-
-			<!--Bad Company-->
 			<entity name="badZombieBolivar"/>
 			<entity name="badZombieCur"/>
 			<entity name="badZombieSWATMale"/>
 			<entity name="badZombieSWATFemale"/>
-			<!--<entity name="badZombieTallman"/>-->
-			<!--screamer-->
 			<entity name="valZombieRaveReaper"/>
 			<entity name="badZombieStripperMole"/>
 			<entity name="valZombieRegen"/>
@@ -185,7 +174,6 @@
 			<entity name="bkSanta"/>
 			<entity name="sanZombieBodyBuilder"/>
 			<entity name="sanZombieBanditJuggernaut"/>
-
 			<entity name="badZombieAiden_Rager"/>
 			<entity name="badZombieBob_Rager"/>
 			<entity name="badZombieCaitlin_Rager"/>
@@ -263,7 +251,6 @@
 			<entity name="sanZombieFrozen_Rager"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier04">
-			<!--Vanilla-->
 			<entity name="zombieFemaleFatFeral"/>
 			<entity name="zombieMoeFeral"/>
 			<entity name="zombieSpiderFeral"/>
@@ -276,11 +263,8 @@
 			<entity name="badZombieBurnt_Rager"/>
 			<entity name="badZombieStripper_Rager"/>
 			<entity name="badZombieFarmer_Rager"/>
-
-			<!--Bad Company-->
 			<entity name="badZombieMord"/>
 			<entity name="sanZombieExperiment"/>
-
 			<entity name="badZombieJethro_Rager"/>
 			<entity name="badZombieSeryph_Rager"/>
 			<entity name="badZombieSeryphSnow_Rager"/>
@@ -297,18 +281,14 @@
 			<entity name="sanZombieFreak_Rager"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier05">
-			<!--Vanilla-->
 			<entity name="zombieSnowFeral"/>
 			<entity name="zombieSoldierFeral"/>
 			<entity name="badZombieSoldier_Rager"/>
 			<entity name="badZombieBiker_Rager"/>
-
-			<!--Bad Company-->
 			<entity name="badZombieBabyBoomer"/>
 			<entity name="valZombieRavagerSpider"/>
 			<entity name="gupZombieClimber"/>
 			<entity name="sanZombieClown"/>
-
 			<entity name="badZombieBolivar_Rager"/>
 			<entity name="badZombieCur_Rager"/>
 			<entity name="badZombieSWATMale_Rager"/>
@@ -327,53 +307,36 @@
 			<entity name="sanZombieBanditJuggernaut_Rager"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier06">
-			<!--Vanilla-->
 			<entity name="zombieFatHawaiianFeral"/>
 			<entity name="zombieFatCop"/>
-
-			<!--Bad Company-->
 			<entity name="badZombieWarlord"/>
 			<entity name="badZombieSuicideMole"/>
 			<entity name="gupZombieBiff"/>
-
-			<!--No Ragers-->
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier07">
-			<!--Vanilla-->
 			<entity name="zombieWightFeral"/>
-
-			<!--Bad Company-->
 			<entity name="valZombieBrute"/>
 			<entity name="valZombieBruteBoss"/>
-
 			<entity name="badZombieBabyBoomer_Rager"/>
 			<entity name="valZombieRavagerSpider_Rager"/>
 			<entity name="gupZombieClimber_Rager"/>
 			<entity name="sanZombieClown_Rager"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier08">
-			<!--Vanilla-->
 			<entity name="zombieFatCopFeral"/>
-
-			<!--Bad Company-->
 			<entity name="badZombieWarlord_Rager"/>
 			<entity name="badZombieSuicideMole_Rager"/>
 			<entity name="gupZombieBiff_Rager"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier09">
-			<!--Bad Company-->
 			<entity name="valZombieBrute_Rager"/>
 			<entity name="valZombieBruteBoss_Rager"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier10">
-			<!--Bad Company-->
 			<entity name="valZombieBrute_Rager"/>
 			<entity name="valZombieBruteBoss_Rager"/>
 		  </entitygroup>
-
-		  <!-- GS 1 to 400 -->
 		  <entitygroup name="ZombiesTierGroup01">
-			<!--T1-->
 			<entity name="zombieBoe"/>
 			<entity name="zombieJoe"/>
 			<entity name="zombieArlene"/>
@@ -466,8 +429,6 @@
 			<entity name="sanZombieEvilGranny"/>
 			<entity name="sanZombieSecurityGuard"/>
 			<entity name="sanZombieFrozen"/>
-
-			<!--T2-->
 			<entity name="zombieFootballPlayer" prob="0.5"/>
 			<entity name="zombieFemaleFat" prob="0.5"/>
 			<entity name="zombieMoe" prob="0.5"/>
@@ -504,8 +465,6 @@
 			<entity name="sanZombieCannibalFemale" prob="0.5"/>
 			<entity name="sanZombieCannibalMale" prob="0.5"/>
 			<entity name="sanZombieFreak" prob="0.5"/>
-
-			<!--T3-->
 			<entity name="zombieBoeFeral" prob="0.15"/>
 			<entity name="zombieJoeFeral" prob="0.15"/>
 			<entity name="zombieArleneFeral" prob="0.15"/>
@@ -616,9 +575,7 @@
 			<entity name="sanZombieSecurityGuard_Rager" prob="0.15"/>
 			<entity name="sanZombieFrozen_Rager" prob="0.15"/>
 		  </entitygroup>
-		  <!-- GS 401 to 800 -->
 		  <entitygroup name="ZombiesTierGroup02">
-			<!--T1-->
 			<entity name="zombieBoe" prob="0.65"/>
 			<entity name="zombieJoe" prob="0.65"/>
 			<entity name="zombieArlene" prob="0.65"/>
@@ -711,8 +668,6 @@
 			<entity name="sanZombieEvilGranny" prob="0.65"/>
 			<entity name="sanZombieSecurityGuard" prob="0.65"/>
 			<entity name="sanZombieFrozen" prob="0.65"/>
-
-			<!--T2-->
 			<entity name="zombieFootballPlayer" prob="0.75"/>
 			<entity name="zombieFemaleFat" prob="0.75"/>
 			<entity name="zombieMoe" prob="0.75"/>
@@ -749,8 +704,6 @@
 			<entity name="sanZombieCannibalFemale" prob="0.75"/>
 			<entity name="sanZombieCannibalMale" prob="0.75"/>
 			<entity name="sanZombieFreak" prob="0.75"/>
-
-			<!--T3-->
 			<entity name="zombieBoeFeral" prob="0.35"/>
 			<entity name="zombieJoeFeral" prob="0.35"/>
 			<entity name="zombieArleneFeral" prob="0.35"/>
@@ -860,8 +813,6 @@
 			<entity name="sanZombieEvilGranny_Rager" prob="0.35"/>
 			<entity name="sanZombieSecurityGuard_Rager" prob="0.35"/>
 			<entity name="sanZombieFrozen_Rager" prob="0.35"/>
-
-			<!--T4-->
 			<entity name="zombieFemaleFatFeral" prob="0.15"/>
 			<entity name="zombieMoeFeral" prob="0.15"/>
 			<entity name="zombieSpiderFeral" prob="0.15"/>
@@ -891,9 +842,7 @@
 			<entity name="sanZombieCannibalMale_Rager" prob="0.15"/>
 			<entity name="sanZombieFreak_Rager" prob="0.15"/>
 		  </entitygroup>
-		  <!-- GS 801 to 1200 -->
 		  <entitygroup name="ZombiesTierGroup03">
-			<!--T1-->
 			<entity name="zombieBoe" prob="0.15"/>
 			<entity name="zombieJoe" prob="0.15"/>
 			<entity name="zombieArlene" prob="0.15"/>
@@ -986,8 +935,6 @@
 			<entity name="sanZombieEvilGranny" prob="0.15"/>
 			<entity name="sanZombieSecurityGuard" prob="0.15"/>
 			<entity name="sanZombieFrozen" prob="0.15"/>
-
-			<!--T2-->
 			<entity name="zombieFootballPlayer" prob="0.45"/>
 			<entity name="zombieFemaleFat" prob="0.45"/>
 			<entity name="zombieMoe" prob="0.45"/>
@@ -1024,8 +971,6 @@
 			<entity name="sanZombieCannibalFemale" prob="0.45"/>
 			<entity name="sanZombieCannibalMale" prob="0.45"/>
 			<entity name="sanZombieFreak" prob="0.45"/>
-
-			<!--T3-->
 			<entity name="zombieBoeFeral" prob="0.55"/>
 			<entity name="zombieJoeFeral" prob="0.55"/>
 			<entity name="zombieArleneFeral" prob="0.55"/>
@@ -1135,8 +1080,6 @@
 			<entity name="sanZombieEvilGranny_Rager" prob="0.55"/>
 			<entity name="sanZombieSecurityGuard_Rager" prob="0.55"/>
 			<entity name="sanZombieFrozen_Rager" prob="0.55"/>
-
-			<!--T4-->
 			<entity name="zombieFemaleFatFeral" prob="0.25"/>
 			<entity name="zombieMoeFeral" prob="0.25"/>
 			<entity name="zombieSpiderFeral" prob="0.25"/>
@@ -1165,8 +1108,6 @@
 			<entity name="sanZombieCannibalFemale_Rager" prob="0.25"/>
 			<entity name="sanZombieCannibalMale_Rager" prob="0.25"/>
 			<entity name="sanZombieFreak_Rager" prob="0.25"/>
-
-			<!--T5-->
 			<entity name="zombieSnowFeral" prob="0.1"/>
 			<entity name="zombieSoldierFeral" prob="0.1"/>
 			<entity name="badZombieSoldier_Rager" prob="0.1"/>
@@ -1192,9 +1133,7 @@
 			<entity name="sanZombieBodyBuilder_Rager" prob="0.1"/>
 			<entity name="sanZombieBanditJuggernaut_Rager" prob="0.1"/>
 		  </entitygroup>
-		  <!-- GS 1201 to 1600 -->
 		  <entitygroup name="ZombiesTierGroup04">
-			<!--T1-->
 			<entity name="zombieBoe" prob="0.1"/>
 			<entity name="zombieJoe" prob="0.1"/>
 			<entity name="zombieArlene" prob="0.1"/>
@@ -1287,8 +1226,6 @@
 			<entity name="sanZombieEvilGranny" prob="0.1"/>
 			<entity name="sanZombieSecurityGuard" prob="0.1"/>
 			<entity name="sanZombieFrozen" prob="0.1"/>
-
-			<!--T2-->
 			<entity name="zombieFootballPlayer" prob="0.35"/>
 			<entity name="zombieFemaleFat" prob="0.35"/>
 			<entity name="zombieMoe" prob="0.35"/>
@@ -1325,8 +1262,6 @@
 			<entity name="sanZombieCannibalFemale" prob="0.35"/>
 			<entity name="sanZombieCannibalMale" prob="0.35"/>
 			<entity name="sanZombieFreak" prob="0.35"/>
-
-			<!--T3-->
 			<entity name="zombieBoeFeral" prob="0.50"/>
 			<entity name="zombieJoeFeral" prob="0.50"/>
 			<entity name="zombieArleneFeral" prob="0.50"/>
@@ -1436,8 +1371,6 @@
 			<entity name="sanZombieEvilGranny_Rager" prob="0.50"/>
 			<entity name="sanZombieSecurityGuard_Rager" prob="0.50"/>
 			<entity name="sanZombieFrozen_Rager" prob="0.50"/>
-
-			<!--T4-->
 			<entity name="zombieFemaleFatFeral" prob="0.40"/>
 			<entity name="zombieMoeFeral" prob="0.40"/>
 			<entity name="zombieSpiderFeral" prob="0.40"/>
@@ -1466,8 +1399,6 @@
 			<entity name="sanZombieCannibalFemale_Rager" prob="0.40"/>
 			<entity name="sanZombieCannibalMale_Rager" prob="0.40"/>
 			<entity name="sanZombieFreak_Rager" prob="0.40"/>
-
-			<!--T5-->
 			<entity name="zombieSnowFeral" prob="0.15"/>
 			<entity name="zombieSoldierFeral" prob="0.15"/>
 			<entity name="badZombieSoldier_Rager" prob="0.15"/>
@@ -1492,15 +1423,11 @@
 			<entity name="bkSanta_Rager" prob="0.15"/>
 			<entity name="sanZombieBodyBuilder_Rager" prob="0.15"/>
 			<entity name="sanZombieBanditJuggernaut_Rager" prob="0.15"/>
-
-			<!--T6-->
 			<entity name="zombieFatHawaiianFeral" prob="0.1"/>
 			<entity name="zombieFatCop" prob="0.1"/>
 			<entity name="badZombieWarlord" prob="0.1"/>
 			<entity name="badZombieSuicideMole" prob="0.1"/>
 			<entity name="gupZombieBiff" prob="0.1"/>
-
-			<!--T7-->
 			<entity name="zombieWightFeral" prob="0.05"/>
 			<entity name="valZombieBrute" prob="0.05"/>
 			<entity name="valZombieBruteBoss" prob="0.05"/>
@@ -1508,16 +1435,12 @@
 			<entity name="valZombieRavagerSpider_Rager" prob="0.05"/>
 			<entity name="gupZombieClimber_Rager" prob="0.05"/>
 			<entity name="sanZombieClown_Rager" prob="0.05"/>
-
-			<!--T8-->
 			<entity name="zombieFatCopFeral" prob="0.01"/>
 			<entity name="badZombieWarlord_Rager" prob="0.01"/>
 			<entity name="badZombieSuicideMole_Rager" prob="0.01"/>
 			<entity name="gupZombieBiff_Rager" prob="0.01"/>
 		  </entitygroup>
-		  <!-- GS 1601 to 2000 -->
 		  <entitygroup name="ZombiesTierGroup05">
-			<!--T1-->
 			<entity name="zombieBoe" prob="0.05"/>
 			<entity name="zombieJoe" prob="0.05"/>
 			<entity name="zombieArlene" prob="0.05"/>
@@ -1610,8 +1533,6 @@
 			<entity name="sanZombieEvilGranny" prob="0.05"/>
 			<entity name="sanZombieSecurityGuard" prob="0.05"/>
 			<entity name="sanZombieFrozen" prob="0.05"/>
-
-			<!--T2-->
 			<entity name="zombieFootballPlayer" prob="0.15"/>
 			<entity name="zombieFemaleFat" prob="0.15"/>
 			<entity name="zombieMoe" prob="0.15"/>
@@ -1648,8 +1569,6 @@
 			<entity name="sanZombieCannibalFemale" prob="0.15"/>
 			<entity name="sanZombieCannibalMale" prob="0.15"/>
 			<entity name="sanZombieFreak" prob="0.15"/>
-
-			<!--T3-->
 			<entity name="zombieBoeFeral" prob="0.50"/>
 			<entity name="zombieJoeFeral" prob="0.50"/>
 			<entity name="zombieArleneFeral" prob="0.50"/>
@@ -1759,8 +1678,6 @@
 			<entity name="sanZombieEvilGranny_Rager" prob="0.50"/>
 			<entity name="sanZombieSecurityGuard_Rager" prob="0.50"/>
 			<entity name="sanZombieFrozen_Rager" prob="0.50"/>
-
-			<!--T4-->
 			<entity name="zombieFemaleFatFeral" prob="0.50"/>
 			<entity name="zombieMoeFeral" prob="0.50"/>
 			<entity name="zombieSpiderFeral" prob="0.50"/>
@@ -1789,8 +1706,6 @@
 			<entity name="sanZombieCannibalFemale_Rager" prob="0.50"/>
 			<entity name="sanZombieCannibalMale_Rager" prob="0.50"/>
 			<entity name="sanZombieFreak_Rager" prob="0.50"/>
-
-			<!--T5-->
 			<entity name="zombieSnowFeral" prob="0.35"/>
 			<entity name="zombieSoldierFeral" prob="0.35"/>
 			<entity name="badZombieSoldier_Rager" prob="0.35"/>
@@ -1815,15 +1730,11 @@
 			<entity name="bkSanta_Rager" prob="0.35"/>
 			<entity name="sanZombieBodyBuilder_Rager" prob="0.35"/>
 			<entity name="sanZombieBanditJuggernaut_Rager" prob="0.35"/>
-
-			<!--T6-->
 			<entity name="zombieFatHawaiianFeral" prob="0.2"/>
 			<entity name="zombieFatCop" prob="0.2"/>
 			<entity name="badZombieWarlord" prob="0.2"/>
 			<entity name="badZombieSuicideMole" prob="0.2"/>
 			<entity name="gupZombieBiff" prob="0.2"/>
-
-			<!--T7-->
 			<entity name="zombieWightFeral" prob="0.15"/>
 			<entity name="valZombieBrute" prob="0.15"/>
 			<entity name="valZombieBruteBoss" prob="0.15"/>
@@ -1831,20 +1742,14 @@
 			<entity name="valZombieRavagerSpider_Rager" prob="0.15"/>
 			<entity name="gupZombieClimber_Rager" prob="0.15"/>
 			<entity name="sanZombieClown_Rager" prob="0.15"/>
-
-			<!--T8-->
 			<entity name="zombieFatCopFeral" prob="0.1"/>
 			<entity name="badZombieWarlord_Rager" prob="0.1"/>
 			<entity name="badZombieSuicideMole_Rager" prob="0.1"/>
 			<entity name="gupZombieBiff_Rager" prob="0.1"/>
-
-			<!--T9-->
 			<entity name="valZombieBrute_Rager" prob="0.1"/>
 			<entity name="valZombieBruteBoss_Rager" prob="0.1"/>
 		  </entitygroup>
-		  <!-- GS 2001 to 3000 -->
 		  <entitygroup name="ZombiesTierGroup06">
-			<!--T1-->
 			<entity name="zombieBoe" prob="0.05"/>
 			<entity name="zombieJoe" prob="0.05"/>
 			<entity name="zombieArlene" prob="0.05"/>
@@ -1937,8 +1842,6 @@
 			<entity name="sanZombieEvilGranny" prob="0.05"/>
 			<entity name="sanZombieSecurityGuard" prob="0.05"/>
 			<entity name="sanZombieFrozen" prob="0.05"/>
-
-			<!--T2-->
 			<entity name="zombieFootballPlayer" prob="0.15"/>
 			<entity name="zombieFemaleFat" prob="0.15"/>
 			<entity name="zombieMoe" prob="0.15"/>
@@ -1975,8 +1878,6 @@
 			<entity name="sanZombieCannibalFemale" prob="0.15"/>
 			<entity name="sanZombieCannibalMale" prob="0.15"/>
 			<entity name="sanZombieFreak" prob="0.15"/>
-
-			<!--T3-->
 			<entity name="zombieBoeFeral" prob="1.50"/>
 			<entity name="zombieJoeFeral" prob="1.50"/>
 			<entity name="zombieArleneFeral" prob="1.50"/>
@@ -2086,8 +1987,6 @@
 			<entity name="sanZombieEvilGranny_Rager" prob="1.50"/>
 			<entity name="sanZombieSecurityGuard_Rager" prob="1.50"/>
 			<entity name="sanZombieFrozen_Rager" prob="1.50"/>
-
-			<!--T4-->
 			<entity name="zombieFemaleFatFeral" prob="1.25"/>
 			<entity name="zombieMoeFeral" prob="1.25"/>
 			<entity name="zombieSpiderFeral" prob="1.25"/>
@@ -2116,8 +2015,6 @@
 			<entity name="sanZombieCannibalFemale_Rager" prob="1.25"/>
 			<entity name="sanZombieCannibalMale_Rager" prob="1.25"/>
 			<entity name="sanZombieFreak_Rager" prob="1.25"/>
-
-			<!--T5-->
 			<entity name="zombieSnowFeral" prob="1.0"/>
 			<entity name="zombieSoldierFeral" prob="1.0"/>
 			<entity name="badZombieSoldier_Rager" prob="1.0"/>
@@ -2142,15 +2039,11 @@
 			<entity name="bkSanta_Rager" prob="1.0"/>
 			<entity name="sanZombieBodyBuilder_Rager" prob="1.0"/>
 			<entity name="sanZombieBanditJuggernaut_Rager" prob="1.0"/>
-
-			<!--T6-->
 			<entity name="zombieFatHawaiianFeral" prob="1.0"/>
 			<entity name="zombieFatCop" prob="1.0"/>
 			<entity name="badZombieWarlord" prob="1.0"/>
 			<entity name="badZombieSuicideMole" prob="1.0"/>
 			<entity name="gupZombieBiff" prob="1.0"/>
-
-			<!--T7-->
 			<entity name="zombieWightFeral" prob="1.0"/>
 			<entity name="valZombieBrute" prob="1.0"/>
 			<entity name="valZombieBruteBoss" prob="1.0"/>
@@ -2158,20 +2051,14 @@
 			<entity name="valZombieRavagerSpider_Rager" prob="1.0"/>
 			<entity name="gupZombieClimber_Rager" prob="1.0"/>
 			<entity name="sanZombieClown_Rager" prob="1.0"/>
-
-			<!--T8-->
 			<entity name="zombieFatCopFeral" prob="0.75"/>
 			<entity name="badZombieWarlord_Rager" prob="0.75"/>
 			<entity name="badZombieSuicideMole_Rager" prob="0.75"/>
 			<entity name="gupZombieBiff_Rager" prob="0.75"/>
-
-			<!--T9-->
 			<entity name="valZombieBrute_Rager" prob="0.75"/>
 			<entity name="valZombieBruteBoss_Rager" prob="0.75"/>
 		  </entitygroup>
-		  <!-- GS 3001+ -->
 		  <entitygroup name="ZombiesTierGroup07">
-			<!--T1-->
 			<entity name="zombieBoe" prob="0.05"/>
 			<entity name="zombieJoe" prob="0.05"/>
 			<entity name="zombieArlene" prob="0.05"/>
@@ -2264,8 +2151,6 @@
 			<entity name="sanZombieEvilGranny" prob="0.05"/>
 			<entity name="sanZombieSecurityGuard" prob="0.05"/>
 			<entity name="sanZombieFrozen" prob="0.05"/>
-
-			<!--T2-->
 			<entity name="zombieFootballPlayer" prob="0.15"/>
 			<entity name="zombieFemaleFat" prob="0.15"/>
 			<entity name="zombieMoe" prob="0.15"/>
@@ -2302,8 +2187,6 @@
 			<entity name="sanZombieCannibalFemale" prob="0.15"/>
 			<entity name="sanZombieCannibalMale" prob="0.15"/>
 			<entity name="sanZombieFreak" prob="0.15"/>
-
-			<!--T3-->
 			<entity name="zombieBoeFeral" prob="1.5"/>
 			<entity name="zombieJoeFeral" prob="1.5"/>
 			<entity name="zombieArleneFeral" prob="1.5"/>
@@ -2413,8 +2296,6 @@
 			<entity name="sanZombieEvilGranny_Rager" prob="1.5"/>
 			<entity name="sanZombieSecurityGuard_Rager" prob="1.5"/>
 			<entity name="sanZombieFrozen_Rager" prob="1.5"/>
-
-			<!--T4-->
 			<entity name="zombieFemaleFatFeral" prob="1.5"/>
 			<entity name="zombieMoeFeral" prob="1.5"/>
 			<entity name="zombieSpiderFeral" prob="1.5"/>
@@ -2443,8 +2324,6 @@
 			<entity name="sanZombieCannibalFemale_Rager" prob="1.5"/>
 			<entity name="sanZombieCannibalMale_Rager" prob="1.5"/>
 			<entity name="sanZombieFreak_Rager" prob="1.5"/>
-
-			<!--T5-->
 			<entity name="zombieSnowFeral" prob="1.5"/>
 			<entity name="zombieSoldierFeral" prob="1.5"/>
 			<entity name="badZombieSoldier_Rager" prob="1.5"/>
@@ -2469,15 +2348,11 @@
 			<entity name="bkSanta_Rager" prob="1.5"/>
 			<entity name="sanZombieBodyBuilder_Rager" prob="1.5"/>
 			<entity name="sanZombieBanditJuggernaut_Rager" prob="1.5"/>
-
-			<!--T6-->
 			<entity name="zombieFatHawaiianFeral" prob="2.0"/>
 			<entity name="zombieFatCop" prob="2.0"/>
 			<entity name="badZombieWarlord" prob="2.0"/>
 			<entity name="badZombieSuicideMole" prob="2.0"/>
 			<entity name="gupZombieBiff" prob="2.0"/>
-
-			<!--T7-->
 			<entity name="zombieWightFeral" prob="2.0"/>
 			<entity name="valZombieBrute" prob="2.0"/>
 			<entity name="valZombieBruteBoss" prob="2.0"/>
@@ -2485,14 +2360,10 @@
 			<entity name="valZombieRavagerSpider_Rager" prob="2.0"/>
 			<entity name="gupZombieClimber_Rager" prob="2.0"/>
 			<entity name="sanZombieClown_Rager" prob="2.0"/>
-
-			<!--T8-->
 			<entity name="zombieFatCopFeral" prob="3.0"/>
 			<entity name="badZombieWarlord_Rager" prob="3.0"/>
 			<entity name="badZombieSuicideMole_Rager" prob="3.0"/>
 			<entity name="gupZombieBiff_Rager" prob="3.0"/>
-
-			<!--T9-->
 			<entity name="valZombieBrute_Rager" prob="5.0"/>
 			<entity name="valZombieBruteBoss_Rager" prob="5.0"/>
 		  </entitygroup>
