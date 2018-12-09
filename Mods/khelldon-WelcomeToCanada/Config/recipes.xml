@@ -2,7 +2,7 @@
 <remove xpath="/recipes" />
 
 
-<append>
+<append xpath="/">
 <recipes>
 <!-- * * * * * * * * * * * * scrap and forge-emptying recipes * * * * * * * * * * * * -->
 <recipe name="resourceMilitaryFiber" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true">
