@@ -2,8 +2,7 @@
 <remove xpath="/recipes" />
 
 
-<append xpath="">
-<recipes>
+<append xpath="/recipes">
 <!-- * * * * * * * * * * * * scrap and forge-emptying recipes * * * * * * * * * * * * -->
 <recipe name="resourceMilitaryFiber" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true">
 	<wildcard_forge_category />
@@ -3616,7 +3615,6 @@
 <recipe name="flagstoneGableInvertedHalf" count="1" craft_area="workbench">
 	<ingredient name="resourceCobblestones" count="4"/>
 </recipe>
-</recipes>
 
 </append>
 </configs>
