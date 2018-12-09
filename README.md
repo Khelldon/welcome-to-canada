@@ -14,3 +14,5 @@ Features:
 Bad Company UMA Zombies - designed by Bad Company and remixed by Khelldon
 SimpleUI Modlets - designed by Steadman420 - https://7daystodie.com/forums/showthread.php?94502-A17-Simple-UI-Modlets
 RWG Updated - 3 separate snow biomes by 
+Traders Destructable - by Khelldon
+Workbench Needed for mostly Everything - by Khelldon
