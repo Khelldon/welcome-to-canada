@@ -585,7 +585,7 @@
 			<Wind min="20" max="100" prob="0.1"/>
 		</weather>
 		<layers>
-			<layer fillupto="9" blockname="water"/>
+			<layer fillupto="9" blockname="terrIce"/>
 			<layer depth="1" blockname="terrSnow"> <resource blockname="terrOreSandPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="5" blockname="terrSnow"> <resource blockname="terrOreSandPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">

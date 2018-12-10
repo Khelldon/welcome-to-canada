@@ -40,7 +40,7 @@ in the Canada map.
 <!-- ######################################################### -->
 **Features**:
 Bad Company UMA Zombies - designed by Bad Company and remixed by Khelldon
-SimpleUI Modlets - designed by Steadman420 - https://7daystodie.com/forums/showthread.php?94502-A17-Simple-UI-Modlets
+SimpleUI Modlets - designed by Stedman420 - https://7daystodie.com/forums/showthread.php?94502-A17-Simple-UI-Modlets
 RWG Updated - 3 separate snow biomes by Khelldon 
 Traders Destructable - by Khelldon
 Workbench Needed for mostly Everything - by Khelldon
@@ -51,4 +51,4 @@ Loot bag drop increased - by Khelldon
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-**Thank You**: Big thanks to Sphereii, Xyth, Khaine, Guppycur, Steadman420, TormentedEmu, and many more. Thank you so much for the help everyone.
+**Thank You**: Big thanks to Sphereii, Xyth, Khaine, Guppycur, Stedman420, TormentedEmu, and many more. Thank you so much for the help everyone.
