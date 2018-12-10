@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <Servers >
-	<ServerGroup Name="Welcome to Canada" Logo="https://i.imgur.com/DorAJNX.jpg">
+	<ServerGroup Name="Khelldon Mods" Logo="https://i.imgur.com/DorAJNX.jpg">
 		<Server Name="Welcome to Canada 3" Logo="https://i.imgur.com/voqx09G.png" >
                          <RSS></RSS>
                          <Banner>https://i.imgur.com/voqx09G.png</Banner>
@@ -14,7 +14,7 @@
 			<WebSite></WebSite>	
 			<ReleaseNotes></ReleaseNotes>
 			<Downloads>
-				<Download>https://github.com/RyanJames1978/Welcome-to-Canada-3point0/archive/master.zip</Download>
+				<Download>https://github.com/Khelldon/welcome-to-canada/archive/master.zip</Download>
 			</Downloads>
 			<DownloadMode>Clone</DownloadMode>
 			<Description>
