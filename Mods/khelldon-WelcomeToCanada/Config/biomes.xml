@@ -174,7 +174,7 @@
 <!-- Khelldon - Main Snow Biome  -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-	<biome name="pine_forest" biomemapcolor="#004000">
+	<biome name="pine_forest" biomemapcolor="#fdffff">
 		<weather>
 			<Temperature min="-80" max="-30" prob="1"/>
 			<Fog min="0" max="0" prob=".9"/>
@@ -490,7 +490,7 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 	
-	<biome name="water" biomemapcolor="#0063ff">
+	<biome name="water" biomemapcolor="#324c6a">
 		<weather>
 			<Temperature min="-80" max="-10" prob="1"/>
 			<CloudThickness min="5" max="50" prob="1"/>
@@ -570,7 +570,7 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 	
-	<biome name="onlyWater" biomemapcolor="#0064ff">
+	<biome name="onlyWater" biomemapcolor="#334c6a">
 		<weather>
 			<Temperature min="0" max="10" prob="1"/>
 			<CloudThickness min="5" max="50" prob="1"/>
@@ -776,7 +776,7 @@
 <!-- Khelldon - Main Forest -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-	<biome name="burnt_forest" biomemapcolor="#ba00ff">
+	<biome name="burnt_forest" biomemapcolor="#004000">
        <weather>
 			<Temperature min="-45" max="05" prob="1"/>
 			<Fog min="0" max="0" prob=".9"/>
