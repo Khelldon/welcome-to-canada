@@ -21,7 +21,7 @@ but even worse was the "frankenstein" like experimentation that occured and perh
 there was only undead to deal with, now there are real monsters out there. 
 
 Now you are one of the last people alive on earth, with a strong immunity to the virus, you are left to survive the cold while fending
-off thousands of starving Zombies. 
+off thousands of starving Zombies. Completely trapped inside a radiated zone, there is no escape, you must survive here.
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
