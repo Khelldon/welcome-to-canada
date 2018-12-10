@@ -14,6 +14,9 @@
     <drop event="Destroy" name="workbench" count="1"/>
 </insertBefore>
 
+<!-- change workbench health - originally 800hp -->
+<set xpath="/blocks/block[@name='workbench']/property[@name='MaxDamage']/@value">200</set>
+
 <!-- Set Crafting Groups for workbench -->
 <set xpath="/blocks/block[@name='workbench']/property[@name='Group']/@value">Basics,Building,Science,Decor/Miscellaneous,Ammo/Weapons,Tools/Traps,Resources,Chemicals,Clothing</set>
 
@@ -26,18 +29,22 @@
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Workstation Pickups -->
+<!-- Khelldon - Campfire Tweaks -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-
-<!-- campfire -->
 <remove xpath="/blocks/block[@name='campfire']/drop[@event='Destroy']"/>
 <insertBefore xpath="/blocks/block[@name='campfire']/drop[@event='Fall']">
     <drop event="Destroy" name="campfire" count="1"/>
 </insertBefore>
 <remove xpath="/blocks/block[@name='campfire']/drop[@name='terrStone']"/>
+<!-- set health -->
+<set xpath="/blocks/block[@name='campfire']/property[@name='MaxDamage']/@value">100</set>
 
-<!-- chemistryStation -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Chem Station Tweaks -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 <remove xpath="/blocks/block[@name='chemistryStation']/drop[@event='Destroy']"/>
 <insertBefore xpath="/blocks/block[@name='chemistryStation']/drop[@event='Fall']">
     <drop event="Destroy" name="chemistryStation" count="1"/>
@@ -47,8 +54,14 @@
 <remove xpath="/blocks/block[@name='chemistryStation']/drop[@name='terrStone']"/>
 <remove xpath="/blocks/block[@name='chemistryStation']/drop[@name='resourceForgedIron']"/>
 <remove xpath="/blocks/block[@name='chemistryStation']/drop[@name='resourceMetalPipe']"/>
+<!-- set health -->
+<set xpath="/blocks/block[@name='chemistryStation']/property[@name='MaxDamage']/@value">200</set>
 
-<!-- forge -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Forge Tweaks -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 <remove xpath="/blocks/block[@name='forge']/drop[@event='Destroy']"/>
 <insertBefore xpath="/blocks/block[@name='forge']/drop[@event='Fall']">
     <drop event="Destroy" name="forge" count="1"/>
@@ -57,8 +70,14 @@
 <remove xpath="/blocks/block[@name='forge']/drop[@name='terrStone']"/>
 <remove xpath="/blocks/block[@name='forge']/drop[@name='resourceClayLump']"/>
 <remove xpath="/blocks/block[@name='forge']/drop[@name='resourceLeather']"/>
+<!-- set health -->
+<set xpath="/blocks/block[@name='forge']/property[@name='MaxDamage']/@value">200</set>
 
-<!-- cementMixer -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Cement Mixer Tweaks -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 <remove xpath="/blocks/block[@name='cementMixer']/drop[@event='Destroy']"/>
 <insertBefore xpath="/blocks/block[@name='cementMixer']/drop[@event='Fall']">
     <drop event="Destroy" name="cementMixer" count="1"/>
@@ -68,11 +87,54 @@
 <remove xpath="/blocks/block[@name='cementMixer']/drop[@name='terrStone']"/>
 <remove xpath="/blocks/block[@name='cementMixer']/drop[@name='resourceSpring']"/>
 <remove xpath="/blocks/block[@name='cementMixer']/drop[@name='resourceMechanicalParts']"/>
+<!-- set health -->
+<set xpath="/blocks/block[@name='cementMixer']/property[@name='MaxDamage']/@value">200</set>
 
-<!-- tableSaw -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Table Saw Tweaks -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 <insertAfter xpath="/blocks/block[@name='tableSaw']/property[@name='WorkstationWindow']">
     <drop event="Destroy" name="tableSaw" count="1"/>
+    <!-- set health -->
+	<property name="MaxDamage" value="200"/>
 </insertAfter>
+
+
+
+
+
+
+
+
+
+
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     New Blocks Start Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
 
 
 <!-- ######################################################### -->
@@ -112,6 +174,7 @@
 	<drop event="Destroy" name="resourcePaper" count="2,8"/>
 	<property name="FilterTags" value="floot"/>
 </block>
-		</append>
+
+</append>
 		
 </configs>
