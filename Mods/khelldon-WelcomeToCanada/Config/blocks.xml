@@ -46,7 +46,7 @@
 <remove xpath="/blocks/block[@name='chemistryStation']/drop[@name='resourceWood']"/>
 <remove xpath="/blocks/block[@name='chemistryStation']/drop[@name='terrStone']"/>
 <remove xpath="/blocks/block[@name='chemistryStation']/drop[@name='resourceForgedIron']"/>
-<remove xpath="/blocks/block[@name='chemistryStation']/drop[@name='resourceMechanicalParts']"/>
+<remove xpath="/blocks/block[@name='chemistryStation']/drop[@name='resourceMetalPipe']"/>
 
 <!-- forge -->
 <remove xpath="/blocks/block[@name='forge']/drop[@event='Destroy']"/>
