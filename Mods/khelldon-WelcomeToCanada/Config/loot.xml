@@ -1,10 +1,12 @@
 <configs>
-		<append xpath="/lootcontainers">
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Starter Crate Loot -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
+
+<append xpath="/lootcontainers">
+
 <lootgroup name="khelldonStarterCrateContents" count="all">
 	<item group="pufferCoatAll" count="1"/>
 	<item group="skullCapAll" count="1"/>
@@ -13,12 +15,14 @@
 	<item name="gunHuntingRifle" count="1"/>
 	<item name="ammo762mmBulletFMJ" count="25"/>
 	<item name="medicalFirstAidBandage" count="5"/>
-	<item name="meleeToolMachete" count="1"/>
+	<item name="khelldonSurvivalMachete" count="1"/>
     <item name="drinkJarBoiledWater" count="5"/>
     <item name="foodSteakAndPotato" count="3"/>
 </lootgroup>
 <lootcontainer id="111" count="1" size="8,9" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate" destroy_on_close="true">
 	<item group="khelldonStarterCrateContents" count="1"/>
 </lootcontainer>
-		</append>
+
+</append>
+
 </configs>

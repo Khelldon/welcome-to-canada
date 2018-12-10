@@ -17,9 +17,11 @@
          and not(contains(@name, 'meleeToolTorch')) 
          and not(contains(@name, 'thrownAmmoMolotovCocktail')) 
          and not(contains(@name, 'resourceCloth'))
+         and not(contains(@tooltip, 'ttScrapMetalBrass'))
+         and not(contains(@tooltip, 'ttScrapMetalIron'))
+         and not(contains(@tooltip, 'ttScrapMetalLead'))
     ]" 
     name="craft_area">
     workbench
 </setattribute>
-
 </configs>
