@@ -353,9 +353,6 @@
 			<prefab name="army_camp_03" />
 			<prefab name="army_barracks_01" />
 			<prefab name="installation_red_mesa" max_count="1"/>
-			<prefab name="barn_01" />
-			<prefab name="barn_02" />
-			<prefab name="barn_03" />
 			<prefab name="bombshelter_lg_01" max_count="1"/>
 			<prefab name="bombshelter_md_01" max_count="1"/>
 		</prefab_rule>
