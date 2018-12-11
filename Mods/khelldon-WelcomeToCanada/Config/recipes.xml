@@ -54,7 +54,7 @@
 <append xpath="/recipes/recipe
 [
 starts-with(@name, 'wood') 
-or (ends-with(@name, 'Wood'))
+or ends-with(@name, 'Wood')
 or (contains(@name, 'whitePicketFenceSheet'))
 or (contains(@name, 'cntCabinetBottom'))
 or (contains(@name, 'cntCupboardCabinetRedTopClosed'))
