@@ -30,8 +30,44 @@
     workbench
 </setattribute>
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Bedroll Recipe Change. -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 
+<remove xpath="/recipes/recipe[@name='bedroll']" />
+<append xpath="/recipes">
 
+<recipe name="bedroll" count="1">
+	<ingredient name="resourceCloth" count="10"/>
+	<ingredient name="resourceCropCottonPlant" count="10"/>
+</recipe>
+
+</append>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Add nails to things that should need nails. -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<append xpath="/recipes/recipe
+[
+starts-with(@name, 'wood') 
+or (ends-with(@name, 'Wood'))
+or (contains(@name, 'whitePicketFenceSheet'))
+or (contains(@name, 'cntCabinetBottom'))
+or (contains(@name, 'cntCupboardCabinetRedTopClosed'))
+or (contains(@name, 'cntWoodDesk01Closed'))
+or (contains(@name, 'cntSecureStorageChest'))
+or (contains(@name, 'endTable'))
+and not (contains(@name, 'meleeClubWood'))
+and not (contains(@name, 'woodChair1'))
+and not (contains(@name, 'woodTable'))
+and not (contains(@name, 'resourceWood'))
+]">
+	<ingredient name="resourceNail" count="4"/>
+</append>
 
 
 
@@ -57,13 +93,6 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-
-
-
-
-
-
-
 
 
 <append xpath="/recipes">

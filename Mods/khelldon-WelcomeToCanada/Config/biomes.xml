@@ -320,6 +320,8 @@
 			<decoration type="block" blockname="treeSnowyDeadBush" prob ="0.005" rotatemax="7"/>
 			<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".1"/>
 			<decoration type="block" blockname="treeStump" prob =".0002" rotatemax="7"/>
+			<!-- Khelldon - Cotton for bedroll -->
+			<decoration type="block" blockname="plantedCotton3Harvest" prob="0.005"/>
 		</decorations>
 		<terrain class="Mountains"/>
 		<spectrum name="snow"/>
@@ -874,7 +876,7 @@
 			<decoration type="block" blockname="cntForestRandomLootHelper" prob="0.00025"/>
 			<decoration type="prefab" name="rock_form02" prob=".001" rotatemax="7"/>
 			<decoration type="prefab" name="rock_form01" prob=".001" rotatemax="7"/>
-			<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001"/>
+			<decoration type="block" blockname="plantedCotton3Harvest" prob="0.05"/>
 			<decoration type="block" blockname="rock01" prob =".001"/>
 			<decoration type="block" blockname="rock02" prob =".001"/>
 			<decoration type="block" blockname="rock04" prob =".001"/>

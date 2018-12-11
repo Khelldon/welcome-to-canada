@@ -134,7 +134,9 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
+	
 
+<append xpath="/blocks">
 
 
 <!-- ######################################################### -->
@@ -142,9 +144,6 @@
 <!-- Khelldon - Starter Crate -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-	
-
-<append xpath="/blocks">
 <block name="khelldonStarterCrate">
 	<property name="CustomIcon" value="cntShippingCrateHero"/>
 	<property name="DescriptionKey" value="khelldonStarterCrateDesc"/>
