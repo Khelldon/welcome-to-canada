@@ -382,4 +382,51 @@
 			<prefab name="settlement_trader_05" min_count="1" max_count="2" />
 		</prefab_rule>
 </append>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- XXXXXX Khelldon - Biome Spawn Rules - NOT YET WORKING XXX -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<remove xpath="/rwgmixer/biome_spawn_rules" />
+
+<append xpath="/rwgmixer">
+
+	<biome_spawn_rules>
+	
+		<biome_spawn_rule name="pine_forest">
+			<biome_generator range="0,0.3"/>
+			<terrain_generator range="150,175"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="snow">
+			<biome_generator range="0.3,0.6"/>
+			<terrain_generator range="176,255"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="desert">
+			<biome_generator range="0.3,0.6"/>
+		</biome_spawn_rule>
+
+		<biome_spawn_rule name="burnt_forest">
+			<biome_generator range="0.6,0.8"/>
+		</biome_spawn_rule>
+
+		<biome_spawn_rule name="wasteland">
+			<biome_generator range="0.8,1"/>
+		</biome_spawn_rule>
+
+		<biome_spawn_rule name="radiated">
+			<distance_from_center range="4000,5000"/>
+		</biome_spawn_rule>
+
+		<biome_spawn_rule name="water">
+			<terrain_generator range="-31,-1"/>
+		</biome_spawn_rule>
+
+	</biome_spawn_rules>
+	
+</append>
+
 </configs>
