@@ -5,8 +5,8 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
-<set xpath="/windows/window[@name='menuBackground']/texture[@name='bgTexture']/@texture">@file:Mods/khelldon-WelcomeToCanada/Textures/UI/MenuBG.png</set>
-<set xpath="/windows/window[@name='mainMenuLogo']/texture[@name='gameLogo']/@texture">@file:Mods/khelldon-WelcomeToCanada/Textures/UI/WTCLogo.png</set>
+<set xpath="/windows/window[@name='menuBackground']/texture[@name='bgTexture']/@texture">@modfolder:Textures/UI/MenuBG.png</set>
+<set xpath="/windows/window[@name='mainMenuLogo']/texture[@name='gameLogo']/@texture">@modfolder:Textures/UI/WTCLogo.png</set>
 
 
 <!-- ######################################################### -->

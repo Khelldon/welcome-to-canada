@@ -1,4 +1,4 @@
-<configs>
+<Khelldon>
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Make most things craftable only in the workbench -->
@@ -46,26 +46,7 @@
 
 </append>
 
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<!-- Khelldon - Add nails to things that should need nails. -->
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<append xpath="/recipes/recipe[
-starts-with(@name, 'wood')
-or (contains(@name, 'whitePicketFenceSheet'))
-or (contains(@name, 'cntCabinetBottom'))
-or (contains(@name, 'cntCupboardCabinetRedTopClosed'))
-or (contains(@name, 'cntWoodDesk01Closed'))
-or (contains(@name, 'cntSecureStorageChest'))
-or (contains(@name, 'endTable'))
-or (contains(@name, 'ladderWood'))
-or (contains(@name, 'window03Wood'))
-and not(contains(@name, 'woodChair1'))
-and not(contains(@name, 'woodTable'))
-]">
-	<ingredient name="resourceNail" count="4"/>
-</append>
+
 
 
 
@@ -97,4 +78,4 @@ and not(contains(@name, 'woodTable'))
 <!-- Stuff goes here -->
 </append>
 
-</configs>
+</Khelldon>

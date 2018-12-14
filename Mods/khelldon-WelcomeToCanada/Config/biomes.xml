@@ -1,4 +1,4 @@
-<configs>
+<Khelldon>
 <remove xpath="/worldgeneration/biomes/biome[@name='snow']" />
 <remove xpath="/worldgeneration/biomes/biome[@name='pine_forest']" />
 <remove xpath="/worldgeneration/biomes/biome[@name='desert']" />
@@ -1173,4 +1173,4 @@
 		<terrain class="Wasteland"/>
 	</biome>
 </append>
-</configs>
+</Khelldon>
