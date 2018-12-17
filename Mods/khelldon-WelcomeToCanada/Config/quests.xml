@@ -40,7 +40,7 @@
     <quest id="quest_BasicSurvival2">
 		<property name="group_name_key" value="quest_BasicSurvival" />
 		<property name="name_key" value="quest_BasicSurvival2" />
-		<property name="subtitle" value="Craft a Stone Axe" />
+		<property name="subtitle" value="Place Your Workbench" />
 		<property name="subtitle_key" value="quest_BasicSurvival2_subtitle" />
 		<property name="description_key" value="quest_BasicSurvival2_description" />
 		<property name="icon" value="ui_game_symbol_hammer" />

@@ -1,31 +1,42 @@
 <Khelldon>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Starts Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Workbench Tweaks -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
-<!-- Recipes Shown in Workbench -->
-<set xpath="/blocks/block[@name='workbench']/property[@class='Workstation']/property[@name='CraftingAreaRecipes']/@value">player,workbench</set>
+<!-- Recipes Shown in Workbench - remove player crefting items from workbench list. -->
+<set xpath="/blocks/block[@name='workbench']/property[@class='Workstation']/property[@name='CraftingAreaRecipes']/@value">workbench</set>
 
-<!-- Pick up workbench when destroyed -->
+<!-- Pick up workbench when destroyed - Since the workbench is so important we want to let players pick it up -->
 <remove xpath="/blocks/block[@name='workbench']/drop[@event='Destroy']"/>
 <insertBefore xpath="/blocks/block[@name='workbench']/drop[@event='Fall']">
     <drop event="Destroy" name="workbench" count="1"/>
 </insertBefore>
 
-<!-- change workbench health - originally 800hp -->
+<!-- change workbench health - originally 800hp too much to easily destroy -->
 <set xpath="/blocks/block[@name='workbench']/property[@name='MaxDamage']/@value">200</set>
 
-<!-- Set Crafting Groups for workbench -->
+<!-- Set Crafting Groups for workbench, we'll assign it to all groups to make sure it's obvious you need it for everything -->
 <set xpath="/blocks/block[@name='workbench']/property[@name='Group']/@value">Basics,Building,Science,Decor/Miscellaneous,Ammo/Weapons,Tools/Traps,Resources,Chemicals,Clothing</set>
 
-<!-- Remove destroy bonus mats for workbench -->
+<!-- Remove destroy bonus mats for workbench, this will stop players from getting unlimited mats by destroying the workbench and placing it loop. -->
 <remove xpath="/blocks/block[@name='workbench']/drop[@name='resourceScrapIron']"/>
 <remove xpath="/blocks/block[@name='workbench']/drop[@name='resourceWood']"/>
 <remove xpath="/blocks/block[@name='workbench']/drop[@name='terrStone']"/>
 <remove xpath="/blocks/block[@name='workbench']/drop[@name='resourceForgedIron']"/>
 <remove xpath="/blocks/block[@name='workbench']/drop[@name='resourceMechanicalParts']"/>
+
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -101,42 +112,571 @@
 	<property name="MaxDamage" value="200"/>
 </insertAfter>
 
+		
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Nuts and Bolts -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/blocks/block
+[
+@name='scrapIronFrameMaster'
+or @name='scrapIronNoUpgradeMaster'
+or @name='rScrapIronMaster'
+or @name='ironDoor1_v1'
+or @name='scrapHatch_v1'
+or @name='vaultDoor01'
+or @name='vaultHatch_v1'
+or @name='garageDoorMetal_v1'
+or @name='metalReinforcedWoodDrawBridge'
+]
+/property
+[
+@class='RepairItems'
+]">
+<property name="khelldonNutsAndBolts" value="2"/>
+</append>
+
+
+<!--
+Khelldon - Let's make it so you can use a wrench to take things apart that you get nuts and bolts
+Note: This will also work with the Crowbar if you have the "Get Nailed" modlet installed
+-->
+
+<append xpath="/blocks/block
+[
+@name='scrapIronFrameMaster'
+or @name='scrapIronNoUpgradeMaster'
+or @name='rScrapIronMaster'
+or @name='ironDoor1_v1'
+or @name='scrapHatch_v1'
+or @name='vaultDoor01'
+or @name='vaultHatch_v1'
+or @name='garageDoorMetal_v1'
+or @name='cntCar03SedanDamage0'
+or @name='cntCar03SedanDamage1'
+or @name='cntCar03SedanDamage2'
+or @name='metalReinforcedWoodDrawBridge'
+or @name='crushedCars'
+or @name='airConditioner'
+or @name='airConditionVentFan'
+or @name='workbench'
+or @name='cntCollapsedWorkbench'
+or @name='cementMixer'
+or @name='cntCollapsedCementMixer'
+or @name='chemistryStation'
+or @name='cntCollapsedChemistryStation'
+or @name='generatorbank'
+or @name='cntCollapsedGeneratorbank'
+or @name='solarbank'
+or @name='cntCollapsedSolarbank'
+or @name='batterybank'
+or @name='cntCollapsedBatterybank'
+or @name='fusebox'
+or @name='cntMicrowaveOvenVer1Open'
+or @name='cntRetroFridgeVer1Closed'
+or @name='cntFridgeTop'
+or @name='cntFridgeBottom'
+or (contains(@name, 'controlPanel'))
+or (contains(@name, 'satelliteDish'))
+or (contains(@name, 'cntBus'))
+or (contains(@name, 'cntCar03SedanDamage0v'))
+or (contains(@name, 'cntCar03SedanDamage1v'))
+]">
+	<drop event="Harvest" name="khelldonNutsAndBolts" count="2,5" tag="nailsHarvest"/>
+</append>
+
+		
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Cobblestone -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<!-- Add mortar to the repair items of the two masters, these will append throughout all flagstone amnd cobblestone blocks -->
+<append xpath="/blocks/block[@name='flagstoneNoUpgradeMaster' or @name='cobblestoneMaster']/property[@class='RepairItems']">
+<property name="khelldonMortar" value="1"/>
+</append>
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Frames with nails -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<append xpath="/blocks/block
+[
+@name='woodWeakNoUpgradeMaster'
+or @name='woodNoUpgradeMaster'
+or @name='rWoodMaster'
+or @name='whitePicketFenceSheet'
+or @name='cntCabinetBottom'
+or @name='cntCupboardCabinetRedTopClosed'
+or @name='cntWoodDesk01Closed'
+or @name='cntSecureStorageChest'
+or @name='endTable'
+or @name='ladderWood'
+or @name='window03Wood'
+or @name='secureDoorWooden'
+or @name='houseFrontDoor1_v1'
+or @name='houseFrontDoor2_v1'
+]">
+	<drop event="Harvest" name="resourceNail" count="1,2" tag="nailsHarvest"/>
+	<drop event="Harvest" name="resourceNailBent" count="1,2" tag="allHarvest"/> 
+</append>
+<append xpath="/blocks/block
+[
+@name='woodWeakNoUpgradeMaster'
+or @name='woodNoUpgradeMaster'
+or @name='rWoodMaster'
+or @name='whitePicketFenceSheet'
+or @name='cntCabinetBottom'
+or @name='cntCupboardCabinetRedTopClosed'
+or @name='cntWoodDesk01Closed'
+or @name='cntSecureStorageChest'
+or @name='endTable'
+or @name='ladderWood'
+or @name='window03Wood'
+or @name='secureDoorWooden'
+or @name='houseFrontDoor1_v1'
+or @name='houseFrontDoor2_v1'
+]
+/property
+[
+@class='RepairItems'
+]">
+<property name="resourceNail" value="2"/>
+</append>
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Frames with no glue -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+
+<!--
+Khelldon - Change default wooden frames material so they won't stick and behave like Hay Bales.
+-->
+
+<set xpath="/blocks/block[@name='woodWeakNoUpgradeMaster']/property[@name='Material']/@value">khelldonFramesNoGlue</set>
+
+
+
+
+<!--
+Khelldon - Change default wooden frames upgrade to tier 2 frames
+-->
+
+<set xpath="/blocks/block[@name='woodFrameMaster']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameMaster</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeIncline']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeIncline</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeStairs']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeStairs</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeTipCNRFullTop']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeTipCNRFullTop</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeTipStairs']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeTipStairs</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeTipCNRFullBottom']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeTipCNRFullBottom</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeCNRInsideBottom']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeCNRInsideBottom</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeCNRInsideTop']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeCNRInsideTop</set>
+<set xpath="/blocks/block[@name='woodFrameCNRRampFiller']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameCNRRampFiller</set>
+<set xpath="/blocks/block[@name='woodFrameStairs25CornerCNR']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameStairs25CornerCNR</set>
+<set xpath="/blocks/block[@name='woodFrameGableInvertedSteep']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameGableInvertedSteep</set>
+<set xpath="/blocks/block[@name='woodFrameGableQuarter']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameGableQuarter</set>
+<set xpath="/blocks/block[@name='woodFrameArch']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameArch</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeCNRInsideSteepTop']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeCNRInsideSteepTop</set>
+<set xpath="/blocks/block[@name='woodFrameQuarterCNR']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameQuarterCNR</set>
+<set xpath="/blocks/block[@name='woodFrameQuarterCNR3Way']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameQuarterCNR3Way</set>
+<set xpath="/blocks/block[@name='woodFrameHalf']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameHalf</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeCNRSteepTop']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeCNRSteepTop</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeCNRSteepBase']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeCNRSteepBase</set>
+<set xpath="/blocks/block[@name='woodFrameQuarterSCtr']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameQuarterSCtr</set>
+<set xpath="/blocks/block[@name='woodFrameQuarterTeeSCtr']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameQuarterTeeSCtr</set>
+<set xpath="/blocks/block[@name='woodFrameCNRInside']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameCNRInside</set>
+<set xpath="/blocks/block[@name='woodFrameCNRFull']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameCNRFull</set>
+<set xpath="/blocks/block[@name='woodFrameBlock']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameBlock</set>
+<set xpath="/blocks/block[@name='woodFrameWedgeCNRInsideSteepBase']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedgeCNRInsideSteepBase</set>
+<set xpath="/blocks/block[@name='woodFrameGableInvertedQuarter']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameGableInvertedQuarter</set>
+<set xpath="/blocks/block[@name='woodFrameGableInvertedHalf']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameGableInvertedHalf</set>
+<set xpath="/blocks/block[@name='woodFrameWedge']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameWedge</set>
+<set xpath="/blocks/block[@name='woodFrameRamp']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFrameRamp</set>
+<set xpath="/blocks/block[@name='woodFramePlateOffset']/property[@class='UpgradeBlock']/property[@name='ToBlock']/@value">khelldonWoodFramePlateOffset</set>
+
+
+
+
+<!--
+Khelldon - Change default wooden frames upgrade to require nails
+-->
+
+<set xpath="/blocks/block[starts-with(@name, 'woodFrame')]/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceNail</set>
 
 
 
 
 
-
-
-
-
-
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     New Blocks Start Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-
-	
+<!--
+Khelldon - Add a second Tier of wooden frames, these have glue
+-->
 
 <append xpath="/blocks">
+<block name="khelldonWoodWeakNoUpgradeMaster">
+	<property name="Extends" value="woodWeakNoUpgradeMaster"/>
+	<property name="Material" value="Mwood_weak"/>
+</block>
+<block name="khelldonWoodFrameMaster">
+	<property name="Extends" value="khelldonWoodWeakNoUpgradeMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/> 
+	<property name="MaxDamage" value="50"/>
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="Model" value="cube"/>
+	<property name="Mesh" value="cutout"/>
+	<property name="Frame"/>
+	<property name="Texture" value="381"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Collide" value="movement,melee,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodMaster"/>
+		<property name="Item" value="resourceWood"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="CustomUpgradeSound" value="place_block_wood"/>
+	<drop event="Destroy" name="resourceWood" count="1" prob="1"/>
+	<property name="FilterTags" value="fbuilding,fwood,fconstruction,fframes"/>
+	<property name="SortOrder1" value="g0t0"/>
+	<property name="SortOrder2" value="0002"/>
+</block>
+<block name="khelldonWoodFrameWedgeIncline">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge60_incline"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeIncline"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedgeStairs">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_stairs"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeStairs"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedgeTipCNRFullTop">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge60_corner"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeTipCNRFullTop"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedgeTipStairs">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_tip_stairs"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeTipStairs"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedgeTipCNRFullBottom">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge60_tip_corner"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeTipCNRFullBottom"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedgeCNRInsideBottom">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge60_inside_corner"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeCNRInsideBottom"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedgeCNRInsideTop">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge60_inside_corner_2"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeCNRInsideTop"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameCNRRampFiller">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="ramp_corner_filler"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodCNRRampFiller"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameStairs25CornerCNR">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="stairs_filled_corner"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodStairs25CornerCNR"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameGableInvertedSteep">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="gable_inverted_steep"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodGableInvertedSteep"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameGableQuarter">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_tip_quarter"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodGableQuarter"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameArch">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="Arch"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodArch"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedgeCNRInsideSteepTop">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_inside_corner_base"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeCNRInsideSteepTop"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameQuarterCNR">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="quarter_inside_corner"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodQuarterCNR"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameQuarterCNR3Way">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="quarter_inside_corner_3way"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodQuarterCNR3Way"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameHalf">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_half"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodHalf"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedgeCNRSteepTop">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge60_tip_corner_top"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeCNRSteepTop"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedgeCNRSteepBase">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge60_tip_corner_base"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeCNRSteepBase"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameQuarterSCtr">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="quarter_centered_wall"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodQuarterSCtr"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameQuarterTeeSCtr">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="quarter_t_centered"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodQuarterTeeSCtr"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameCNRInside">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="ramp_inside_corner"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodCNRInside"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameCNRFull">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="ramp_outside_corner"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodCNRFull"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameBlock">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_frame"/>
+	<property name="Texture" value="241"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodBlock"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedgeCNRInsideSteepBase">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge_inside_corner_top"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedgeCNRInsideSteepBase"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameGableInvertedQuarter">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="gable_inverted_quarter"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodGableInvertedQuarter"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameGableInvertedHalf">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="gable_inverted_half"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodGableInvertedHalf"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameWedge">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge60"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodWedge"/>
+	</property>
+</block>
+<block name="khelldonWoodFrameRamp">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Mesh" value="opaque"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="ramp_frame"/>
+	<property name="Texture" value="241"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodRamp"/>
+	</property>
+</block>
+<block name="khelldonWoodFramePlateOffset">
+	<property name="Extends" value="khelldonWoodFrameMaster"/>
+	<property name="RandomTintColor1" value="130,130,130"/>
+	<property name="CanPickup" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="tube_center_straight"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodPlateOffset"/>
+	</property>
+</block>
+
+</append>
 
 
 <!-- ######################################################### -->
@@ -144,6 +684,9 @@
 <!-- Khelldon - Starter Crate -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
+
+<append xpath="/blocks">
+
 <block name="khelldonStarterCrate">
 	<property name="CustomIcon" value="cntShippingCrateHero"/>
 	<property name="DescriptionKey" value="khelldonStarterCrateDesc"/>
@@ -175,5 +718,13 @@
 </block>
 
 </append>
-		
+
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Ends Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 </Khelldon>

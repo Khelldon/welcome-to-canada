@@ -1,10 +1,212 @@
 <Khelldon>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Starts Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Make most things craftable only in the workbench -->
+<!-- Khelldon - Nuts And Bolts -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
+
+<!-- Melee Weapons and Tools. Things that need Just 1 Bolt -->
+<append xpath="/recipes/recipe[
+contains(@name, 'meleeToolFireaxeIron')
+or (contains(@name, 'MailBox'))
+or (contains(@name, 'thrownAmmoPipeBomb'))
+or (contains(@name, 'meleeToolFireaxeSteel'))
+or (contains(@name, 'meleeToolHoeIron'))
+or (contains(@name, 'meleeToolPickaxeIron'))
+or (contains(@name, 'meleeToolPickaxeSteel'))
+or (contains(@name, 'meleeToolShovelIron'))
+or (contains(@name, 'meleeToolShovelSteel'))
+or (contains(@name, 'meleeToolSledgehammer'))
+or (contains(@name, 'meleeToolWireTool'))
+or (contains(@name, 'switch'))
+or (contains(@name, 'electrictimerrelay'))
+]">
+	<ingredient name="khelldonNutsAndBolts" count="1"/>
+</append>
+<!-- Frames and other Blocks Things that need 4 Nuts and bolts -->
+<append xpath="/recipes/recipe[
+starts-with(@name, 'scrapIronFrame')
+or (contains(@name, 'meleeToolAuger'))
+or (contains(@name, 'meleeToolChainsaw'))
+or (contains(@name, 'cntBeerCooler'))
+or (contains(@name, 'Safe'))
+or (contains(@name, 'cntGreenDrawerSecure'))
+or (contains(@name, 'Fridge'))
+or (contains(@name, 'garageDoorMetal_v1'))
+or (contains(@name, 'rustyIronTable'))
+or (contains(@name, 'cntLockersShortClosed'))
+or (contains(@name, 'metalReinforcedWoodDrawBridge'))
+or (contains(@name, 'vehicleBicycleChassis'))
+or (contains(@name, 'vehicle4x4TruckAccessories'))
+or (contains(@name, 'officeChair01'))
+or (contains(@name, 'storeShelving01'))
+or (contains(@name, 'tv'))
+or (contains(@name, 'vaultDoor01'))
+or (contains(@name, 'vaultHatch_v1'))
+or (contains(@name, 'tableSaw'))
+or (contains(@name, 'generatorbank'))
+or (contains(@name, 'batterybank'))
+or (contains(@name, 'ceilingLight01_player'))
+or (contains(@name, 'spotlightPlayer'))
+or (contains(@name, 'speaker'))
+or (contains(@name, 'motionsensor'))
+or (contains(@name, 'bladeTrap'))
+or (contains(@name, 'dartTrap'))
+or (contains(@name, 'ironDoor1_v1'))
+or (contains(@name, 'scrapHatch_v1'))
+]">
+	<ingredient name="khelldonNutsAndBolts" count="4"/>
+</append>
+
+<!-- 
+Khelldon - Add a recipe for the nuts and bolts in the forge
+-->
+
+<append xpath="/recipes">
+
+<recipe name="khelldonNutsAndBolts" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+	<ingredient name="unit_iron" count="1"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+</append>
+
+		
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Cobblestone Mortar -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/recipes/recipe[starts-with(@name, 'flagstone')]">
+	<ingredient name="khelldonMortar" count="1"/>
+</append>
+
+
+
+<!-- Khelldon - Let's create a new recipe for mortar
+Real mortar is 3 parts sand to one part concrete but since we can't use concrete we'll sub in cobblestones
+The mixture also needs water.
+-->
+
+<append xpath="/recipes">
+<recipe name="khelldonMortar" count="1">
+	<ingredient name="resourceCobblestones" count="1"/>
+	<ingredient name="resourceCrushedSand" count="3"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+</append>
+
+
+
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - get nailed -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<append xpath="/recipes/recipe[
+starts-with(@name, 'wood')
+or (contains(@name, 'whitePicketFenceSheet'))
+or (contains(@name, 'cntCabinetBottom'))
+or (contains(@name, 'cntCupboardCabinetRedTopClosed'))
+or (contains(@name, 'cntWoodDesk01Closed'))
+or (contains(@name, 'cntSecureStorageChest'))
+or (contains(@name, 'secureDoorWooden'))
+or (contains(@name, 'endTable'))
+or (contains(@name, 'ladderWood'))
+or (contains(@name, 'window03Wood'))
+and not(contains(@name, 'woodChair1'))
+and not(contains(@name, 'woodTable'))
+]">
+	<ingredient name="resourceNail" count="4"/>
+</append>
+
+
+
+<!-- 
+Khelldon - Lets add a new recipe for Nails so we can turn our bent nails into regular nails
+Idea by Stompy 
+updated: Longer Craft time
+-->
+
+<append xpath="/recipes">
+
+<recipe name="resourceNail" count="1" craft_time="15">
+	<ingredient name="resourceNailBent" count="1"/>
+</recipe>
+
+</append>
+
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Rebar Bolts. -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/recipes">
+<!-- Standard Rebar Bolt made in forge and requires anvil -->
+<recipe name="khelldonRebarBolt" count="5" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+	<ingredient name="unit_iron" count="20"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+<!-- Heat the Bolt up in campfire for extra damage and fire effect - 30 seconds per bolt -->
+<recipe name="khelldonRebarBoltHot" count="1" craft_area="campfire" craft_time="30">
+	<ingredient name="khelldonRebarBolt" count="1"/>
+</recipe>
+
+</append>
+
+
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Bedroll Recipe Change. -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<remove xpath="/recipes/recipe[@name='bedroll']" />
+<append xpath="/recipes">
+
+<recipe name="bedroll" count="1">
+	<ingredient name="resourceCloth" count="10"/>
+	<ingredient name="resourceCropCottonPlant" count="10"/>
+</recipe>
+</append>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Suvival Machete. -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<append xpath="/recipes">
+<recipe name="khelldonSurvivalMachete" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="20"/>
+	<ingredient name="resourceLeather" count="1"/>
+</recipe>
+
+</append>
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Add to Workbench. This must be last. -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 <setattribute xpath="/recipes/recipe
      [
          not(contains(@craft_area, 'forge')) 
@@ -30,52 +232,12 @@
     workbench
 </setattribute>
 
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<!-- Khelldon - Bedroll Recipe Change. -->
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-
-<remove xpath="/recipes/recipe[@name='bedroll']" />
-<append xpath="/recipes">
-
-<recipe name="bedroll" count="1">
-	<ingredient name="resourceCloth" count="10"/>
-	<ingredient name="resourceCropCottonPlant" count="10"/>
-</recipe>
-
-</append>
-
-
-
-
 
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Ends Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     New Recipes Start Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-
-
-<append xpath="/recipes">
-<!-- Stuff goes here -->
-</append>
-
 </Khelldon>
