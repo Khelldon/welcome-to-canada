@@ -37,6 +37,9 @@
 <remove xpath="/blocks/block[@name='workbench']/drop[@name='resourceForgedIron']"/>
 <remove xpath="/blocks/block[@name='workbench']/drop[@name='resourceMechanicalParts']"/>
 
+<!-- stack -->
+<set xpath="/blocks/block[@name='workbench']/property[@name='Stacknumber']/@value">10</set>
+
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -50,6 +53,8 @@
 <remove xpath="/blocks/block[@name='campfire']/drop[@name='terrStone']"/>
 <!-- set health -->
 <set xpath="/blocks/block[@name='campfire']/property[@name='MaxDamage']/@value">100</set>
+<!-- stack -->
+<set xpath="/blocks/block[@name='campfire']/property[@name='Stacknumber']/@value">10</set>
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -67,6 +72,8 @@
 <remove xpath="/blocks/block[@name='chemistryStation']/drop[@name='resourceMetalPipe']"/>
 <!-- set health -->
 <set xpath="/blocks/block[@name='chemistryStation']/property[@name='MaxDamage']/@value">200</set>
+<!-- stack -->
+<set xpath="/blocks/block[@name='chemistryStation']/property[@name='Stacknumber']/@value">10</set>
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -83,6 +90,8 @@
 <remove xpath="/blocks/block[@name='forge']/drop[@name='resourceLeather']"/>
 <!-- set health -->
 <set xpath="/blocks/block[@name='forge']/property[@name='MaxDamage']/@value">200</set>
+<!-- stack -->
+<set xpath="/blocks/block[@name='forge']/property[@name='Stacknumber']/@value">10</set>
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -100,6 +109,8 @@
 <remove xpath="/blocks/block[@name='cementMixer']/drop[@name='resourceMechanicalParts']"/>
 <!-- set health -->
 <set xpath="/blocks/block[@name='cementMixer']/property[@name='MaxDamage']/@value">200</set>
+<!-- stack -->
+<set xpath="/blocks/block[@name='cementMixer']/property[@name='Stacknumber']/@value">10</set>
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -110,7 +121,59 @@
     <drop event="Destroy" name="tableSaw" count="1"/>
     <!-- set health -->
 	<property name="MaxDamage" value="200"/>
+	<property name="Stacknumber" value="10"/>
 </insertAfter>
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Turn Sawhorse into workstation -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+
+<remove xpath="/blocks/block[@name='woodSawhorse']"/>
+<append xpath="/blocks">
+
+<block name="woodSawhorse">
+	<property name="CustomIcon" value="woodSawhorse"/>
+	<property name="DescriptionKey" value="woodSawhorseDesc"/>
+	<property name="Class" value="Workstation"/>
+	<property name="Material" value="Mwood_regular"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="Shape" value="New"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="sawhorse"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="HeatMapStrength" value="0.5"/>
+	<property name="HeatMapTime" value="1200"/>
+	<property name="HeatMapFrequency" value="25"/>
+	<property name="Stacknumber" value="10"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="woodSawhorse"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+	<property name="OpenSound" value="open_workbench" />
+	<property name="CloseSound" value="close_workbench" />
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+		<property name="resourceNail" value="4"/>
+	</property>
+	<drop event="Destroy" name="woodSawhorse" count="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="EconomicValue" value="76"/>
+	<property name="Group" value="Building"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>
+
+</append>
 
 		
 <!-- ######################################################### -->
@@ -261,7 +324,8 @@ or @name='houseFrontDoor2_v1'
 Khelldon - Change default wooden frames material so they won't stick and behave like Hay Bales.
 -->
 
-<set xpath="/blocks/block[@name='woodWeakNoUpgradeMaster']/property[@name='Material']/@value">khelldonFramesNoGlue</set>
+<set xpath="/blocks/block[@name='woodWeakNoUpgradeMaster']/property[@name='Material']/@value">khelldonFramesNoGlue</set
+
 
 
 
@@ -305,10 +369,11 @@ Khelldon - Change default wooden frames upgrade to tier 2 frames
 
 
 <!--
-Khelldon - Change default wooden frames upgrade to require nails
+Khelldon - Change default wooden frames upgrade to require nails for nailing them in place
 -->
 
-<set xpath="/blocks/block[starts-with(@name, 'woodFrame')]/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceNail</set>
+<set xpath="/blocks/block[@name, 'woodFrameMaster']/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceNail</set>
+
 
 
 
@@ -337,7 +402,7 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Collide" value="movement,melee,rocket"/>
-	<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+	<property class="RepairItems"> <property name="resourceWood" value="2"/><property name="resourceNail" value="2"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodMaster"/>
 		<property name="Item" value="resourceWood"/>
@@ -345,6 +410,8 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
+	<drop event="Harvest" name="resourceNail" count="1,2" tag="nailsHarvest"/>
+	<drop event="Harvest" name="resourceNailBent" count="1,2" tag="allHarvest"/> 
 	<drop event="Destroy" name="resourceWood" count="1" prob="1"/>
 	<property name="FilterTags" value="fbuilding,fwood,fconstruction,fframes"/>
 	<property name="SortOrder1" value="g0t0"/>

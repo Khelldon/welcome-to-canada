@@ -196,10 +196,40 @@ updated: Longer Craft time
 <append xpath="/recipes">
 <recipe name="khelldonSurvivalMachete" count="1" craft_area="workbench">
 	<ingredient name="resourceForgedSteel" count="20"/>
-	<ingredient name="resourceLeather" count="1"/>
+	<ingredient name="resourceWood" count="2"/>
 </recipe>
 
 </append>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Create sawhorse and Add to Sawhorse. -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<append xpath="/recipes">
+
+<recipe name="woodSawhorse" count="1" craft_area="workbench">
+	<ingredient name="resourceWood" count="10"/>
+	<ingredient name="resourceNail" count="4"/>
+</recipe>
+
+<recipe name="woodFrameBlock" count="1" craft_area="woodSawhorse">
+	<ingredient name="resourceWood" count="2"/>
+	<ingredient name="resourceNail" count="4"/>
+</recipe>
+
+<recipe name="woodFrameRamp" count="1" craft_area="woodSawhorse">
+	<ingredient name="resourceWood" count="2"/>
+	<ingredient name="resourceNail" count="4"/>
+</recipe>
+
+<recipe name="ammoArrowStone" count="1" craft_area="woodSawhorse">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="resourceWood" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+</append>
+
 
 
 <!-- ######################################################### -->
@@ -211,6 +241,8 @@ updated: Longer Craft time
      [
          not(contains(@craft_area, 'forge')) 
          and not(contains(@craft_area, 'workbench')) 
+         and not(contains(@craft_area, 'khelldonAdvancedWorkbench')) 
+         and not(contains(@craft_area, 'woodSawhorse')) 
          and not(contains(@craft_area, 'campfire')) 
          and not(contains(@craft_area, 'cementMixer')) 
          and not(contains(@craft_area, 'tablesaw')) 
@@ -219,6 +251,8 @@ updated: Longer Craft time
          and not(contains(@name, 'campfire')) 
          and not(contains(@name, 'medicalFirstAidBandage')) 
          and not(contains(@name, 'workbench')) 
+         and not(contains(@name, 'khelldonAdvancedWorkbench')) 
+         and not(contains(@name, 'woodSawhorse')) 
          and not(contains(@name, 'meleeBoneShiv')) 
          and not(contains(@name, 'meleeClubWood')) 
          and not(contains(@name, 'meleeToolTorch')) 
