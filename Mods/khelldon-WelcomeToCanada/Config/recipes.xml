@@ -213,6 +213,11 @@ updated: Longer Craft time
 	<ingredient name="resourceNail" count="4"/>
 </recipe>
 
+<recipe name="woodSawhorse" count="1" craft_area="woodSawhorse">
+	<ingredient name="resourceWood" count="10"/>
+	<ingredient name="resourceNail" count="4"/>
+</recipe>
+
 <recipe name="woodFrameBlock" count="1" craft_area="woodSawhorse">
 	<ingredient name="resourceWood" count="2"/>
 	<ingredient name="resourceNail" count="4"/>

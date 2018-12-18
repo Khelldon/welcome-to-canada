@@ -11,4 +11,6 @@
 	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
 	<!-- Chemistry station crafting slots -->
 	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Khelldon - Sawhorse crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_woodSawhorse']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
 </configs>
