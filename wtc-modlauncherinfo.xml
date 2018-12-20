@@ -31,7 +31,7 @@ Keep auto updates checked.
 The following download link is for mod launcher use ONLY! For a direct download link or server admin files, please visit the forum.
 			</Description>
 			<Excludes>
-                     <Exclude>RJextra</Exclude>
+                     <Exclude>Khelldon-Extras</Exclude>
             </Excludes>
 		</Server>
 	</ServerGroup>
