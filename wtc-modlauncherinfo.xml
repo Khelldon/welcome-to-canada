@@ -32,7 +32,6 @@ The following download link is for mod launcher use ONLY! For a direct download 
 			</Description>
 			<Excludes>
                      <Exclude>RJextra</Exclude>
-                     <Exclude>Mods</Exclude>
             </Excludes>
 		</Server>
 	</ServerGroup>
