@@ -183,7 +183,7 @@
 <!-- Khelldon - Main Snow Biome  -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-	<biome name="pine_forest" biomemapcolor="#fdffff">
+	<biome name="pine_forest" biomemapcolor="#feffff">
 		<weather>
 			<Temperature min="-80" max="-30" prob="1"/>
 			<Fog min="0" max="0" prob=".9"/>
@@ -343,7 +343,7 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 	
-	<biome name="desert" biomemapcolor="#FAFFFF">
+	<biome name="desert" biomemapcolor="#FdFFFF">
 	<weather>
 			<Temperature min="-80" max="-30" prob="1"/>
 			<Fog min="0" max="0" prob=".9"/>
@@ -498,7 +498,7 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 	
-	<biome name="water" biomemapcolor="#324c6a">
+	<biome name="water" biomemapcolor="#c0c0ff">
 		<weather>
 			<Temperature min="0" max="10" prob="1"/>
 			<CloudThickness min="5" max="50" prob="1"/>
@@ -538,7 +538,7 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer fillupto="58" filluptorg="58" blockname="water"/>
+			<layer fillupto="58" filluptorg="58" blockname="terrIce"/>
 			<layer depth="1" blockname="terrSnow"> <resource blockname="terrOreSandPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="5" blockname="terrSand"> <resource blockname="terrOreSandPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -579,7 +579,7 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 	
-	<biome name="onlyWater" biomemapcolor="#334c6a">
+	<biome name="onlyWater" biomemapcolor="#c0c0fe">
 		<weather>
 			<Temperature min="0" max="10" prob="1"/>
 			<CloudThickness min="5" max="50" prob="1"/>
@@ -641,7 +641,7 @@
 <!-- Khelldon - Feral Forest Biome -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-	<biome name="wasteland" biomemapcolor="#ffa800">
+	<biome name="wasteland" biomemapcolor="#fbffff">
 		<weather>
 			<Temperature min="-80" max="-30" prob="1"/>
 			<Fog min="0" max="0" prob=".9"/>
@@ -798,7 +798,7 @@
 <!-- Khelldon - Thick Forest -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-	<biome name="burnt_forest" biomemapcolor="#004000">
+	<biome name="burnt_forest" biomemapcolor="#faffff">
        <weather>
 			<Temperature min="-80" max="-30" prob="1"/>
 			<Fog min="0" max="0" prob=".9"/>
@@ -1054,7 +1054,7 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="water"/>
+			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="3" blockname="terrAsphalt"/>
 			<layer depth="4" blockname="terrDirt"> <resource blockname="terrGravel" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -1156,7 +1156,7 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="water"/>
+			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="1" blockname="terrDestroyedStone"> <resource blockname="terrOreGravelPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="2" blockname="terrDestroyedStone"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
