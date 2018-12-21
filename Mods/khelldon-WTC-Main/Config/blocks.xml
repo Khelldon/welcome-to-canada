@@ -326,7 +326,7 @@ or @name='houseFrontDoor2_v1'
 Khelldon - Change default wooden frames material so they won't stick and behave like Hay Bales.
 -->
 
-<set xpath="/blocks/block[@name='woodWeakNoUpgradeMaster']/property[@name='Material']/@value">khelldonFramesNoGlue</set
+<set xpath="/blocks/block[@name='woodWeakNoUpgradeMaster']/property[@name='Material']/@value">khelldonFramesNoGlue</set>
 
 
 
