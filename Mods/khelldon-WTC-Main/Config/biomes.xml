@@ -541,7 +541,7 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer fillupto="58" filluptorg="58" blockname="water"/>
+			<layer fillupto="58" filluptorg="58" blockname="terrIce"/>
 			<layer depth="1" blockname="terrSand"> <resource blockname="terrOreSandPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="5" blockname="terrSand"> <resource blockname="terrOreSandPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -597,7 +597,7 @@
 			<Wind min="20" max="100" prob="0.1"/>
 		</weather>
 		<layers>
-			<layer fillupto="9" blockname="water"/>
+			<layer fillupto="9" blockname="terrIce"/>
 			<layer depth="1" blockname="terrSand"> <resource blockname="terrOreSandPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="5" blockname="terrSand"> <resource blockname="terrOreSandPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -718,7 +718,7 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="water"/>
+			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="1" blockname="terrDestroyedStone"> <resource blockname="terrOreGravelPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="2" blockname="terrDestroyedStone"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
@@ -1020,7 +1020,7 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="water"/>
+			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="3" blockname="terrAsphalt"/>
 			<layer depth="4" blockname="terrDirt"> <resource blockname="terrGravel" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -1122,7 +1122,7 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="water"/>
+			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="1" blockname="terrDestroyedStone"> <resource blockname="terrOreGravelPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="2" blockname="terrDestroyedStone"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
