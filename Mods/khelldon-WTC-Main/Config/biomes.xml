@@ -41,6 +41,20 @@
     </weather>
 		<replacements>
 			<replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal"/>
+			<replace source="treeMountainPine12m" target="treeWinterPine13m"/>
+			<replace source="treeMountainPine19m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine27m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine31m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPineDry21m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine41m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine48m" target="treeWinterPine28m"/>
+			<replace source="treeOakLrg01" target="treeWinterPine28m"/>
+			<replace source="treeOakMed01" target="treeWinterPine13m"/>
+			<replace source="treeOakMed02" target="treeWinterPine19m"/>
+			<replace source="treeOakSml01" target="treeWinterEverGreen"/>
+			<replace source="treeFirLrg01" target="treeWinterPine28m"/>
+			<replace source="treeDeadShrub" target="treeSnowyDeadBush"/>
+			<replace source="treeJuniper4m" target="treeWinterEverGreen"/>
 		</replacements>
 
 		<subbiome prob="0.1">
@@ -136,7 +150,6 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="4" blockname="terrSnow"> <resource blockname="terrOreGravelPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -166,11 +179,11 @@
 			<decoration type="block" blockname="rockResource" prob =".02" checkresource="true" rotatemax="3"/>
 			<decoration type="block" blockname="rockResource02" prob =".02" checkresource="true" rotatemax="3"/>
 			<decoration type="block" blockname="cntBirdnest" prob ="0.0007"/>
-			<decoration type="block" blockname="treeWinterEverGreen" prob="0.003" rotatemax="7"/>
-			<decoration type="block" blockname="treeWinterPine13m" prob="0.003" rotatemax="7"/>
-			<decoration type="block" blockname="treeWinterPine19m" prob="0.003" rotatemax="7"/>
-			<decoration type="block" blockname="treeWinterPine28m" prob="0.003" rotatemax="7"/>
-			<decoration type="block" blockname="treeSnowyDeadBush" prob ="0.005" rotatemax="7"/>
+			<decoration type="block" blockname="treeWinterEverGreen" prob="0.03" rotatemax="7"/>
+			<decoration type="block" blockname="treeWinterPine13m" prob="0.03" rotatemax="7"/>
+			<decoration type="block" blockname="treeWinterPine19m" prob="0.03" rotatemax="7"/>
+			<decoration type="block" blockname="treeWinterPine28m" prob="0.03" rotatemax="7"/>
+			<decoration type="block" blockname="treeSnowyDeadBush" prob ="0.05" rotatemax="7"/>
 			<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".1"/>
 			<decoration type="block" blockname="treeStump" prob =".0002" rotatemax="7"/>
 		</decorations>
@@ -199,6 +212,20 @@
     </weather>
 		<replacements>
 			<replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal"/>
+			<replace source="treeMountainPine12m" target="treeWinterPine13m"/>
+			<replace source="treeMountainPine19m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine27m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine31m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPineDry21m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine41m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine48m" target="treeWinterPine28m"/>
+			<replace source="treeOakLrg01" target="treeWinterPine28m"/>
+			<replace source="treeOakMed01" target="treeWinterPine13m"/>
+			<replace source="treeOakMed02" target="treeWinterPine19m"/>
+			<replace source="treeOakSml01" target="treeWinterEverGreen"/>
+			<replace source="treeFirLrg01" target="treeWinterPine28m"/>
+			<replace source="treeDeadShrub" target="treeSnowyDeadBush"/>
+			<replace source="treeJuniper4m" target="treeWinterEverGreen"/>
 		</replacements>
 
 		<subbiome prob="0.1">
@@ -294,7 +321,6 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="4" blockname="terrSnow"> <resource blockname="terrOreGravelPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -360,6 +386,20 @@
     </weather>
 		<replacements>
 			<replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal"/>
+			<replace source="treeMountainPine12m" target="treeWinterPine13m"/>
+			<replace source="treeMountainPine19m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine27m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine31m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPineDry21m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine41m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine48m" target="treeWinterPine28m"/>
+			<replace source="treeOakLrg01" target="treeWinterPine28m"/>
+			<replace source="treeOakMed01" target="treeWinterPine13m"/>
+			<replace source="treeOakMed02" target="treeWinterPine19m"/>
+			<replace source="treeOakSml01" target="treeWinterEverGreen"/>
+			<replace source="treeFirLrg01" target="treeWinterPine28m"/>
+			<replace source="treeDeadShrub" target="treeSnowyDeadBush"/>
+			<replace source="treeJuniper4m" target="treeWinterEverGreen"/>
 		</replacements>
 
 		<!-- Sub Biome Grass -->
@@ -459,7 +499,6 @@
 		</subbiome>
 
 		<layers>
-			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="4" blockname="terrSnow"> <resource blockname="terrOreGravelPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -491,7 +530,7 @@
 			<decoration type="block" blockname="cntBirdnest" prob ="0.0007"/>
 			<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".4"/>
 		</decorations>
-		<terrain class="Mountains"/>
+		<terrain class="Water"/>
 		<spectrum name="snow"/>
 	</biome>
 	
@@ -659,6 +698,20 @@
     </weather>
 		<replacements>
 			<replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal"/>
+			<replace source="treeMountainPine12m" target="treeWinterPine13m"/>
+			<replace source="treeMountainPine19m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine27m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine31m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPineDry21m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine41m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine48m" target="treeWinterPine28m"/>
+			<replace source="treeOakLrg01" target="treeWinterPine28m"/>
+			<replace source="treeOakMed01" target="treeWinterPine13m"/>
+			<replace source="treeOakMed02" target="treeWinterPine19m"/>
+			<replace source="treeOakSml01" target="treeWinterEverGreen"/>
+			<replace source="treeFirLrg01" target="treeWinterPine28m"/>
+			<replace source="treeDeadShrub" target="treeSnowyDeadBush"/>
+			<replace source="treeJuniper4m" target="treeWinterEverGreen"/>
 		</replacements>
 
 		<subbiome prob="0.1">
@@ -754,7 +807,6 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="4" blockname="terrSnow"> <resource blockname="terrOreGravelPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -817,6 +869,20 @@
     </weather>
 		<replacements>
 			<replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal"/>
+			<replace source="treeMountainPine12m" target="treeWinterPine13m"/>
+			<replace source="treeMountainPine19m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine27m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine31m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPineDry21m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine41m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine48m" target="treeWinterPine28m"/>
+			<replace source="treeOakLrg01" target="treeWinterPine28m"/>
+			<replace source="treeOakMed01" target="treeWinterPine13m"/>
+			<replace source="treeOakMed02" target="treeWinterPine19m"/>
+			<replace source="treeOakSml01" target="treeWinterEverGreen"/>
+			<replace source="treeFirLrg01" target="treeWinterPine28m"/>
+			<replace source="treeDeadShrub" target="treeSnowyDeadBush"/>
+			<replace source="treeJuniper4m" target="treeWinterEverGreen"/>
 		</replacements>
 
 		<subbiome prob="0.1">
@@ -912,7 +978,6 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="4" blockname="terrSnow"> <resource blockname="terrOreGravelPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -973,6 +1038,23 @@
 			<Wind min="10" max="20" prob="0.9"/>
 			<Wind min="20" max="100" prob="0.1"/>
 		</weather>
+		<replacements>
+			<replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal"/>
+			<replace source="treeMountainPine12m" target="treeWinterPine13m"/>
+			<replace source="treeMountainPine19m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine27m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine31m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPineDry21m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine41m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine48m" target="treeWinterPine28m"/>
+			<replace source="treeOakLrg01" target="treeWinterPine28m"/>
+			<replace source="treeOakMed01" target="treeWinterPine13m"/>
+			<replace source="treeOakMed02" target="treeWinterPine19m"/>
+			<replace source="treeOakSml01" target="treeWinterEverGreen"/>
+			<replace source="treeFirLrg01" target="treeWinterPine28m"/>
+			<replace source="treeDeadShrub" target="treeSnowyDeadBush"/>
+			<replace source="treeJuniper4m" target="treeWinterEverGreen"/>
+		</replacements>
 
 		<subbiome prob="0.1551">
 			<layers>
@@ -1036,6 +1118,23 @@
 			<Wind min="10" max="20" prob="0.9"/>
 			<Wind min="20" max="100" prob="0.1"/>
 		</weather>
+		<replacements>
+			<replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal"/>
+			<replace source="treeMountainPine12m" target="treeWinterPine13m"/>
+			<replace source="treeMountainPine19m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine27m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine31m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPineDry21m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine41m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine48m" target="treeWinterPine28m"/>
+			<replace source="treeOakLrg01" target="treeWinterPine28m"/>
+			<replace source="treeOakMed01" target="treeWinterPine13m"/>
+			<replace source="treeOakMed02" target="treeWinterPine19m"/>
+			<replace source="treeOakSml01" target="treeWinterEverGreen"/>
+			<replace source="treeFirLrg01" target="treeWinterPine28m"/>
+			<replace source="treeDeadShrub" target="treeSnowyDeadBush"/>
+			<replace source="treeJuniper4m" target="treeWinterEverGreen"/>
+		</replacements>
 
 		<subbiome prob="0.1551">
 			<layers>
@@ -1059,7 +1158,6 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="3" blockname="terrAsphalt"/>
 			<layer depth="4" blockname="terrDirt"> <resource blockname="terrGravel" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrStone">
@@ -1103,6 +1201,23 @@
 			<Wind min="10" max="20" prob="0.9"/>
 			<Wind min="20" max="100" prob="0.1"/>
 		</weather>
+		<replacements>
+			<replace source="treeTallGrassDiagonal" target="treeSnowyGrassDiagonal"/>
+			<replace source="treeMountainPine12m" target="treeWinterPine13m"/>
+			<replace source="treeMountainPine19m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine27m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine31m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPineDry21m" target="treeWinterPine19m"/>
+			<replace source="treeMountainPine41m" target="treeWinterPine28m"/>
+			<replace source="treeMountainPine48m" target="treeWinterPine28m"/>
+			<replace source="treeOakLrg01" target="treeWinterPine28m"/>
+			<replace source="treeOakMed01" target="treeWinterPine13m"/>
+			<replace source="treeOakMed02" target="treeWinterPine19m"/>
+			<replace source="treeOakSml01" target="treeWinterEverGreen"/>
+			<replace source="treeFirLrg01" target="treeWinterPine28m"/>
+			<replace source="treeDeadShrub" target="treeSnowyDeadBush"/>
+			<replace source="treeJuniper4m" target="treeWinterEverGreen"/>
+		</replacements>
 
 		<subbiome prob="0.02">
 			<layers>
@@ -1161,7 +1276,6 @@
 			</layers>
 		</subbiome>
 		<layers>
-			<layer filluptorg="60" blockname="terrIce"/>
 			<layer depth="1" blockname="terrDestroyedStone"> <resource blockname="terrOreGravelPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 			<layer depth="2" blockname="terrDestroyedStone"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
