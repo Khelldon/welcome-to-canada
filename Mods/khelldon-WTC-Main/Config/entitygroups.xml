@@ -10,21 +10,40 @@
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Baby Bears -->
+<!-- Khelldon - Bears -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <insertAfter xpath="/entitygroups/entitygroup/entity[@name='animalBear']" >
-		<entity name="khelldonAnimalBabyBear" prob="0.25"/>
+		<entity name="khelldonAnimalBabyBear"/>
+		<entity name="khelldonPolarBear"/>
+		<entity name="khelldonBabyPolarBear"/>
 </insertAfter>
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Screamer Bears -->
+<!-- Khelldon - Screamers Bear -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
+
+<remove xpath="/entitygroups/entitygroup[@name='ZombieScouts']/entity[@name='zombieScreamer']"/>
 <append xpath="/entitygroups/entitygroup[@name='ZombieScouts']" >
-		<entity name="animalBear"/>
+		<entity name="khelldonScreamerBear"/>
 </append>
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Add New Zombies to Standard Grouping -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<append xpath="/entitygroups/entitygroup[@name='ZombiesAll']" >
+		<entity name="zombieScreamer"/>
+		<entity name="khelldonStandingSpider"/>
+		<entity name="khelldonLeaperScreamer"/>
+</append>
+
+
+
 
 
 
