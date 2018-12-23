@@ -8,30 +8,6 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<!-- Khelldon - Water to Ice -->
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-
-<remove xpath="/blocks/block[@name='water']"/>
-<append xpath="/blocks">
-
-<block name="water">
-	<property name="Material" value="Msnow"/>
-	<property name="Shape" value="Terrain"/>
-	<property name="Mesh" value="terrain"/>
-	<property name="Texture" value="178"/>
-	<property name="ImposterExclude" value="true"/>
-	<property name="CanMobsSpawnOn" value="true"/>
-	<property name="FilterTags" value="fterrain"/>
-	<property name="SortOrder1" value="d0k0"/>
-	<property name="SortOrder2" value="0050"/>
-	<property name="DisplayType" value="blockTerrainFertile" />
-</block>
-
-</append>
-
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->

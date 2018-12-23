@@ -516,7 +516,7 @@
 			<Wind min="20" max="100" prob="0.1"/>
 		</weather>
 		<terrain class="Water">
-			<property name="BaseHeight" value="12"/>
+			<property name="BaseHeight" value="60"/>
 		</terrain>
 
 		<subbiome prob="0.1551">
@@ -620,7 +620,7 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
-	<biome name="underwater" biomemapcolor="#001234">
+	<biome name="underwater" biomemapcolor="#c0c0fd">
 		<decorations>
 			<decoration type="block" blockname="rockResource" prob =".0002" rotatemax="3"/>
 			<decoration type="block" blockname="rockResourceBroke1" prob =".0002" rotatemax="3"/>
