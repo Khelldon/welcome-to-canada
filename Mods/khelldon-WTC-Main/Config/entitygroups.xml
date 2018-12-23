@@ -8,6 +8,23 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Baby Bears -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<insertAfter xpath="/entitygroups/entitygroup/entity[@name='animalBear']" >
+		<entity name="khelldonAnimalBabyBear" prob="0.25"/>
+</insertAfter>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Screamer Bears -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<append xpath="/entitygroups/entitygroup[@name='ZombieScouts']" >
+		<entity name="animalBear"/>
+</append>
 
 
 
