@@ -113,38 +113,6 @@
 
 
 
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<!-- Khelldon - Sphereiis Transmogrifier -->
-<!-- ######################################################### -->
-<!-- ######################################################### -->
- 
-
-<!-- Set class for zombies -->
-<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieTemplateMale')]/property[@name='Class']/@value">EntityZombieSDX, Mods</set>
-<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieFatCop')]/property[@name='Class']/@value">EntityZombieCopSDX, Mods</set>
-<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieSteveCrawler')]/property[@name='Class']/@value">EntityZombieCrawlSDX, Mods</set>
-
-  <!-- Turn on head shots, and random speeds for entities-->
-<append xpath="/entity_classes/entity_class[starts-with(@name, 'zombieTemplateMale')]" >
-    <!-- Set to true for romero mode -->
-    <property name="HeadShots" value="false" />
-    <property name="RandomSpeeds" value="false" />
-    <property name="RandomSize" value="true" />
-    <!-- Allows the zombies to go to sleep when idle. -->
-    <property name="IdleSleep" value="false" />
-    <property name="SleeperPose" value="1" />
-</append>
-
-  <!-- turn off headshots for the zombie Cops -->
-<append xpath="/entity_classes/entity_class[starts-with(@name, 'zombieFatCop')]" >
-    <property name="HeadShots" value="true" />
-    <property name="RandomSpeeds" value="false" />
-</append>
-
-
-
-
 
 
 
@@ -158,22 +126,13 @@
 <append xpath="/entity_classes">
 
 <entity_class name="SDXTemplate" extends="zombieTemplateMale">
-        <!-- For fun, let's use the zombie transmogrifier class -->
-        <!--property name="Class" value="EntityZombieSDX, Mods" /-->
-
-        <!-- We are using the Animal Animation, since the BipedAnimation is a bit wonky with the hit animation -->
         <property name="AvatarController" value="MecanimSDX, Mods" />
-
-        <!-- With true, the zombie just kind of chills out in one place. Set to false to watch it move. -->
         <property name="RootMotion" value="false" />
-
-        <!-- Baseline Speed is way too slow, so we need to bump it up a notch or 5 -->
+        <property name="HasRagdoll" value="false" />
         <property name="WanderSpeed" value="0.8" />
         <property name="ApproachSpeed" value="0.8" />
         <property name="NightWanderSpeed" value="0.8" />
         <property name="NightApproachSpeed" value="1.1" />
-        <!-- Stop the Zombie from flying away when attacked -->
-        <property name="HasRagdoll" value="false" />
 </entity_class>
 
 </append>
