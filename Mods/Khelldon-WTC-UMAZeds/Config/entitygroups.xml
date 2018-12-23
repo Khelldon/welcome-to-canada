@@ -16,26 +16,6 @@
 <!-- ######################################################### -->
 <append xpath="/entitygroups">
 		  <entitygroup name="ZombiesBCTier01">
-			<entity name="zombieBoe"/>
-    		<entity name="zombieJoe"/>
-    		<entity name="zombieSteve"/>
-     		<entity name="zombieMoe"/>
-    		<entity name="zombieYo"/>
-	    	<entity name="zombieBusinessMan"/>
-	     	<entity name="zombieArlene"/>
-	    	<entity name="zombieDarlene"/>
-	    	<entity name="zombieMarlene"/>
-	    	<entity name="zombieSkateboarder"/>
-	    	<entity name="zombieCheerleader"/>
-	    	<entity name="zombieOldTimer"/>
-	    	<entity name="zombieBiker"/>
-	    	<entity name="zombieFarmer"/>
-	    	<entity name="zombieStripper"/>
-	    	<entity name="zombieUtilityWorker"/>
-	    	<entity name="zombieNurse"/>
-	    	<entity name="zombieSteveCrawler"/>
-	    	<entity name="zombieFatHawaiian"/>
-	    	<entity name="zombieSnow" prob="10"/>
 			<entity name="badZombieAiden"/>
 			<entity name="badZombieBob"/>
 			<entity name="badZombieCaitlin"/>
@@ -115,15 +95,6 @@
 			<entity name="sanZombieFrozen"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier02">
-			<entity name="zombieFootballPlayer"/>
-			<entity name="zombieFemaleFat"/>
-			<entity name="zombieMoe"/>
-			<entity name="zombieSteveCrawlerFeral"/>
-			<entity name="zombieBusinessMan"/>
-			<entity name="zombieSpider"/>
-			<entity name="zombieBurnt"/>
-			<entity name="zombieFarmer"/>
-			<entity name="zombieStripper"/>
 			<entity name="badZombieJethro"/>
 			<entity name="badZombieSeryph"/>
 			<entity name="badZombieSeryphSnow"/>
@@ -140,22 +111,6 @@
 			<entity name="sanZombieFreak"/>
 		  </entitygroup>
 		  <entitygroup name="ZombiesBCTier03">
-			<entity name="zombieBoeFeral"/>
-			<entity name="zombieJoeFeral"/>
-			<entity name="zombieArleneFeral"/>
-			<entity name="zombieDarleneFeral"/>
-			<entity name="zombieMarleneFeral"/>
-			<entity name="zombieYoFeral"/>
-			<entity name="zombieSteveFeral"/>
-			<entity name="zombieBusinessManFeral"/>
-			<entity name="zombieSnow"/>
-			<entity name="zombieNurseFeral"/>
-			<entity name="zombieUtilityWorkerFeral"/>
-			<entity name="zombieSoldier"/>
-			<entity name="zombieSkateboarderFeral"/>
-			<entity name="zombieCheerleaderFeral"/>
-			<entity name="zombieOldTimerFeral"/>
-			<entity name="zombieBiker"/>
 			<entity name="badZombieBolivar"/>
 			<entity name="badZombieCur"/>
 			<entity name="badZombieSWATMale"/>

@@ -234,12 +234,6 @@
 
 
 
-
-
-
-
-
-
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Custom Entities -->
@@ -361,19 +355,19 @@
 
 	<!-- Stealth settings -->
 	<property name="MaxViewAngle" value="180"/>
-	<property name="SightRange" value="30"/> <!-- distance in m -->
+	<property name="SightRange" value="30"/>
 	<property name="SightLightThreshold" value="-2,150"/>
 
-	<property name="SleeperWakeupSightDetectionMin" value="-40,5"/> <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
-	<property name="SleeperWakeupSightDetectionMax" value="340,480"/> <!-- Indiv.Random. "I see you" light value at "SightRange" -->
-	<property name="SleeperSenseSightDetectionMin" value="-10,0"/> <!-- same for groaning, not waking -->
+	<property name="SleeperWakeupSightDetectionMin" value="-40,5"/> 
+	<property name="SleeperWakeupSightDetectionMax" value="340,480"/>
+	<property name="SleeperSenseSightDetectionMin" value="-10,0"/> 
 	<property name="SleeperSenseSightDetectionMax" value="200,300"/>
 
-	<property name="SleeperNoiseSenseThreshold" value="3,8"/> <!-- Indiv.Random. hearing capability - "I hear something" noise value -->
+	<property name="SleeperNoiseSenseThreshold" value="3,8"/> 
 	<property name="SleeperNoiseWakeThreshold" value="9,12"/>
 
-	<property name="SleeperSmellSenseThreshold" value="20,50"/> <!-- Indiv.Random. smell capability - "I smell something" player smell value -->
-	<property name="SoundSleeperSenseChance" value=".5"/> <!-- the chance to play "SoundSleeperSense" when "SleeperSmellSenseThreshold" is triggered -->
+	<property name="SleeperSmellSenseThreshold" value="20,50"/> 
+	<property name="SoundSleeperSenseChance" value=".5"/> 
 
 	<!-- Gameplay -->
 	<property name="SurfaceCategory" value="organic"/>
@@ -394,7 +388,7 @@
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
 	</effect_group>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="50"/> <!-- animalBear -->
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="50"/> 
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="15"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="7"/>
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="5"/>
