@@ -8,6 +8,63 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Change Trees -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<remove xpath="/blockplaceholders/placeholder[@name='treeSmallRandomHelper' or @name='treeMediumRandomHelper' or @name='treeLargeRandomHelper']"/>
+<append xpath="/blockplaceholders">
+    <placeholder name="treeSmallRandomHelper">
+		<block name="treeWinterEverGreen" prob="1.0" biome="snow" randomrotation="true"/>
+		<block name="treeWinterPine13m" prob="1.0" biome="snow" randomrotation="true"/>
+		<block name="treeWinterEverGreen" prob="1.0" biome="pine_forest" randomrotation="true"/>
+		<block name="treeWinterPine13m" prob="1.0" biome="pine_forest" randomrotation="true"/>
+		<block name="treeWinterEverGreen" prob="1.0" biome="desert" randomrotation="true"/>
+		<block name="treeWinterPine13m" prob="1.0" biome="desert" randomrotation="true"/>
+		<block name="treeBurntMaple01" prob="1.0" biome="wasteland" randomrotation="true"/>
+		<block name="treeWinterEverGreen" prob="1.0" biome="wasteland" randomrotation="true"/>
+		<block name="treeWinterPine13m" prob="1.0" biome="wasteland" randomrotation="true"/>
+		<block name="treeWinterEverGreen" prob="1.0" biome="burnt_forest" randomrotation="true"/>
+		<block name="treeWinterPine13m" prob="1.0" biome="burnt_forest" randomrotation="true"/>
+		<block name="treeBurntMaple01" prob="1.0" biome="burnt_forest" randomrotation="true"/>
+	</placeholder>
+
+	<placeholder name="treeMediumRandomHelper">
+		<block name="treeWinterPine19m" prob="1.0" biome="snow" randomrotation="true"/>
+		<block name="treeWinterPine19m" prob="1.0" biome="pine_forest" randomrotation="true"/>
+		<block name="treeWinterPine19m" prob="1.0" biome="desert" randomrotation="true"/>
+		<block name="treeWinterPine19m" prob="1.0" biome="wasteland" randomrotation="true"/>
+		<block name="treeWinterPine19m" prob="1.0" biome="burnt_forest" randomrotation="true"/>
+		<block name="treeWinterPine19m" prob="1.0" biome="wasteland" randomrotation="true"/>
+		<block name="treeWinterPine19m" prob="1.0" biome="burnt_forest" randomrotation="true"/>
+	</placeholder>
+
+	<placeholder name="treeLargeRandomHelper">
+		<block name="treeWinterPine28m" prob="1.0" biome="snow" randomrotation="true"/>
+		<block name="treeWinterPine28m" prob="1.0" biome="pine_forest" randomrotation="true"/>
+		<block name="treeWinterPine28m" prob="1.0" biome="desert" randomrotation="true"/>
+		<block name="treeBurntMaple03" prob="1.0" biome="wasteland" randomrotation="true"/>
+		<block name="treeWinterPine28m" prob="1.0" biome="wasteland" randomrotation="true"/>
+		<block name="treeBurntMaple03" prob="1.0" biome="burnt_forest" randomrotation="true"/>
+		<block name="treeWinterPine28m" prob="1.0" biome="burnt_forest" randomrotation="true"/>
+	</placeholder>
+</append>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
