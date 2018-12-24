@@ -229,7 +229,7 @@ Please credit Valve with this model.
 	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="2"/>
-	<property name="Meshfile" value="#@modfolder:Resources/khelldonSurvivalMachete.unity3d?khelldonMachetePrefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/khelldonMachete.unity3d?khelldonMachete"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceForgedSteel"/>
 	<property name="DegradationBreaksAfter" value="false"/>

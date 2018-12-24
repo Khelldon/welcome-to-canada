@@ -76,18 +76,6 @@
 </append>
 
 
-
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<!-- Khelldon - Let's show the Zombie names -->
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-
-<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
-	<property name="DisplayInfo" value="Name"/>
-</append>
-
-
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Increase loot default 0.02 now 0.1 -->
@@ -185,8 +173,8 @@
 	<property name="Tags" value="animal,hostile"/>
 	<property name="SizeScale" value="0.8"/>
 	<property name="Mass" value="800"/>
-	<property name="TintMaterial1" value="11,11,11"/>
-	<property name="ReplaceMaterial2" value="entities/zombies/materials/rad_eye"/>
+	<!-- <property name="TintMaterial1" value="11,11,11"/> -->
+	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/Bears/Materials/bearBlack.mat"/>
 	<property name="ExperienceGain" value="600"/>
 	<property name="DeadBodyHitPoints" value="400"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
@@ -199,6 +187,14 @@
 		<passive_effect name="HealthMax" operation="base_set" value="200"/>
 	</effect_group>
 </entity_class>
+
+<!-- Polar Bear -->
+<entity_class name="khelldonPolarBear" extends="animalBear">
+	<property name="Tags" value="animal,hostile"/>
+	<property name="SizeScale" value="1.1"/>
+	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/Bears/Materials/bearPolar.mat"/>
+</entity_class>
+
 
 
 </append>
