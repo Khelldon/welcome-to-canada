@@ -111,25 +111,6 @@
 
 
 
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<!-- Khelldon - Zombie Texture Changes -->
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-
-<!-- Hockey Mom -->
-<append xpath="/entity_classes/entity_class[@name='zombieScreamer']">
-	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/AngryHockeyMom"/>
-</append>
-
-<!-- Dam Str8 Soldier -->
-<append xpath="/entity_classes/entity_class[@name='zombieSoldier']">
-	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/DamStr8Soldier"/>
-</append>
-
-
-
-
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -204,7 +185,7 @@
 	<property name="Tags" value="animal,hostile"/>
 	<property name="SizeScale" value="0.8"/>
 	<property name="Mass" value="800"/>
-	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/bearBlack"/>
+	<property name="TintMaterial0" value="11,11,11"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
 	<property name="ExperienceGain" value="600"/>
 	<property name="DeadBodyHitPoints" value="400"/>
@@ -219,15 +200,6 @@
 	</effect_group>
 </entity_class>
 
-<!-- Polar Bears -->
-<entity_class name="khelldonPolarBear" extends="animalBear">
-	<property name="Tags" value="animal,hostile"/>
-	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/bearPolar"/>
-</entity_class>
-<entity_class name="khelldonBabyPolarBear" extends="khelldonAnimalBabyBear">
-	<property name="Tags" value="animal"/>
-	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/bearPolar"/>
-</entity_class>
 
 </append>
 
