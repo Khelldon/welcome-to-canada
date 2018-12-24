@@ -120,12 +120,12 @@
 <!-- Hockey Mom -->
 <append xpath="/entity_classes/entity_class[@name='zombieScreamer']">
 	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/AngryHockeyMom"/>
-</entity_class>
+</append>
 
 <!-- Dam Str8 Soldier -->
 <append xpath="/entity_classes/entity_class[@name='zombieSoldier']">
 	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/DamStr8Soldier"/>
-</entity_class>
+</append>
 
 
 
