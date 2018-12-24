@@ -15,8 +15,6 @@
 <!-- ######################################################### -->
 <insertAfter xpath="/entitygroups/entitygroup/entity[@name='animalBear']" >
 		<entity name="khelldonAnimalBabyBear"/>
-		<entity name="khelldonPolarBear"/>
-		<entity name="khelldonBabyPolarBear"/>
 </insertAfter>
 
 <!-- ######################################################### -->

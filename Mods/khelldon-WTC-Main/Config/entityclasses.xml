@@ -185,8 +185,8 @@
 	<property name="Tags" value="animal,hostile"/>
 	<property name="SizeScale" value="0.8"/>
 	<property name="Mass" value="800"/>
-	<property name="TintMaterial0" value="11,11,11"/>
-	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
+	<property name="TintMaterial1" value="11,11,11"/>
+	<property name="ReplaceMaterial2" value="entities/zombies/materials/rad_eye"/>
 	<property name="ExperienceGain" value="600"/>
 	<property name="DeadBodyHitPoints" value="400"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
