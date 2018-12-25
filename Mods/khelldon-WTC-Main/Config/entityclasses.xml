@@ -19,60 +19,15 @@
 
 <!-- Buck -->
 <append xpath="/entity_classes/entity_class[@name='animalStag']">
-    <!-- 10% bigger -->
-	<property name="SizeScale" value="1.1"/>
+    <!-- 20% bigger -->
+	<property name="SizeScale" value="1.2"/>
 </append>
 	
 	
 <!-- Doe -->
 <append xpath="/entity_classes/entity_class[@name='animalDoe']">
-    <!-- 25% bigger -->
-	<property name="SizeScale" value="1.25"/>
-</append>
-
-
-
-
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<!-- Khelldon - Baby Bears -->
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<append xpath="/entity_classes">
-
-<entity_class name="khelldonAnimalBabyBear" extends="animalBear">
-	<property name="Tags" value="animal,hostile"/>
-	<property name="IsEnemyEntity" value="false"/>
-	<property name="ExperienceGain" value="300"/> 
-	<property name="DeadBodyHitPoints" value="150"/>
-	<property name="HandItem" value="meleeHandAnimalWolf"/>
-	<property name="HasRagdoll" value="false"/>
-	<property name="SizeScale" value="0.25"/>
-	<property name="AITask-1" value="Swim"/>
-	<property name="AITask-2" value="BreakBlock"/>
-	<property name="AITask-3" value="DestroyArea"/>
-	<property name="AITask-4" value="Territorial"/>
-	<property name="AITask-5" value=""/>
-	<property name="AITask-6" value="ApproachSpot"/>
-	<property name="AITask-7" value="Look"/>
-	<property name="AITask-8" value="Wander"/>
-	<property name="AITask-9" value=""/>
-	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
-	<property name="AITarget-2" value="BlockingTargetTask"/>
-	<property name="AITarget-3" value=""/>
-	<property name="AITarget-4" value=""/>
-	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="100"/>
-		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
-	</effect_group>	
-	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="20"/>
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
-	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="resourceFemur" tag="allToolsHarvest" count="1"/>
-</entity_class>
-
+    <!-- 35% bigger -->
+	<property name="SizeScale" value="1.35"/>
 </append>
 
 
@@ -102,12 +57,63 @@
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Zombie remixes -->
+<!-- Khelldon - Zombie and Animal remixes -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-
 
 <append xpath="/entity_classes">
+<!-- Khelldon - Baby Bears -->
+<entity_class name="khelldonAnimalBabyBear" extends="animalBear">
+	<property name="Tags" value="animal,hostile"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="ExperienceGain" value="300"/> 
+	<property name="DeadBodyHitPoints" value="150"/>
+	<property name="HandItem" value="meleeHandAnimalWolf"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="SizeScale" value="0.25"/>
+	<property name="AITask-1" value="Swim"/>
+	<property name="AITask-2" value="BreakBlock"/>
+	<property name="AITask-3" value="DestroyArea"/>
+	<property name="AITask-4" value="Territorial"/>
+	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer,8,EntityAnimalStag,40,EntityZombie,30"/>
+	<property name="AITask-6" value="ApproachSpot"/>
+	<property name="AITask-7" value="Look"/>
+	<property name="AITask-8" value="Wander"/>
+	<property name="AITask-9" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer,8,EntityAnimalStag,0,EntityZombie,0"/>
+	<property name="AITarget-4" value=""/>
+	<property class="MechanimAttackTriggers">
+		<property name="state0" value="AttackTrigger"/>
+	</property>
+	<property class="MechanimAttackStates">
+		<property name="state0" value="Attack"/>
+		<property name="state1" value="AttackStandingStill"/>
+	</property>
+	<property class="MechanimPainTriggers">
+		<property name="state0" value="PainTrigger"/>
+	</property>
+	<property class="MechanimPainStates">
+		<property name="state0" value="Pain"/>
+	</property>
+	<property class="MechanimDeathTriggers">
+		<property name="state0" value="DeathTrigger"/>
+	</property>
+	<property class="MechanimDeathStates">
+		<property name="state0" value="Death"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="100"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	</effect_group>	
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="20"/>
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
+	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="resourceFemur" tag="allToolsHarvest" count="1"/>
+</entity_class>
 
 
 <!-- Standing Large Leaper -->
@@ -147,18 +153,16 @@
 	<property name="LegCrippleThreshold" value="0"/>
 	<property name="KnockdownProneDamageThreshold" value="0"/>
 	<property name="KnockdownKneelDamageThreshold" value="0"/>
-
 	<property name="AITask-1" value="Leap"/>
 	<property name="AITask-2" value="BreakBlock"/>
 	<property name="AITask-3" value="DestroyArea"/>
 	<property name="AITask-4" value="Territorial"/>
 	<property name="AITask-5" value="ApproachDistraction"/>
-	<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityNPC,0,EntityPlayer,0"/> <!-- class,maxChaseTime (return home) -->
+	<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityNPC,0,EntityPlayer,0"/>
 	<property name="AITask-7" value="ApproachSpot"/>
 	<property name="AITask-8" value="Look"/>
 	<property name="AITask-9" value="Wander"/>
 	<property name="AITask-10" value=""/>
-
 	<!-- Gameplay -->
 	<property name="MoveSpeed" value="0.08"/>
 	<property name="MoveSpeedAggro" value="0.2, 1.35"/>
@@ -167,13 +171,12 @@
 	<property name="JumpMaxDistance" value="8"/>
 </entity_class>
 
-
 <!-- Screamer Bear -->
 <entity_class name="khelldonScreamerBear" extends="animalBear">
 	<property name="Tags" value="animal,hostile"/>
 	<property name="SizeScale" value="0.8"/>
 	<property name="Mass" value="800"/>
-	<!-- <property name="TintMaterial1" value="11,11,11"/> -->
+	<!-- <property name="TintMaterial0" value="11,11,11"/> -->
 	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/Bears/Materials/bearBlack.mat"/>
 	<property name="ExperienceGain" value="600"/>
 	<property name="DeadBodyHitPoints" value="400"/>
@@ -194,9 +197,6 @@
 	<property name="SizeScale" value="1.1"/>
 	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/Bears/Materials/bearPolar.mat"/>
 </entity_class>
-
-
-
 </append>
 
 
