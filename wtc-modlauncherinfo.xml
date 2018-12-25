@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <Servers >
 	<ServerGroup Name="Khelldon Mods" Logo="https://i.imgur.com/DorAJNX.jpg">
-		<Server Name="Welcome to Canada 3" Logo="" >
+		<Server Name="Welcome to Canada" Logo="https://i.imgur.com/DorAJNX.jpg" >
                          <RSS></RSS>
                          <Banner></Banner>
 			<Address></Address>						
