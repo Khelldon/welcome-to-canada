@@ -39,13 +39,14 @@ in the Canada map.
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 **Features**:
-Bad Company UMA Zombies - designed by Bad Company and remixed by Khelldon
-SimpleUI Modlets - designed by Stedman420 - https://7daystodie.com/forums/showthread.php?94502-A17-Simple-UI-Modlets
-RWG Updated - 3 separate snow biomes by Khelldon 
-Traders Destructable - by Khelldon
-Workbench Needed for mostly Everything - by Khelldon
-Workstation pickups - by Khelldon
-Loot bag drop increased - by Khelldon
+- Menu Music: "Proud to be a Canadian" and "Squeegee Night In Canada" Written and Preformed by Dayglow Abortions
+- Bad Company UMA Zombies: designed by Bad Company and remixed by Khelldon
+- SimpleUI Modlets: designed by Stedman420 - https://7daystodie.com/forums/showthread.php?94502-A17-Simple-UI-Modlets
+- RWG Updated: 3 separate snow biomes by Khelldon 
+- Traders Destructable: by Khelldon
+- Workbench Needed for mostly Everything: by Khelldon
+- Workstation pickups: by Khelldon
+- Loot bag drop increased: by Khelldon
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
