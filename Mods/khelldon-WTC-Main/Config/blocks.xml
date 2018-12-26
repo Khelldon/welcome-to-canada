@@ -805,7 +805,7 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodBlock"/> </property>
 	<property name="DowngradeBlock" value="solidWoodFrameBlock"/>
 	<property name="SortOrder2" value="0050"/>
-	<property name="Texture" value="#@modfolder:Resources/khelldonBlockTextures.unity3d?snow"/>
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/khelldonBlockTextures.unity3d?snow"/>
 </block>
 
 <block name="iceBlock">
@@ -814,7 +814,7 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodBlock"/> </property>
 	<property name="DowngradeBlock" value="solidWoodFrameBlock"/>
 	<property name="SortOrder2" value="0050"/>
-	<property name="Texture" value="#@modfolder:Resources/khelldonBlockTextures.unity3d?ice"/>
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/khelldonBlockTextures.unity3d?ice"/>
 </block>
 
 </append>
