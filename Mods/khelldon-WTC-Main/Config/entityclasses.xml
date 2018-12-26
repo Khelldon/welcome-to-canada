@@ -176,8 +176,7 @@
 	<property name="Tags" value="animal,hostile"/>
 	<property name="SizeScale" value="0.8"/>
 	<property name="Mass" value="800"/>
-	<!-- <property name="TintMaterial0" value="11,11,11"/> -->
-	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/Bears/Materials/bearBlack.mat"/>
+	<property name="TintMaterial0" value="0,0,0"/>
 	<property name="ExperienceGain" value="600"/>
 	<property name="DeadBodyHitPoints" value="400"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
@@ -195,7 +194,7 @@
 <entity_class name="khelldonPolarBear" extends="animalBear">
 	<property name="Tags" value="animal,hostile"/>
 	<property name="SizeScale" value="1.1"/>
-	<property name="ReplaceMaterial0" value="@modfolder:Textures/Skins/Bears/Materials/bearPolar.mat"/>
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/khelldonPolarBearTexture.unity3d?bearPolar"/>
 </entity_class>
 </append>
 
