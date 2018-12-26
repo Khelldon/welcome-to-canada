@@ -789,6 +789,41 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 </append>
 
 
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Ice and Snow Blocks -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+
+<append xpath="/blocks">
+
+<block name="snowBlock">
+	<property name="Extends" value="woodMaster"/>
+	<property name="Path" value="solid"/>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodBlock"/> </property>
+	<property name="DowngradeBlock" value="solidWoodFrameBlock"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="Texture" value="#@modfolder:Resources/khelldonBlockTextures.unity3d?snow"/>
+</block>
+
+<block name="iceBlock">
+	<property name="Extends" value="woodMaster"/>
+	<property name="Path" value="solid"/>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodBlock"/> </property>
+	<property name="DowngradeBlock" value="solidWoodFrameBlock"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="Texture" value="#@modfolder:Resources/khelldonBlockTextures.unity3d?ice"/>
+</block>
+
+</append>
+
+
+
+
+
+
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->

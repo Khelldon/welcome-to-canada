@@ -8,7 +8,16 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Zombie Skins -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 
+<!-- Angry hockey mom skin -->
+<append xpath="/entity_classes/entity_class[@name='zombieScreamer']">
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/khelldonZombieSkins.unity3d?AngryHockeyMom"/>
+</append>
 
 
 <!-- ######################################################### -->
@@ -141,7 +150,6 @@
 </entity_class>
 
 
-
 <!-- Crawlin Screamer -->
 <entity_class name="khelldonLeaperScreamer" extends="zombieScreamer">
 	<property name="Tags" value="zombie"/>
@@ -176,7 +184,7 @@
 	<property name="Tags" value="animal,hostile"/>
 	<property name="SizeScale" value="0.8"/>
 	<property name="Mass" value="800"/>
-	<property name="TintMaterial0" value="0,0,0"/>
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/khelldonBlackBearTexture.unity3d?bearBlack"/>
 	<property name="ExperienceGain" value="600"/>
 	<property name="DeadBodyHitPoints" value="400"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
