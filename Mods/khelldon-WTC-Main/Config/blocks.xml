@@ -9,6 +9,19 @@
 
 
 
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Land claim -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<remove xpath="/blocks/block[@name='keystoneBlock']/property[@name='Texture']"/>
+<append xpath="/blocks/block[@name='keystoneBlock']">
+	<property name="Model" value="#@modfolder:Resources/khelldonCanadaClaimBlock.unity3d?khelldonCanadaClaimBlock"/>
+</append>
+
+
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Workbench Tweaks -->

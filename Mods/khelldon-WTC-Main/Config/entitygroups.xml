@@ -30,6 +30,9 @@
 <append xpath="/entitygroups/entitygroup[@name='ZombieScouts']" >
 		<entity name="khelldonScreamerBear"/>
 </append>
+<!-- Rewrite Scout Groups -->   
+<!-- <remove xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHordeStageGS')]/entity"/> -->
+<append xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHordeStageGS')]" ><entity name="khelldonScreamerBear"/><entity name="khelldonScreamerBearBaby" prob="0.1"/><entity name="khelldonScreamerBearTeen"/><entity name="khelldonScreamerBearHuge" prob="0.05"/></append>
 
 
 <!-- ######################################################### -->

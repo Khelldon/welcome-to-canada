@@ -8,6 +8,18 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - remove option for loot. -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<set xpath="//gameoption[@name='LootAbundance']/@values">25, 50, 75, 100</set>
+<set xpath="//browsergameoptioncombined[@name='LootAbundance']/@values">25, 50, 75, 100</set>
+
+
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Add my logo and background - SO Khaine -->
