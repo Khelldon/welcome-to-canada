@@ -70,6 +70,11 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
+
+<append xpath="/entity_classes/entity_class[@name='animalBear']">
+    <!-- bear to polar bear -->
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/khelldonPolarBearTexture.unity3d?bearPolar"/>
+</append>
 <append xpath="/entity_classes">
 <!-- Khelldon - Baby Bears -->
 <entity_class name="khelldonAnimalBabyBear" extends="animalBear">
@@ -78,6 +83,7 @@
 	<property name="ExperienceGain" value="300"/> 
 	<property name="DeadBodyHitPoints" value="150"/>
 	<property name="HandItem" value="meleeHandAnimalWolf"/>
+	<property name="ReplaceMaterial0" value="#@modfolder:Resources/khelldonPolarBearTexture.unity3d?bearPolar"/>
 	<property name="HasRagdoll" value="false"/>
 	<property name="SizeScale" value="0.25"/>
 	<property name="AITask-1" value="Swim"/>
@@ -275,6 +281,11 @@
 <append xpath="/entity_classes">
 
 
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!  STOP  !!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!   YOU MAY NOT USE THIS MOOSE IN ANY OTHER MOD   !!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!  PURCHASED ASSET  !!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <entity_class name="khelldonMoose">
     <!-- Sdx values -->
     <property name="AvatarController" value="MecanimSDX, Mods" />
@@ -288,7 +299,7 @@
 	<property name="RagdollOnDeathChance" value=".5"/>
 	<property name="PhysicsBody" value="bear"/>
 	<property name="Mass" value="600"/>
-	<property name="Mesh" value="Animals/Bear/animalBearStandardRagdoll"/>
+	<property name="Mesh" value=""/>
 	<property name="Prefab" value="NPC"/>
 	<property name="Class" value="EntityEnemyAnimal"/>
 	<property name="Parent" value="Animals"/>
@@ -419,6 +430,11 @@
 
 <append xpath="/entity_classes">
 
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!  STOP  !!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!   YOU MAY NOT USE THIS BEAVER IN ANY OTHER MOD   !!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!  PURCHASED ASSET  !!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <entity_class name="khelldonBeaver">
     <!-- Sdx values -->
     <property name="AvatarController" value="MecanimSDX, Mods" />
@@ -427,7 +443,7 @@
     
     <!-- Main Properties -->
     <property name="Tags" value="animal"/>
-	<property name="Mesh" value="Animals/Stag/STAG"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonBeaver.unity3d?khelldonBeaver"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="Prefab" value="NPC"/>
 	<property name="Class" value="EntityAnimalStag"/>
@@ -441,7 +457,7 @@
 	<property name="Weight" value="30"/>
 	
 	<!-- Animations -->
-    <property name="AttackAnimations" value="Attack0, SpecialAttack" />
+    <property name="AttackAnimations" value="Attack0" />
     <property name="AttackIndexes" value="0" />
     <property name="SpecialAttackIndexes" value="0" />
     <property name="SpecialSecondAttackIndexes" value="0" />

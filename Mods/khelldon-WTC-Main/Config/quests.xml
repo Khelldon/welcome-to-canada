@@ -93,7 +93,7 @@
 		<reward type="Quest" id="quest_BasicSurvival4" />
     </quest>
 
-	<!-- Basic Survival 4 - Wear Plant Fiber Clothing /> -->
+	<!-- Basic Survival 4 - Build a Sawhorse /> -->
 	<quest id="quest_BasicSurvival4">
 		<property name="group_name_key" value="quest_BasicSurvival" />
 		<property name="name_key" value="quest_BasicSurvival4" />

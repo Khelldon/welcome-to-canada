@@ -8,6 +8,15 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Add loonie Icon -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<append xpath="/items/item[@name='casinoCoin']">
+	<property name="CustomIcon" value="khelldonLoonieIcon"/>
+</append>
+
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -128,6 +137,15 @@ We'll extend from the standard nail
 
 </append>
 
+<append xpath="/items">
+
+<item name="khelldonBoxNails">
+	<property name="Extends" value="resourceNail"/>
+	<property name="CustomIcon" value="khelldonBoxNailsIcon"/>
+	<property name="DescriptionKey" value="khelldonBoxNailsDesc"/>
+</item>
+
+</append>
 <!--
 Khelldon - hammer tweaks
 This will only work with the vanilla unaltered hammer

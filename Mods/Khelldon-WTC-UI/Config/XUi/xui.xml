@@ -1,0 +1,63 @@
+<Khelldon>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Starts Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - UI -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+	<!-- Main scale of UI -->
+	<set xpath="/xui/ruleset[@name='default']/@scale">1.20</set>
+	<set xpath="/xui/ruleset[@name='default']/@stackpanel_scale">1.00</set>
+	<!-- compass -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='compass']/window[@name='windowCompass']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+		<window name="S420windowCompass" /> 
+	</append>
+	<!-- Crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='crafting']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Campfire crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_campfire']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Forge crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Cement mixer crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_cementMixer']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Workbench crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Chemistry station crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Khelldon - Sawhorse crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_woodSawhorse']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Forge input slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">S420windowForgeInput</set>
+	<!-- Left HUD -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="S420HUDLeftStatBars" anchor="LeftBottom" />
+	</append>
+	<!-- Looting window -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='looting']/window[@name='windowLooting']/@name">S420windowLooting</set>
+	<!-- Toolbelt -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']/window[@name='windowToolbelt']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="S420XpBar" anchor="CenterBottom" />
+		<window name="S420windowToolbelt" anchor="CenterBottom" />
+	</append>
+	
+	
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Ends Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+</Khelldon>
