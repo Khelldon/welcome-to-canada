@@ -291,7 +291,6 @@
     <property name="AvatarController" value="MecanimSDX, Mods" />
     <property name="RootMotion" value="false" />
     <property name="HasRagdoll" value="false" />
-    
     <!-- Main Properties -->
     <property name="Tags" value="animal,hostile"/>
 	<property name="ModelType" value="Standard"/>
@@ -299,7 +298,9 @@
 	<property name="RagdollOnDeathChance" value=".5"/>
 	<property name="PhysicsBody" value="bear"/>
 	<property name="Mass" value="600"/>
-	<property name="Mesh" value=""/>
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonMoose.unity3d?khelldonMoose"/><!-- Moose by 3DRT -->
+	<!-- !!!! END RESTRICTED AREA !!!! -->
 	<property name="Prefab" value="NPC"/>
 	<property name="Class" value="EntityEnemyAnimal"/>
 	<property name="Parent" value="Animals"/>
@@ -309,13 +310,11 @@
 	<property name="IsEnemyEntity" value="true"/>
 	<property name="Faction" value="animals"/>
 	<property name="PhysicsBody" value="bear"/>	
-	
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandAnimalBear"/>
-	
 	<!-- Animations -->
-    <property name="AttackAnimations" value="Attack0, SpecialAttack" />
-    <property name="AttackIndexes" value="0" />
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
     <property name="SpecialAttackIndexes" value="0" />
     <property name="SpecialSecondAttackIndexes" value="0" />
     <property name="RagingIndexes" value="0" />
@@ -348,17 +347,15 @@
 	<property class="MechanimDeathStates">
 		<property name="state0" value="Base Layer.Death"/>
 	</property>
-	
 	<!-- Sounds -->
-	<property name="SoundHurt" value=""/>
-	<property name="SoundDeath" value=""/>
-	<property name="SoundRandom" value=""/>
-	<property name="SoundSense" value=""/>
-	<property name="SoundAlert" value=""/>
-	<property name="SoundAttack" value=""/>
-	<property name="SoundFootstepModifier" value=""/>
-	<property name="SoundGiveUp" value=""/>
-	
+	<property name="SoundHurt" value="moosepain" />
+	<property name="SoundDeath" value="moosedeath" />
+	<property name="SoundRandom" value="mooseroam" />
+	<property name="SoundSense" value="moosesense" />
+	<property name="SoundAlert" value="moosealert" />
+	<property name="SoundAttack" value="mooseattack" />
+	<property name="SoundFootstepModifier" value="moosefootstep" />
+	<property name="SoundGiveUp" value="moosegiveup" />
     <!-- AI Tasks -->
 	<property name="AITask-1" value="Swim"/>
 	<property name="AITask-2" value="BreakBlock"/>
@@ -373,24 +370,18 @@
 	<property name="AITarget-2" value="BlockingTargetTask"/>
 	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer,8,EntityAnimalStag,0,EntityZombie,0"/>
 	<property name="AITarget-4" value=""/>
-
-
 	<!-- Stealth settings -->
 	<property name="MaxViewAngle" value="180"/>
 	<property name="SightRange" value="30"/>
 	<property name="SightLightThreshold" value="-2,150"/>
-
 	<property name="SleeperWakeupSightDetectionMin" value="-40,5"/> 
 	<property name="SleeperWakeupSightDetectionMax" value="340,480"/>
 	<property name="SleeperSenseSightDetectionMin" value="-10,0"/> 
 	<property name="SleeperSenseSightDetectionMax" value="200,300"/>
-
 	<property name="SleeperNoiseSenseThreshold" value="3,8"/> 
 	<property name="SleeperNoiseWakeThreshold" value="9,12"/>
-
 	<property name="SleeperSmellSenseThreshold" value="20,50"/> 
 	<property name="SoundSleeperSenseChance" value=".5"/> 
-
 	<!-- Gameplay -->
 	<property name="SurfaceCategory" value="organic"/>
 	<property name="ParticleOnDeath" value="blood_death"/>
@@ -440,10 +431,11 @@
     <property name="AvatarController" value="MecanimSDX, Mods" />
     <property name="RootMotion" value="false" />
     <property name="HasRagdoll" value="false" />
-    
     <!-- Main Properties -->
     <property name="Tags" value="animal"/>
-	<property name="Mesh" value="#@modfolder:Resources/khelldonBeaver.unity3d?khelldonBeaver"/>
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonBeaver.unity3d?khelldonBeaver"/><!-- Beaver by BennyG -->
+	<!-- !!!! END RESTRICTED AREA !!!! -->
 	<property name="ModelType" value="Standard"/>
 	<property name="Prefab" value="NPC"/>
 	<property name="Class" value="EntityAnimalStag"/>
@@ -455,7 +447,6 @@
 	<property name="PhysicsBody" value="Stag"/>
 	<property name="Mass" value="10"/>
 	<property name="Weight" value="30"/>
-	
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0" />
     <property name="AttackIndexes" value="0" />
@@ -473,7 +464,6 @@
     <property name="WalkIndexes" value="0" />
     <property name="IdleIndexes" value="0" />
     <property name="JumpIndexes" value="0" />
-	
     <!-- AI Tasks -->
 	<property name="AITask-1" value="Swim"/>
 	<property name="AITask-2" value="RunawayWhenHurt"/>
@@ -481,7 +471,6 @@
 	<property name="AITask-4" value="RunawayFromEntity" param1="EntityZombie"/>
 	<property name="AITask-5" value="Look"/>
 	<property name="AITask-6" value="Wander"/>
-
 	<!-- Stealth settings -->
 	<property name="MaxViewAngle" value="180"/>
 	<property name="SightRange" value="30"/> 
@@ -493,14 +482,12 @@
 	<property name="SleeperNoiseSenseThreshold" value="3,8"/>
 	<property name="SleeperNoiseWakeThreshold" value="9,12"/>
 	<property name="SleeperSmellSenseThreshold" value="20,50"/>
-	<property name="SoundSleeperSenseChance" value=".5"/> 
-
+	<property name="SoundSleeperSenseChance" value=".5"/>
 	<!-- Gameplay -->
 	<property name="MaxTurnSpeed" value="450"/>
 	<property name="MoveSpeed" value="0.7"/>
 	<property name="MoveSpeedPanic" value="2.0"/>
 	<property name="CanClimbLadders" value="false"/>
-
 	<!-- Sounds -->
 	<property name="SoundHurt" value=""/>
 	<property name="SoundDeath" value=""/>
@@ -510,7 +497,6 @@
 	<property name="SoundAttack" value=""/>
 	<property name="SoundFootstepModifier" value=""/>
 	<property name="SoundGiveUp" value=""/>
-
 	<!-- Gameplay -->
 	<property name="DeadBodyHitPoints" value="150"/>
 	<property name="SurfaceCategory" value="organic"/>
