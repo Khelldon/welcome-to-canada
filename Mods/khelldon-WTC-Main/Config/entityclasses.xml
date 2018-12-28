@@ -239,13 +239,6 @@
 		<passive_effect name="HealthMax" operation="base_set" value="2000"/>
 	</effect_group>
 </entity_class>
-
-<!-- Polar Bear -->
-<entity_class name="khelldonPolarBear" extends="animalBear">
-	<property name="Tags" value="animal,hostile"/>
-	<property name="SizeScale" value="1.1"/>
-	<property name="ReplaceMaterial0" value="#@modfolder:Resources/khelldonPolarBearTexture.unity3d?bearPolar"/>
-</entity_class>
 </append>
 
 
@@ -497,7 +490,16 @@
 
 </append>
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Kitty Kitty -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 
+<append xpath="/entity_classes">
+
+
+</append>
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
