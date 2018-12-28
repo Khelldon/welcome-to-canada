@@ -16,11 +16,11 @@
 <!-- ######################################################### -->
 <!--
 <remove xpath="//mainmenubutton[@name='btnEditingTools']" />
-
+-->
 <insertBefore xpath="//mainmenubutton[@name='btnOptions']">
 			<mainmenubutton name="btnProfiles" pivot="center" width="400" height="54" caption_key="xuikhelldonCharacterSelect" />
 </insertBefore>
--->
+
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - remove option for loot. -->
