@@ -136,7 +136,16 @@ We'll extend from the standard nail
 </item>
 
 </append>
+<!-- 
+Khelldon - Lets add the Box of Nails code
+We'll extend from the standard nail
 
+This needs Localization, please add the following two lines to /Data/Configs/Localization.txt
+
+khelldonBoxNails,items,Item,KgNone,Box of Nails,,,,,
+khelldonBoxNailsDesc,items,Item,KgNone,"A regular box nails. Open it up (with recipe) to get some nails.",,,,,
+
+-->
 <append xpath="/items">
 
 <item name="khelldonBoxNails">
