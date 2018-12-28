@@ -41,9 +41,9 @@
 		
 
 <!-- Remove vanilla groups -->
-<remove xpath="/spawning/biome/spawn[contains(@entitygroup, 'Animals')]" />
+<remove xpath="/spawning/biome/spawn[contains(@entitygroup, 'Animals')]"/>
 <!-- Country Animals -->
-<append xpath="/spawning/biome[not(@name, 'city') and not(@name, 'city_wasteland') and not(@name, 'wasteland_hub')]">
+<append xpath="/spawning/biome[@name='pine_forest' or @name='burnt_forest' or @name='desert' or @name='wasteland' or @name='snow']">
 		<spawn maxcount="1" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
 		<spawn maxcount="4" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
 		<spawn maxcount="4" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
@@ -52,8 +52,8 @@
 </append>
 <!-- City Animals -->
 <append xpath="/spawning/biome[@name='city' or @name='city_wasteland' or @name='wasteland_hub']">
-		<spawn maxcount="5" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
-		<spawn maxcount="10" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="8" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
 </append>
 
 
