@@ -43,7 +43,7 @@
 <!-- Remove vanilla groups -->
 <remove xpath="/spawning/biome/spawn[contains(@entitygroup, 'Animals')]" />
 <!-- Country Animals -->
-<append xpath="/spawning/biome[not @name='city' and not @name='city_wasteland' and not @name='wasteland_hub']">
+<append xpath="/spawning/biome[not @name='city' or not @name='city_wasteland' or not @name='wasteland_hub']">
 		<spawn maxcount="1" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
 		<spawn maxcount="4" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
 		<spawn maxcount="4" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
