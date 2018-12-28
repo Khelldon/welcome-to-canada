@@ -6141,7 +6141,6 @@ xuiContinueGame,UI,XUi MainMenu,New,Continue Game,Continuer la partie,Spiel fort
 xuiCredits,UI,XUi MainMenu,New,Credits,Crédits,Mitwirkende,,Créditos,
 xuiNewGame,UI,XUi MainMenu,New,New Game,Nouvelle partie,Neues Spiel,,Partida nueva,
 xuiOptions,UI,XUi MainMenu,New,Options,Options,Optionen,,Opciones,
-xuiQuit,UI,XUi MainMenu,New,Quit,Quitter,Verlassen,,Salir,
 xuiBoolCelsiusOff,UI,XUi Options Video,New,°F,,,,,
 xuiBoolCelsiusOn,UI,XUi Options Video,New,°C,,,,,
 xuiBtnOptionsAccount,UI,XUi OptionsMenu,New,Player Name,,,,,
@@ -7345,3 +7344,4 @@ khelldonBoxNailsDesc,items,Item,KgNone,"A regular box nails. Open it up (with re
 casinoCoin,items,Item,KgNone,Loonie,,,,,
 casinoCoinDesc,items,Item,KgNone,"A Loonie is Canada's one dollar coin. It's value varries.",,,,,
 xuikhelldonCharacterSelect,UI,XUI,New,Character,,,,,
+xuiQuit,UI,XUi MainMenu,New,Leave Canada,,,,,
