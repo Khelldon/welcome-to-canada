@@ -329,24 +329,6 @@
     <property name="WalkIndexes" value="0" />
     <property name="IdleIndexes" value="0" />
     <property name="JumpIndexes" value="0" />
-	<property class="MechanimAttackTriggers">
-		<property name="state0" value="AttackTrigger"/>
-	</property>
-	<property class="MechanimAttackStates">
-		<property name="state0" value="Base Layer.Attack"/>
-	</property>
-	<property class="MechanimPainTriggers">
-		<property name="state0" value="PainTrigger"/>
-	</property>
-	<property class="MechanimPainStates">
-		<property name="state0" value="Base Layer.Pain"/>
-	</property>
-	<property class="MechanimDeathTriggers">
-		<property name="state0" value="DeathTrigger"/>
-	</property>
-	<property class="MechanimDeathStates">
-		<property name="state0" value="Base Layer.Death"/>
-	</property>
 	<!-- Sounds -->
 	<property name="SoundHurt" value="moosepain" />
 	<property name="SoundDeath" value="moosedeath" />

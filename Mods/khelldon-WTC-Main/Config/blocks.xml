@@ -22,6 +22,7 @@
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="#@modfolder:Resources/khelldonCanadaClaimBlock.unity3d?khelldonCanadaClaimBlock"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
 </append>
 
 

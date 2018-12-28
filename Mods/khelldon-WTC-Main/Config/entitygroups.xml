@@ -16,7 +16,7 @@
 <!-- ######################################################### -->
 <append xpath="/entitygroups" >
 <entitygroup name="KheldonsAnimalsCanadaHostile">
-		<entity name="invisibleAnimalEnemy"/>
+		<entity name="invisibleAnimalEnemy" prob="6"/>
 		<entity name="khelldonMoose"/>
 		<entity name="animalSnake"/>
 		<entity name="animalZombieVulture"/>
@@ -24,7 +24,7 @@
 		<entity name="animalDireWolf" prob="0.25"/>
 </entitygroup>
 <entitygroup name="KheldonsAnimalsCanadaPassive">
-		<entity name="invisibleAnimal"/>
+		<entity name="invisibleAnimal" prob="6"/>
 		<entity name="khelldonBeaver"/>
 		<entity name="animalRabbit"/>
 		<entity name="animalChicken"/>
@@ -33,13 +33,13 @@
 		<entity name="animalBoar"/>
 </entitygroup>
 <entitygroup name="KheldonsAnimalsCanadaCity">
-		<entity name="invisibleAnimal"/>
+		<entity name="invisibleAnimal" prob="6"/>
 		<entity name="animalRabbit"/>
 		<entity name="animalChicken"/>
 		<entity name="animalBoar"/>
 </entitygroup>
 <entitygroup name="KheldonsAnimalsBearsCanada">
-		<entity name="invisibleAnimalEnemy"/>
+		<entity name="invisibleAnimalEnemy" prob="6"/>
 		<entity name="animalBear" prob="0.25"/>
 		<entity name="khelldonAnimalBabyBear"/>
 </entitygroup>
