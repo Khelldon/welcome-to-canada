@@ -54,6 +54,7 @@
 <item name="khelldon20dollars">
 	<property name="Extends" value="khelldon5dollars"/>
 	<property name="CustomIcon" value="khelldon20dollarsIcon"/>
+	<property name="Material" value="MoldCash"/>
 	<property name="EconomicValue" value="100"/>
 	<property name="Group" value="Resources"/>
 </item>
@@ -61,6 +62,7 @@
 <item name="khelldon50dollars">
 	<property name="Extends" value="khelldon5dollars"/>
 	<property name="CustomIcon" value="khelldon50dollarsIcon"/>
+	<property name="Material" value="MoldCash"/>
 	<property name="EconomicValue" value="250"/>
 	<property name="Group" value="Resources"/>
 </item>
@@ -68,6 +70,7 @@
 <item name="khelldon100dollars">
 	<property name="Extends" value="khelldon5dollars"/>
 	<property name="CustomIcon" value="khelldon100dollarsIcon"/>
+	<property name="Material" value="MoldCash"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="Group" value="Resources"/>
 </item>
