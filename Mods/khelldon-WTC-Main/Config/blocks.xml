@@ -18,6 +18,7 @@
 
 <remove xpath="/blocks/block[@name='keystoneBlock']/property[@name='Texture']"/>
 <append xpath="/blocks/block[@name='keystoneBlock']">
+	<property name="CustomIcon" value="khelldonLCB"/>
 	<property name="Mesh" value="models"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>

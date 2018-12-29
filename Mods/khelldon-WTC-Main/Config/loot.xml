@@ -7,9 +7,52 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Machete -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/lootcontainers/lootgroup[@name='tools' or @name='workingStiffs']">
+	<item name="khelldonSurvivalMachete" count="1" prob="0.25"/>
+</append>
 
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Bloody Hatchet -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 
+<append xpath="/lootcontainers/lootgroup[@name='junk' or @name='sportingGoods']">
+	<item name="khelldonHatchetBloody" count="1" prob="0.3"/>
+</append>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Baseball bat -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/lootcontainers/lootgroup[@name='junk' or @name='sportingGoods']">
+	<item name="khelldonBaseballBat" count="1" prob="0.4"/>
+</append>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Currency -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<insertAfter xpath="//item[@name='oldCash']">
+	<item name="khelldonTwoonie" count="1,6" prob="0.3"/>
+	<item name="khelldon5dollars" count="1,5" prob="0.3"/>
+	<item name="khelldon10dollars" count="1,4" prob="0.3"/>
+	<item name="khelldon20dollars" count="1,3" prob="0.3"/>
+	<item name="khelldon50dollars" count="1,2" prob="0.2"/>
+	<item name="khelldon100dollars" count="1" prob="0.1"/>
+</insertAfter>
+<remove xpath="//item[@name='oldCash']"/>
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -80,6 +123,7 @@ Khelldon - Add box of nails to working stiffs
 <append xpath="/lootcontainers">
 <!-- Our list of loot to give the player -->
 <lootgroup name="khelldonStarterCrateContents" count="all">
+	<item group="khelldonBoxNails" count="4"/>
 	<item group="pufferCoatAll" count="1"/>
 	<item group="skullCapAll" count="1"/>
 	<item group="flannelShirtAll" count="1"/>
@@ -88,7 +132,7 @@ Khelldon - Add box of nails to working stiffs
 	<item name="ammo762mmBulletFMJ" count="25"/>
 	<item name="medicalFirstAidBandage" count="5"/>
 	<item name="khelldonSurvivalMachete" count="1"/>
-	<item name="meleeToolStoneAxe" count="1"/>
+	<item name="khelldonIceAxe" count="1"/>
 	<item name="meleeToolShovelStone" count="1"/>
     <item name="drinkJarBoiledWater" count="5"/>
     <item name="foodSteakAndPotato" count="3"/>
@@ -99,6 +143,18 @@ This may certainly cause conflicts with other mods. -->
 	<item group="khelldonStarterCrateContents" count="1"/>
 </lootcontainer>
 
+</append>
+
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Vehicles -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+
+<append xpath="/lootcontainers">
 </append>
 
 

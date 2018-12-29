@@ -17,6 +17,64 @@
 	<property name="CustomIcon" value="khelldonLoonieIcon"/>
 </append>
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Currency -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<append xpath="/items">
+
+<item name="khelldonTwoonie">
+	<property name="Extends" value="casinoCoin"/>
+	<property name="CustomIcon" value="khelldonTwoonieIcon"/>
+	<property name="DescriptionKey" value="khelldonMoneyDesc"/>
+	<property name="Material" value="McasinoCoin"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="SellableToTrader" value="true"/>
+</item>
+
+<item name="khelldon5dollars">
+	<property name="Extends" value="oldCash"/>
+	<property name="CustomIcon" value="khelldon5DollarSpockIcon"/>
+	<property name="DescriptionKey" value="khelldonMoneyDesc"/>
+	<property name="Material" value="MoldCash"/>
+	<property name="Stacknumber" value="20000"/>
+	<property name="EconomicValue" value="25"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item name="khelldon10dollars">
+	<property name="Extends" value="khelldon5dollars"/>
+	<property name="CustomIcon" value="khelldon10dollarsIcon"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item name="khelldon20dollars">
+	<property name="Extends" value="khelldon5dollars"/>
+	<property name="CustomIcon" value="khelldon20dollarsIcon"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item name="khelldon50dollars">
+	<property name="Extends" value="khelldon5dollars"/>
+	<property name="CustomIcon" value="khelldon50dollarsIcon"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item name="khelldon100dollars">
+	<property name="Extends" value="khelldon5dollars"/>
+	<property name="CustomIcon" value="khelldon100dollarsIcon"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+</append>
+
+
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -238,16 +296,18 @@ Please credit Valve with this model.
 <!-- Ice Axe -->
 <item name="khelldonIceAxe">
 	<property name="Tags" value="melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+	<property name="CustomIcon" value="khelldonIceAxeIcon"/>
+	<property name="DescriptionKey" value="khelldonIceAxeDesc"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="12"/>
-	<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/khelldonIceAxe.unity3d?khelldonIceAxe"/> <!-- model by RRFREELANCE -->
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceForgedIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
-	<property name="FuelValue" value="250"/>
-	<property name="EconomicValue" value="240"/>
+	<property name="FuelValue" value="20"/>
+	<property name="EconomicValue" value="140"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.15"/>
@@ -265,14 +325,14 @@ Please credit Valve with this model.
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="17"/> <!-- meleeToolPickaxeIron -->
-		<passive_effect name="BlockDamage" operation="base_set" value="42"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/> <!-- A16 1 -->
+		<passive_effect name="EntityDamage" operation="base_set" value="22"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="32"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="65"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="16.2" tags="primary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="12.2" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
@@ -300,10 +360,12 @@ Please credit Valve with this model.
 
 <!-- Iron sledge -->
 <item name="khelldonSledgehammer">
+	<property name="CustomIcon" value="khelldonSledgehammerIcon"/>
+	<property name="DescriptionKey" value="khelldonSledgehammerDesc"/>
 	<property name="Tags" value="blunt,melee,heavy,sledge,weapon,meleeWeapon,perkHeavyMetal"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="33"/>
-	<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/khelldonSledgeHammer.unity3d?khelldonSledgeHammer"/> <!-- model by RRFREELANCE -->
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceForgedIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -318,13 +380,13 @@ Please credit Valve with this model.
 
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sphere" value="0.15"/> 
 		<property name="Sound_start" value="SlowSwoosh"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="DynamicMelee"/>
-		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sphere" value="0.15"/> 
 		<property name="Sound_start" value="SlowSwoosh"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
@@ -332,9 +394,9 @@ Please credit Valve with this model.
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="42"/> <!-- meleeToolSledgehammer -->
+		<passive_effect name="EntityDamage" operation="base_set" value="42"/> 
 		<passive_effect name="BlockDamage" operation="base_set" value="80"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="34"/> <!-- A16 1.8 -->
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="34"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="29" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -365,16 +427,18 @@ Please credit Valve with this model.
 
 <!-- hatchets -->
 <item name="khelldonHatchet">
+	<property name="CustomIcon" value="khelldonHatchet1"/>
+	<property name="DescriptionKey" value="khelldonHatchetDesc"/>
 	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
 	<property name="DisplayType" value="melee"/>
-	<property name="HoldType" value="17"/>
-	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
+	<property name="HoldType" value="2"/>
+	<property name="Meshfile" value="#@modfolder:Resources/khelldonHatchets.unity3d?khelldonHatchete"/> <!-- model by ESSPLASKID -->
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceForgedIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="FuelValue" value="250"/>
-	<property name="EconomicValue" value="240"/>
+	<property name="EconomicValue" value="120"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
@@ -396,10 +460,10 @@ Please credit Valve with this model.
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="26"/> <!-- meleeToolFireaxeIron -->
-		<passive_effect name="BlockDamage" operation="base_set" value="60"/>
-		<passive_effect name="HarvestCount" operation="base_set" value=".35" tags="butcherHarvest"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="16"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="40"/>
+		<passive_effect name="HarvestCount" operation="base_set" value=".25" tags="butcherHarvest"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
@@ -428,10 +492,14 @@ Please credit Valve with this model.
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
-</item><item name="khelldonHatchetBloody">
-	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+</item>
+
+<item name="khelldonHatchetBloody">
 	<property name="Extends" value="khelldonHatchet"/>
-	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
+	<property name="CustomIcon" value="khelldonHatchet2"/>
+	<property name="DescriptionKey" value="khelldonHatchetBloodyDesc"/>
+	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
+	<property name="Meshfile" value="#@modfolder:Resources/khelldonHatchets.unity3d?khelldonHatcheteBloody"/> <!-- model by ESSPLASKID -->
 </item>
 </append>
 
@@ -471,6 +539,7 @@ Please credit Valve with this model.
 		<property name="Sphere" value="0.15"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 	</property>
 	<property class="Action1">
@@ -479,6 +548,7 @@ Please credit Valve with this model.
 		<property name="Sphere" value="0.15"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
 	</property>
@@ -486,7 +556,11 @@ Please credit Valve with this model.
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="17"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="25"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
 		<passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
@@ -510,8 +584,13 @@ Please credit Valve with this model.
 		</triggered_effect>
 	</effect_group>
 </item>
+
+
+
 <!-- baseball bat -->
 <item name="khelldonBaseballBat">
+	<property name="CustomIcon" value="khelldonBaseballBatIcon"/>
+	<property name="DescriptionKey" value="khelldonBaseballBatDesc"/>
 	<property name="Tags" value="blunt,club,melee,light,weapon,meleeWeapon,perkStayDown"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="Group" value="Ammo/Weapons,Basics"/>
@@ -525,16 +604,14 @@ Please credit Valve with this model.
 	<property name="CraftingSkillGroup" value="attIntellect"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="EconomicBundleSize" value="1"/>
-	<property name="EconomicValue" value="5"/>
+	<property name="EconomicValue" value="25"/>
 	<property name="FuelValue" value="250"/>
-
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 	</property>
-
 	<property class="Action1">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sound_start" value="swoosh"/>
@@ -542,18 +619,17 @@ Please credit Valve with this model.
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
 	</property>
-
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="16"/> <!-- meleeClubWood -->
+		<passive_effect name="EntityDamage" operation="base_set" value="32"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
 		<passive_effect name="HarvestCount" operation="base_set" value=".35" tags="butcherHarvest"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/> <!-- A16 1.33 -->
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/> 
 		<passive_effect name="StaminaLoss" operation="base_set" value="16.2" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -573,10 +649,11 @@ Please credit Valve with this model.
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
-
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
 	</effect_group>
 </item>
+
+
 <!-- Night Stick -->
 <item name="khelldonNightStick">
 	<property name="Tags" value="blunt,club,melee,light,weapon,meleeWeapon,perkStayDown"/>
@@ -594,14 +671,12 @@ Please credit Valve with this model.
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="FuelValue" value="250"/>
-
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 	</property>
-
 	<property class="Action1">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sound_start" value="swoosh"/>
@@ -609,18 +684,17 @@ Please credit Valve with this model.
 		<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
 	</property>
-
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="16"/> <!-- meleeClubWood -->
+		<passive_effect name="EntityDamage" operation="base_set" value="40"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
 		<passive_effect name="HarvestCount" operation="base_set" value=".35" tags="butcherHarvest"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/> <!-- A16 1.33 -->
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="16.2" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -640,16 +714,17 @@ Please credit Valve with this model.
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
 			<requirement name="IsMale" target="self" invert="true"/>
 		</triggered_effect>
-
 		<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
 	</effect_group>
 </item>
+
+
 <!-- Surgical Saw -->
 <item name="khelldonSurgicalSaw">
 	<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="HoldType" value="36"/>
-	<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab"/> <!-- model by ESSPLASHKID -->
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceForgedIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -717,6 +792,17 @@ Please credit Valve with this model.
 </item>
 </append>
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Hockey Equipment -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/items">
+
+
+
+</append>
 
 
 <!-- ######################################################### -->
@@ -808,7 +894,7 @@ Khelldon - Now let's make sure the crossbow knows this can be used as ammo
 note: This will cause conflicts with any other mod that changes the crossbow ammo
 -->
 
-<set xpath="/items/item[@name='gunCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoCrossbowBoltStone,ammoCrossbowBoltIron, ammoCrossbowBoltSteelAP, ammoCrossbowBoltExploding, khelldonRebarBolt, khelldonRebarBoltHot</set>
+<set xpath="/items/item[@name='gunCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoCrossbowBoltStone,ammoCrossbowBoltIron, ammoCrossbowBoltSteelAP, ammoCrossbowBoltExploding, khelldonRebarBolt, khelldonRebarBoltHot, khelldonHockeyPuck</set>
 
 
 
@@ -824,6 +910,9 @@ note: This will cause conflicts with any other mod that changes the crossbow amm
 
 
 </append>
+
+
+
 
 
 

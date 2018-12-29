@@ -8,6 +8,15 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - change crafted sledgehammer into custom one -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<set xpath="/recipes/recipe[@name='meleeToolSledgehammer']/@name">khelldonSledgehammer</set>
+
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Nuts And Bolts -->
@@ -143,7 +152,7 @@ updated: Longer Craft time
 
 <append xpath="/recipes">
 
-<recipe name="resourceNail" count="1" craft_time="15">
+<recipe name="resourceNail" count="1" craft_time="15" craft_area="workbench">
 	<ingredient name="resourceNailBent" count="1"/>
 </recipe>
 
@@ -244,6 +253,12 @@ Idea by Guppycur
 	<ingredient name="resourceWood" count="1"/>
 	<ingredient name="resourceFeather" count="1"/>
 </recipe>
+
+<recipe name="resourceNail" count="1" craft_time="15" craft_area="woodSawhorse">
+	<ingredient name="resourceNailBent" count="1"/>
+</recipe>
+
+
 </append>
 
 
@@ -269,6 +284,7 @@ Idea by Guppycur
          and not(contains(@name, 'workbench')) 
          and not(contains(@name, 'khelldonAdvancedWorkbench')) 
          and not(contains(@name, 'woodSawhorse')) 
+         and not(contains(@name, 'resourceNail')) 
          and not(contains(@name, 'meleeBoneShiv')) 
          and not(contains(@name, 'meleeClubWood')) 
          and not(contains(@name, 'meleeToolTorch')) 

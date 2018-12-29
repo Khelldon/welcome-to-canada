@@ -8,6 +8,37 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Currency -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+		
+<append xpath="//trader_item_group[@name='traderAlways']">
+
+	<item name="khelldonTwoonie" count="100" prob="0.3"/>
+	<item name="khelldon5dollars" count="100" prob="0.3"/>
+	<item name="khelldon10dollars" count="100" prob="0.3"/>
+	<item name="khelldon20dollars" count="100" prob="0.3"/>
+	<item name="khelldon50dollars" count="100" prob="0.2"/>
+	<item name="khelldon100dollars" count="100" prob="0.1"/>
+
+</append>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Hockey -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="//trader_item_group[@name='traderAlways']">
+
+
+
+</append>
+
+
+
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
