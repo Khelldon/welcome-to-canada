@@ -239,6 +239,83 @@
 		<passive_effect name="HealthMax" operation="base_set" value="2000"/>
 	</effect_group>
 </entity_class>
+
+
+<entity_class name="khelldonCoyote" extends="animalWolf">
+<property name="Tags" value="animal,hostile"/>
+	<!--property name="Prefab" value="Wolf"-->
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="PhysicsBody" value="wolf"/>
+	<property name="Mass" value="95"/>
+	<property name="Prefab" value="/Entities/Animals/Wolf/coyote"/>
+	<property name="Mesh" value=""/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+	<property class="MechanimAttackTriggers">
+		<property name="state0" value="AttackTrigger"/>
+	</property>
+	<property class="MechanimAttackStates">
+		<property name="state0" value="Attack"/>
+		<property name="state1" value="AttackStandingStill"/>
+	</property>
+	<property class="MechanimPainTriggers">
+		<property name="state0" value="PainTrigger"/>
+	</property>
+	<property class="MechanimPainStates">
+		<property name="state0" value="Pain"/>
+	</property>
+	<property class="MechanimDeathTriggers">
+		<property name="state0" value="DeathTrigger"/>
+	</property>
+	<property class="MechanimDeathStates">
+		<property name="state0" value="Death"/>
+	</property>
+
+	<property name="AITask-1" value="Swim"/>
+	<property name="AITask-2" value="BreakBlock"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityAnimalStag,40,EntityPlayer,15,EntityZombie,30"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer,8,EntityAnimalStag,0,EntityZombie,0"/>
+	<property name="AITarget-4" value=""/>
+
+	<property name="SoundRandom" value="Animals/Wolf/wolfroam"/>
+	<property name="SoundAlert" value="Animals/Wolf/wolfalert"/>
+	<property name="SoundHurt" value="Animals/Wolf/wolfpain"/>
+	<property name="SoundDeath" value="Animals/Wolf/wolfdeath"/>
+	<property name="SoundAttack" value="Animals/Wolf/wolfattack"/>
+	<property name="SoundSense" value="Animals/Wolf/wolfsense"/>
+	<property name="SoundGiveUp" value="Animals/Wolf/wolfgiveup"/>
+
+	<!-- Stealth -->
+	<property name="SmellAlertThreshold" value="5"/>
+
+	<!-- Gameplay -->
+	<property name="HandItem" value="meleeHandAnimalWolf"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="100"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+	</effect_group>
+
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="25"/> <!-- animalWolf -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
+	<drop event="Harvest" name="resourceFemur" tag="allToolsHarvest" count="1"/>
+</entity_class>
+
+
+
 </append>
 
 
