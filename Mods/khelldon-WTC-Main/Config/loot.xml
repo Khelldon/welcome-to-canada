@@ -7,6 +7,45 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
+
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Hockey Gear -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+<lootgroup name="khelldonHockeyStickGroup">
+	<item name="khelldonHockeyStick01"/>
+	<item name="khelldonHockeyStick02"/>
+	<item name="khelldonHockeyStick03"/>
+	<item name="khelldonGoalieStick01"/>
+	<item name="khelldonGoalieStick02"/>
+	<item name="khelldonGoalieStick03"/>
+</lootgroup>
+<lootgroup name="khelldonHockeyGearGroup">
+	<item name="khelldonGoalieHelmet"/>
+	<item name="khelldonHockeySkates"/>
+</lootgroup>
+</insertAfter>
+
+<append xpath="/lootcontainers/lootgroup[@name='junk' or @name='sportingGoods' or @name='sportingGoods']">
+	<item name="khelldonHockeyTape" count="1,2"/>
+	<item name="khelldonHockeyPuck" count="1,4"/>
+	<item group="khelldonHockeyStickGroup" count="3"/>
+	<item group="khelldonHockeyGearGroup" count="2"/>
+</append>
+
+<append xpath="/lootcontainers/lootcontainer[@id='19']">
+	<item name="khelldonHockeyTape" count="1,2"/>
+	<item name="khelldonHockeyPuck" count="1,2"/>
+	<item group="khelldonHockeyStickGroup" count="3"/>
+	<item group="khelldonHockeyGearGroup" count="2"/>
+</append>
+
+
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Machete -->
@@ -37,7 +76,9 @@
 <append xpath="/lootcontainers/lootgroup[@name='junk' or @name='sportingGoods']">
 	<item name="khelldonBaseballBat" count="1" prob="0.4"/>
 </append>
-
+<append xpath="/lootcontainers/lootcontainer[@id='19']">
+	<item name="khelldonBaseballBat" count="1" prob="0.4"/>
+</append>
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Currency -->
@@ -144,6 +185,20 @@ This may certainly cause conflicts with other mods. -->
 </lootcontainer>
 
 </append>
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - backpack -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/lootcontainers">
+<lootcontainer id="112" count="0" size="8,10" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="0" prob="0.01"/>
+</lootcontainer>
+</append>
+
 
 
 

@@ -811,6 +811,7 @@ Please credit Valve with this model.
 <!-- ######################################################### -->
 
 <append xpath="/items">
+
 <!-- Hockey Tape -->
 <item name="khelldonHockeyTape">
 	<property name="Extends" value="resourceDuctTape"/>
@@ -821,17 +822,129 @@ Please credit Valve with this model.
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="15"/>
 </item>
+
 <!-- Hockey Puck -->
-
-
+<item name="khelldonHockeyPuck">
+	<property name="CustomIcon" value="khelldonHockeyPuckIcon"/>
+	<property name="DescriptionKey" value="khelldonHockeyPuckDesc"/>
+	<property name="Tags" value="ranged,perkArchery"/>
+	<property name="DisplayType" value="ammoArrow"/>
+	<property name="Meshfile" value="#@modfolder:Resources/khelldonHockeyPuck.unity3d?khelldonHockeyPuck"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="#@modfolder:Resources/khelldonHockeyPuck.unity3d?khelldonHockeyPuck"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/khelldonHockeyPuck.unity3d?khelldonHockeyPuck"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="IsSticky" value="false"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="FuelValue" value="5"/>
+	<property name="EconomicValue" value="25"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Explosion.ParticleIndex" value="0"/>
+		<property name="Gravity" value="-4"/>
+		<property name="FlyTime" value="0"/>
+		<property name="LifeTime" value="12"/>
+	</property>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+	</property>
+	<effect_group name="Base Effects" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="28"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+	</effect_group>
+</item>
 
 <!-- Hockey Helmet -->
+<item name="khelldonGoalieHelmet">
+	<property name="CustomIcon" value="khelldonGoalieHelmetIcon"/>
+	<property name="DescriptionKey" value="khelldonGoalieHelmetDesc"/>
+	<property name="Tags" value="head,armor,armorHead,lightarmor"/>
+	<property name="DisplayType" value="armor"/>
+	<property name="Waterproof" value="0.15"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceScrapPolymers"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Weight" value="60"/>
+	<property name="EconomicValue" value="400"/>
+	<property name="Encumbrance" value="0"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#@modfolder:Resources/khelldonHockeyGear.unity3d?khelldonGoalieHelmet"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/khelldonHockeyGear.unity3d?khelldonGoalieHelmet"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="240,600" tier="1,6"/>
 
+		<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="-.562"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.10" />
+		<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+	</effect_group>
+	<property name="EquipSlot" value="Head"/>
+	<property class="UMA">
+		<property name="Mesh" value="gear_football_helmet"/>
+		<property name="Overlay0" value="gear_football_helmet"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="Headgear"/>
+		<property name="Mask0" value="Head" param1="inner"/>
+		<property name="ShowAltHair" value="false"/>
+	</property>
+	<property name="Group" value="Clothing"/>
+	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+</item>
 
 <!-- Hockey Skates -->
+<item name="khelldonHockeySkates">
+	<property name="CustomIcon" value="khelldonHockeySkatesIcon"/>
+	<property name="DescriptionKey" value="khelldonHockeySkatesDesc"/>	
+	<property name="CreativeMode" value="None"/>
+	<property name="DisplayType" value="armor"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceScrapPolymers"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#@modfolder:Resources/khelldonHockeyGear.unity3d?khelldonHockeySkate"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/khelldonHockeyGear.unity3d?khelldonHockeySkate"/>
+	<property name="Group" value="Clothing"/>
+	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="EconomicValue" value="800"/>
+	<property name="Tags" value="lowerbody,feet,armor,armorFeet,heavyarmor"/>
+	<property name="EquipSlot" value="Feet"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9"/>
+		<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
+		<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
 
+		<passive_effect name="Mobility" operation="perc_subtract" value="0.06"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.09" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="-.9"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.20" />
+		<passive_effect name="BuffResistance" operation="base_add" value="0.09" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+	</effect_group>
 
-
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_boots"/>
+		<property name="Overlay0" value="armor_iron_boots"/>
+		<property name="Layer" value="3"/>
+		<property name="UISlot" value="Footwear"/>
+	</property>
+</item>
 
 <!-- Hockey Stick 01 -->
 <item name="khelldonHockeyStick01">
@@ -843,7 +956,7 @@ Please credit Valve with this model.
 	<property name="Meshfile" value="#@modfolder:Resources/khelldonHockeySticks.unity3d?khelldonHockeyStick1"/>
 	<property name="HoldType" value="18"/>
 	<property name="Material" value="Mwood"/>
-	<property name="RepairTools" value="resourceWood"/>
+	<property name="RepairTools" value="khelldonHockeyTape"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="ActionSkillGroup" value="Destruction"/>
@@ -908,7 +1021,7 @@ Please credit Valve with this model.
 	<property name="Meshfile" value="#@modfolder:Resources/khelldonHockeySticks.unity3d?khelldonHockeyStick2"/>
 	<property name="HoldType" value="18"/>
 	<property name="Material" value="Mwood"/>
-	<property name="RepairTools" value="resourceWood"/>
+	<property name="RepairTools" value="khelldonHockeyTape"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="ActionSkillGroup" value="Destruction"/>
@@ -973,7 +1086,7 @@ Please credit Valve with this model.
 	<property name="Meshfile" value="#@modfolder:Resources/khelldonHockeySticks.unity3d?khelldonHockeyStick3"/>
 	<property name="HoldType" value="18"/>
 	<property name="Material" value="Mwood"/>
-	<property name="RepairTools" value="resourceWood"/>
+	<property name="RepairTools" value="khelldonHockeyTape"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="ActionSkillGroup" value="Destruction"/>
@@ -1038,7 +1151,7 @@ Please credit Valve with this model.
 	<property name="Meshfile" value="#@modfolder:Resources/khelldonHockeySticks.unity3d?khelldonHockeyGoalieStick1"/>
 	<property name="HoldType" value="33"/>
 	<property name="Material" value="Mwood"/>
-	<property name="RepairTools" value="resourceWood"/>
+	<property name="RepairTools" value="khelldonHockeyTape"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="ActionSkillGroup" value="Destruction"/>
@@ -1103,7 +1216,7 @@ Please credit Valve with this model.
 	<property name="Meshfile" value="#@modfolder:Resources/khelldonHockeySticks.unity3d?khelldonHockeyGoalieStick2"/>
 	<property name="HoldType" value="33"/>
 	<property name="Material" value="Mwood"/>
-	<property name="RepairTools" value="resourceWood"/>
+	<property name="RepairTools" value="khelldonHockeyTape"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="ActionSkillGroup" value="Destruction"/>
@@ -1168,7 +1281,7 @@ Please credit Valve with this model.
 	<property name="Meshfile" value="#@modfolder:Resources/khelldonHockeySticks.unity3d?khelldonHockeyGoalieStick3"/>
 	<property name="HoldType" value="33"/>
 	<property name="Material" value="Mwood"/>
-	<property name="RepairTools" value="resourceWood"/>
+	<property name="RepairTools" value="khelldonHockeyTape"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="ActionSkillGroup" value="Destruction"/>

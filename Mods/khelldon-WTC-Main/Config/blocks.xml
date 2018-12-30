@@ -7,6 +7,43 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - replace backpacks -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+
+<set xpath="/blocks/block[@name='cntBagsRandomLootHelper' or @name='cntBackpackDropped']/property[@name='Model']/@value">#@modfolder:Resources/khelldonBackpack.unity3d?khelldonBackpack</set>
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - backpack storage -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+
+<append xpath="/blocks">
+<block name="khelldonBackpack">
+	<property name="CustomIcon" value="khelldonBackpackIcon"/>
+	<property name="DescriptionKey" value="khelldonBackpackDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/khelldonBackpack.unity3d?khelldonBackpack"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="LootList" value="112"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="4,16" tag="salvageHarvest"/>
+	<drop event="Destroy" name="khelldonBackpack" count="1"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	<property name="Group" value="Basics"/>
+</block>
+</append>
+
 
 
 <!-- ######################################################### -->

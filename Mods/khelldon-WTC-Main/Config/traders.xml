@@ -10,7 +10,7 @@
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Currency -->
+<!-- Khelldon - Trader Always -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 		
@@ -22,20 +22,13 @@
 	<item name="khelldon20dollars" count="100" prob="0.3"/>
 	<item name="khelldon50dollars" count="100" prob="0.2"/>
 	<item name="khelldon100dollars" count="100" prob="0.1"/>
+	<item name="khelldonHockeyTape" count="10,20"/>
+	<item name="khelldonHockeyPuck" count="20,40"/>
+	<item group="khelldonHockeyStickGroup" count="3"/>
+	<item group="khelldonHockeyGearGroup" count="2"/>
 
 </append>
 
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<!-- Khelldon - Hockey -->
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-
-<append xpath="//trader_item_group[@name='traderAlways']">
-
-
-
-</append>
 
 
 
