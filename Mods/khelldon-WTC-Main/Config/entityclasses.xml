@@ -244,7 +244,7 @@
 <entity_class name="khelldonCoyote" extends="animalWolf">
     <property name="Tags" value="animal,hostile"/>
 	<property name="Mass" value="75"/>
-	<property name="Prefab" value="/Entities/Animals/Wolf/animalStandardWolfRagdoll"/>
+	<property name="Prefab" value=""/>
 	<property name="Mesh" value="/Entities/Animals/Wolf/coyote"/>
 	<property name="ReplaceMaterial0" value="/entities/animals/wolf/materials/coyote"/>
 	<property name="ReplaceMaterial1" value="/Entities/Animals/Wolf/materials/coyote_hair"/>
