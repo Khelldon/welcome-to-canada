@@ -30,6 +30,7 @@
 		<entity name="animalChicken"/>
 		<entity name="animalStag"/>
 		<entity name="animalDoe"/>
+		<entity name="animalPig"/>
 		<entity name="animalBoar"/>
 </entitygroup>
 <entitygroup name="KheldonsAnimalsCanadaCity">
