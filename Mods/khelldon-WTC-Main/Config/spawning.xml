@@ -17,14 +17,14 @@
 <!-- ######################################################### -->
 		
 <!-- Day Zombies -->
-<set xpath="/spawning/biome[@name='city']/spawn[@entitygroup='ZombiesAll']/@maxcount">8</set>
-<set xpath="/spawning/biome[@name='city_wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">8</set>
-<set xpath="/spawning/biome[@name='wasteland_hub']/spawn[@entitygroup='ZombiesWasteland']/@maxcount">8</set>
-<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@maxcount">4</set>
-<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@maxcount">6</set>
-<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@maxcount">6</set>
-<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">6</set>
-<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@maxcount">6</set>
+<set xpath="/spawning/biome[@name='city']/spawn[@entitygroup='ZombiesAll']/@maxcount">6</set>
+<set xpath="/spawning/biome[@name='city_wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">6</set>
+<set xpath="/spawning/biome[@name='wasteland_hub']/spawn[@entitygroup='ZombiesWasteland']/@maxcount">6</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@maxcount">4</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@maxcount">4</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">4</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@maxcount">4</set>
 
 <!-- Night Zombies -->
 <set xpath="/spawning/biome[@name='city']/spawn[@entitygroup='ZombiesNight']/@maxcount">12</set>
@@ -45,15 +45,15 @@
 <!-- Country Animals -->
 <append xpath="/spawning/biome[@name='pine_forest' or @name='burnt_forest' or @name='desert' or @name='wasteland' or @name='snow']">
 		<spawn maxcount="1" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
-		<spawn maxcount="4" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
-		<spawn maxcount="4" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
 		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
-		<spawn maxcount="4" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
 </append>
 <!-- City Animals -->
 <append xpath="/spawning/biome[@name='city' or @name='city_wasteland' or @name='wasteland_hub']">
 		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
-		<spawn maxcount="8" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="3" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
 </append>
 
 
