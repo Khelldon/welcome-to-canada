@@ -241,25 +241,7 @@
 </entity_class>
 
 
-<entity_class name="khelldonCoyote" extends="animalTemplateHostile">
-    <property name="Tags" value="animal,hostile"/>
-	<property name="Mass" value="75"/>
-	<property name="Prefab" value="NPC"/>
-	<property name="Mesh" value="/Entities/Animals/Wolf/coyote"/>
-	<!-- <property name="ReplaceMaterial0" value="#@modfolder:Resources/khelldonCoyote.unity3d?coyote"/>
-	<property name="ReplaceMaterial2" value="#@modfolder:Resources/khelldonCoyote.unity3d?coyote_hair"/> -->
-	<property name="SizeScale" value="0.7"/>
-	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="100"/>
-		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
-	</effect_group>
-	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="25"/>
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
-	<drop event="Harvest" name="resourceFemur" tag="allToolsHarvest" count="1"/>
-</entity_class>
+
 <!-- piggy -->
 <entity_class name="animalPig" extends="animalTemplateTimid">
 	<property name="Tags" value="animal"/>
