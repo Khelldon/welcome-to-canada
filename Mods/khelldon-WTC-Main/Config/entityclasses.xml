@@ -242,23 +242,20 @@
 
 
 <entity_class name="khelldonCoyote" extends="animalWolf">
-<property name="Tags" value="animal,hostile"/>
-	<property name="AvatarController" value="AvatarAnimalController"/>
-	<property name="ModelType" value="Standard"/>
-	<property name="HasRagdoll" value="true"/>
-	<property name="PhysicsBody" value="wolf"/>
-	<property name="Mass" value="95"/>
+    <property name="Tags" value="animal,hostile"/>
+	<property name="Mass" value="75"/>
+	<property name="Prefab" value="/Entities/Animals/Wolf/animalStandardWolfRagdoll"/>
 	<property name="Mesh" value="/Entities/Animals/Wolf/coyote"/>
 	<property name="ReplaceMaterial0" value="/entities/animals/wolf/materials/coyote"/>
 	<property name="ReplaceMaterial1" value="/Entities/Animals/Wolf/materials/coyote_hair"/>
-	<property name="ReplaceMaterial2" value="/Entities/Animals/Wolf/materials/coyote"/>
+	<property name="ReplaceMaterial2" value="/Entities/Animals/Wolf/materials/coyote_hair"/>
 	<property name="SizeScale" value="0.75"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="100"/>
-		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
+		<passive_effect name="HealthMax" operation="perc_add" value="0"/>
 	</effect_group>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="25"/> <!-- animalWolf -->
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="25"/>
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
