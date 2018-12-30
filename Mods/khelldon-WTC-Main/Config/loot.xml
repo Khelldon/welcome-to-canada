@@ -123,7 +123,7 @@ Khelldon - Add box of nails to working stiffs
 <append xpath="/lootcontainers">
 <!-- Our list of loot to give the player -->
 <lootgroup name="khelldonStarterCrateContents" count="all">
-	<item group="khelldonBoxNails" count="4"/>
+	<item name="khelldonBoxNails" count="4"/>
 	<item group="pufferCoatAll" count="1"/>
 	<item group="skullCapAll" count="1"/>
 	<item group="flannelShirtAll" count="1"/>

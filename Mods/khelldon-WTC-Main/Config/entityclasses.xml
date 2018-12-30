@@ -249,8 +249,8 @@
 	<property name="HasRagdoll" value="true"/>
 	<property name="PhysicsBody" value="wolf"/>
 	<property name="Mass" value="95"/>
-	<property name="Prefab" value="/Entities/Animals/Wolf/coyote"/>
-	<property name="Mesh" value=""/>
+	<!--<property name="Prefab" value="/Entities/Animals/Wolf/coyote"/>-->
+	<property name="Mesh" value="/Entities/Animals/Wolf/coyote"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="RagdollOnDeathChance" value=".5"/>

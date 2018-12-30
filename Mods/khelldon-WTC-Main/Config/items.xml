@@ -503,6 +503,67 @@ Please credit Valve with this model.
 	<property name="DescriptionKey" value="khelldonHatchetBloodyDesc"/>
 	<property name="Tags" value="knife,melee,medium,tool,perkDeepCuts,perkMotherLode"/>
 	<property name="Meshfile" value="#@modfolder:Resources/khelldonHatchets.unity3d?khelldonHatcheteBloody"/> <!-- model by ESSPLASKID -->
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="2"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceForgedIron"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="FuelValue" value="250"/>
+	<property name="EconomicValue" value="120"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="4"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="16"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="40"/>
+		<passive_effect name="HarvestCount" operation="base_set" value=".25" tags="butcherHarvest"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="47"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="21" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="42" tags="secondary"/>
+	</effect_group>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="IsMale" target="self"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
+			<requirement name="IsMale" target="self" invert="true"/>
+		</triggered_effect>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 </append>
 
@@ -597,7 +658,7 @@ Please credit Valve with this model.
 	<property name="Tags" value="blunt,club,melee,light,weapon,meleeWeapon,perkStayDown"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="Group" value="Ammo/Weapons,Basics"/>
-	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab"/>
+	<property name="Meshfile" value="#@modfolder:Resources/khelldonBaseballBat.unity3d?khelldonBaseballBat"/>
 	<property name="HoldType" value="2"/>
 	<property name="Material" value="Mwood"/>
 	<property name="RepairTools" value="resourceWood"/>
