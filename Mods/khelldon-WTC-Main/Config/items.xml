@@ -1444,11 +1444,34 @@ note: This will cause conflicts with any other mod that changes the crossbow amm
 
 <append xpath="/items">
 <!-- Poutine -->
+
+
+
 <!-- Canadian Bacon -->
+
+
+
 <!-- Pancakes -->
+
+
+
 <!-- Cheese -->
+
+
+
 <!-- Hot Chocolate -->
-<!-- Poutine -->
+
+
+
+<!-- Corn Oil -->
+
+
+
+<!-- Flour -->
+
+
+
+<!-- hot chocolat mix -->
 
 
 </append>
@@ -1463,6 +1486,27 @@ note: This will cause conflicts with any other mod that changes the crossbow amm
 
 <append xpath="/items">
 
+<!-- Touque -->
+
+
+
+<!-- Scarf -->
+
+
+
+<!-- Winter Jacket -->
+
+
+
+<!-- Sweater -->
+
+
+
+<!-- Ski Pants -->
+
+
+
+<!-- Winter Boots -->
 
 
 </append>

@@ -1017,7 +1017,31 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 
 </append>
 
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - Decorations Vehicles -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 
+
+<append xpath="/blocks">
+
+<!-- Master Vehicles -->
+
+<!-- Military Vehicles -->
+
+<!-- Special Vehicles -->
+
+<!-- Sedans -->
+
+<!-- Hatchbacks -->
+
+<!-- Buses -->
+
+<!-- Aircraft -->
+
+
+</append>
 
 
 
