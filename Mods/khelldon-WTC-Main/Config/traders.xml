@@ -24,9 +24,14 @@
 	<item name="khelldon100dollars" count="100" prob="0.1"/>
 	<item name="khelldonHockeyTape" count="10,20"/>
 	<item name="khelldonHockeyPuck" count="20,40"/>
-	<item group="khelldonHockeyStickGroup" count="3"/>
-	<item group="khelldonHockeyGearGroup" count="2"/>
-
+	<item name="khelldonGoalieHelmet"/>
+	<item name="khelldonHockeySkates"/>
+	<item name="khelldonHockeyStick01"/>
+	<item name="khelldonHockeyStick02"/>
+	<item name="khelldonHockeyStick03"/>
+	<item name="khelldonGoalieStick01"/>
+	<item name="khelldonGoalieStick02"/>
+	<item name="khelldonGoalieStick03"/>
 </append>
 
 

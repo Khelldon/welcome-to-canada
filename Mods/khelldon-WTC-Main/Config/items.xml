@@ -13,7 +13,7 @@
 <!-- Khelldon - Upgrade Items -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<set xpath="/items/item[not (contains(@name, 'meleeToolHoeIron'))]/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,drinkJarBoiledWater</set>
+<set xpath="/items/item[not (contains(@name, 'meleeToolHoeIron'))]/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,drinkJarBoiledWater</set>
 
 
 
