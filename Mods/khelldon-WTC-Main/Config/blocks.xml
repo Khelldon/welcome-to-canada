@@ -169,13 +169,17 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
-<remove xpath="/blocks/block[@name='keystoneBlock']/property[@name='Texture']"/>
+<remove xpath="/blocks/block[@name='keystoneBlock']/property[@name='Texture' or @name='Weight']"/>
 <append xpath="/blocks/block[@name='keystoneBlock']">
 	<property name="CustomIcon" value="khelldonLCB"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/khelldonCanadaClaimBlock.unity3d?khelldonCanadaClaimBlock"/>
-	<property name="ImposterDontBlock" value="true"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="true"/>
+	 <property name="HandleFace" value="South"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Weight" value="100"/>
 </append>
 
 
@@ -981,6 +985,8 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 	<drop event="Fall" name="terrSnow" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="resourceSnowBall" count="20" prob="0.187" stick_chance="0"/>
 	<property name="Model" value="#@modfolder:Resources/khelldonBlocks.unity3d?khelldonSnowBlock"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
 	<property class="RepairItems"> <property name="resourceSnowBall" value="30"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="khelldonIceBlock"/>
@@ -988,6 +994,8 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="true"/>
 </block>
 
 <block name="khelldonIceBlock">
@@ -995,11 +1003,15 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 	<property name="DescriptionKey" value="khelldonIceBlockDesc"/>
 	<property name="Material" value="Msnow"/>
 	<property name="Model" value="#@modfolder:Resources/khelldonBlocks.unity3d?khelldonIceBlock"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
 	<drop event="Harvest" name="resourceSnowBall" count="10" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="terrSnow" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="resourceSnowBall" count="20" prob="0.187" stick_chance="0"/>
 	<property class="RepairItems"> <property name="resourceSnowBall" value="30"/> </property>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="StabilitySupport" value="true"/>
 </block>
 
 </append>
