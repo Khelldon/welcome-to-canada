@@ -9,53 +9,112 @@
 
 
 
-
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Up the Zombie and Animal Spawning -->
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-		
-<!-- Day Zombies -->
-<set xpath="/spawning/biome[@name='city']/spawn[@entitygroup='ZombiesAll']/@maxcount">6</set>
-<set xpath="/spawning/biome[@name='city_wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">6</set>
-<set xpath="/spawning/biome[@name='wasteland_hub']/spawn[@entitygroup='ZombiesWasteland']/@maxcount">6</set>
-<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
-<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@maxcount">4</set>
-<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@maxcount">4</set>
-<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">4</set>
-<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@maxcount">4</set>
-
-<!-- Night Zombies -->
-<set xpath="/spawning/biome[@name='city']/spawn[@entitygroup='ZombiesNight']/@maxcount">12</set>
-<set xpath="/spawning/biome[@name='city_wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">12</set>
-<set xpath="/spawning/biome[@name='wasteland_hub']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">12</set>
-<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">12</set>
-
-
-<!-- ######################################################### -->
-<!-- ######################################################### -->
-<!-- Khelldon - Add my animal groups in -->
+<!-- Khelldon - Remove Biome Spawners and rewrite -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 		
+<remove xpath="/spawning/biome[@name='city' or @name='city_wasteland' or @name='wasteland_hub' or @name='pine_forest' or @name='burnt_forest' or @name='desert' or @name='wasteland' or @name='snow']"/>
+<append xpath="/spawning">
 
-<!-- Remove vanilla groups -->
-<remove xpath="/spawning/biome/spawn[contains(@entitygroup, 'Animals')]"/>
-<!-- Country Animals -->
-<append xpath="/spawning/biome[@name='pine_forest' or @name='burnt_forest' or @name='desert' or @name='wasteland' or @name='snow']">
+	<biome name="city">
+        <!-- Day Zombies -->
+		<spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
+        <!-- Night Zombies -->
+		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
+        <!-- City Animals -->
+		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="3" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+	</biome>
+
+	<biome name="city_wasteland">
+        <!-- Day Zombies -->
+		<spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
+        <!-- Night Zombies -->
+		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+        <!-- City Animals -->
+		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="3" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+	</biome>
+
+	<biome name="wasteland_hub">
+        <!-- Day Zombies -->
+		<spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
+        <!-- Night Zombies -->
+		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+        <!-- City Animals -->
+		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="3" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+	</biome>
+
+	<biome name="pine_forest">
+        <!-- Day Zombies -->
+		<spawn maxcount="4" respawndelay="4" time="Any" entitygroup="ZombiesAll" />
+        <!-- Night Zombies -->
+		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
+        <!-- Country Animals -->
 		<spawn maxcount="1" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
 		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
-</append>
-<!-- City Animals -->
-<append xpath="/spawning/biome[@name='city' or @name='city_wasteland' or @name='wasteland_hub']">
-		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
-		<spawn maxcount="3" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
-</append>
+	</biome>
 
+	<biome name="desert">
+        <!-- Day Zombies -->
+		<spawn maxcount="2" respawndelay="4" time="Any" entitygroup="ZombiesAll" />
+        <!-- Night Zombies -->
+		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
+        <!-- Country Animals -->
+		<spawn maxcount="1" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
+	</biome>
+
+	<biome name="wasteland">
+        <!-- Day Zombies -->
+		<spawn maxcount="4" respawndelay="1" time="Day"	entitygroup="ZombiesAll" />
+        <!-- Night Zombies -->
+		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+        <!-- Country Animals -->
+		<spawn maxcount="1" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
+	</biome>
+
+	<biome name="burnt_forest">
+        <!-- Day Zombies -->
+		<spawn maxcount="4" respawndelay="4" time="Any" entitygroup="ZombiesBurntForest" />
+        <!-- Night Zombies -->
+		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
+        <!-- Country Animals -->
+		<spawn maxcount="1" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
+	</biome>
+
+	<biome name="snow">
+        <!-- Day Zombies -->
+		<spawn maxcount="4" respawndelay="4" time="Any" entitygroup="SnowZombies" />
+        <!-- Night Zombies -->
+		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
+        <!-- Country Animals -->
+		<spawn maxcount="1" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaHostile" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
+		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
+	</biome>
+
+</append>
 
 
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->

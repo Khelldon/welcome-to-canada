@@ -165,6 +165,7 @@ Khelldon - Add box of nails to working stiffs
 <!-- Our list of loot to give the player -->
 <lootgroup name="khelldonStarterCrateContents" count="all">
 	<item name="khelldonBoxNails" count="4"/>
+	<item name="resourceForgedIron" count="10"/>
 	<item group="pufferCoatAll" count="1"/>
 	<item group="skullCapAll" count="1"/>
 	<item group="flannelShirtAll" count="1"/>
@@ -174,7 +175,6 @@ Khelldon - Add box of nails to working stiffs
 	<item name="medicalFirstAidBandage" count="5"/>
 	<item name="khelldonSurvivalMachete" count="1"/>
 	<item name="khelldonIceAxe" count="1"/>
-	<item name="meleeToolShovelStone" count="1"/>
     <item name="drinkJarBoiledWater" count="5"/>
     <item name="foodSteakAndPotato" count="3"/>
 </lootgroup>

@@ -1004,6 +1004,7 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 	<property name="Material" value="Msnow"/>
 	<property name="Model" value="#@modfolder:Resources/khelldonBlocks.unity3d?khelldonIceBlock"/>
 	<property name="Shape" value="ModelEntity"/>
+	<property name="MaxDamage" value="750"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
 	<drop event="Harvest" name="resourceSnowBall" count="10" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>

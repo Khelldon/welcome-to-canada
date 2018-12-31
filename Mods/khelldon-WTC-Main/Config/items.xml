@@ -19,7 +19,7 @@
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Add loonie Icon -->
+<!-- Khelldon - Add snow ball Icon -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <append xpath="/items/item[@name='resourceSnowBall']">
@@ -605,7 +605,7 @@ Please credit Valve with this model.
 	<property name="HoldType" value="2"/>
 	<property name="Meshfile" value="#@modfolder:Resources/khelldonMachete.unity3d?khelldonMachete"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="RepairTools" value="resourceForgedSteel"/>
+	<property name="RepairTools" value="resourceForgedIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="EconomicValue" value="600"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -1443,7 +1443,12 @@ note: This will cause conflicts with any other mod that changes the crossbow amm
 <!-- ######################################################### -->
 
 <append xpath="/items">
-
+<!-- Poutine -->
+<!-- Canadian Bacon -->
+<!-- Pancakes -->
+<!-- Cheese -->
+<!-- Hot Chocolate -->
+<!-- Poutine -->
 
 
 </append>
