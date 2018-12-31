@@ -14,13 +14,22 @@
 <!-- Khelldon Remove Editor Options -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!--
-<remove xpath="//mainmenubutton[@name='btnEditingTools']" />
 
-<insertBefore xpath="//mainmenubutton[@name='btnOptions']">
-			<mainmenubutton name="btnProfiles" pivot="center" width="400" height="54" caption_key="xuikhelldonCharacterSelect" />
+<remove xpath="//window[@name='mainMenu']" />
+<insertBefore xpath="//window[@name='newContinueGame']">	
+    <window name="mainMenu" anchor="CenterCenter" pos="0,0" width="1050" height="780" controller="MainMenu" cursor_area="true">
+		<grid pos="50,80" rows="12" cell_width="400" cell_height="70" repeat_content="false" arrangement="vertical" >
+			<mainmenubutton name="btnNewGame" pivot="center" width="400" height="54" caption_key="xuiNewGame" />
+			<mainmenubutton name="btnContinueGame" pivot="center" width="400" height="54" caption_key="xuiContinueGame" />
+			<mainmenubutton name="btnConnectToServer" pivot="center" width="400" height="54" caption_key="xuiConnectToServer" />
+			<mainmenubutton name="btnOptions" pivot="center" width="400" height="54" caption_key="xuiOptions" />
+			<mainmenubutton name="btnCredits" pivot="center" width="400" height="54" caption_key="xuiCredits" />
+			<rect />
+			<mainmenubutton name="btnQuit" pivot="center" width="400" height="54" caption_key="xuiQuit" />
+		</grid>
+	</window>
 </insertBefore>
--->
+
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - remove option for loot. -->
