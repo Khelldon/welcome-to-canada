@@ -929,6 +929,7 @@ Khelldon - Add a second Tier of wooden frames, these have glue
 <block name="khelldonStarterCrate">
 	<property name="CustomIcon" value="cntShippingCrateHero"/>
 	<property name="DescriptionKey" value="khelldonStarterCrateDesc"/>
+    <property name="Class" value="TakeAndReplace, Mods"/>
 	<property name="MaxDamage" value="225"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
