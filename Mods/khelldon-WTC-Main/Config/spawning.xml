@@ -24,8 +24,8 @@
         <!-- Night Zombies -->
 		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- City Animals -->
-		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
-		<spawn maxcount="3" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="4" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="6" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
 	</biome>
 
 	<biome name="city_wasteland">
@@ -35,8 +35,8 @@
         <!-- Night Zombies -->
 		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
         <!-- City Animals -->
-		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
-		<spawn maxcount="3" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="4" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="6" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
 	</biome>
 
 	<biome name="wasteland_hub">
@@ -45,8 +45,8 @@
         <!-- Night Zombies -->
 		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
         <!-- City Animals -->
-		<spawn maxcount="2" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
-		<spawn maxcount="3" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="4" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
+		<spawn maxcount="6" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
 	</biome>
 
 	<biome name="pine_forest">
