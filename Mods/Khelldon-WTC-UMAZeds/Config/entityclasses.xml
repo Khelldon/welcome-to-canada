@@ -210,7 +210,7 @@
 			<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain"/>
 			<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath"/>
 			<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
-		  </entity_class
+		  </entity_class>
 		  
 		  
 		  <entity_class name="badZombieBabyCrawler" extends="badZombieBaby">
@@ -322,7 +322,7 @@
 	        <property name="Tags" value="zombie,walker"/>
 			<property name="Archetype" value="valZombieChildMale"/>
 			<property name="MaxHealth" value="70" />
-		  </entity_class
+		  </entity_class>
 		  
 		  
 		  <entity_class name="valZombieRanger" extends="badZombieUMA" >
