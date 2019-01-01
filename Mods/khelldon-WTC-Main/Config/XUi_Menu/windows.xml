@@ -15,7 +15,7 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
-<remove xpath="//window[@name='mainMenu']" />
+<!-- <remove xpath="//window[@name='mainMenu']" />
 <insertBefore xpath="//window[@name='newContinueGame']">	
     <window name="mainMenu" anchor="CenterCenter" pos="0,0" width="1050" height="780" controller="MainMenu" cursor_area="true">
 		<grid pos="50,80" rows="11" cell_width="400" cell_height="70" repeat_content="false" arrangement="vertical" >
@@ -28,7 +28,7 @@
 			<mainmenubutton name="btnQuit" pivot="center" width="400" height="54" caption_key="xuiQuit" />
 		</grid>
 	</window>
-</insertBefore>
+</insertBefore> -->
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
