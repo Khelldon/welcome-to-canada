@@ -16,11 +16,12 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
-
+<!--
 <remove xpath="/controls/mainmenubutton/rect/button"/>
 <append xpath="/controls/mainmenubutton/rect">
 <button name="clickable" sprite="ui_game_popup" flip="horizontally" pos="0,${Round(-height/2,0)|-16}" defaultcolor="192,0,0,80" hovercolor="[red]" type="sliced" hoverscale="1.0" pivot="${pivot|left}" tooltip_key="${tooltip_key|}" />
 </append>
+-->
 
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
