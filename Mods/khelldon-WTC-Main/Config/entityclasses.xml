@@ -320,27 +320,83 @@
 </entity_class>
 
 <entity_class name="khelldonL4DBoomer" extends="khelldonL4DZedTemplate">
+        <property name="AvatarController" value="MecanimSDX, Mods" />
+        <property name="RootMotion" value="false" />
+        <property name="HasRagdoll" value="false" />
+        <property name="WanderSpeed" value="0.8" />
+        <property name="ApproachSpeed" value="0.8" />
+        <property name="NightWanderSpeed" value="0.8" />
+        <property name="NightApproachSpeed" value="1.1" />
 </entity_class>
 
 <entity_class name="khelldonL4DBoomette" extends="khelldonL4DZedTemplate">
+        <property name="AvatarController" value="MecanimSDX, Mods" />
+        <property name="RootMotion" value="false" />
+        <property name="HasRagdoll" value="false" />
+        <property name="WanderSpeed" value="0.8" />
+        <property name="ApproachSpeed" value="0.8" />
+        <property name="NightWanderSpeed" value="0.8" />
+        <property name="NightApproachSpeed" value="1.1" />
 </entity_class>
 
 <entity_class name="khelldonL4DCharger" extends="khelldonL4DZedTemplate">
+        <property name="AvatarController" value="MecanimSDX, Mods" />
+        <property name="RootMotion" value="false" />
+        <property name="HasRagdoll" value="false" />
+        <property name="WanderSpeed" value="0.8" />
+        <property name="ApproachSpeed" value="0.8" />
+        <property name="NightWanderSpeed" value="0.8" />
+        <property name="NightApproachSpeed" value="1.1" />
 </entity_class>
 
 <entity_class name="khelldonL4DHunter" extends="khelldonL4DZedTemplate">
+        <property name="AvatarController" value="MecanimSDX, Mods" />
+        <property name="RootMotion" value="false" />
+        <property name="HasRagdoll" value="false" />
+        <property name="WanderSpeed" value="0.8" />
+        <property name="ApproachSpeed" value="0.8" />
+        <property name="NightWanderSpeed" value="0.8" />
+        <property name="NightApproachSpeed" value="1.1" />
 </entity_class>
 
 <entity_class name="khelldonL4DJockey" extends="khelldonL4DZedTemplate">
+        <property name="AvatarController" value="MecanimSDX, Mods" />
+        <property name="RootMotion" value="false" />
+        <property name="HasRagdoll" value="false" />
+        <property name="WanderSpeed" value="0.8" />
+        <property name="ApproachSpeed" value="0.8" />
+        <property name="NightWanderSpeed" value="0.8" />
+        <property name="NightApproachSpeed" value="1.1" />
 </entity_class>
 
 <entity_class name="khelldonL4DSmoker" extends="khelldonL4DZedTemplate">
+        <property name="AvatarController" value="MecanimSDX, Mods" />
+        <property name="RootMotion" value="false" />
+        <property name="HasRagdoll" value="false" />
+        <property name="WanderSpeed" value="0.8" />
+        <property name="ApproachSpeed" value="0.8" />
+        <property name="NightWanderSpeed" value="0.8" />
+        <property name="NightApproachSpeed" value="1.1" />
 </entity_class>
 
 <entity_class name="khelldonL4DSpitter" extends="khelldonL4DZedTemplate">
+        <property name="AvatarController" value="MecanimSDX, Mods" />
+        <property name="RootMotion" value="false" />
+        <property name="HasRagdoll" value="false" />
+        <property name="WanderSpeed" value="0.8" />
+        <property name="ApproachSpeed" value="0.8" />
+        <property name="NightWanderSpeed" value="0.8" />
+        <property name="NightApproachSpeed" value="1.1" />
 </entity_class>
 
 <entity_class name="khelldonL4DTank" extends="khelldonL4DZedTemplate">
+        <property name="AvatarController" value="MecanimSDX, Mods" />
+        <property name="RootMotion" value="false" />
+        <property name="HasRagdoll" value="false" />
+        <property name="WanderSpeed" value="0.8" />
+        <property name="ApproachSpeed" value="0.8" />
+        <property name="NightWanderSpeed" value="0.8" />
+        <property name="NightApproachSpeed" value="1.1" />
 </entity_class>
 
 
