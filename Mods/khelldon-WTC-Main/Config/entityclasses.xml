@@ -288,7 +288,7 @@
 <!-- ######################################################### -->
 
 <append xpath="/entity_classes">
-
+<!-- I'm not using this but I leave it for the sake of leaving it -->
 <entity_class name="SDXTemplate" extends="zombieTemplateMale">
         <property name="AvatarController" value="MecanimSDX, Mods" />
         <property name="RootMotion" value="false" />
@@ -304,100 +304,271 @@
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Left4Dead 2 Zombies - All Credit Valve -->
+<!-- Khelldon - Left4Dead2 Zombies -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
+
+<!-- 
+
+Models and Textures by Valve. You may NOT use these models.
+These are added for fun. Please do not reuse. Restricted.
+
+
+Animations, Unity Convertion, retexture and coding by Khelldon
+
+-->
 
 <append xpath="/entity_classes">
+
+<!-- Template -->
 <entity_class name="khelldonL4DZedTemplate" extends="zombieTemplateMale">
-        <property name="AvatarController" value="MecanimSDX, Mods" />
-        <property name="RootMotion" value="false" />
-        <property name="HasRagdoll" value="false" />
-        <property name="WanderSpeed" value="0.8" />
-        <property name="ApproachSpeed" value="0.8" />
-        <property name="NightWanderSpeed" value="0.8" />
-        <property name="NightApproachSpeed" value="1.1" />
+    <property name="AvatarController" value="MecanimSDX, Mods" />
+	<property name="Tags" value="zombie,walker"/>
+    <property name="RootMotion" value="false" />
+    <property name="HasRagdoll" value="false" />
 </entity_class>
 
+
+
+<!-- Left4Dead2 Special Zeds -->
 <entity_class name="khelldonL4DBoomer" extends="khelldonL4DZedTemplate">
-        <property name="AvatarController" value="MecanimSDX, Mods" />
-        <property name="RootMotion" value="false" />
-        <property name="HasRagdoll" value="false" />
-        <property name="WanderSpeed" value="0.8" />
-        <property name="ApproachSpeed" value="0.8" />
-        <property name="NightWanderSpeed" value="0.8" />
-        <property name="NightApproachSpeed" value="1.1" />
+	<property name="Tags" value="zombie,walker"/>
+	<!-- Hand Item -->
+	<property name="HandItem" value="meleeHandZombieStrong"/>
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.04"/>
+	<property name="MoveSpeedAggro" value="0.1, 0.75"/>
+	<property name="MoveSpeedPanic" value="0.25"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="JumpMaxDistance" value="2.3"/>
+	<!-- Fat Sounds -->
+	<property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam"/>
+	<property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert"/>
+	<property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack"/>
+	<property name="SoundHurt" value="Enemies/Acid_Puking_Hulk/hulkpain"/>
+	<property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
+	<property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonBoomer"/>
+	<!-- !!!! END RESTRICTED AREA !!!! -->
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
 </entity_class>
+
+
 
 <entity_class name="khelldonL4DBoomette" extends="khelldonL4DZedTemplate">
-        <property name="AvatarController" value="MecanimSDX, Mods" />
-        <property name="RootMotion" value="false" />
-        <property name="HasRagdoll" value="false" />
-        <property name="WanderSpeed" value="0.8" />
-        <property name="ApproachSpeed" value="0.8" />
-        <property name="NightWanderSpeed" value="0.8" />
-        <property name="NightApproachSpeed" value="1.1" />
+	<property name="Tags" value="zombie,walker"/>
+	<!-- Hand Item -->
+	<property name="HandItem" value="meleeHandZombieStrong"/>
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.04"/>
+	<property name="MoveSpeedAggro" value="0.1, 0.75"/>
+	<property name="MoveSpeedPanic" value="0.25"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="JumpMaxDistance" value="2.3"/>
+	<!-- Lady Sounds -->
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonBoomette"/>
+	<!-- !!!! END RESTRICTED AREA !!!! -->
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
 </entity_class>
+
+
 
 <entity_class name="khelldonL4DCharger" extends="khelldonL4DZedTemplate">
-        <property name="AvatarController" value="MecanimSDX, Mods" />
-        <property name="RootMotion" value="false" />
-        <property name="HasRagdoll" value="false" />
-        <property name="WanderSpeed" value="0.8" />
-        <property name="ApproachSpeed" value="0.8" />
-        <property name="NightWanderSpeed" value="0.8" />
-        <property name="NightApproachSpeed" value="1.1" />
+	<property name="Tags" value="zombie,walker"/>
+	<!-- Hand Item -->
+	<property name="HandItem" value="meleeHandZombieStrong"/>
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="5"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="2, 3.25"/>
+	<property name="MoveSpeedPanic" value="0.55"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="JumpMaxDistance" value="1.3"/>
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonCharger"/>
+	<!-- !!!! END RESTRICTED AREA !!!! -->
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
 </entity_class>
+
+
 
 <entity_class name="khelldonL4DHunter" extends="khelldonL4DZedTemplate">
-        <property name="AvatarController" value="MecanimSDX, Mods" />
-        <property name="RootMotion" value="false" />
-        <property name="HasRagdoll" value="false" />
-        <property name="WanderSpeed" value="0.8" />
-        <property name="ApproachSpeed" value="0.8" />
-        <property name="NightWanderSpeed" value="0.8" />
-        <property name="NightApproachSpeed" value="1.1" />
+	<property name="Tags" value="zombie,walker"/>
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.01"/>
+	<property name="MoveSpeedAggro" value="0.9, 2.25"/>
+	<property name="MoveSpeedPanic" value="0.55"/>
+	<property name="CanClimbLadders" value="true"/>
+	<!-- Crazy Hunter Jump -->
+	<property name="JumpMaxDistance" value="20.0"/>
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonHunter"/>
+	<!-- !!!! END RESTRICTED AREA !!!! -->
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
 </entity_class>
+
+
 
 <entity_class name="khelldonL4DJockey" extends="khelldonL4DZedTemplate">
-        <property name="AvatarController" value="MecanimSDX, Mods" />
-        <property name="RootMotion" value="false" />
-        <property name="HasRagdoll" value="false" />
-        <property name="WanderSpeed" value="0.8" />
-        <property name="ApproachSpeed" value="0.8" />
-        <property name="NightWanderSpeed" value="0.8" />
-        <property name="NightApproachSpeed" value="1.1" />
+	<property name="Tags" value="zombie,walker"/>
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.01"/>
+	<property name="MoveSpeedAggro" value="0.6, 1.75"/>
+	<property name="MoveSpeedPanic" value="0.95"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="JumpMaxDistance" value="3.3"/>
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonJockey"/>
+	<!-- !!!! END RESTRICTED AREA !!!! -->
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
 </entity_class>
+
+
 
 <entity_class name="khelldonL4DSmoker" extends="khelldonL4DZedTemplate">
-        <property name="AvatarController" value="MecanimSDX, Mods" />
-        <property name="RootMotion" value="false" />
-        <property name="HasRagdoll" value="false" />
-        <property name="WanderSpeed" value="0.8" />
-        <property name="ApproachSpeed" value="0.8" />
-        <property name="NightWanderSpeed" value="0.8" />
-        <property name="NightApproachSpeed" value="1.1" />
+	<property name="Tags" value="zombie,walker"/>
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.55"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="JumpMaxDistance" value="3.3"/>
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonSmoker"/>
+	<!-- !!!! END RESTRICTED AREA !!!! -->
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
 </entity_class>
+
+
 
 <entity_class name="khelldonL4DSpitter" extends="khelldonL4DZedTemplate">
-        <property name="AvatarController" value="MecanimSDX, Mods" />
-        <property name="RootMotion" value="false" />
-        <property name="HasRagdoll" value="false" />
-        <property name="WanderSpeed" value="0.8" />
-        <property name="ApproachSpeed" value="0.8" />
-        <property name="NightWanderSpeed" value="0.8" />
-        <property name="NightApproachSpeed" value="1.1" />
+	<property name="Tags" value="zombie,walker"/>
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.55"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="JumpMaxDistance" value="3.3"/>
+	<!-- Lady Sounds -->
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonSpitter"/>
+	<!-- !!!! END RESTRICTED AREA !!!! -->
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
 </entity_class>
 
+
+
 <entity_class name="khelldonL4DTank" extends="khelldonL4DZedTemplate">
-        <property name="AvatarController" value="MecanimSDX, Mods" />
-        <property name="RootMotion" value="false" />
-        <property name="HasRagdoll" value="false" />
-        <property name="WanderSpeed" value="0.8" />
-        <property name="ApproachSpeed" value="0.8" />
-        <property name="NightWanderSpeed" value="0.8" />
-        <property name="NightApproachSpeed" value="1.1" />
+	<property name="Tags" value="zombie,walker"/>
+	<!-- Hand Item -->
+	<property name="HandItem" value="meleeHandZombieStrong"/>
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="1.08"/>
+	<property name="MoveSpeedAggro" value="2.2, 3.25"/>
+	<property name="MoveSpeedPanic" value="1.55"/>
+	<property name="CanClimbLadders" value="false"/>
+	<property name="JumpMaxDistance" value="3.3"/>
+	<!-- Tank Sounds -->
+	<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
+	<property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
+	<property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack"/>
+	<property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain"/>
+	<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath"/>
+	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonTank"/>
+	<!-- !!!! END RESTRICTED AREA !!!! -->
+	<effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
 </entity_class>
+
+
 
 
 </append>
