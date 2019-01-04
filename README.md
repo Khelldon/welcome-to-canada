@@ -43,6 +43,8 @@ in the Canada map.
 - Bad Company UMA Zombies: designed by Bad Company and remixed by Khelldon
 - SimpleUI Modlets: designed by Stedman420 - https://7daystodie.com/forums/showthread.php?94502-A17-Simple-UI-Modlets
 - AnimationSDX: HAL9000, Sphereii, Xyth
+- Player Entity: By Sphereii 
+- Take and Replace: By Sphereii
 - RWG Updated: Everything is Snow! by Khelldon 
 - Traders Destructable: by Khelldon
 - Workbench Needed for mostly Everything: by Khelldon
