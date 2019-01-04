@@ -11,7 +11,7 @@
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Custom Entities -->
+<!-- Sphereii - Animation SDX -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
@@ -320,20 +320,11 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
-    <property name="SpecialAttackIndexes" value="0" />
-    <property name="SpecialSecondAttackIndexes" value="0" />
-    <property name="RagingIndexes" value="0" />
-    <property name="ElectrocutionIndexes" value="0" />
-    <property name="CrouchIndexes" value="0" />
-    <property name="StunIndexes" value="0" />
-    <property name="SleeperIndexes" value="0" />
-    <property name="HarvestIndexes" value="0" />
-    <property name="PainIndexes" value="0" />
-    <property name="DeathIndexes" value="0" />
-    <property name="RunIndexes" value="0" />
-    <property name="WalkIndexes" value="0" />
-    <property name="IdleIndexes" value="0" />
-    <property name="JumpIndexes" value="0" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.55"/>
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieFeral"/>
     <!-- Model -->
@@ -343,7 +334,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
-		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
 	</effect_group>
