@@ -34,7 +34,29 @@
     <property name="HeadShots" value="true" />
     <property name="RandomSpeeds" value="true" />
   </append>
- -->
+-->
+
+
+
+<!-- Set the Transmogrifier path to only certain zombies -->
+<set xpath="
+/entity_classes
+/entity_class
+[
+starts-with(@name, 'zombieWight')
+or (starts-with(@name, 'zombieBoe'))
+or (starts-with(@name, 'zombieFootballPlayer'))
+or (starts-with(@name, 'zombieFemaleFat'))
+or (starts-with(@name, 'zombieTemplateMale'))
+or (starts-with(@name, 'zombieTemplateMale'))
+]
+/property[@name='Class']
+/@value">
+EntityZombieSDX, Mods
+</set>
+ 
+ 
+ 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - Player inventory size -->
