@@ -51,7 +51,7 @@ or (contains(@name, 'feralHordeStage'))
 <append xpath="/entitygroups" >
 <entitygroup name="KheldonsAnimalsCanadaHostile">
 		<entity name="invisibleAnimalEnemy" prob="6"/>
-		<entity name="khelldonMoose"/>
+		<entity name="khelldonMoose"/><!-- Don't Even. -->
 		<entity name="animalSnake"/>
 		<entity name="animalZombieVulture"/>
 		<entity name="animalWolf"/>
@@ -59,13 +59,16 @@ or (contains(@name, 'feralHordeStage'))
 </entitygroup>
 <entitygroup name="KheldonsAnimalsCanadaPassive">
 		<entity name="invisibleAnimal" prob="6"/>
-		<entity name="khelldonBeaver"/>
+		<entity name="khelldonBeaver"/><!-- No no no no no. -->
 		<entity name="animalRabbit"/>
 		<entity name="animalChicken"/>
 		<entity name="animalStag"/>
 		<entity name="animalDoe"/>
 		<entity name="animalPig"/>
 		<entity name="animalBoar"/>
+</entitygroup>
+<entitygroup name="KheldonsAnimalsCanadaBirds">
+		<entity name="invisibleAnimal" prob="6"/>
 </entitygroup>
 <entitygroup name="KheldonsAnimalsCanadaCity">
 		<entity name="invisibleAnimal" prob="6"/>
