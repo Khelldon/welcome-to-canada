@@ -7,6 +7,23 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Sphereii Localization Block -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/blocks">
+    <!-- this is  a fake block which will trigger the localization -->
+    <block name="localiztionBlock" >
+      <property name="Extends" value="terrSnow" />
+      <property name="CreativeMode" value="Dev"/>
+      <property name="Class" value="LocalizationBlock, Mods"/>
+    </block>
+</append>
+
+
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 <!-- Khelldon - replace backpacks -->
