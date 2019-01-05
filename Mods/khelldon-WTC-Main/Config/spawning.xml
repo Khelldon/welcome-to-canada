@@ -19,8 +19,6 @@
 <append xpath="/spawning">
 
 	<biome name="city">
-        <!-- Day Zombies -->
-		<spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
         <!-- Night Zombies -->
 		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- City Animals -->
@@ -29,10 +27,8 @@
 	</biome>
 
 	<biome name="city_wasteland">
-        <!-- Day Zombies -->
-		<spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
-		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
         <!-- Night Zombies -->
+		<spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombiesBoss" />
 		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
         <!-- City Animals -->
 		<spawn maxcount="4" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
@@ -40,8 +36,6 @@
 	</biome>
 
 	<biome name="wasteland_hub">
-        <!-- Day Zombies -->
-		<spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
         <!-- Night Zombies -->
 		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
         <!-- City Animals -->
@@ -51,7 +45,7 @@
 
 	<biome name="pine_forest">
         <!-- Day Zombies -->
-		<spawn maxcount="4" respawndelay="4" time="Any" entitygroup="ZombiesAll" />
+		<spawn maxcount="4" respawndelay="4" time="Day" entitygroup="ZombiesAll" />
         <!-- Night Zombies -->
 		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- Country Animals -->
@@ -64,7 +58,7 @@
 
 	<biome name="desert">
         <!-- Day Zombies -->
-		<spawn maxcount="2" respawndelay="4" time="Any" entitygroup="ZombiesAll" />
+		<spawn maxcount="2" respawndelay="4" time="Day" entitygroup="ZombiesAll" />
         <!-- Night Zombies -->
 		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- Country Animals -->
@@ -90,7 +84,7 @@
 
 	<biome name="burnt_forest">
         <!-- Day Zombies -->
-		<spawn maxcount="4" respawndelay="4" time="Any" entitygroup="ZombiesBurntForest" />
+		<spawn maxcount="4" respawndelay="4" time="Day" entitygroup="ZombiesBurntForest" />
         <!-- Night Zombies -->
 		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- Country Animals -->
@@ -103,7 +97,7 @@
 
 	<biome name="snow">
         <!-- Day Zombies -->
-		<spawn maxcount="4" respawndelay="4" time="Any" entitygroup="SnowZombies" />
+		<spawn maxcount="4" respawndelay="4" time="Day" entitygroup="SnowZombies" />
         <!-- Night Zombies -->
 		<spawn maxcount="12" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
         <!-- Country Animals -->
