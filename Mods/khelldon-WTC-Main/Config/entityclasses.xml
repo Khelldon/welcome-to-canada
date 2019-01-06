@@ -575,6 +575,7 @@
 	
 <entity_class name="khelldonPassiveFlight">
 	<property name="Tags" value="animal,zombie"/>
+	<property name="Prefab" value="NPC"/>
 	<property name="IsEnemyEntity" value="false"/>
 	<property name="AvatarController" value="MecanimSDX, Mods" />
 	<property name="HasRagdoll" value="false" />
