@@ -69,6 +69,13 @@ or (contains(@name, 'feralHordeStage'))
 </entitygroup>
 <entitygroup name="KheldonsAnimalsCanadaBirds">
 		<entity name="invisibleAnimal" prob="6"/>
+		<entity name="khelldonBirdBlueJay"/>
+		<entity name="khelldonBirdCardinal"/>
+		<entity name="khelldonBirdChickadee"/>
+		<entity name="khelldonBirdCrow"/>
+		<entity name="khelldonBirdFinch"/>
+		<entity name="khelldonBirdRobin"/>
+		<entity name="khelldonBirdSparrow"/>
 </entitygroup>
 <entitygroup name="KheldonsAnimalsCanadaCity">
 		<entity name="invisibleAnimal" prob="6"/>

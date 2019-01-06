@@ -16,6 +16,299 @@
 
 
 <append xpath="/entity_classes">
+
+<!-- Template -->
+<entity_class name="khelldonFreakTemplates" extends="zombieTemplateMale">
+    <!-- Freaks only come out on horde night so we tag them as feral -->
+	<property name="Tags" value="zombie,walker,feral"/>
+    <!-- Sdx values -->
+    <property name="AvatarController" value="MecanimSDX, Mods" />
+    <property name="RootMotion" value="false" />
+    <property name="HasRagdoll" value="false" />
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+    <property name="SpecialAttackIndexes" value="0" />
+    <property name="SpecialSecondAttackIndexes" value="0" />
+    <property name="RagingIndexes" value="0" />
+    <property name="ElectrocutionIndexes" value="0" />
+    <property name="CrouchIndexes" value="0" />
+    <property name="StunIndexes" value="0" />
+    <property name="SleeperIndexes" value="0" />
+    <property name="HarvestIndexes" value="0" />
+    <property name="PainIndexes" value="0" />
+    <property name="DeathIndexes" value="0" />
+    <property name="RunIndexes" value="0" />
+    <property name="WalkIndexes" value="0" />
+    <property name="IdleIndexes" value="0" />
+    <property name="JumpIndexes" value="0" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieFeral"/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresMutant"/>
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+
+
+<!-- Mutant -->
+<entity_class name="khelldonFreakMutant" extends="khelldonFreakTemplates">
+	<property name="Tags" value="zombie,walker,feral"/>
+	<!-- Animations -->
+    <property name="RunIndexes" value="0" />
+    <property name="WalkIndexes" value="0" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieCop"/>
+	<!-- Sounds -->
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresMutant"/>
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+<!-- Demonoid -->
+<entity_class name="khelldonFreakDemonoid" extends="khelldonFreakTemplates">
+	<property name="Tags" value="zombie,walker,feral"/>
+	<!-- Animations -->
+    <property name="RunIndexes" value="0" />
+    <property name="WalkIndexes" value="0" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieCop"/>
+	<!-- Sounds -->
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmareDemonoid"/>
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+<!-- Ice Demon -->
+<entity_class name="khelldonFreakIceDemon" extends="khelldonFreakTemplates">
+	<property name="Tags" value="zombie,walker,feral"/>
+	<!-- Animations -->
+    <property name="RunIndexes" value="0" />
+    <property name="WalkIndexes" value="0" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieCop"/>
+	<!-- Sounds -->
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmareDemonoidIce"/>
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+<!-- Skeletal Zombie -->
+<entity_class name="khelldonFreakSkeletalZombie" extends="khelldonFreakTemplates">
+	<property name="Tags" value="zombie,walker,feral"/>
+	<!-- Animations -->
+    <property name="RunIndexes" value="0" />
+    <property name="WalkIndexes" value="0" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieCop"/>
+	<!-- Sounds -->
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresSkeletonZombie"/>
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+<!-- Nightshade -->
+<entity_class name="khelldonFreakNightshade" extends="khelldonFreakTemplates">
+	<property name="Tags" value="zombie,walker,feral"/>
+	<!-- Animations -->
+    <property name="RunIndexes" value="0" />
+    <property name="WalkIndexes" value="0" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieCop"/>
+	<!-- Sounds -->
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresNightshade"/>
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+<!-- Pumpkin Hulk -->
+<entity_class name="khelldonFreakPumpkinHulk" extends="khelldonFreakTemplates">
+	<property name="Tags" value="zombie,walker,feral"/>
+	<!-- Animations -->
+    <property name="RunIndexes" value="0" />
+    <property name="WalkIndexes" value="0" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieCop"/>
+	<!-- Sounds -->
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresPumpkinhulk"/>
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+<!-- Parasite -->
+<entity_class name="khelldonFreakParasite" extends="khelldonFreakTemplates">
+	<property name="Tags" value="zombie,walker,feral"/>
+	<!-- Animations -->
+    <property name="RunIndexes" value="0" />
+    <property name="WalkIndexes" value="0" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieCop"/>
+	<!-- Sounds -->
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundFootstepModifier" value=""/>
+	<property name="SoundGiveUp" value=""/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresParasite"/>
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
 </append>
 
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->

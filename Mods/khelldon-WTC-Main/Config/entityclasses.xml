@@ -20,7 +20,7 @@
   <set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieFatCop')]/property[@name='Class']/@value">EntityZombieCopSDX, Mods</set>
   <set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieSteveCrawler')]/property[@name='Class']/@value">EntityZombieCrawlSDX, Mods</set>
   
-<!-- Reset Class on our entities -->
+<!-- Reset Class on our entities where we don't want random walk types -->
   <set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieSpider') or (starts-with(@name, 'zombieScreamer'))]/property[@name='Class']/@value">EntityZombie</set>
 
 <!-- Make sure that head shots, and random speeds for entities are all turned off by default -->
@@ -564,7 +564,198 @@
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Kitty Kitty -->
+<!-- Khelldon - Birds -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<!-- All birds in this next section are part of a bird pack "Living Birds" by DINOPUNCH, available for free on the Unity Store  -->
+<append xpath="/entity_classes">
+	
+<entity_class name="khelldonPassiveFlight">
+	<property name="Tags" value="animal,zombie"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="AvatarController" value="MecanimSDX, Mods" />
+	<property name="HasRagdoll" value="false" />
+	<property name="RootMotion" value="false" />
+	<property name="Tags" value="animal,zombie,hostile"/>
+	<property name="Class" value="EntityVulture"/>
+	<property name="EntityType" value="Zombie"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="PhysicsBody" value="vulture"/>
+	<property name="Mass" value="30"/>
+	<property name="Mesh" value="Animals/Vulture/animalVultureStandardRagdoll"/>
+	<property name="AITask-1" value="RunawayWhenHurt"/>
+	<property name="AITask-2" value="RunawayFromEntity" param1="EntityPlayer"/>
+	<property name="AITask-3" value="RunawayFromEntity" param1="EntityZombie"/>
+	<property name="AITask-4" value="Wander"/>
+	<property name="AITask-5" value=""/>
+	<property name="AITask-6" value=""/>
+	<property name="AITarget-1" value=""/>
+	<property name="AITarget-2" value=""/>
+	<property name="AITarget-3" value=""/>
+	<property name="AITarget-4" value=""/>
+	<property name="SoundRandom" value=""/>
+	<property name="SoundAlert" value=""/>
+	<property name="SoundHurt" value=""/>
+	<property name="SoundDeath" value=""/>
+	<property name="SoundAttack" value=""/>
+	<property name="SoundSense" value=""/>
+	<property name="SoundGiveUp" value=""/>
+	<!-- Stealth -->
+	<property name="SightRange" value="70"/>
+	<!-- Gameplay -->
+	<property name="MoveSpeed" value="1"/>
+	<property name="MoveSpeedAggro" value="2.1, 2.1"/>
+	<property name="MaxTurnSpeed" value="190"/>
+	<property name="Immunity" value="sickness;disease;wellness"/>
+	<property name="DeadBodyHitPoints" value="100"/>
+	<drop event="Harvest" name="foodRawMeat" count="1" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="3"/>
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="30"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="30"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	</effect_group>
+</entity_class>
+	 
+<!-- BlueJay -->
+<entity_class name="khelldonBirdBlueJay" extends="khelldonPassiveFlight">
+	<property name="Tags" value="animal,zombie"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonBlueJay" />
+	<!-- Bluejay Sounds -->
+	<property name="SoundDeath" value="bluejaydeath" />
+	<property name="SoundRandom" value="bluejayroam" />
+	<property name="SoundSense" value="bluejaysense" />
+	<property name="SoundAlert" value="bluejayalert" />
+	<property name="SoundHurt" value="" />
+	<property name="SoundAttack" value="" />
+	<property name="SoundFootstepModifier" value="" />
+	<property name="SoundGiveUp" value="" />
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	</effect_group>
+</entity_class>
+	
+<!-- Cardinal -->
+<entity_class name="khelldonBirdCardinal" extends="khelldonPassiveFlight">
+	<property name="Tags" value="animal,zombie"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonCardinal" />
+	<!-- Cardinal Sounds -->
+	<property name="SoundDeath" value="cardinaldeath" />
+	<property name="SoundRandom" value="cardinalroam" />
+	<property name="SoundSense" value="cardinalsense" />
+	<property name="SoundAlert" value="cardinalalert" />
+	<property name="SoundHurt" value="" />
+	<property name="SoundAttack" value="" />
+	<property name="SoundFootstepModifier" value="" />
+	<property name="SoundGiveUp" value="" />
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	</effect_group>
+</entity_class>
+
+<!-- Chickadee -->
+<entity_class name="khelldonBirdChickadee" extends="khelldonPassiveFlight">
+	<property name="Tags" value="animal,zombie"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonChickadee" />
+	<!-- Chickadee Sounds -->
+	<property name="SoundDeath" value="chickadeedeath" />
+	<property name="SoundRandom" value="chickadeeroam" />
+	<property name="SoundSense" value="chickadeesense" />
+	<property name="SoundAlert" value="chickadeealert" />
+	<property name="SoundHurt" value="" />
+	<property name="SoundAttack" value="" />
+	<property name="SoundFootstepModifier" value="" />
+	<property name="SoundGiveUp" value="" />
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	</effect_group>
+</entity_class>
+
+<!-- Crow -->
+<entity_class name="khelldonBirdCrow" extends="khelldonPassiveFlight">
+	<property name="Tags" value="animal,zombie"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonCrow" />
+	<!-- Crow Sounds -->
+	<property name="SoundDeath" value="crowdeath" />
+	<property name="SoundRandom" value="crowroam" />
+	<property name="SoundSense" value="crowsense" />
+	<property name="SoundAlert" value="crowalert" />
+	<property name="SoundHurt" value="" />
+	<property name="SoundAttack" value="" />
+	<property name="SoundFootstepModifier" value="" />
+	<property name="SoundGiveUp" value="" />
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="15"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	</effect_group>
+</entity_class>
+
+<!-- Gold Finch -->
+<entity_class name="khelldonBirdFinch" extends="khelldonPassiveFlight">
+	<property name="Tags" value="animal,zombie"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonGoldFinch" />
+	<!-- Gold Finch Sounds -->
+	<property name="SoundDeath" value="finchdeath" />
+	<property name="SoundRandom" value="finchroam" />
+	<property name="SoundSense" value="finchsense" />
+	<property name="SoundAlert" value="finchalert" />
+	<property name="SoundHurt" value="" />
+	<property name="SoundAttack" value="" />
+	<property name="SoundFootstepModifier" value="" />
+	<property name="SoundGiveUp" value="" />
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	</effect_group>
+</entity_class>
+
+<!-- Robin -->
+<entity_class name="khelldonBirdRobin" extends="khelldonPassiveFlight">
+	<property name="Tags" value="animal,zombie"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonRobin" />
+	<!-- Robin Sounds -->
+	<property name="SoundDeath" value="robindeath" />
+	<property name="SoundRandom" value="robinroam" />
+	<property name="SoundSense" value="robinsense" />
+	<property name="SoundAlert" value="robinalert" />
+	<property name="SoundHurt" value="" />
+	<property name="SoundAttack" value="" />
+	<property name="SoundFootstepModifier" value="" />
+	<property name="SoundGiveUp" value="" />
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	</effect_group>
+</entity_class>
+
+<!-- Sparrow -->
+<entity_class name="khelldonBirdSparrow" extends="khelldonPassiveFlight">
+	<property name="Tags" value="animal,zombie"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonSparrow" />
+	<!-- Sparrow Sounds -->
+	<property name="SoundDeath" value="sparrowdeath" />
+	<property name="SoundRandom" value="sparrowroam" />
+	<property name="SoundSense" value="sparrowsense" />
+	<property name="SoundAlert" value="sparrowalert" />
+	<property name="SoundHurt" value="" />
+	<property name="SoundAttack" value="" />
+	<property name="SoundFootstepModifier" value="" />
+	<property name="SoundGiveUp" value="" />
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	</effect_group>
+</entity_class>
+
+</append>
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
@@ -575,7 +766,7 @@
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
-<!-- Khelldon - Spiders -->
+<!-- Khelldon - -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
@@ -583,6 +774,34 @@
 
 
 </append>
+
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/entity_classes">
+
+
+</append>
+
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+<!-- Khelldon - -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<append xpath="/entity_classes">
+
+
+</append>
+
+
 
 
 

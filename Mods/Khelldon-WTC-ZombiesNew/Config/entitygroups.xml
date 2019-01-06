@@ -38,6 +38,15 @@ or (contains(@name, 'badassOnlyHordeStage'))
 or (contains(@name, 'scoutHordeStage')) 
 or (contains(@name, 'feralHordeStage')) 
 ]">
+		<entity name="khelldonL4DBoomer"/>
+		<entity name="khelldonL4DBoomette"/>
+		<entity name="khelldonL4DCharger"/>
+		<entity name="khelldonL4DHunter"/>
+		<entity name="khelldonL4DJockey"/>
+		<entity name="khelldonL4DSmoker"/>
+		<entity name="khelldonL4DSpitter"/>
+		<entity name="khelldonL4DTank"/>
+		<entity name="khelldonZombieHockeyMomAdvanced"/>
 </append>
 
 

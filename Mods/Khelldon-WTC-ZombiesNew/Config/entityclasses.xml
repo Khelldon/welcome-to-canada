@@ -39,7 +39,7 @@
 <!-- 
 
 Models and Textures by Valve. You may NOT use these models.
-These are added for fun. Please do not reuse. Restricted.
+These are added for fun for use with only this modlet. Please do not reuse. Restricted.
 
 
 Animations, Unity Convertion, retexture and coding by Khelldon
@@ -284,6 +284,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 <append xpath="/entity_classes">
 <!-- Advanced Hockey Mom -->
 <entity_class name="khelldonZombieHockeyMomAdvanced" extends="zombieScreamer">
+	<property name="Tags" value="zombie,walker"/>
     <!-- Sdx values -->
     <property name="AvatarController" value="MecanimSDX, Mods" />
     <property name="RootMotion" value="false" />
