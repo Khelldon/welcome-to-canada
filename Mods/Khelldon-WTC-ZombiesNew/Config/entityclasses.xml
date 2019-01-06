@@ -52,7 +52,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
     <property name="AvatarController" value="MecanimSDX, Mods" />
 	<property name="Tags" value="zombie,walker"/>
     <property name="RootMotion" value="false" />
-    <property name="HasRagdoll" value="true" />
+    <property name="HasRagdoll" value="false" />
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
@@ -290,7 +290,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
     <!-- Sdx values -->
     <property name="AvatarController" value="MecanimSDX, Mods" />
     <property name="RootMotion" value="false" />
-    <property name="HasRagdoll" value="true" />
+    <property name="HasRagdoll" value="false" />
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
@@ -304,7 +304,6 @@ Animations, Unity Convertion, retexture and coding by Khelldon
     <!-- Model -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieAngryHockeyMomAdvanced.unity3d?khelldonZombieHockeyMomAdvanced"/>
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
