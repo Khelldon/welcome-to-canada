@@ -79,7 +79,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
 	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
 	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
-	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonBoomer"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonZombieL4DBoomer"/>
 	<!-- !!!! END RESTRICTED AREA !!!! -->
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -110,7 +110,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
 	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
 	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
-	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonBoomette"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonZombieL4DBoomette"/>
 	<!-- !!!! END RESTRICTED AREA !!!! -->
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -134,7 +134,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<property name="CanClimbLadders" value="true"/>
 	<property name="JumpMaxDistance" value="1.3"/>
 	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
-	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonCharger"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonZombieL4DCharger"/>
 	<!-- !!!! END RESTRICTED AREA !!!! -->
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -157,7 +157,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Crazy Hunter Jump -->
 	<property name="JumpMaxDistance" value="20.0"/>
 	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
-	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonHunter"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonZombieL4DHunter"/>
 	<!-- !!!! END RESTRICTED AREA !!!! -->
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -179,7 +179,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<property name="CanClimbLadders" value="true"/>
 	<property name="JumpMaxDistance" value="3.3"/>
 	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
-	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonJockey"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonZombieL4DJockey"/>
 	<!-- !!!! END RESTRICTED AREA !!!! -->
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -201,7 +201,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<property name="CanClimbLadders" value="true"/>
 	<property name="JumpMaxDistance" value="3.3"/>
 	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
-	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonSmoker"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonZombieL4DSmoker"/>
 	<!-- !!!! END RESTRICTED AREA !!!! -->
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -230,7 +230,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
 	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
 	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
-	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonSpitter"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonZombieL4DSpitter"/>
 	<!-- !!!! END RESTRICTED AREA !!!! -->
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -262,7 +262,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense"/>
 	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
 	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
-	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonTank"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonLeft4Dead2SpecialZombies.unity3d?khelldonZombieL4DTank"/>
 	<!-- !!!! END RESTRICTED AREA !!!! -->
 	<effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
