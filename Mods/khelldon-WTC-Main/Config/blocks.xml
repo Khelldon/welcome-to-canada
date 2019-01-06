@@ -51,7 +51,7 @@
 	<property name="StabilitySupport" value="false"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="Model" value="#@modfolder:Resources/khelldonBackpack.unity3d?khelldonBackpack"/>
+	<property name="Model" value="#@modfolder:Resources/khelldonBackpack.unity3d?khelldonBackpackBlock"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="112"/>
 	<drop event="Harvest" name="resourceScrapPolymers" count="4,16" tag="salvageHarvest"/>

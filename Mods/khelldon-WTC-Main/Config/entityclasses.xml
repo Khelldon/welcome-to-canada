@@ -598,6 +598,23 @@
 	<property name="SoundAttack" value=""/>
 	<property name="SoundSense" value=""/>
 	<property name="SoundGiveUp" value=""/>
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0" />
+    <property name="AttackIndexes" value="0" />
+    <property name="SpecialAttackIndexes" value="0" />
+    <property name="SpecialSecondAttackIndexes" value="0" />
+    <property name="RagingIndexes" value="0" />
+    <property name="ElectrocutionIndexes" value="0" />
+    <property name="CrouchIndexes" value="0" />
+    <property name="StunIndexes" value="0" />
+    <property name="SleeperIndexes" value="0" />
+    <property name="HarvestIndexes" value="0" />
+    <property name="PainIndexes" value="0" />
+    <property name="DeathIndexes" value="0" />
+    <property name="RunIndexes" value="0" />
+    <property name="WalkIndexes" value="0" />
+    <property name="IdleIndexes" value="0" />
+    <property name="JumpIndexes" value="0" />
 	<!-- Stealth -->
 	<property name="SightRange" value="70"/>
 	<!-- Gameplay -->
