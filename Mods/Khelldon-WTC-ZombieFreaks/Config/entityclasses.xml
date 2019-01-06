@@ -53,7 +53,6 @@
     <!-- Model -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresMutant"/>
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -90,7 +89,6 @@
     <!-- Model -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresMutant"/>
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -125,7 +123,6 @@
     <!-- Model -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmareDemonoid"/>
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -160,7 +157,6 @@
     <!-- Model -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmareDemonoidIce"/>
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -195,7 +191,6 @@
     <!-- Model -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresSkeletonZombie"/>
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -230,7 +225,6 @@
     <!-- Model -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresNightshade"/>
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -265,7 +259,6 @@
     <!-- Model -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresPumpkinhulk"/>
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -300,7 +293,6 @@
     <!-- Model -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieFreaks.unity3d?khelldonNightmaresParasite"/>
 		<property name="ModelOffset" value="0,0,0" />
-		<property name="MultiBlockDim" value="1,1,1" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
