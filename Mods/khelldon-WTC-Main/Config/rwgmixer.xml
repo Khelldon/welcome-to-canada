@@ -10,6 +10,165 @@
 
 <!-- ######################################################### -->
 <!-- ######################################################### -->
+<!-- Alphado RWG -->
+<!-- ######################################################### -->
+<!-- ######################################################### -->
+
+<!-- We'll deal with this later
+<set xpath="/*/biome_generators/*[@name='vanillaSmall']|/*/trash">
+	<module name="val_0" type="Constant">
+		<property name="constant" value="0"/>
+	</module>
+
+
+
+	<module name="val_world_size" type="Constant">
+		<property name="constant" value="4096"/>
+	</module>
+
+
+
+	<module name="val_world_safeSize" type="BiasOutput">
+		<property name="sourceModule" value="val_world_size"/>
+		<property name="bias" value="-640"/>
+	</module>
+	<module name="val_world_safeLower" type="Constant">
+		<property name="constant" value="320"/>
+	</module>
+	<module name="checker" type="Checkerboard"/>
+	<module name="sgn_z" type="ScaleInput">
+		<property name="sourceModule" value="checker"/>
+		<property name="x" value="0"/>
+		<property name="y" value="0"/>
+		<property name="z" value="1e-10"/>
+	</module>
+
+
+
+	<module name="val_bottom_perc" type="ScaleOutput">
+		<property name="sourceModule" value="val_world_safeSize"/>
+		<property name="scale" value="0.15"/>
+	</module>
+	<module name="val_bottom_AND_desert_perc" type="ScaleOutput">
+		<property name="sourceModule" value="val_world_safeSize"/>
+		<property name="scale" value="0.40"/>
+	</module>
+	<module name="val_NO_snow_perc" type="ScaleOutput">
+		<property name="sourceModule" value="val_world_safeSize"/>
+		<property name="scale" value="0.75"/>
+	</module>
+
+
+
+	<module name="bio_posBottomInv" type="Add">
+		<property name="sourceModule1" value="val_world_safeLower"/>
+		<property name="sourceModule2" value="val_bottom_perc"/>
+	</module>
+	<module name="bio_posBottom" type="InvertOutput">
+		<property name="sourceModule" value="bio_posBottomInv"/>
+	</module>
+	<module name="bio_posLowerInv" type="Add">
+		<property name="sourceModule1" value="val_world_safeLower"/>
+		<property name="sourceModule2" value="val_bottom_AND_desert_perc"/>
+	</module>
+	<module name="bio_posLower" type="InvertOutput">
+		<property name="sourceModule" value="bio_posLowerInv"/>
+	</module>
+	<module name="bio_posUpperInv" type="Add">
+		<property name="sourceModule1" value="val_world_safeLower"/>
+		<property name="sourceModule2" value="val_NO_snow_perc"/>
+	</module>
+	<module name="bio_posUpper" type="InvertOutput">
+		<property name="sourceModule" value="bio_posUpperInv"/>
+	</module>
+
+	<module name="isPositive_z" type="ScaleBiasOutput">
+		<property name="sourceModule" value="sgn_z"/>
+		<property name="scale" value="0.5"/>
+		<property name="bias" value="0.5"/>
+	</module>
+	<module name="isPositive_z_waved" type="FastTurbulence">
+		<property name="sourceModule" value="isPositive_z"/>
+		<property name="frequency" value="0.0017"/>
+		<property name="power" value="600"/>
+		<property name="roughness" value="5"/>
+	</module>
+
+	<module name="bio_gapBottom" type="ScaleOutput">
+		<property name="sourceModule" value="isPositive_z_waved"/>
+		<property name="scale" value="3"/>
+	</module>
+	<module name="bio_gapLower" type="ScaleOutput">
+		<property name="sourceModule" value="isPositive_z_waved"/>
+		<property name="scale" value="3"/>
+	</module>
+	<module name="bio_gapUpper" type="ScaleOutput">
+		<property name="sourceModule" value="isPositive_z_waved"/>
+		<property name="scale" value="3"/>
+	</module>
+
+	<module name="bio_bandBottom" type="DisplaceInput">
+		<property name="sourceModule" value="bio_gapBottom"/>
+		<property name="xDisplaceModule" value="val_0"/>
+		<property name="yDisplaceModule" value="val_0"/>
+		<property name="zDisplaceModule" value="bio_posBottom"/>
+	</module>
+	<module name="bio_bandLower" type="DisplaceInput">
+		<property name="sourceModule" value="bio_gapLower"/>
+		<property name="xDisplaceModule" value="val_0"/>
+		<property name="yDisplaceModule" value="val_0"/>
+		<property name="zDisplaceModule" value="bio_posLower"/>
+	</module>
+	<module name="bio_bandUpper" type="DisplaceInput">
+		<property name="sourceModule" value="bio_gapUpper"/>
+		<property name="xDisplaceModule" value="val_0"/>
+		<property name="yDisplaceModule" value="val_0"/>
+		<property name="zDisplaceModule" value="bio_posUpper"/>
+	</module>
+	<module name="bio_bandBase" type="Add">
+		<property name="sourceModule1" value="bio_bandBottom"/>
+		<property name="sourceModule2" value="bio_bandLower"/>
+	</module>
+	<module name="bio_band" type="Add">
+		<property name="sourceModule1" value="bio_bandBase"/>
+		<property name="sourceModule2" value="bio_bandUpper"/>
+	</module>
+
+	<module name="bio_waster" type="FastNoise">
+		<property name="frequency" value="0.0028"/>
+		<property name="lacunarity" value="1.8"/>
+	</module>
+	<module name="bio_wastePerc" type="ScaleOutput">
+		<property name="sourceModule" value="bio_waster"/>
+		<property name="scale" value="0.65"/>
+	</module>
+	<module name="bio_out" type="Add">
+		<property name="sourceModule1" value="bio_band"/>
+		<property name="sourceModule2" value="bio_wastePerc"/>
+	</module>
+
+	<module name="biomeOutput" type="BiomeIDMapper">
+		<property name="sourceModule" value="bio_out"/>
+		<property name="biomemap0.Name" value="snow"/>
+		<property name="biomemap0.Range" value="-1.5,1.5"/>
+		<property name="biomemap1.Name" value="desert"/>
+		<property name="biomemap1.Range" value="2.5,3.5"/>
+		<property name="biomemap2.Name" value="pine_forest"/>
+		<property name="biomemap2.Range" value="5.5,6.5"/>
+		<property name="biomemap3.Name" value="snow"/>
+		<property name="biomemap3.Range" value="8.5,9.5"/>
+		<property name="biomemap4.Name" value="burnt_forest"/>
+		<property name="biomemap4.Range" value="4.5,9"/>
+		<property name="biomemap5.Name" value="wasteland"/>
+		<property name="biomemap5.Range" value="-5,15"/>
+	</module>
+		<output module="biomeOutput"/>
+</set>
+-->
+
+
+<!-- ######################################################### -->
+<!-- ######################################################### -->
 <!-- Khelldon - Prefabs -->
 <!-- ######################################################### -->
 <!-- ######################################################### -->
@@ -173,6 +332,7 @@
 		</prefab_rule>
 
 		<prefab_rule name="commercialGroup">
+			<prefab rule="traderGroup" min_count="1" max_count="2"/>
 			<prefab name="store_gun_sm_01" prob="0.6"/>
 			<prefab name="store_gun_lg_01" prob="0.4"/>
 			<prefab name="store_pharmacy_sm_01" />
@@ -207,6 +367,7 @@
 		</prefab_rule>
 
 		<prefab_rule name="downtownGroup">
+			<prefab rule="traderGroup" min_count="1" max_count="2"/>
 			<prefab name="business_old_01"/>
 			<prefab name="business_old_02"/>
 			<prefab name="business_old_03"/>

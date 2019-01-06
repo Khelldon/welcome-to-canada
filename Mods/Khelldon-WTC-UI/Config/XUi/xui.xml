@@ -14,6 +14,7 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
+	
     <!-- Add Sawhorse window -->
 	<append xpath="/xui/ruleset[@name='default']">
 		<window_group name="workstation_woodSawhorse" controller="XUiC_WorkstationWindowGroup">
