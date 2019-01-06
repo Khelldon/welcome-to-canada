@@ -21,7 +21,9 @@
   <set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieSteveCrawler')]/property[@name='Class']/@value">EntityZombieCrawlSDX, Mods</set>
   
 <!-- Reset Class on our entities where we don't want random walk types -->
-  <set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieSpider') or starts-with(@name, 'zombieScreamer')]/property[@name='Class']/@value">EntityZombie</set>
+  <append xpath="/entity_classes/entity_class[starts-with(@name, 'zombieSpider') or (starts-with(@name, 'zombieScreamer'))]">
+	<property name="Class" value="EntityZombie"/>
+  </append>
 
 <!-- Make sure that head shots, and random speeds for entities are all turned off by default -->
   <append xpath="/entity_classes/entity_class[starts-with(@name, 'zombieTemplateMale')]" >

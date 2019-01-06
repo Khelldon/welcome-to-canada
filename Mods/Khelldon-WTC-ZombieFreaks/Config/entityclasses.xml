@@ -25,6 +25,7 @@
     <property name="AvatarController" value="MecanimSDX, Mods" />
     <property name="RootMotion" value="false" />
     <property name="HasRagdoll" value="false" />
+	<property name="Prefab" value="NPC"/>
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
