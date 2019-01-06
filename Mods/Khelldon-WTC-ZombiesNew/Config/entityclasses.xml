@@ -52,7 +52,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
     <property name="AvatarController" value="MecanimSDX, Mods" />
 	<property name="Tags" value="zombie,walker"/>
     <property name="RootMotion" value="false" />
-    <property name="HasRagdoll" value="false" />
+    <property name="HasRagdoll" value="true" />
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
@@ -290,7 +290,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
     <!-- Sdx values -->
     <property name="AvatarController" value="MecanimSDX, Mods" />
     <property name="RootMotion" value="false" />
-    <property name="HasRagdoll" value="false" />
+    <property name="HasRagdoll" value="true" />
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />

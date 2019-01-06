@@ -625,6 +625,7 @@
 <entity_class name="khelldonBirdBlueJay" extends="khelldonPassiveFlight">
 	<property name="Tags" value="animal,zombie"/>
 	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonBlueJay" />
+	<property name="SizeScale" value="2"/>
 	<!-- Bluejay Sounds -->
 	<property name="SoundDeath" value="bluejaydeath" />
 	<property name="SoundRandom" value="bluejayroam" />
@@ -644,6 +645,7 @@
 <entity_class name="khelldonBirdCardinal" extends="khelldonPassiveFlight">
 	<property name="Tags" value="animal,zombie"/>
 	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonCardinal" />
+	<property name="SizeScale" value="1.8"/>
 	<!-- Cardinal Sounds -->
 	<property name="SoundDeath" value="cardinaldeath" />
 	<property name="SoundRandom" value="cardinalroam" />
@@ -663,6 +665,7 @@
 <entity_class name="khelldonBirdChickadee" extends="khelldonPassiveFlight">
 	<property name="Tags" value="animal,zombie"/>
 	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonChickadee" />
+	<property name="SizeScale" value="1.2"/>
 	<!-- Chickadee Sounds -->
 	<property name="SoundDeath" value="chickadeedeath" />
 	<property name="SoundRandom" value="chickadeeroam" />
@@ -682,6 +685,7 @@
 <entity_class name="khelldonBirdCrow" extends="khelldonPassiveFlight">
 	<property name="Tags" value="animal,zombie"/>
 	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonCrow" />
+	<property name="SizeScale" value="3"/>
 	<!-- Crow Sounds -->
 	<property name="SoundDeath" value="crowdeath" />
 	<property name="SoundRandom" value="crowroam" />
@@ -701,6 +705,7 @@
 <entity_class name="khelldonBirdFinch" extends="khelldonPassiveFlight">
 	<property name="Tags" value="animal,zombie"/>
 	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonGoldFinch" />
+	<property name="SizeScale" value="1.2"/>
 	<!-- Gold Finch Sounds -->
 	<property name="SoundDeath" value="finchdeath" />
 	<property name="SoundRandom" value="finchroam" />
@@ -720,6 +725,7 @@
 <entity_class name="khelldonBirdRobin" extends="khelldonPassiveFlight">
 	<property name="Tags" value="animal,zombie"/>
 	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonRobin" />
+	<property name="SizeScale" value="1.8"/>
 	<!-- Robin Sounds -->
 	<property name="SoundDeath" value="robindeath" />
 	<property name="SoundRandom" value="robinroam" />
@@ -739,6 +745,7 @@
 <entity_class name="khelldonBirdSparrow" extends="khelldonPassiveFlight">
 	<property name="Tags" value="animal,zombie"/>
 	<property name="Mesh" value="#@modfolder:Resources/khelldonBirds.unity3d?khelldonSparrow" />
+	<property name="SizeScale" value="1.2"/>
 	<!-- Sparrow Sounds -->
 	<property name="SoundDeath" value="sparrowdeath" />
 	<property name="SoundRandom" value="sparrowroam" />
