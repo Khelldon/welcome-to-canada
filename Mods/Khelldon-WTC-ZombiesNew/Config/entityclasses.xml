@@ -305,7 +305,7 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieFeral"/>
     <!-- Model -->
-	<property name="Mesh" value="#@modfolder:Resources/khelldonZombieAngryHockeyMomAdvanced.unity3d?khelldonZombieHockeyMomAdvanced"/>
+	<property name="Mesh" value="#@modfolder:Resources/khelldonAHMA.unity3d?khelldonAHMfinal"/>
 		<property name="ModelOffset" value="0,0,0" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
