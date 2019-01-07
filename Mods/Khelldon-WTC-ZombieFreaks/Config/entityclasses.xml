@@ -26,7 +26,7 @@
     <property name="RootMotion" value="false" />
     <property name="HasRagdoll" value="false" />
 	<property name="Prefab" value="NPC"/>
-	<property name="Class" value="EntityZombie"/>
+	<property name="Class" value="EntityEnemyAnimal"/>
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />

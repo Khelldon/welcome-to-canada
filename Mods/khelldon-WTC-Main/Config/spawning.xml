@@ -25,7 +25,7 @@
 		<spawn maxcount="4" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
 		<spawn maxcount="6" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
         <!-- Birds -->
-		<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" />
+		<!--<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" /> -->
 	</biome>
 
 	<biome name="city_wasteland">
@@ -36,7 +36,7 @@
 		<spawn maxcount="4" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
 		<spawn maxcount="6" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
         <!-- Birds -->
-		<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" />
+		<!--<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" /> -->
 	</biome>
 
 	<biome name="wasteland_hub">
@@ -46,7 +46,7 @@
 		<spawn maxcount="4" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
 		<spawn maxcount="6" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaCity" spawnDeadChance="0" />
         <!-- Birds -->
-		<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" />
+		<!--<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" /> -->
 	</biome>
 
 	<biome name="pine_forest">
@@ -61,7 +61,7 @@
 		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
         <!-- Birds -->
-		<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" />
+		<!-- <spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" /> -->
 	</biome>
 
 	<biome name="desert">
@@ -76,7 +76,7 @@
 		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
         <!-- Birds -->
-		<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" />
+		<!--<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" /> -->
 	</biome>
 
 	<biome name="wasteland">
@@ -91,7 +91,7 @@
 		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
         <!-- Birds -->
-		<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" />
+		<!--<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" /> -->
 	</biome>
 
 	<biome name="burnt_forest">
@@ -106,7 +106,7 @@
 		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
         <!-- Birds -->
-		<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" />
+		<!--<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" /> -->
 	</biome>
 
 	<biome name="snow">
@@ -121,7 +121,7 @@
 		<spawn maxcount="1" respawndelay="7" time="Night" entitygroup="KheldonsAnimalsCanadaPassive" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="KheldonsAnimalsBearsCanada" spawnDeadChance="0" />
         <!-- Birds -->
-		<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" />
+		<!--<spawn maxcount="6" respawndelay="7" time="Day" entitygroup="KheldonsAnimalsCanadaBirds" spawnDeadChance="0" /> -->
 	</biome>
 
 </append>
