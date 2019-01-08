@@ -68,9 +68,9 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
-
+<!--
 <set xpath="/entity_classes/entity_class[@name='Backpack' or @name='Backpack']/property[@name='Mesh']/@value">#@modfolder:Resources/khelldonBackpack.unity3d?khelldonBackpack</set>
-
+-->
 
 
 <!-- ######################################################### -->
