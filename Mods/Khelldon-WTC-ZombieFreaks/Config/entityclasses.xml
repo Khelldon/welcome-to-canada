@@ -40,8 +40,8 @@
     <property name="HarvestIndexes" value="0" />
     <property name="PainIndexes" value="0" />
     <property name="DeathIndexes" value="0" />
-    <property name="RunIndexes" value="0" />
-    <property name="WalkIndexes" value="0" />
+    <property name="RunIndexes" value="2" />
+    <property name="WalkIndexes" value="2" />
     <property name="IdleIndexes" value="0" />
     <property name="JumpIndexes" value="0" />
     <!-- Speeds -->

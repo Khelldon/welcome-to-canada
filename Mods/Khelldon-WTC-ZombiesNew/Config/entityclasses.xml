@@ -58,7 +58,9 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
-	<property name="ModelOffset" value="0,1,0" />
+    <property name="RunIndexes" value="2" />
+    <property name="WalkIndexes" value="2" />
+	<property name="ModelOffset" value="0,0,0" />
 </entity_class>
 <!-- Left4Dead2 Special Zeds -->
 <entity_class name="khelldonL4DBoomer" extends="khelldonL4DZedTemplate">
@@ -297,6 +299,8 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
+    <property name="RunIndexes" value="2" />
+    <property name="WalkIndexes" value="2" />
     <!-- Speeds -->
 	<property name="MaxTurnSpeed" value="250"/>
 	<property name="MoveSpeed" value="0.08"/>
@@ -308,7 +312,6 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonAHMA.unity3d?khelldonAHMfinal"/>
 	<!-- !!!! END RESTRICTED AREA !!!! -->
-		<property name="ModelOffset" value="0,1,0" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -334,6 +337,8 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
+    <property name="RunIndexes" value="2" />
+    <property name="WalkIndexes" value="2" />
     <!-- Speeds -->
 	<property name="MaxTurnSpeed" value="250"/>
 	<property name="MoveSpeed" value="0.08"/>
@@ -365,6 +370,8 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
+    <property name="RunIndexes" value="2" />
+    <property name="WalkIndexes" value="2" />
     <!-- Speeds -->
 	<property name="MaxTurnSpeed" value="250"/>
 	<property name="MoveSpeed" value="0.08"/>
@@ -397,6 +404,8 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
+    <property name="RunIndexes" value="2" />
+    <property name="WalkIndexes" value="2" />
     <!-- Speeds -->
 	<property name="MaxTurnSpeed" value="250"/>
 	<property name="MoveSpeed" value="0.08"/>
@@ -429,6 +438,8 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
+    <property name="RunIndexes" value="2" />
+    <property name="WalkIndexes" value="2" />
     <!-- Speeds -->
 	<property name="MaxTurnSpeed" value="250"/>
 	<property name="MoveSpeed" value="0.08"/>
@@ -461,6 +472,8 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
+    <property name="RunIndexes" value="2" />
+    <property name="WalkIndexes" value="2" />
     <!-- Speeds -->
 	<property name="MaxTurnSpeed" value="250"/>
 	<property name="MoveSpeed" value="0.08"/>
@@ -493,6 +506,8 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
+    <property name="RunIndexes" value="2" />
+    <property name="WalkIndexes" value="2" />
     <!-- Speeds -->
 	<property name="MaxTurnSpeed" value="250"/>
 	<property name="MoveSpeed" value="0.08"/>
@@ -525,6 +540,8 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- Animations -->
     <property name="AttackAnimations" value="Attack0, Attack1" />
     <property name="AttackIndexes" value="2" />
+    <property name="RunIndexes" value="2" />
+    <property name="WalkIndexes" value="2" />
     <!-- Speeds -->
 	<property name="MaxTurnSpeed" value="250"/>
 	<property name="MoveSpeed" value="0.08"/>
