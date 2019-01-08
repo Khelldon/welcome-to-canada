@@ -47,6 +47,13 @@ or (contains(@name, 'feralHordeStage'))
 		<entity name="khelldonL4DSpitter"/>
 		<entity name="khelldonL4DTank"/>
 		<entity name="khelldonZombieHockeyMomAdvanced"/>
+		<entity name="khelldonZombieCop"/>
+		<entity name="khelldonZombieMortician"/>
+		<entity name="khelldonZombieSecurityGuard"/>
+		<entity name="khelldonZombieFemaleGeneric"/>
+		<entity name="khelldonZombieFemaleHospitalPatient"/>
+		<entity name="khelldonZombieEuropeanMilitary"/>
+		<entity name="khelldonZombieYakuza"/>
 </append>
 
 

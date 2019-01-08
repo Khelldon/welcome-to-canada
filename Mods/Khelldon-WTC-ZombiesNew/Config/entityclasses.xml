@@ -305,8 +305,236 @@ Animations, Unity Convertion, retexture and coding by Khelldon
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieFeral"/>
     <!-- Model -->
+	<!-- !!!! DO NOT USE - RESTRICTED AREA !!!! -->
 	<property name="Mesh" value="#@modfolder:Resources/khelldonAHMA.unity3d?khelldonAHMfinal"/>
+	<!-- !!!! END RESTRICTED AREA !!!! -->
 		<property name="ModelOffset" value="0,1,0" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+
+
+<!-- !!!! The following Zombies are okay to use in any project !!!! -->
+<!-- !!!! Found on Mixamo, ported to 7 days to die by Khelldon !!!! -->
+<!-- Cop -->
+<entity_class name="khelldonZombieCop" extends="zombieTemplateMale">
+	<property name="Tags" value="zombie,walker"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityEnemyAnimal"/>
+    <!-- Sdx values -->
+    <property name="AvatarController" value="MecanimSDX, Mods" />
+    <property name="RootMotion" value="false" />
+    <property name="HasRagdoll" value="false" />
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieFeral"/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonNewZombies.unity3d?khelldonZombieCopEnglish"/>
+		<property name="ModelOffset" value="0,0,0" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+<!-- Mortician -->
+<entity_class name="khelldonZombieMortician" extends="zombieTemplateMale">
+	<property name="Tags" value="zombie,walker"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityEnemyAnimal"/>
+    <!-- Sdx values -->
+    <property name="AvatarController" value="MecanimSDX, Mods" />
+    <property name="RootMotion" value="false" />
+    <property name="HasRagdoll" value="false" />
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieFeral"/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonNewZombies.unity3d?khelldonZombieMortician"/>
+		<property name="ModelOffset" value="0,0,0" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+
+<!-- Security Guard -->
+<entity_class name="khelldonZombieSecurityGuard" extends="zombieTemplateMale">
+	<property name="Tags" value="zombie,walker"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityEnemyAnimal"/>
+    <!-- Sdx values -->
+    <property name="AvatarController" value="MecanimSDX, Mods" />
+    <property name="RootMotion" value="false" />
+    <property name="HasRagdoll" value="false" />
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieFeral"/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonNewZombies.unity3d?khelldonZombieSecurityGuard"/>
+		<property name="ModelOffset" value="0,0,0" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+
+<!-- Girl -->
+<entity_class name="khelldonZombieFemaleGeneric" extends="zombieTemplateMale">
+	<property name="Tags" value="zombie,walker"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityEnemyAnimal"/>
+    <!-- Sdx values -->
+    <property name="AvatarController" value="MecanimSDX, Mods" />
+    <property name="RootMotion" value="false" />
+    <property name="HasRagdoll" value="false" />
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieFeral"/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonNewZombies.unity3d?khelldonZombieFemaleGeneric02"/>
+		<property name="ModelOffset" value="0,0,0" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+
+<!-- hospital Patient -->
+<entity_class name="khelldonZombieFemaleHospitalPatient" extends="zombieTemplateMale">
+	<property name="Tags" value="zombie,walker"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityEnemyAnimal"/>
+    <!-- Sdx values -->
+    <property name="AvatarController" value="MecanimSDX, Mods" />
+    <property name="RootMotion" value="false" />
+    <property name="HasRagdoll" value="false" />
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieFeral"/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonNewZombies.unity3d?khelldonZombieHospital"/>
+		<property name="ModelOffset" value="0,0,0" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+
+<!-- War Zombie -->
+<entity_class name="khelldonZombieEuropeanMilitary" extends="zombieTemplateMale">
+	<property name="Tags" value="zombie,walker"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityEnemyAnimal"/>
+    <!-- Sdx values -->
+    <property name="AvatarController" value="MecanimSDX, Mods" />
+    <property name="RootMotion" value="false" />
+    <property name="HasRagdoll" value="false" />
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieFeral"/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonNewZombies.unity3d?khelldonZombieRussianMilitary"/>
+		<property name="ModelOffset" value="0,0,0" />
+	<!-- Set Health -->
+    <effect_group name="Base Effects">
+		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+	</effect_group>
+</entity_class>
+
+
+<!-- Yakuza -->
+<entity_class name="khelldonZombieYakuza" extends="zombieTemplateMale">
+	<property name="Tags" value="zombie,walker"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityEnemyAnimal"/>
+    <!-- Sdx values -->
+    <property name="AvatarController" value="MecanimSDX, Mods" />
+    <property name="RootMotion" value="false" />
+    <property name="HasRagdoll" value="false" />
+	<!-- Animations -->
+    <property name="AttackAnimations" value="Attack0, Attack1" />
+    <property name="AttackIndexes" value="2" />
+    <!-- Speeds -->
+	<property name="MaxTurnSpeed" value="250"/>
+	<property name="MoveSpeed" value="0.08"/>
+	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
+	<property name="MoveSpeedPanic" value="0.75"/>
+	<!-- hand item -->
+	<property name="HandItem" value="meleeHandZombieFeral"/>
+    <!-- Model -->
+	<property name="Mesh" value="#@modfolder:Resources/khelldonNewZombies.unity3d?khelldonZombieSamaurai"/>
+		<property name="ModelOffset" value="0,0,0" />
 	<!-- Set Health -->
     <effect_group name="Base Effects">
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
