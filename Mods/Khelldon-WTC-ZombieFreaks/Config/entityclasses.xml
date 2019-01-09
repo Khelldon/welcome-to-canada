@@ -46,9 +46,9 @@
     <property name="JumpIndexes" value="0" />
     <!-- Speeds -->
 	<property name="MaxTurnSpeed" value="250"/>
-	<property name="MoveSpeed" value="0.08"/>
-	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
-	<property name="MoveSpeedPanic" value="0.75"/>
+	<property name="MoveSpeed" value="0.6"/>
+	<property name="MoveSpeedAggro" value="0.6, 1.25"/>
+	<property name="MoveSpeedPanic" value="1.3"/>
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieFeral"/>
     <!-- Model -->
@@ -71,11 +71,6 @@
 	<!-- Animations -->
     <property name="RunIndexes" value="0" />
     <property name="WalkIndexes" value="0" />
-    <!-- Speeds -->
-	<property name="MaxTurnSpeed" value="250"/>
-	<property name="MoveSpeed" value="0.08"/>
-	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
-	<property name="MoveSpeedPanic" value="0.75"/>
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieCop"/>
 	<!-- Sounds -->
@@ -105,11 +100,6 @@
 	<!-- Animations -->
     <property name="RunIndexes" value="0" />
     <property name="WalkIndexes" value="0" />
-    <!-- Speeds -->
-	<property name="MaxTurnSpeed" value="250"/>
-	<property name="MoveSpeed" value="0.08"/>
-	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
-	<property name="MoveSpeedPanic" value="0.75"/>
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieCop"/>
 	<!-- Sounds -->
@@ -139,11 +129,6 @@
 	<!-- Animations -->
     <property name="RunIndexes" value="0" />
     <property name="WalkIndexes" value="0" />
-    <!-- Speeds -->
-	<property name="MaxTurnSpeed" value="250"/>
-	<property name="MoveSpeed" value="0.08"/>
-	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
-	<property name="MoveSpeedPanic" value="0.75"/>
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieCop"/>
 	<!-- Sounds -->
@@ -174,10 +159,6 @@
     <property name="RunIndexes" value="0" />
     <property name="WalkIndexes" value="0" />
     <!-- Speeds -->
-	<property name="MaxTurnSpeed" value="250"/>
-	<property name="MoveSpeed" value="0.08"/>
-	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
-	<property name="MoveSpeedPanic" value="0.75"/>
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieCop"/>
 	<!-- Sounds -->
@@ -207,11 +188,6 @@
 	<!-- Animations -->
     <property name="RunIndexes" value="0" />
     <property name="WalkIndexes" value="0" />
-    <!-- Speeds -->
-	<property name="MaxTurnSpeed" value="250"/>
-	<property name="MoveSpeed" value="0.08"/>
-	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
-	<property name="MoveSpeedPanic" value="0.75"/>
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieCop"/>
 	<!-- Sounds -->
@@ -241,11 +217,6 @@
 	<!-- Animations -->
     <property name="RunIndexes" value="0" />
     <property name="WalkIndexes" value="0" />
-    <!-- Speeds -->
-	<property name="MaxTurnSpeed" value="250"/>
-	<property name="MoveSpeed" value="0.08"/>
-	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
-	<property name="MoveSpeedPanic" value="0.75"/>
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieCop"/>
 	<!-- Sounds -->
@@ -275,11 +246,6 @@
 	<!-- Animations -->
     <property name="RunIndexes" value="0" />
     <property name="WalkIndexes" value="0" />
-    <!-- Speeds -->
-	<property name="MaxTurnSpeed" value="250"/>
-	<property name="MoveSpeed" value="0.08"/>
-	<property name="MoveSpeedAggro" value="0.2, 1.25"/>
-	<property name="MoveSpeedPanic" value="0.75"/>
 	<!-- hand item -->
 	<property name="HandItem" value="meleeHandZombieCop"/>
 	<!-- Sounds -->
