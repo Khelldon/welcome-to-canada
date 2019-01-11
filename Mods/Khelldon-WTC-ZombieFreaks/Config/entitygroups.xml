@@ -16,8 +16,8 @@
 <!-- ######################################################### -->
 <append xpath="/entitygroups/entitygroup[contains(@name, 'feralHordeStage')]">
 		<entity name="khelldonFreakMutant"/>
-		<entity name="khelldonFreakDemonoid"/>
-		<entity name="khelldonFreakIceDemon"/>
+		<!-- <entity name="khelldonFreakDemonoid"/>
+		<entity name="khelldonFreakIceDemon"/> -->
 		<entity name="khelldonFreakSkeletalZombie"/>
 		<entity name="khelldonFreakNightshade"/>
 		<entity name="khelldonFreakPumpkinHulk"/>
