@@ -68,9 +68,7 @@
 <!-- ######################################################### -->
 <!-- ######################################################### -->
 
-<!--
-<set xpath="/entity_classes/entity_class[@name='Backpack' or @name='Backpack']/property[@name='Mesh']/@value">#@modfolder:Resources/khelldonBackpack.unity3d?khelldonBackpack</set>
--->
+<set xpath="/entity_classes/entity_class[@name='Backpack' or @name='DroppedLootContainer' or @name='EntityLootContainerRegular' or @name='EntityLootContainerStrong' or @name='EntityLootContainerBoss' or @name='EntityLootContainerBandit']/property[@name='Mesh']/@value">#@modfolder:Resources/khelldonBackpack.unity3d?khelldonBackpack</set>
 
 
 <!-- ######################################################### -->
